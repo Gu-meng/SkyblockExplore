@@ -6,8 +6,6 @@ StartupEvents.registry("creative_mode_tab",event=>{
 });
 
 StartupEvents.modifyCreativeTab("kubejs:tab",event =>{
-    Object.values(regIds).forEach(id=>{
-        event.remove(id)
-    });
+    event.remove("@meng");
 });
 
