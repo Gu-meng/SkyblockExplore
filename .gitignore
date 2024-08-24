@@ -19,3 +19,5 @@ rhino.local.properties
 usercache.json
 usernamecache.json
 /schematics
+/kubejs/startup_scripts/MengTest.js
+/kubejs/server_scripts/MengTest.js

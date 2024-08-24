@@ -5,5 +5,6 @@ const regIds = {
     redstone_dust : namespace + "redstone_dust",
     iron_dust : namespace + "iron_dust",
     crushbone_axe : namespace + "crushbone_axe",
-    crushbone_sword : namespace + "crushbone_sword"
+    crushbone_sword : namespace + "crushbone_sword",
+    iron_frame : namespace + "iron_frame"
 }

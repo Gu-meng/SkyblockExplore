@@ -5,4 +5,11 @@ ServerEvents.recipes(event=>{
         ['meng:iron_dust','create:shaft','meng:iron_dust'],
         ['#minecraft:wooden_slabs','meng:iron_dust','#minecraft:wooden_slabs']
     ]).id("create:crafting/kinetics/water_wheel");
+
+    //动力筛子
+    event.shaped('createsifter:sifter',[
+        ['create:andesite_casing','meng:iron_frame','create:andesite_casing'],
+        ['#minecraft:wooden_fences','create:cogwheel','#minecraft:wooden_fences'],
+        ['#forge:stone','#forge:stone','#forge:stone']
+    ]).id('createsifter:sifter');
 })
