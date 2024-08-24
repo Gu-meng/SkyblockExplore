@@ -15,4 +15,17 @@ ServerEvents.recipes(event=>{
 
     // 骨粉
     event.shapeless('27x minecraft:bone_meal',["minecraft:bone_block"]).id("minecraft:bone_meal_from_bone_block");
+
+    // 闪长岩
+    event.shaped('minecraft:diorite',[
+        ['meng:white_dust','minecraft:cobblestone'],
+        ['minecraft:cobblestone','meng:white_dust']
+    ]).id("minecraft:diorite");
+
+    // 熔炉
+    event.shaped('minecraft:furnace',[
+        ['minecraft:cobblestone','minecraft:stone','minecraft:cobblestone'],
+        ['minecraft:stone','meng:iron_mesh','minecraft:stone'],
+        ['minecraft:cobblestone','minecraft:stone','minecraft:cobblestone']
+    ]).id('minecraft:furnace');
 })

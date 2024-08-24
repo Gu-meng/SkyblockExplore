@@ -25,6 +25,12 @@
       "south": [
         [ 6, 3, 5 ]
       ]
+    },
+    "exported_at_2024-08-25T01:47:09+0800": {
+      "north": [],
+      "east": [],
+      "south": [[ 5, 3, 5 ]],
+      "west": []
     }
   },
   
@@ -48,8 +54,12 @@
   },
   
   // The list of templates being available. The first entry is the default template.
-  "templates": [
+  "templates": [ 
     {
+      "name": "sky",
+      "file": "sky.snbt",
+      "spawns": "exported_at_2024-08-25T01:47:09+0800"
+    },{
       "name": "default",
       "file": "default.nbt",
       "spawns": "default",

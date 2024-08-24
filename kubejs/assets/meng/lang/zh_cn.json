@@ -5,6 +5,24 @@
 	"item.meng.crushbone_axe":"碎骨斧",
 	"item.meng.redstone_dust":"红石粉粉",
     "item.meng.iron_frame":"铁框架",
+    "item.meng.white_dust":"白灰",
+    "item.meng.iron_mesh":"铁网",
 
-    "item_group.meng.items":"孤梦的物品"
+    "item_group.meng.items":"孤梦的物品",
+
+    "ftbq.tile.meng.start_play":"欢迎游玩",
+    "ftbq.details.meng.start_play":"首先非常感谢您游玩整合包,本整合包主要以机械动力为主要来发展游戏进程,上面的奖励物品是你的发展资源,请好好的利用它们",
+
+    "ftbq.tile.meng.kill_monster":"从怪物身上获取资源",
+    "ftbq.details.meng.kill_monster":"在前期我们大部分资源都需要通过这些怪物来获取,比如石头就需要骨块进项烧制而成",
+
+    "ftbq.tile.meng.bone_block":"这是我的骨块吗?",
+    "ftbq.details.meng.bone_block":"骨块是前期你获取石头的方法,常规的骨块合成会导致骨块无法通过高温烧制成石头,所以我们合成的方法将他进行了加固",
+    
+    "ftbq.tile.meng.smelter":"热门话题!",
+    "ftbq.details.meng.smelter":"恭喜你终于合成了熔炉!上面是给你的奖励,请好好的利用它们,不同的使用方法会导致游戏的游玩时间不同",
+
+    "ftbq.tile.meng.start_create":"步入机械动力",
+    "ftbq.details.meng.start_create":"现在你终于可以开始去实现机械动力的一些物品了,虽然"
+    
 }

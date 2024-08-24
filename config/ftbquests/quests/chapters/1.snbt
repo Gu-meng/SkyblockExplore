@@ -1,0 +1,118 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1"
+	group: ""
+	id: "44D9C0D689005815"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["{ftbq.details.meng.start_play}"]
+			id: "5D42A098E3C294D5"
+			rewards: [
+				{
+					id: "7C1521F71ACD33B5"
+					item: {
+						Count: 1
+						id: "meng:crushbone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "02AC710D0AE81912"
+					table_id: 4652297859770340667L
+					type: "choice"
+				}
+				{
+					id: "120EC84914EC6BEB"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "55D4E7FFCEF66D1E"
+				title: "欢迎游玩"
+				type: "checkmark"
+			}]
+			title: "{ftbq.tile.meng.start_play}"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5D42A098E3C294D5"]
+			description: ["{ftbq.details.meng.kill_monster}"]
+			id: "6938A9EB1122F781"
+			rewards: [{
+				id: "154C9F0F31952987"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "73B06473949E4E1E"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "minecraft:skeleton"
+					id: "42CF7BC6010ED7BB"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "{ftbq.tile.meng.kill_monster}"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			description: ["{ftbq.details.meng.bone_block}"]
+			id: "7C884E28A2E4E337"
+			rewards: [{
+				id: "2F103810BD5A32B6"
+				item: "meng:crushbone"
+				random_bonus: 6
+				type: "item"
+			}]
+			tasks: [{
+				id: "5AE6B3BE3CBE32E7"
+				item: "minecraft:bone_block"
+				type: "item"
+			}]
+			title: "{ftbq.tile.meng.bone_block}"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			description: ["{ftbq.details.meng.smelter}"]
+			id: "11F997E9816B1CF3"
+			rewards: [
+				{
+					count: 7
+					id: "3E21926C429A978C"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					id: "79FBF608B9803600"
+					item: "minecraft:sand"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "471ADCA858136145"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "{ftbq.tile.meng.smelter}"
+			x: 0.5d
+			y: 2.0d
+		}
+	]
+	title: "1"
+}

@@ -19,4 +19,6 @@ ServerEvents.recipes(event=>{
         ["minecraft:iron_nugget","","minecraft:iron_nugget"],
         ["minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget"]
     ])
+
+    event.shapeless("meng:iron_mesh",["meng:iron_frame","minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget"]);
 })
