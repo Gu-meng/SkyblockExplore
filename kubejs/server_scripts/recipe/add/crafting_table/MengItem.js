@@ -14,4 +14,9 @@ ServerEvents.recipes(event=>{
 
     event.shapeless("7x meng:iron_dust",['minecraft:bone']);
 
+    event.shaped('meng:iron_frame',[
+        ["minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget"],
+        ["minecraft:iron_nugget","","minecraft:iron_nugget"],
+        ["minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget"]
+    ])
 })
