@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "1"
 	group: ""
+	icon: "minecraft:grass_block"
 	id: "44D9C0D689005815"
 	order_index: 0
 	quest_links: [ ]
@@ -113,6 +114,23 @@
 			x: 0.5d
 			y: 2.0d
 		}
+		{
+			description: ["{ftbq.details.meng.start_create}"]
+			id: "1AD7A63158207E2B"
+			rewards: [{
+				id: "02E45F84A7B6AFB0"
+				item: "create:wrench"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F2C7C614CEDFE4B"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "{ftbq.tile.meng.start_create}"
+			x: -2.0d
+			y: 2.0d
+		}
 	]
-	title: "1"
+	title: "{ftbq.chapter.meng.start}"
 }

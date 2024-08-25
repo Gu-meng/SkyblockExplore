@@ -21,4 +21,54 @@ ServerEvents.recipes(event=>{
     ])
 
     event.shapeless("meng:iron_mesh",["meng:iron_frame","minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget"]);
+
+    ironTimbers.forEach(value=>{
+        event.shaped(value.output,[
+            [value.input],
+            ['create:iron_sheet'],
+            [value.input]
+        ])
+    })
 })
+
+const ironTimbers = [
+    {
+        input:'minecraft:oak_slab',
+        output:'meng:iron_oak_block'   
+    },
+    {
+        input:'minecraft:acacia_slab',
+        output:'meng:iron_acacia_block'
+    },
+    {
+        input:'minecraft:birch_slab',
+        output:'meng:iron_birch_block'
+    },
+    {
+        input:'minecraft:cherry_slab',
+        output:'meng:iron_cherry_block'
+    },
+    {
+        input:'minecraft:crimson_slab',
+        output:'meng:iron_crimson_block'
+    },
+    {
+        input:'minecraft:dark_oak_slab',
+        output:'meng:iron_dark_oak_block'
+    },
+    {
+        input:'minecraft:jungle_slab',
+        output:'meng:iron_jungle_block'
+    },
+    {
+        input:'minecraft:mangrove_slab',
+        output:'meng:iron_mangrove_block'
+    },
+    {
+        input:'minecraft:spruce_slab',
+        output:'meng:iron_spruce_block'
+    },{
+        input:'minecraft:warped_slab',
+        output:'meng:iron_warped_block'
+    }
+]

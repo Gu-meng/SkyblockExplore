@@ -5,4 +5,5 @@ StartupEvents.registry("item",event=>{
     event.create(regIds.iron_frame,"basic");
     event.create(regIds.white_dust,"basic");
     event.create(regIds.iron_mesh,"basic");
+    event.create(regIds.iron_timber_sheet,"basic");
 })

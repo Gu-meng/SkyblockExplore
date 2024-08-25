@@ -12,4 +12,11 @@ ServerEvents.recipes(event=>{
         ['#minecraft:wooden_fences','create:cogwheel','#minecraft:wooden_fences'],
         ['#forge:stone','#forge:stone','#forge:stone']
     ]).id('createsifter:sifter');
+
+    // 大水车
+    event.shaped('create:large_water_wheel',[
+        ['meng:iron_timber_sheet','meng:iron_timber_sheet','meng:iron_timber_sheet'],
+        ['meng:iron_timber_sheet','create:shaft','meng:iron_timber_sheet'],
+        ['meng:iron_timber_sheet','meng:iron_timber_sheet','meng:iron_timber_sheet']
+    ]).id("create:crafting/kinetics/large_water_wheel");
 })

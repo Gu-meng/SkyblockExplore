@@ -7,8 +7,23 @@
     "item.meng.iron_frame":"铁框架",
     "item.meng.white_dust":"白灰",
     "item.meng.iron_mesh":"铁网",
+    "item.meng.iron_timber_sheet":"木包铁板",
+    
+    "block.meng.iron_acacia_block":"金合欢木包铁",
+    "block.meng.iron_birch_block":"白桦木包铁",
+    "block.meng.iron_cherry_block":"樱花木包铁",
+    "block.meng.iron_crimson_block":"绯红木包铁",
+    "block.meng.iron_dark_oak_block":"深色橡木包铁",
+    "block.meng.iron_jungle_block":"丛林木包铁",
+    "block.meng.iron_mangrove_block":"红树木包铁",
+    "block.meng.iron_oak_block":"橡木包铁",
+    "block.meng.iron_spruce_block":"云杉木包铁",
+    "block.meng.iron_warped_block":"诡异木包铁",
+    
 
-    "item_group.meng.items":"孤梦的物品",
+    "item_group.meng.items":"Meng",
+
+    "ftbq.chapter.meng.start":"开始",
 
     "ftbq.tile.meng.start_play":"欢迎游玩",
     "ftbq.details.meng.start_play":"首先非常感谢您游玩整合包,本整合包主要以机械动力为主要来发展游戏进程,上面的奖励物品是你的发展资源,请好好的利用它们",
@@ -23,6 +38,8 @@
     "ftbq.details.meng.smelter":"恭喜你终于合成了熔炉!上面是给你的奖励,请好好的利用它们,不同的使用方法会导致游戏的游玩时间不同",
 
     "ftbq.tile.meng.start_create":"步入机械动力",
-    "ftbq.details.meng.start_create":"现在你终于可以开始去实现机械动力的一些物品了,虽然"
+    "ftbq.details.meng.start_create":"现在你终于可以开始去实现机械动力的一些物品了",
+
+    "ftbq.chapter.meng.create":"机械动力"
     
 }

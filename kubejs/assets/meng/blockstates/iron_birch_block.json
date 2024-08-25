@@ -1,0 +1,7 @@
+{
+    "variants":{
+        "":{
+            "model": "meng:block/iron_birch_block"
+        }
+    }
+}
