@@ -8,6 +8,7 @@
     "item.meng.white_dust":"白灰",
     "item.meng.iron_mesh":"铁网",
     "item.meng.iron_timber_sheet":"木包铁板",
+    "item.meng.raffle_ticket":"抽奖券",
     
     "block.meng.iron_acacia_block":"金合欢木包铁",
     "block.meng.iron_birch_block":"白桦木包铁",
@@ -22,6 +23,8 @@
     
 
     "item_group.meng.items":"Meng",
+
+    "text.meng.lottery_state":"抽奖进行中,请结束后再继续",
 
     "ftbq.chapter.meng.start":"开始",
 

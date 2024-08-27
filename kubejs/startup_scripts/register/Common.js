@@ -19,5 +19,6 @@ const regIds = {
     iron_mangrove_block : namespace + "iron_mangrove_block",
     iron_oak_block : namespace + "iron_oak_block",
     iron_spruce_block : namespace + "iron_spruce_block",
-    iron_warped_block : namespace + "iron_warped_block"
+    iron_warped_block : namespace + "iron_warped_block",
+    raffle_ticket : namespace + "raffle_ticket"
 };

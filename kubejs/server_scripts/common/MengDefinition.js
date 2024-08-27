@@ -1,0 +1,2 @@
+const basalItemList = [];
+let poolItemList = [];
