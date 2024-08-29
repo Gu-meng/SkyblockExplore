@@ -22,5 +22,6 @@ const regIds = {
     iron_warped_block : namespace + "iron_warped_block",
     raffle_ticket : namespace + "raffle_ticket",
     reinforce_iron_sheet : namespace + 'reinforce_iron_sheet',
-    rain_doll : namespace + "rain_doll"
+    rain_doll : namespace + "rain_doll",
+    sunny_doll : namespace + "sunny_doll"
 };
