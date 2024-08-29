@@ -25,3 +25,15 @@ usernamecache.json
 /quests_structures
 /CustomSkinLoader
 /icon-exports-x16
+log4j2.xml
+natives-windows-x86_64/OpenAL.dll
+natives-windows-x86_64/lwjgl.dll
+natives-windows-x86_64/lwjgl_stb.dll
+natives-windows-x86_64/lwjgl_opengl.dll
+natives-windows-x86_64/jna3618215513141389162.dll.x
+natives-windows-x86_64/jna3618215513141389162.dll
+natives-windows-x86_64/glfw.dll
+natives-windows-x86_64/jemalloc.dll
+kubejs/config/probejs.json
+create-sky.jar
+create-sky.json
