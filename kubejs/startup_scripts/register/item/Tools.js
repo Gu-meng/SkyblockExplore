@@ -5,8 +5,13 @@ StartupEvents.registry("item",event=>{
         .attackDamageBaseline(8)
         .maxDamage(100);
 
-        event.create(regIds.crushbone_sword,"sword")
+    event.create(regIds.crushbone_sword,"sword")
         .speedBaseline(1.6)
         .attackDamageBaseline(4)
         .maxDamage(50);
+    
+    event.create(regIds.rain_doll,"basic")
+        .maxDamage(2)
+        .fireResistant(true)
+        .unstackable()
 })

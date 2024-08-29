@@ -20,5 +20,4 @@ StartupEvents.registry("block",event=>{
             .tagBlock("minecraft:needs_stone_tool")
             .tagItem("meng:iron_timbers")
     })
-    
 })

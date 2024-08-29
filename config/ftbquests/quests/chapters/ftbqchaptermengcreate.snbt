@@ -95,12 +95,18 @@
 		{
 			description: ["{ftbq.details.meng.gravel}"]
 			id: "4FA2933B1B2D4335"
+			rewards: [{
+				count: 16
+				id: "696B139B5731226F"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6E151827CF500589"
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			title: "{ftbq.title.meng.gravel}|"
+			title: "{ftbq.title.meng.gravel}"
 			x: 0.0d
 			y: 3.5d
 		}

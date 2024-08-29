@@ -6,4 +6,8 @@ ServerEvents.recipes(event=>{
     pressing('meng:iron_timber_sheet',[
         "#meng:iron_timbers"
     ])
+
+    pressing('meng:reinforce_iron_sheet',[
+        "minecraft:iron_block"
+    ])
 })

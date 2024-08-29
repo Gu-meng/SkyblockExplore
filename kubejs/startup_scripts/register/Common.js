@@ -20,5 +20,7 @@ const regIds = {
     iron_oak_block : namespace + "iron_oak_block",
     iron_spruce_block : namespace + "iron_spruce_block",
     iron_warped_block : namespace + "iron_warped_block",
-    raffle_ticket : namespace + "raffle_ticket"
+    raffle_ticket : namespace + "raffle_ticket",
+    reinforce_iron_sheet : namespace + 'reinforce_iron_sheet',
+    rain_doll : namespace + "rain_doll"
 };

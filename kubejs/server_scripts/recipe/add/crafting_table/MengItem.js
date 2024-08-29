@@ -22,6 +22,12 @@ ServerEvents.recipes(event=>{
 
     event.shapeless("meng:iron_mesh",["meng:iron_frame","minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget","minecraft:iron_nugget"]);
 
+    event.shaped("meng:rain_doll",[
+        ['','minecraft:white_wool'],
+        [Item.of('minecraft:potion', {Potion:"minecraft:water"}).strongNBT(),'minecraft:white_wool',Item.of('minecraft:potion', {Potion:"minecraft:water"}).strongNBT()],
+        ['','minecraft:white_wool']
+    ]).replaceIngredient(Item.of('minecraft:potion', {Potion:"minecraft:water"}).strongNBT(),'minecraft:glass_bottle');
+
     ironTimbers.forEach(value=>{
         event.shaped(value.output,[
             [value.input],

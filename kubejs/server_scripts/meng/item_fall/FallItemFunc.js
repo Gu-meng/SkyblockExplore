@@ -1,11 +1,10 @@
-let itemFallList = {
-
-};
+let itemFallList = {};
 
 let fallItem = [
     {
         inputItem: "minecraft:cobblestone",
-        outputItem: 'minecraft:gravel'
+        outputItem: 'minecraft:gravel',
+        spaceBetween: 10
     }
 ]
 
@@ -22,7 +21,8 @@ EntityEvents.spawned("item", event => {
         itemFallList[itemEntity.getUuid()] = {
             y: itemEntity.getY(),
             output: value.outputItem,
-            count: count
+            count: count,
+            spaceBetween: value.spaceBetween
         }
     })
 
@@ -36,7 +36,7 @@ LevelEvents.tick(event => {
             let fallValue = itemFallList[key];
             if (entity.getUuid() == key) {
                 if (entity.onGround()) {
-                    if (fallValue.y - entity.getY() >= 10) {
+                    if (fallValue.y - entity.getY() >= fallItem.spaceBetween) {
                         entity.setItem(Item.of(fallValue.output, fallValue.count))
                     }
                     entity.pickUpDelay = 20;
