@@ -1,22 +1,22 @@
 // 线筛网
-function string_mesh(output,input,time,isWater){
+function stringMesh(output,input,time,isWater){
     sifting(output,[input,'createsifter:string_mesh'],time,isWater);
 }
 
 // 安山筛网
-function andesite_mesh(output,input,time,isWater){
+function andesiteMesh(output,input,time,isWater){
     sifting(output,[input,'createsifter:andesite_mesh'],time,isWater);
 }
 // 锌筛网
-function zinc_mesh(output,input,time,isWater){
+function zincMesh(output,input,time,isWater){
     sifting(output,[input,'createsifter:zinc_mesh'],time,isWater);
 }
 // 黄铜筛网
-function brass_mesh(output,input,time,isWater){
+function brassMesh(output,input,time,isWater){
     sifting(output,[input,'createsifter:brass_mesh'],time,isWater);
 }
 // 高级黄铜筛网
-function advanced_brass_mesh(output,input,time,isWater){
+function advancedBrassMesh(output,input,time,isWater){
     sifting(output,[input,'createsifter:advanced_brass_mesh'],time,isWater);
 }
 

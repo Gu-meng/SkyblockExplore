@@ -7,6 +7,103 @@
 	id: "4F4BAACA3E031A6F"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: ["{ftbq.details.meng.create.start_create}"]
+			id: "0C3EAD456F570E66"
+			rewards: [
+				{
+					id: "4DE6959C8CC629E0"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6B41845A3396C224"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "76767B5ED1085287"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "{ftbq.title.meng.start_create}"
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			description: ["{ftbq.details.meng.hand_crank}"]
+			id: "2D62A192B162B26E"
+			rewards: [
+				{
+					id: "424553A213DF5738"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "35D2CEE2A612D185"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4FA8DEF1B125D333"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			title: "{ftbq.title.meng.hand_crank}"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			description: ["{ftbq.details.meng.sifter}"]
+			id: "39CCE1B46CAA5BAB"
+			rewards: [{
+				id: "6C156C46D776AD57"
+				item: {
+					Count: 1
+					id: "createsifter:string_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E58BCA4C4BC69C9"
+				item: "createsifter:sifter"
+				type: "item"
+			}]
+			title: "{ftbq.title.meng.sifter}"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			id: "2F1B7E20891741D4"
+			tasks: [{
+				id: "277E96B18B46E716"
+				item: {
+					Count: 1
+					id: "createsifter:andesite_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: ["{ftbq.details.meng.gravel}"]
+			id: "4FA2933B1B2D4335"
+			tasks: [{
+				id: "6E151827CF500589"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			title: "{ftbq.title.meng.gravel}|"
+			x: 0.0d
+			y: 3.5d
+		}
+	]
 	title: "{ftbq.chapter.meng.create}"
 }

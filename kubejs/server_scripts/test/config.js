@@ -1,0 +1,3 @@
+const debugConfig = {
+    isDebug : false
+}

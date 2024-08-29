@@ -40,7 +40,7 @@
 				title: "欢迎游玩"
 				type: "checkmark"
 			}]
-			title: "{ftbq.tile.meng.start_play}"
+			title: "{ftbq.title.meng.start_play}"
 			x: -4.0d
 			y: -1.0d
 		}
@@ -67,7 +67,7 @@
 					value: 3L
 				}
 			]
-			title: "{ftbq.tile.meng.kill_monster}"
+			title: "{ftbq.title.meng.kill_monster}"
 			x: -2.0d
 			y: -1.0d
 		}
@@ -85,7 +85,7 @@
 				item: "minecraft:bone_block"
 				type: "item"
 			}]
-			title: "{ftbq.tile.meng.bone_block}"
+			title: "{ftbq.title.meng.bone_block}"
 			x: 0.5d
 			y: -1.0d
 		}
@@ -110,12 +110,12 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			title: "{ftbq.tile.meng.smelter}"
+			title: "{ftbq.title.meng.smelter}"
 			x: 0.5d
 			y: 2.0d
 		}
 		{
-			description: ["{ftbq.details.meng.start_create}"]
+			description: ["{ftbq.details.meng.start.start_create}"]
 			id: "1AD7A63158207E2B"
 			rewards: [{
 				id: "02E45F84A7B6AFB0"
@@ -127,7 +127,7 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			title: "{ftbq.tile.meng.start_create}"
+			title: "{ftbq.title.meng.start_create}"
 			x: -2.0d
 			y: 2.0d
 		}

@@ -19,4 +19,10 @@ ServerEvents.recipes(event=>{
         ['meng:iron_timber_sheet','create:shaft','meng:iron_timber_sheet'],
         ['meng:iron_timber_sheet','meng:iron_timber_sheet','meng:iron_timber_sheet']
     ]).id("create:crafting/kinetics/large_water_wheel");
+
+    // 传动杆
+    event.shaped('4x create:shaft',[
+        ['create:andesite_alloy'],
+        ['create:andesite_alloy']
+    ]).id("create:crafting/kinetics/shaft");
 })
