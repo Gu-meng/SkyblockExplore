@@ -7,5 +7,5 @@ StartupEvents.registry("item",event=>{
     event.create(regIds.iron_mesh);
     event.create(regIds.iron_timber_sheet);
     event.create(regIds.raffle_ticket);
-    event.create(regIds.reinforce_iron_sheet)
+    event.create(regIds.reinforce_iron_sheet);
 })

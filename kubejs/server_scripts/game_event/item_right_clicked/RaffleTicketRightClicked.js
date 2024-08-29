@@ -6,7 +6,7 @@ ItemEvents.rightClicked("meng:raffle_ticket", event => {
     const playerPersistentData = player.getPersistentData();
     if (playerPersistentData.getBoolean("lotteryState")) {
         player.tell(Text.translate("text.meng.lottery_state"))
-        playerPersistentData.putBoolean("lotteryState",false);
+        // playerPersistentData.putBoolean("lotteryState",false);
         return;
     }
     const item = event.getItem();

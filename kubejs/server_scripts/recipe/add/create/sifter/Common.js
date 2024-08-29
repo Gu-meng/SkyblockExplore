@@ -20,8 +20,16 @@ function advancedBrassMesh(output,input,time,isWater){
     sifting(output,[input,'createsifter:advanced_brass_mesh'],time,isWater);
 }
 
-
+/**
+ * 
+ * @param {*} output 
+ * @param {*} input 
+ * @param {*} time 不填写默认为5秒
+ * @param {*} isWater 不填写默认为false
+ */
 function sifting(output,input,time,isWater){
+    if(time == undefined) time = 5
+    if(isWater == undefined) isWater = false
     ServerEvents.recipes(event=>{
         const createsifter = event.recipes.createsifter;
         createsifter.sifting(output,input,time * 20,isWater);
