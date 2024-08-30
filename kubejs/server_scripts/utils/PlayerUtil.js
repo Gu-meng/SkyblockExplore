@@ -1,3 +1,5 @@
+// priority: 10
+
 /**
  * 玩家右上角提示
  * @param {Internal.Player} player 

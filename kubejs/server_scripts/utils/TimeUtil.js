@@ -1,3 +1,5 @@
+// priority: 10
+
 /**
  * 格式化时间(内置hh:mm:ss)
  * @returns 返回字符串时间

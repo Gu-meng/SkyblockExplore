@@ -1,3 +1,5 @@
+// priority: 10
+
 /**
  * 打乱数组
  * @param {Array} arr 
