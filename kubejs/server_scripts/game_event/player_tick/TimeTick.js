@@ -6,32 +6,32 @@ PlayerEvents.tick(event => {
     let t = time();
     switch (t) {
         case "06:00:00":
-            playerNotify(player, 'minecraft:bell', Text.red("时间小助手"), Text.white("早上好,是一晚上没睡吗"))
+            playerNotify(player, 'minecraft:bell', Text.translate("notify.meng.time.title").red(), Text.translate("notify.meng.time.0600").white())
             break;
         case "08:00:00":
-            playerNotify(player, 'minecraft:mushroom_stew', Text.red("时间小助手"), Text.white("吃了吗,打游戏也别忘了吃早饭哦"))
+            playerNotify(player, 'minecraft:mushroom_stew', Text.translate("notify.meng.time.title").red(), Text.translate("notify.meng.time.0800").white())
             break;
         case "11:30:00":
-            playerNotify(player, 'minecraft:mushroom_stew', Text.red("时间小助手"), Text.white("中午好,一定要记得吃中饭啊"))
+            playerNotify(player, 'minecraft:mushroom_stew', Text.translate("notify.meng.time.title").red(), Text.translate("notify.meng.time.1130").white())
             break;
         case "12:30:00":
-            playerNotify(player, 'minecraft:red_bed', Text.red("时间小助手"), Text.white("你看已经" + t + ",要不先睡午觉吧"))
+            playerNotify(player, 'minecraft:red_bed', Text.translate("notify.meng.time.title").red(), Text.translate("notify.meng.time.1230",t).white())
             break;
         case "17:00:00":
-            playerNotify(player, 'minecraft:mushroom_stew', Text.red("时间小助手"), Text.white("下午好,马上就要吃晚饭了呢,游戏哪有干饭重要啊!"))
+            playerNotify(player, 'minecraft:mushroom_stew', Text.translate("notify.meng.time.title").red(), Text.translate("notify.meng.time.1700").white())
             break;
         case "22:30:00":
-            playerNotify(player, 'minecraft:red_bed', Text.red("时间小助手"), Text.white("晚上好,已经到了睡觉的点了,你会早点休息的,对吧?"))
+            playerNotify(player, 'minecraft:red_bed', Text.translate("notify.meng.time.title").red(), Text.translate("notify.meng.time.2230").white())
             break;
         case "00:00:00":
-            playerNotify(player, 'minecraft:ender_eye', Text.red("时间小助手"), Text.white("都这个点了,你还不睡吗,难道真正的夜生活才刚刚开始吗!"))
+            playerNotify(player, 'minecraft:ender_eye', Text.translate("notify.meng.time.title").red(), Text.translate("notify.meng.time.0000").white())
             break;
         case "02:30:00":
         case "03:30:00":
-            playerNotify(player, 'minecraft:clock', Text.red("时间小助手"), Text.white("真的还不睡吗,都已经" + t))
+            playerNotify(player, 'minecraft:clock', Text.translate("notify.meng.time.title").red(), Text.translate("notify.meng.time.0330",t).white())
             break;
         case "04:30:00":
-            playerNotify(player, 'draconicevolution:reactor_core', Text.red("时间小助手"), Text.white("我想你该睡了,确实不早了呢"))
+            playerNotify(player, 'draconicevolution:reactor_core', Text.translate("notify.meng.time.title").red(), Text.translate("notify.meng.time.0430").white())
             break;
     }
     player.paint({

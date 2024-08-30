@@ -11,6 +11,7 @@
     "item.meng.raffle_ticket":"抽奖券",
     "item.meng.reinforce_iron_sheet":"加固铁板",
     "item.meng.rain_doll":"雨天娃娃",
+    "item.meng.sunny_doll":"晴天娃娃",
     
     "block.meng.iron_acacia_block":"金合欢木包铁",
     "block.meng.iron_birch_block":"白桦木包铁",
@@ -23,6 +24,17 @@
     "block.meng.iron_spruce_block":"云杉木包铁",
     "block.meng.iron_warped_block":"诡异木包铁",
     
+    "notify.meng.time.title":"时间小助手",
+    "notify.meng.time.0600":"早上好,是一晚上没睡吗",
+    "notify.meng.time.0800":"吃了吗,打游戏也别忘了吃早饭哦",
+    "notify.meng.time.1130":"中午好,一定要记得吃中饭啊",
+    "notify.meng.time.1230":"你看已经%s,要不先睡午觉吧",
+    "notify.meng.time.1700":"下午好,马上就要吃晚饭了呢,游戏哪有干饭重要啊!",
+    "notify.meng.time.2230":"晚上好,已经到了睡觉的点了,你会早点休息的,对吧?",
+    "notify.meng.time.0000":"都这个点了,你还不睡吗,难道真正的夜生活才刚刚开始吗!",
+    "notify.meng.time.0330":"真的还不睡吗,都已经 %s",
+    "notify.meng.time.0430":"我想你该睡了,确实不早了呢",
+    "notify.meng.time.test":"你好 %s,要注意休息哦",
 
     "item_group.meng.items":"Meng",
 
