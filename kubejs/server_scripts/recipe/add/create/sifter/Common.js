@@ -20,6 +20,11 @@ function advancedBrassMesh(output,input,time,isWater){
     sifting(output,[input,'createsifter:advanced_brass_mesh'],time,isWater);
 }
 
+// 铁筛网
+function ironMesh(output,input,time,isWater){
+    sifting(output,[input,'meng:iron_mesh'],time,isWater);
+}
+
 /**
  * 
  * @param {*} output 

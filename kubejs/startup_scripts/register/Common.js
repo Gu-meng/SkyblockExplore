@@ -23,5 +23,8 @@ const regIds = {
     raffle_ticket : namespace + "raffle_ticket",
     reinforce_iron_sheet : namespace + 'reinforce_iron_sheet',
     rain_doll : namespace + "rain_doll",
-    sunny_doll : namespace + "sunny_doll"
+    sunny_doll : namespace + "sunny_doll",
+    lava_debris : namespace + "lava_debris",
+    lavl_chunk : namespace + "lavl_chunk",
+    drill_bit : namespace + "drill_bit",
 };

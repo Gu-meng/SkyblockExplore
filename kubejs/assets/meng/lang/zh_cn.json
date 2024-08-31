@@ -12,6 +12,9 @@
     "item.meng.reinforce_iron_sheet":"加固铁板",
     "item.meng.rain_doll":"雨天娃娃",
     "item.meng.sunny_doll":"晴天娃娃",
+    "item.meng.lava_debris":"熔岩碎片",
+    "item.meng.lavl_chunk":"熔岩块",
+    "item.meng.drill_bit":"钻头",
     
     "block.meng.iron_acacia_block":"金合欢木包铁",
     "block.meng.iron_birch_block":"白桦木包铁",
@@ -64,6 +67,9 @@
     "ftbq.title.meng.hand_crank":"在没水前的最好的应力源",
     "ftbq.details.meng.hand_crank":"希望你能早日获取到水!没有水也没关系,先用手吧(确信)",
 
+    "ftbq.title.meng.water_wheel":"已经不想用手了",
+    "ftbq.details.meng.water_wheel":"还是偷懒的好",
+
     "ftbq.title.meng.sifter":"这个真的可以来矿吗?",
     "ftbq.details.meng.sifter":"这个是不是很像无中生有里的筛子，但是这个是机械动力的筛子",
     
@@ -71,5 +77,26 @@
     "ftbq.details.meng.andesite_mesh":"使用安山筛网可以晒出部分矿石,但是因为筛网材质问题,有一些矿石是筛不出来的",
 
     "ftbq.title.meng.gravel":"原来还可以这样!",
-    "ftbq.details.meng.gravel":"将原石从距离地面高度10格及以上的高度丢下来可以摔成沙砾,原来是这样获取的吗,太厉害了"
+    "ftbq.details.meng.gravel":"将原石从距离地面高度10格及以上的高度丢下来可以摔成沙砾,原来是这样获取的吗,太厉害了",
+
+    "ftbq.title.meng.mechanical_press":"我们需要片片",
+    "ftbq.details.meng.mechanical_press":"先做一个辊压机来整一些片片吧",
+
+    "ftbq.title.meng.large_water_wheel":"更大！更快！更强！",
+    "ftbq.details.meng.large_water_wheel":"一个大水车比得上两个小水车，不过这个大水车是不是有点贵了\n哪里贵了，一直都是这个价，这么长时间你有没有努力",
+
+    "ftbq.title.meng.millstone":"这个比丢矿快",
+    "ftbq.details.meng.millstone":"用石磨把圆石磨成沙砾吧,这个可比从上面丢矿来的快",
+
+    "ftbq.title.meng.mechanical_mixer":"搅拌一下",
+    "ftbq.details.meng.mechanical_mixer":"做个搅拌机来搅拌一下吧~",
+
+    "ftbq.title.meng.lava_debris":"熔岩碎片",
+    "ftbq.details.meng.lava_debris":"这个可是要搅拌的他发热才能出的东西,16个圆石只能出这一个！",
+
+    "ftbq.title.meng.lava":"热腾腾",
+    "ftbq.details.meng.lava":"刷石机！刷石机！刷石机",
+
+    "ftbq.title.meng.blaze_burner":"加热！加热！",
+    "ftbq.details.meng.blaze_burner":"做一个烈焰人燃烧室吧！"
 }

@@ -28,6 +28,8 @@ ServerEvents.recipes(event=>{
         ['','minecraft:white_wool']
     ]).replaceIngredient(Item.of('minecraft:potion', {Potion:"minecraft:water"}).strongNBT(),'minecraft:glass_bottle');
 
+    event.shapeless('meng:lavl_chunk',['meng:lava_debris','meng:lava_debris','meng:lava_debris','meng:lava_debris']);
+
     ironTimbers.forEach(value=>{
         event.shaped(value.output,[
             [value.input],

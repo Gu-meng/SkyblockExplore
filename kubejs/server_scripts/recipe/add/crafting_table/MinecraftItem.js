@@ -25,7 +25,10 @@ ServerEvents.recipes(event=>{
     // 熔炉
     event.shaped('minecraft:furnace',[
         ['minecraft:cobblestone','minecraft:stone','minecraft:cobblestone'],
-        ['minecraft:stone','meng:iron_mesh','minecraft:stone'],
+        ['minecraft:stone','meng:iron_frame','minecraft:stone'],
         ['minecraft:cobblestone','minecraft:stone','minecraft:cobblestone']
     ]).id('minecraft:furnace');
+
+    // 岩浆块
+    event.shapeless('minecraft:magma_block',['meng:lavl_chunk','meng:lavl_chunk','meng:lavl_chunk','meng:lavl_chunk'])
 })

@@ -71,8 +71,33 @@ andesiteMesh([
     Item.of('meng:iron_dust').withChance(0.1),
     Item.of('meng:redstone_dust').withChance(0.05),
     Item.of('minecraft:iron_nugget').withChance(0.04),
-    Item.of('minecraft:raw_copper').withChance(0.06),
+    Item.of('create:copper_nugget').withChance(0.06),
     Item.of('minecraft:lapis_lazuli').withChance(0.06),
     Item.of('minecraft:bone_meal').withChance(0.03),
     Item.of('meng:white_dust').withChance(0.03)
 ],'minecraft:gravel',20)
+
+ironMesh([
+    Item.of('minecraft:iron_nugget',2).withChance(0.08),
+    Item.of('minecraft:gold_nugget').withChance(0.03),
+    Item.of('create:copper_nugget').withChance(0.1),
+    Item.of('create:zinc_nugget').withChance(0.05),
+    Item.of('mekanism:nugget_lead').withChance(0.02),
+    Item.of('mekanism:nugget_tin').withChance(0.03),
+    Item.of('mekanism:nugget_uranium').withChance(0.01),
+    Item.of('create:brass_nugget').withChance(0.02),
+    Item.of('mekanism:nugget_osmium').withChance(0.005),
+    Item.of('create:experience_nugget').withChance(0.009),
+    Item.of('meng:white_dust').withChance(0.02),
+    Item.of('minecraft:redstone').withChance(0.05),
+    Item.of('minecraft:lapis_lazuli',3).withChance(0.08)
+],'minecraft:gravel',15)
+
+zincMesh([
+    Item.of('minecraft:cod').withChance(0.3),
+    Item.of('minecraft:salmon').withChance(0.3),
+    Item.of('minecraft:tropical_fish').withChance(0.1),
+    Item.of('minecraft:pufferfish').withChance(0.05),
+    Item.of('minecraft:prismarine_shard').withChance(0.08),
+    Item.of('minecraft:prismarine_crystals').withChance(0.07)
+],'minecraft:sand',10,true)

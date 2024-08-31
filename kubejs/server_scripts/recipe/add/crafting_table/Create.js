@@ -25,4 +25,25 @@ ServerEvents.recipes(event=>{
         ['create:andesite_alloy'],
         ['create:andesite_alloy']
     ]).id("create:crafting/kinetics/shaft");
+
+    // 辊压机
+    event.shaped('create:mechanical_press',[
+        ['','create:piston_extension_pole',''],
+        ['create:shaft','create:andesite_casing','create:shaft'],
+        ['',"minecraft:iron_block",'']
+    ]).id("create:crafting/kinetics/mechanical_press");
+
+    // 搅拌机
+    event.shaped('create:mechanical_mixer',[
+        ['','create:piston_extension_pole',''],
+        ['create:shaft','create:andesite_casing','create:shaft'],
+        ['','create:whisk','']
+    ]).id("create:crafting/kinetics/mechanical_mixer");
+
+    // 石磨
+    event.shaped('create:millstone',[
+        ['','meng:iron_frame',''],
+        ['create:cogwheel','create:chute','create:cogwheel'],
+        ['create:andesite_casing','meng:reinforce_iron_sheet','create:andesite_casing']
+    ]).id("create:crafting/kinetics/millstone")
 })
