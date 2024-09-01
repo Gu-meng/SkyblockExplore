@@ -70,9 +70,7 @@ let MekRecipe = {
         if (outputItemObj.nbt == null) delete outputItemObj.nbt
         let obj = {
             "type": "mekanism:combining",
-            "extraInput": {
-                "ingredient": {}
-            },
+            "extraInput": {"ingredient": {}},
             "mainInput": {
                 "amount": 3,
                 "ingredient": {}

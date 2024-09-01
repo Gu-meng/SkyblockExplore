@@ -27,4 +27,8 @@ const regIds = {
     lava_debris : namespace + "lava_debris",
     lavl_chunk : namespace + "lavl_chunk",
     drill_bit : namespace + "drill_bit",
+    saw_blade : namespace + "saw_blade",
+    harvesting_accessories : namespace + "harvesting_accessories",
+    stalinite_block : namespace + "stalinite_block",
+    machine_incomplete : namespace + "machine_incomplete",
 };

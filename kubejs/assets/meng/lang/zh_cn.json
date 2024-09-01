@@ -14,8 +14,13 @@
     "item.meng.sunny_doll":"晴天娃娃",
     "item.meng.lava_debris":"熔岩碎片",
     "item.meng.lavl_chunk":"熔岩块",
+    "item.meng.stalinite_block":"钢化玻璃块",
+    "item.meng.machine_incomplete":"未完成的机器",
     "item.meng.drill_bit":"钻头",
-    
+    "item.meng.saw_blade":"锯片",
+    "item.meng.harvesting_accessories":"收割机部件",
+
+    "block.meng.stalinite_block":"钢化玻璃块",
     "block.meng.iron_acacia_block":"金合欢木包铁",
     "block.meng.iron_birch_block":"白桦木包铁",
     "block.meng.iron_cherry_block":"樱花木包铁",

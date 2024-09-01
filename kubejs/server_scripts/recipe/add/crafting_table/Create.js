@@ -45,5 +45,11 @@ ServerEvents.recipes(event=>{
         ['','meng:iron_frame',''],
         ['create:cogwheel','create:chute','create:cogwheel'],
         ['create:andesite_casing','meng:reinforce_iron_sheet','create:andesite_casing']
-    ]).id("create:crafting/kinetics/millstone")
+    ]).id("create:crafting/kinetics/millstone");
+
+    // 转盘
+    event.shaped('create:turntable',[
+        ['meng:iron_timber_sheet'],
+        ['create:shaft']
+    ]).id("create:crafting/kinetics/turntable");
 })

@@ -12,7 +12,7 @@ StartupEvents.registry("block",event=>{
         regIds.iron_warped_block
     ]
     ironTimbers.forEach(value=>{
-        event.create(value,"basic")
+        event.create(value)
             .woodSoundType()
             .hardness(2)
             .requiresTool()
@@ -20,4 +20,10 @@ StartupEvents.registry("block",event=>{
             .tagBlock("minecraft:needs_stone_tool")
             .tagItem("meng:iron_timbers")
     })
+
+    event.create(regIds.stalinite_block)
+        .defaultTranslucent()
+        .hardness(0.1)
+        .noDrops()
+        .glassSoundType()
 })

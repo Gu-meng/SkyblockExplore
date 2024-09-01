@@ -30,3 +30,7 @@ function infuseTypeFunc(str, count) {
         }
     }
 }
+
+const MekGas = {
+    
+}

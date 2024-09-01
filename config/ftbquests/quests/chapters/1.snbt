@@ -48,11 +48,18 @@
 			dependencies: ["5D42A098E3C294D5"]
 			description: ["{ftbq.details.meng.kill_monster}"]
 			id: "6938A9EB1122F781"
-			rewards: [{
-				id: "154C9F0F31952987"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "154C9F0F31952987"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "25A2E084EAA92A61"
+					item: "create:haunted_bell"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					entity: "minecraft:zombie"
