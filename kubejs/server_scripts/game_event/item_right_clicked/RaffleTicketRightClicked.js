@@ -1,6 +1,3 @@
-const $LootParams = Java.loadClass("net.minecraft.world.level.storage.loot.LootParams$Builder");
-const $LootContextParamSets = Java.loadClass("net.minecraft.world.level.storage.loot.parameters.LootContextParamSets");
-
 ItemEvents.rightClicked("meng:raffle_ticket", event => {
     const player = event.getPlayer();
     const playerPersistentData = player.getPersistentData();

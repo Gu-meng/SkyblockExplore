@@ -18,6 +18,14 @@ function strInTag(str){
  * @returns 会返回三个值 item或者tag、count和nbt或null
  */
 function strSplitItem(str){
+    if (str == undefined){
+        return {
+            item : "minecraft:air",
+            count : 2,
+            nbt : null
+        }
+    }
+
     if (!isString(str)){
         return ItemOfAlterItem(str)
     }
@@ -72,4 +80,25 @@ function ItemOfAlterItem(itemObj){
         count : itemObj.count,
         nbt : itemNbt
     }
+}
+
+/**
+ * 处理物品的nbt
+ * @param {*} obj 
+ */
+function nbtProcessing(obj){
+    if (obj.nbt == null) delete obj.nbt
+    return obj
+}
+
+function itemListProcessing(newList,itemList){
+    if (isArr(itemList)){
+        itemList.forEach(value => {
+            newList.push(nbtProcessing(strSplitItem(value)))
+        })
+    }else{
+        newList.push(nbtProcessing(strSplitItem(itemList)))
+    }
+
+    return newList;
 }

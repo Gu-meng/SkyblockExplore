@@ -14,3 +14,7 @@ function randArr(arr) {
     }
     return arr;
 }
+
+function isArr(value){
+    return Array.isArray(value);
+}

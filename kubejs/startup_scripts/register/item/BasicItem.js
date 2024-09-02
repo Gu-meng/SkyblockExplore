@@ -12,4 +12,9 @@ StartupEvents.registry("item",event=>{
     event.create(regIds.drill_bit);
     event.create(regIds.saw_blade);
     event.create(regIds.harvesting_accessories);
+    event.create(regIds.painful_tears);
+    event.create(regIds.screw_nut);
+    event.create(regIds.screw);
+    event.create(regIds.machine);
+    event.create(regIds.slag);
 })

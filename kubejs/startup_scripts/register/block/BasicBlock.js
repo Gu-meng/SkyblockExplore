@@ -23,7 +23,8 @@ StartupEvents.registry("block",event=>{
 
     event.create(regIds.stalinite_block)
         .defaultTranslucent()
-        .hardness(0.1)
+        .hardness(3)
         .noDrops()
         .glassSoundType()
+    
 })

@@ -31,4 +31,10 @@ const regIds = {
     harvesting_accessories : namespace + "harvesting_accessories",
     stalinite_block : namespace + "stalinite_block",
     machine_incomplete : namespace + "machine_incomplete",
+    machine : namespace + "machine",
+    painful_tears : namespace + "painful_tears",
+    screw_nut : namespace + "screw_nut",
+    screw : namespace + "screw",
+    slag : namespace + "slag",
+    slag_block : namespace + "slag_block",
 };

@@ -30,6 +30,8 @@ ServerEvents.recipes(event=>{
 
     event.shapeless('meng:lavl_chunk',['meng:lava_debris','meng:lava_debris','meng:lava_debris','meng:lava_debris']);
 
+    event.shapeless('meng:slag_block',['meng:slag','meng:slag','meng:slag','meng:slag','meng:slag','meng:slag','meng:slag','meng:slag','meng:slag']);
+
     ironTimbers.forEach(value=>{
         event.shaped(value.output,[
             [value.input],

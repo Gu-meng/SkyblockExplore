@@ -1,4 +1,3 @@
-
 function entityLootAddCrushbone(loot,crushboneWeight,maxCount){
     crushboneWeight*=10
     loot.addPool(pool=>{
