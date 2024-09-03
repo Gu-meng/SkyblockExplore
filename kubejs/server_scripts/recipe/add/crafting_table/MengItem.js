@@ -32,6 +32,12 @@ ServerEvents.recipes(event=>{
 
     event.shapeless('meng:slag_block',['meng:slag','meng:slag','meng:slag','meng:slag','meng:slag','meng:slag','meng:slag','meng:slag','meng:slag']);
 
+    event.shaped('meng:diamond_mesh',[
+        ['minecraft:stick','meng:diamond_wire','minecraft:stick'],
+        ['minecraft:stick','meng:diamond_wire','minecraft:stick'],
+        ['minecraft:stick','meng:diamond_wire','minecraft:stick']
+    ])
+
     ironTimbers.forEach(value=>{
         event.shaped(value.output,[
             [value.input],

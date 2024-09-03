@@ -1,3 +1,5 @@
+// priority: 3
+
 const AERecipe = {
     /**
      * 世界交互爆炸合成
@@ -20,9 +22,7 @@ const AERecipe = {
         }
         obj.ingredients = ingredientList;
         obj.result = outputItemObj;
-        ServerEvents.recipes(e => {
-            e.custom(obj)
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 世界互动流体内合成
@@ -47,9 +47,7 @@ const AERecipe = {
         }
         obj.ingredients = ingredientList;
         obj.result = outputItemObj;
-        ServerEvents.recipes(e => {
-            e.custom(obj)
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 压印机挤压合成模式(需要提供只要一个top或者bottom)
@@ -73,9 +71,7 @@ const AERecipe = {
         obj.ingredients.middle = nbtProcessing(strSplitItem(inputMiddle))
         obj.ingredients.bottom = nbtProcessing(strSplitItem(inputBottom))
         obj.ingredients.result = nbtProcessing(strSplitItem(outputItem))
-        ServerEvents.recipes(e => {
-            e.custom(obj)
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 压印机 压制合成模式(只需要传入一个输入)
@@ -93,9 +89,7 @@ const AERecipe = {
         }
         obj.ingredients.middle = nbtProcessing(strSplitItem(inputItem))
         obj.ingredients.result = nbtProcessing(strSplitItem(outputItem))
-        ServerEvents.recipes(e => {
-            e.custom(obj)
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     }
 }
 // 下面只是测试代码

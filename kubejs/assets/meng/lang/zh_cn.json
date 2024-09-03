@@ -23,6 +23,9 @@
     "item.meng.screw_nut":"螺母",
     "item.meng.screw":"螺丝",
     "item.meng.machine":"机器半成品",
+    "item.meng.diamond_mesh":"钻石筛网",
+    "item.meng.diamond_wire":"钻石线",
+    "item.meng.slag":"矿渣",
 
     "block.meng.stalinite_block":"钢化玻璃块",
     "block.meng.iron_acacia_block":"金合欢木包铁",
@@ -35,6 +38,7 @@
     "block.meng.iron_oak_block":"橡木包铁",
     "block.meng.iron_spruce_block":"云杉木包铁",
     "block.meng.iron_warped_block":"诡异木包铁",
+    "block.meng.slag_block":"矿渣块",
     
     "notify.meng.time.title":"时间小助手",
     "notify.meng.time.0600":"早上好,是一晚上没睡吗",
@@ -55,15 +59,15 @@
     "ftbq.chapter.meng.start":"开始",
 
     "ftbq.title.meng.start_play":"欢迎游玩",
-    "ftbq.details.meng.start_play":"首先非常感谢您游玩整合包,本整合包主要以机械动力为主要来发展游戏进程,上面的奖励物品是你的发展资源,请好好的利用它们",
+    "ftbq.details.meng.start_play":"首先非常感谢您游玩整合包，本整合包主要以机械动力为主要来发展游戏进程\n整合包无需跟着任务走来，可以依照自己对模组的理解来游玩\n上面的奖励物品是你的发展资源,请好好的利用它们",
 
     "ftbq.title.meng.kill_monster":"从怪物身上获取资源",
     "ftbq.details.meng.kill_monster":"在前期我们大部分资源都需要通过这些怪物来获取,比如石头就需要骨块进项烧制而成",
 
-    "ftbq.title.meng.bone_block":"这是我的骨块吗?",
+    "ftbq.title.meng.bone_block":"这是我的骨块吗？",
     "ftbq.details.meng.bone_block":"骨块是前期你获取石头的方法,常规的骨块合成会导致骨块无法通过高温烧制成石头,所以我们合成的方法将他进行了加固",
     
-    "ftbq.title.meng.smelter":"热门话题!",
+    "ftbq.title.meng.smelter":"热门话题！",
     "ftbq.details.meng.smelter":"恭喜你终于合成了熔炉!上面是给你的奖励,请好好的利用它们,不同的使用方法会导致游戏的游玩时间不同",
 
     "ftbq.title.meng.start_create":"步入机械动力",
@@ -71,22 +75,22 @@
 
     "ftbq.chapter.meng.create":"机械动力",
 
-    "ftbq.details.meng.create.start_create":"在本章节中你会使用机械动力来完成空岛前期的资源获取,上面是你可能会用到的物品",
+    "ftbq.details.meng.create.start_create":"在本章节中你会使用机械动力来完成空岛前期的资源获取，上面是你可能会用到的物品",
 
     "ftbq.title.meng.hand_crank":"在没水前的最好的应力源",
-    "ftbq.details.meng.hand_crank":"希望你能早日获取到水!没有水也没关系,先用手吧(确信)",
+    "ftbq.details.meng.hand_crank":"希望你能早日获取到水!没有水也没关系，先用手吧（确信）",
 
     "ftbq.title.meng.water_wheel":"已经不想用手了",
     "ftbq.details.meng.water_wheel":"还是偷懒的好",
 
-    "ftbq.title.meng.sifter":"这个真的可以来矿吗?",
+    "ftbq.title.meng.sifter":"这个真的可以来矿吗？",
     "ftbq.details.meng.sifter":"这个是不是很像无中生有里的筛子，但是这个是机械动力的筛子",
     
     "ftbq.title.meng.andesite_mesh":"这种筛网可以晒出部分矿石",
-    "ftbq.details.meng.andesite_mesh":"使用安山筛网可以晒出部分矿石,但是因为筛网材质问题,有一些矿石是筛不出来的",
+    "ftbq.details.meng.andesite_mesh":"使用安山筛网可以晒出部分矿石，但是因为筛网材质问题，有一些矿石是筛不出来的",
 
-    "ftbq.title.meng.gravel":"原来还可以这样!",
-    "ftbq.details.meng.gravel":"将原石从距离地面高度10格及以上的高度丢下来可以摔成沙砾,原来是这样获取的吗,太厉害了",
+    "ftbq.title.meng.gravel":"原来还可以这样！",
+    "ftbq.details.meng.gravel":"将原石从距离地面高度10格及以上的高度丢下来可以摔成沙砾，原来是这样获取的吗，太厉害了",
 
     "ftbq.title.meng.mechanical_press":"我们需要片片",
     "ftbq.details.meng.mechanical_press":"先做一个辊压机来整一些片片吧",
@@ -107,5 +111,30 @@
     "ftbq.details.meng.lava":"刷石机！刷石机！刷石机",
 
     "ftbq.title.meng.blaze_burner":"加热！加热！",
-    "ftbq.details.meng.blaze_burner":"做一个烈焰人燃烧室吧！"
+    "ftbq.details.meng.blaze_burner":"做一个烈焰人燃烧室吧！",
+
+    "ftbq.title.meng.mechanical_crafter":"超大工作台",
+    "ftbq.details.meng.mechanical_crafter":"有很多配方都需要通过动力合成器才能够合成，所以你必须做出这个",
+    
+    "ftbq.title.meng.crushing_wheel":"两个大轮子",
+    "ftbq.details.meng.crushing_wheel":"据说在粉碎轮中间站着会出现意想不到的事情，我相信你会这么干的对吧？\n不要相信上面的话，他是骗你的，不如看看jei原石的粉碎轮配方，矿渣是一个很好的的东西，它可以解决目前所需要的矿物",
+
+    "ftbq.title.meng.deployer":"指你咋啦",
+    "ftbq.details.meng.deployer":"就指你，就指你\n有一些特殊的物品需要用到机械手来安装，为什么我们不能安装，大概率是机械手更精准吧",
+
+    "ftbq.title.meng.mechanical_drill":"动力钻头",
+    "ftbq.details.meng.mechanical_drill":"有了这个我想自动刷石机是没问题的了",
+
+    "ftbq.title.meng.mechanical_saw":"树场必备？",
+    "ftbq.details.meng.mechanical_saw":"我们空岛需要树场吗？真的需要这么多木头吗？",
+
+    "ftbq.title.meng.mechanical_harvester":"农场主",
+    "ftbq.details.meng.mechanical_harvester":"有了这个终于是可以不用自己种菜了",
+
+    "ftbq.title.meng.encased_fan":"吃吹吹",
+    "ftbq.details.meng.encased_fan":"咱是不是可以用鼓风机改造一下刷怪塔？这样，我再送你几个鼓风机，让你的刷怪塔更快完工",
+
+    "ftbq.title.meng.rolling_mill":"有电线了？",
+    "ftbq.details.meng.rolling_mill":"有了这个意味着我们可以获取电了"
+
 }

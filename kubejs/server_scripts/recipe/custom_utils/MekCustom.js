@@ -1,3 +1,5 @@
+// priority: 3
+
 let MekRecipe = {
     /**
      * 注册提纯仓

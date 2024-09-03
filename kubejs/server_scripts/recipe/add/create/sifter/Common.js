@@ -25,18 +25,30 @@ function ironMesh(output,input,time,isWater){
     sifting(output,[input,'meng:iron_mesh'],time,isWater);
 }
 
+// 钻石筛网
+function diamondMesh(output,input,time,isWater){
+    sifting(output,[input,'meng:diamond_mesh'],time,isWater);
+}
+
 /**
  * 
  * @param {*} output 
  * @param {*} input 
  * @param {*} time 不填写默认为5秒
  * @param {*} isWater 不填写默认为false
+ * @returns 
  */
 function sifting(output,input,time,isWater){
     if(time == undefined) time = 5
     if(isWater == undefined) isWater = false
+    /**
+     * @type {Special.Recipes.SiftingCreatesifter}
+     */
+    let cs;
+    let createsifter;
     ServerEvents.recipes(event=>{
-        const createsifter = event.recipes.createsifter;
-        createsifter.sifting(output,input,time * 20,isWater);
+        createsifter = event.recipes.createsifter;
+        cs = createsifter.sifting(output,input,time * 20,isWater);
     });
+    return cs
 }

@@ -259,66 +259,91 @@
 			y: -4.5d
 		}
 		{
+			description: ["{ftbq.details.meng.mechanical_crafter}"]
 			id: "4D68132783E769A5"
+			rewards: [{
+				count: 5
+				id: "377AAD354933EAC8"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3960ABCB35F71F7F"
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mechanical_crafter}"
 			x: 14.0d
 			y: 0.5d
 		}
 		{
+			description: ["{ftbq.details.meng.mechanical_drill}"]
 			id: "5343D4B36FF91DC8"
 			tasks: [{
 				id: "0A35515412B2EEC7"
 				item: "create:mechanical_drill"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mechanical_drill}"
 			x: 10.0d
 			y: -2.5d
 		}
 		{
+			description: ["{ftbq.details.meng.mechanical_saw}"]
 			id: "73807C3D34DCC8BD"
 			tasks: [{
 				id: "23DC3AC1FDC614C0"
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mechanical_saw}"
 			x: 14.0d
 			y: -2.5d
 		}
 		{
+			description: ["{ftbq.details.meng.mechanical_harvester}"]
 			id: "2789A630327E3B40"
 			tasks: [{
 				id: "70891E4494AA6408"
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mechanical_harvester}"
 			x: 17.5d
 			y: -2.5d
 		}
 		{
+			description: ["{ftbq.details.meng.deployer}"]
 			id: "56E078A5860C1C54"
 			tasks: [{
 				id: "5D7BF840296F73B2"
 				item: "create:deployer"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.deployer}"
 			x: 14.0d
 			y: 3.5d
 		}
 		{
+			description: ["{ftbq.details.meng.encased_fan}"]
 			id: "3A40016222AC3C97"
+			rewards: [{
+				count: 13
+				id: "264F8325CCE35C7E"
+				item: "create:encased_fan"
+				type: "item"
+			}]
 			tasks: [{
 				id: "12AF97288A531DAB"
 				item: "create:encased_fan"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.encased_fan}"
 			x: 6.5d
 			y: -2.0d
 		}
 		{
+			description: ["{ftbq.details.meng.crushing_wheel}"]
 			id: "2B6435BFF65D88EC"
 			tasks: [{
 				count: 2L
@@ -326,8 +351,19 @@
 				item: { Count: 2, id: "create:crushing_wheel" }
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.crushing_wheel}"
 			x: 17.0d
 			y: 0.5d
+		}
+		{
+			id: "00F48525A0F16CB5"
+			tasks: [{
+				id: "2212F886D876E899"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 3.5d
 		}
 	]
 	title: "{ftbq.chapter.meng.create}"

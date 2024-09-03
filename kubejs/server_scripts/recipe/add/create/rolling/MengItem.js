@@ -1,0 +1,1 @@
+createAddition.rolling(Item.of("meng:diamond_wire",2),'#forge:gems/diamond');

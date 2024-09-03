@@ -9,6 +9,7 @@ const regIds = {
     iron_frame : namespace + "iron_frame",
     white_dust : namespace + "white_dust",
     iron_mesh : namespace + "iron_mesh",
+    diamond_mesh : namespace + "diamond_mesh",
     iron_timber_sheet : namespace + "iron_timber_sheet",
     iron_acacia_block : namespace + "iron_acacia_block",
     iron_birch_block : namespace + "iron_birch_block",
@@ -37,4 +38,5 @@ const regIds = {
     screw : namespace + "screw",
     slag : namespace + "slag",
     slag_block : namespace + "slag_block",
+    diamond_wire : namespace + "diamond_wire"
 };

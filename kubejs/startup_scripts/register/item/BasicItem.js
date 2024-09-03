@@ -17,4 +17,5 @@ StartupEvents.registry("item",event=>{
     event.create(regIds.screw);
     event.create(regIds.machine);
     event.create(regIds.slag);
+    event.create(regIds.diamond_wire);
 })

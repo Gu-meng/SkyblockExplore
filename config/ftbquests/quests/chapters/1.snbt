@@ -138,6 +138,27 @@
 			x: -2.0d
 			y: 2.0d
 		}
+		{
+			id: "27120DB8B0A7461F"
+			rewards: [{
+				id: "224122C9D8BC983F"
+				item: {
+					Count: 1
+					id: "meng:rain_doll"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F5C8A8374418B79"
+				item: "minecraft:cauldron"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
 	]
 	title: "{ftbq.chapter.meng.start}"
 }

@@ -1,3 +1,5 @@
+// priority: 3
+
 const draconicRecipe = {
     /**
      * 
@@ -20,9 +22,7 @@ const draconicRecipe = {
         obj.catalyst = nbtProcessing(strSplitItem(inputItem))
         obj.ingredients = itemListProcessing(arr, ingredientList)
         obj.result = nbtProcessing(strSplitItem(outputItem))
-        ServerEvents.recipes(e => {
-            e.custom(obj)
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     }
 }
 
