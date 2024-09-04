@@ -24,16 +24,19 @@
 					type: "item"
 				}
 			]
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "76767B5ED1085287"
 				item: "create:wrench"
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.start_create}"
-			x: -6.0d
-			y: 0.5d
+			x: -3.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["0C3EAD456F570E66"]
 			description: ["{ftbq.details.meng.hand_crank}"]
 			id: "2D62A192B162B26E"
 			rewards: [
@@ -48,6 +51,7 @@
 					type: "item"
 				}
 			]
+			size: 1.2d
 			tasks: [{
 				id: "4FA8DEF1B125D333"
 				item: "create:hand_crank"
@@ -55,9 +59,10 @@
 			}]
 			title: "{ftbq.title.meng.hand_crank}"
 			x: -3.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["2D62A192B162B26E"]
 			description: ["{ftbq.details.meng.sifter}"]
 			id: "39CCE1B46CAA5BAB"
 			rewards: [
@@ -82,16 +87,19 @@
 					type: "item"
 				}
 			]
+			shape: "circle"
+			size: 1.2d
 			tasks: [{
 				id: "4E58BCA4C4BC69C9"
 				item: "createsifter:sifter"
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.sifter}"
-			x: 0.0d
-			y: 0.5d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["39CCE1B46CAA5BAB"]
 			id: "2F1B7E20891741D4"
 			tasks: [{
 				id: "277E96B18B46E716"
@@ -102,10 +110,11 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["39CCE1B46CAA5BAB"]
 			description: ["{ftbq.details.meng.gravel}"]
 			id: "4FA2933B1B2D4335"
 			rewards: [{
@@ -120,20 +129,23 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.gravel}"
-			x: 0.0d
-			y: 3.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["39CCE1B46CAA5BAB"]
 			description: ["{ftbq.details.meng.mechanical_press}"]
 			id: "5ACBA8497E701C35"
+			shape: "circle"
+			size: 1.2d
 			tasks: [{
 				id: "5CE5E1A328CAD364"
 				item: "create:mechanical_press"
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.mechanical_press}"
-			x: 3.5d
-			y: 0.5d
+			x: -3.0d
+			y: 3.5999999999999996d
 		}
 		{
 			description: ["{ftbq.details.meng.millstone}"]
@@ -144,24 +156,28 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.millstone}"
-			x: 3.5d
-			y: -2.0d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["5ACBA8497E701C35"]
 			description: ["{ftbq.details.meng.mechanical_mixer}"]
 			id: "6577C7CDC94B0718"
+			size: 1.2d
 			tasks: [{
 				id: "535311BAC09689CB"
 				item: "create:mechanical_mixer"
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.mechanical_mixer}"
-			x: 6.5d
-			y: 0.5d
+			x: -3.0d
+			y: 5.3999999999999995d
 		}
 		{
+			dependencies: ["6577C7CDC94B0718"]
 			description: ["{ftbq.details.meng.lava_debris}"]
 			id: "752E54E533CB8E93"
+			size: 1.2d
 			tasks: [{
 				count: 4L
 				id: "780A67A0AF430D4A"
@@ -169,10 +185,11 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.lava_debris}"
-			x: 6.5d
-			y: 3.5d
+			x: -1.2d
+			y: 6.6d
 		}
 		{
+			dependencies: ["752E54E533CB8E93"]
 			description: ["{ftbq.details.meng.lava}"]
 			id: "5AE802AF89EFB4CC"
 			rewards: [{
@@ -181,28 +198,32 @@
 				item: "minecraft:blaze_spawn_egg"
 				type: "item"
 			}]
+			size: 1.2d
 			tasks: [{
 				id: "562984440F40747E"
 				item: "minecraft:lava_bucket"
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.lava}"
-			x: 10.0d
-			y: 3.5d
+			x: 0.5999999999999999d
+			y: 6.6d
 		}
 		{
+			dependencies: ["5AE802AF89EFB4CC"]
 			description: ["{ftbq.details.meng.blaze_burner}"]
 			id: "2350ED4B290EE7EA"
+			size: 1.2d
 			tasks: [{
 				id: "44D270AF7FA8B3F9"
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.blaze_burner}"
-			x: 10.0d
-			y: 0.5d
+			x: 2.3999999999999995d
+			y: 6.6d
 		}
 		{
+			dependencies: ["2D62A192B162B26E"]
 			description: ["{ftbq.details.meng.water_wheel}"]
 			id: "04F34EABD68F907B"
 			rewards: [{
@@ -216,8 +237,8 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.water_wheel}"
-			x: -3.0d
-			y: 3.5d
+			x: -4.5d
+			y: 0.5d
 		}
 		{
 			description: ["{ftbq.details.meng.large_water_wheel}"]
@@ -241,10 +262,11 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.large_water_wheel}"
-			x: 3.5d
-			y: 3.5d
+			x: -6.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["2F1B7E20891741D4"]
 			id: "2DAD124CCECDA8E9"
 			tasks: [{
 				id: "5FF8C94134264508"
@@ -255,10 +277,11 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["2350ED4B290EE7EA"]
 			description: ["{ftbq.details.meng.mechanical_crafter}"]
 			id: "4D68132783E769A5"
 			rewards: [{
@@ -267,14 +290,15 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
+			size: 1.2d
 			tasks: [{
 				id: "3960ABCB35F71F7F"
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.mechanical_crafter}"
-			x: 14.0d
-			y: 0.5d
+			x: 4.2d
+			y: 6.6d
 		}
 		{
 			description: ["{ftbq.details.meng.mechanical_drill}"]
@@ -285,8 +309,8 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.mechanical_drill}"
-			x: 10.0d
-			y: -2.5d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			description: ["{ftbq.details.meng.mechanical_saw}"]
@@ -297,8 +321,8 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.mechanical_saw}"
-			x: 14.0d
-			y: -2.5d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
 			description: ["{ftbq.details.meng.mechanical_harvester}"]
@@ -321,8 +345,8 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.deployer}"
-			x: 14.0d
-			y: 3.5d
+			x: 2.5d
+			y: 5.5d
 		}
 		{
 			description: ["{ftbq.details.meng.encased_fan}"]
@@ -339,8 +363,8 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.encased_fan}"
-			x: 6.5d
-			y: -2.0d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			description: ["{ftbq.details.meng.crushing_wheel}"]
