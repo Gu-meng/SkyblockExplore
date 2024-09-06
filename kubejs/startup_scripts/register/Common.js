@@ -1,16 +1,29 @@
 const modid = "meng";
 const namespace = modid + ":";
-const regIds = {
+
+const basicItem = {
     crushbone : namespace + "crushbone",
     redstone_dust : namespace + "redstone_dust",
     iron_dust : namespace + "iron_dust",
-    crushbone_axe : namespace + "crushbone_axe",
-    crushbone_sword : namespace + "crushbone_sword",
     iron_frame : namespace + "iron_frame",
     white_dust : namespace + "white_dust",
-    iron_mesh : namespace + "iron_mesh",
-    diamond_mesh : namespace + "diamond_mesh",
     iron_timber_sheet : namespace + "iron_timber_sheet",
+    raffle_ticket : namespace + "raffle_ticket",
+    reinforce_iron_sheet : namespace + 'reinforce_iron_sheet',
+    lava_debris : namespace + "lava_debris",
+    lava_chunk : namespace + "lava_chunk",
+    drill_bit : namespace + "drill_bit",
+    saw_blade : namespace + "saw_blade",
+    harvesting_accessories : namespace + "harvesting_accessories",
+    screw_nut : namespace + "screw_nut",
+    screw : namespace + "screw",
+    machine : namespace + "machine",
+    diamond_wire : namespace + "diamond_wire",
+    slag : namespace + "slag",
+    painful_tears : namespace + "painful_tears", 
+}
+
+const ironTimberblock = {
     iron_acacia_block : namespace + "iron_acacia_block",
     iron_birch_block : namespace + "iron_birch_block",
     iron_cherry_block : namespace + "iron_cherry_block",
@@ -20,23 +33,33 @@ const regIds = {
     iron_mangrove_block : namespace + "iron_mangrove_block",
     iron_oak_block : namespace + "iron_oak_block",
     iron_spruce_block : namespace + "iron_spruce_block",
-    iron_warped_block : namespace + "iron_warped_block",
-    raffle_ticket : namespace + "raffle_ticket",
-    reinforce_iron_sheet : namespace + 'reinforce_iron_sheet',
+    iron_warped_block : namespace + "iron_warped_block",  
+}
+
+const basicBlock = {
+    stalinite_block : namespace + "stalinite_block",
+    slag_block : namespace + "slag_block",
+    precision_machine_parts : namespace + "precision_machine_parts",
+}
+
+const ToolItem = {
+    crushbone_axe : namespace + "crushbone_axe",
+    crushbone_sword : namespace + "crushbone_sword",
     rain_doll : namespace + "rain_doll",
     sunny_doll : namespace + "sunny_doll",
-    lava_debris : namespace + "lava_debris",
-    lavl_chunk : namespace + "lavl_chunk",
-    drill_bit : namespace + "drill_bit",
-    saw_blade : namespace + "saw_blade",
-    harvesting_accessories : namespace + "harvesting_accessories",
-    stalinite_block : namespace + "stalinite_block",
+    crushbone_shears : namespace + "crushbone_shears"
+}
+
+const MeshItem = {
+    iron_mesh : namespace + "iron_mesh",
+    diamond_mesh : namespace + "diamond_mesh",
+    charged_certus_quartz_crystal_mesh : namespace + "charged_certus_quartz_crystal_mesh"
+}
+
+const CreateIncompleteItem = {
     machine_incomplete : namespace + "machine_incomplete",
-    machine : namespace + "machine",
-    painful_tears : namespace + "painful_tears",
-    screw_nut : namespace + "screw_nut",
-    screw : namespace + "screw",
-    slag : namespace + "slag",
-    slag_block : namespace + "slag_block",
-    diamond_wire : namespace + "diamond_wire"
-};
+    precision_machine_incomplete : namespace + "precision_machine_incomplete",
+}
+
+const regIds = Object.assign({},basicItem,ironTimberblock,basicBlock,ToolItem,MeshItem,CreateIncompleteItem);
+

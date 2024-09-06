@@ -34,6 +34,17 @@
 					item: "minecraft:campfire"
 					type: "item"
 				}
+				{
+					id: "58ED53ECC4FE99F3"
+					item: "meng:raffle_ticket"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "0230B5953A91E173"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "55D4E7FFCEF66D1E"
@@ -57,6 +68,18 @@
 				{
 					id: "25A2E084EAA92A61"
 					item: "create:haunted_bell"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "1863ABC81D2A92B8"
+					item: "createaddition:barbed_wire"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "4897ADF492A9BE3C"
+					item: "mob_grinding_utils:entity_conveyor"
 					type: "item"
 				}
 			]

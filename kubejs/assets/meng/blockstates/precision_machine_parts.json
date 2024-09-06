@@ -1,0 +1,7 @@
+{
+    "variants":{
+        "":{
+            "model": "meng:block/precision_machine_parts"
+        }
+    }
+}

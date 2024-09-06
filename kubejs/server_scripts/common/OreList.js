@@ -6,7 +6,8 @@ let machineType = {
     },
     ironMesh: [],
     andesiteMesh: [],
-    diamondMesh: []
+    diamondMesh: [],
+    quartzMesh: []
 }
 
 const splashingObjIds = [
@@ -32,7 +33,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(0.1),
-        diamondMesh: setChanceAndCount()
+        diamondMesh: setChanceAndCount(),
+        quartzMesh: setChanceAndCount(0.3, 3)
     },
     /**
      * 铁粒
@@ -43,7 +45,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.08),
         andesiteMesh: setChanceAndCount(0.04),
-        diamondMesh: setChanceAndCount(0.25, 3)
+        diamondMesh: setChanceAndCount(0.25, 3),
+        quartzMesh: setChanceAndCount(0.3)
     },
     /**
      * 粉碎铁
@@ -54,7 +57,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.4)
+        diamondMesh: setChanceAndCount(0.4),
+        quartzMesh: setChanceAndCount(0.35, 2)
     },
     /**
      * 金粒
@@ -65,7 +69,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.03),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.25, 5)
+        diamondMesh: setChanceAndCount(0.25, 5),
+        quartzMesh: setChanceAndCount(0.3, 7)
     },
     /**
      * 粉碎金
@@ -76,7 +81,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.25)
+        diamondMesh: setChanceAndCount(0.25),
+        quartzMesh: setChanceAndCount(0.4)
     },
     /**
      * 铜粒
@@ -87,7 +93,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.1),
         andesiteMesh: setChanceAndCount(0.06),
-        diamondMesh: setChanceAndCount(0.55, 13)
+        diamondMesh: setChanceAndCount(0.55, 13),
+        quartzMesh: setChanceAndCount(0.8, 3)
     },
     /**
      * 粉碎铜
@@ -98,7 +105,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.28, 3)
+        diamondMesh: setChanceAndCount(0.28, 3),
+        quartzMesh: setChanceAndCount(0.4, 2)
     },
     /**
      * 煤炭
@@ -109,7 +117,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.3, 3),
         andesiteMesh: setChanceAndCount(0.3),
-        diamondMesh: setChanceAndCount(0.56, 12)
+        diamondMesh: setChanceAndCount(0.56, 12),
+        quartzMesh: setChanceAndCount(0.7, 12)
     },
     /**
      * 红石粉粉
@@ -120,7 +129,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(0.05),
-        diamondMesh: setChanceAndCount(0.33, 3)
+        diamondMesh: setChanceAndCount(0.33, 3),
+        quartzMesh: setChanceAndCount()
     },
     /**
      * 红石
@@ -131,7 +141,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.05),
         andesiteMesh: setChanceAndCount(0.35, 3),
-        diamondMesh: setChanceAndCount(0.48, 7)
+        diamondMesh: setChanceAndCount(0.48, 7),
+        quartzMesh: setChanceAndCount(0.38, 13)
     },
     /**
      * 青金石
@@ -142,7 +153,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.08, 3),
         andesiteMesh: setChanceAndCount(0.06),
-        diamondMesh: setChanceAndCount(0.35, 12)
+        diamondMesh: setChanceAndCount(0.35, 12),
+        quartzMesh: setChanceAndCount(0.7, 12)
     },
     /**
      * 紫水晶
@@ -153,7 +165,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.3)
+        diamondMesh: setChanceAndCount(0.3),
+        quartzMesh: setChanceAndCount(0.18, 2)
     },
     /**
      * 钻石
@@ -164,7 +177,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.08)
+        diamondMesh: setChanceAndCount(0.08),
+        quartzMesh: setChanceAndCount(0.11)
     },
     /**
      * 绿宝石
@@ -175,7 +189,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.08)
+        diamondMesh: setChanceAndCount(0.08),
+        quartzMesh: setChanceAndCount()
     },
     /**
      * 下届石英
@@ -186,7 +201,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount()
+        diamondMesh: setChanceAndCount(),
+        quartzMesh: setChanceAndCount()
     },
     /**
      * 下届合金碎片
@@ -197,7 +213,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount()
+        diamondMesh: setChanceAndCount(),
+        quartzMesh: setChanceAndCount()
 
     },
     /**
@@ -209,7 +226,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.03),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.18, 3)
+        diamondMesh: setChanceAndCount(0.18, 3),
+        quartzMesh: setChanceAndCount(0.25, 4)
     },
     /**
      * 粉碎锡
@@ -220,7 +238,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.25)
+        diamondMesh: setChanceAndCount(0.25),
+        quartzMesh: setChanceAndCount(0.13, 2)
     },
     /**
      * 锇粒
@@ -231,7 +250,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.005),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.18, 4)
+        diamondMesh: setChanceAndCount(0.18, 4),
+        quartzMesh: setChanceAndCount(0.28, 6)
     },
     /**
      * 粉碎锇
@@ -242,7 +262,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.11)
+        diamondMesh: setChanceAndCount(0.11),
+        quartzMesh: setChanceAndCount(0.14, 2)
     },
     /**
      * 铀粒
@@ -253,7 +274,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.01),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount()
+        diamondMesh: setChanceAndCount(),
+        quartzMesh: setChanceAndCount(0.3, 5)
 
     },
     /**
@@ -265,7 +287,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.11)
+        diamondMesh: setChanceAndCount(0.11),
+        quartzMesh: setChanceAndCount(0.16)
     },
     /**
      * 铅粒
@@ -276,7 +299,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.02),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount()
+        diamondMesh: setChanceAndCount(),
+        quartzMesh: setChanceAndCount()
 
     },
     /**
@@ -288,7 +312,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.2)
+        diamondMesh: setChanceAndCount(0.2),
+        quartzMesh: setChanceAndCount(0.35, 2)
     },
     /**
      * 锌粒
@@ -299,7 +324,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(0.05),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount()
+        diamondMesh: setChanceAndCount(),
+        quartzMesh: setChanceAndCount()
 
     },
     /**
@@ -311,7 +337,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.2)
+        diamondMesh: setChanceAndCount(0.2),
+        quartzMesh: setChanceAndCount(0.34, 2)
     },
     'ae2:certus_quartz_crystal': {
         splashing: {
@@ -319,7 +346,8 @@ const oreList = {
         },
         ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.18)
+        diamondMesh: setChanceAndCount(0.18),
+        quartzMesh: setChanceAndCount(0.56)
     }
 }
 
@@ -342,6 +370,9 @@ function getAllOre() {
 
         item = searchingOre("diamondMesh", key);
         if (item != null) machineType.diamondMesh.push(item)
+
+        item = searchingOre("quartzMesh", key);
+        if (item != null) machineType.quartzMesh.push(item)
     }
 }
 
@@ -400,6 +431,15 @@ function getDiamondMeshOre() {
     let list = []
     for (const key in oreList) {
         let item = searchingOre("diamondMesh", key);
+        if (item != null) list.push(item)
+    }
+    return list
+}
+
+function getQuartzMeshOre() {
+    let list = []
+    for (const key in oreList) {
+        let item = searchingOre("quartzMesh", key);
         if (item != null) list.push(item)
     }
     return list

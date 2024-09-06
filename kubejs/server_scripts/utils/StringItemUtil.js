@@ -12,6 +12,10 @@ function strInTag(str){
     return /#/.test(str);
 }
 
+function isFirstCharDigit(str) {
+    return /^\d/.test(str);
+  }
+
 /**
  * 将字符串物品转换为json类型
  * @param {String} str 
@@ -39,7 +43,7 @@ function strSplitItem(str){
         } 
      }
      
-    if (!strInNumber(str)) return {
+    if (!isFirstCharDigit(str)) return {
         item : str,
         count : 1,
         nbt : null

@@ -1,0 +1,1 @@
+AERecipe.transformFluid('create_new_age:overcharged_iron',['minecraft:iron_ingot','minecraft:iron_ingot'],'minecraft:water');

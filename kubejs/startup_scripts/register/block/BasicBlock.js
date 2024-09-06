@@ -26,5 +26,12 @@ StartupEvents.registry("block",event=>{
         .hardness(3)
         .noDrops()
         .glassSoundType()
+        .tag('forge:glass')
     
+    event.create(regIds.precision_machine_parts)
+        .hardness(2)
+        .stoneSoundType()
+        .tagBlock('create:wrench_pickup')
+        .tagBlock('minecraft:mineable/axe')
+        .tagBlock('minecraft:mineable/pickaxe')
 })

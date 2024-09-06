@@ -1,3 +1,5 @@
 StartupEvents.registry("item",event=>{
-    event.create(regIds.machine_incomplete,"create:sequenced_assembly")
+    for (const key in CreateIncompleteItem) {
+        event.create(CreateIncompleteItem[key],"create:sequenced_assembly")
+    }
 })

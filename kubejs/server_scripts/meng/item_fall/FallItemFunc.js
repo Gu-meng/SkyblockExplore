@@ -1,6 +1,6 @@
 let itemFallList = {};
 
-let fallItem = [
+global.fallItem = [
     {
         inputItem: "minecraft:cobblestone",
         outputItem: 'minecraft:gravel',
@@ -17,7 +17,7 @@ EntityEvents.spawned("item", event => {
      * @type {Internal.ItemEntity}
      */
     let itemEntity = event.getEntity();
-    fallItem.forEach(value => {
+    global.fallItem.forEach(value => {
         if (itemEntity.getItem().getId() != value.inputItem) return;
         itemEntity.pickUpDelay = 32767;
         let count = itemEntity.getNbt().get("Item").getInt("Count")

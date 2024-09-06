@@ -1,21 +1,5 @@
 StartupEvents.registry("item",event=>{
-    event.create(regIds.crushbone);
-    event.create(regIds.redstone_dust);
-    event.create(regIds.iron_dust);
-    event.create(regIds.iron_frame);
-    event.create(regIds.white_dust);
-    event.create(regIds.iron_timber_sheet);
-    event.create(regIds.raffle_ticket);
-    event.create(regIds.reinforce_iron_sheet);
-    event.create(regIds.lava_debris);
-    event.create(regIds.lavl_chunk);
-    event.create(regIds.drill_bit);
-    event.create(regIds.saw_blade);
-    event.create(regIds.harvesting_accessories);
-    event.create(regIds.painful_tears);
-    event.create(regIds.screw_nut);
-    event.create(regIds.screw);
-    event.create(regIds.machine);
-    event.create(regIds.slag);
-    event.create(regIds.diamond_wire);
+    for (const key in basicItem) {
+        event.create(basicItem[key]);
+    }
 })

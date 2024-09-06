@@ -10,11 +10,17 @@ ServerEvents.recipes(event=>{
         ['meng:iron_dust','meng:iron_dust'],
         ['meng:iron_dust','meng:iron_dust']
     ]);
+
+    // 骨头
+    event.shapeless('minecraft:bone',["meng:crushbone","meng:crushbone","meng:crushbone","meng:crushbone","meng:crushbone","meng:crushbone","meng:crushbone","meng:crushbone","meng:crushbone"])
+
     // 骨粉
     event.shapeless('minecraft:bone_meal',["meng:crushbone"]);
 
+    event.shapeless('9x minecraft:bone_meal',["minecraft:bone"]);
+
     // 骨粉
-    event.shapeless('27x minecraft:bone_meal',["minecraft:bone_block"]).id("minecraft:bone_meal_from_bone_block");
+    event.shapeless('81x minecraft:bone_meal',["minecraft:bone_block"]).id("minecraft:bone_meal_from_bone_block");
 
     // 闪长岩
     event.shaped('minecraft:diorite',[
@@ -30,5 +36,5 @@ ServerEvents.recipes(event=>{
     ]).id('minecraft:furnace');
 
     // 岩浆块
-    event.shapeless('minecraft:magma_block',['meng:lavl_chunk','meng:lavl_chunk','meng:lavl_chunk','meng:lavl_chunk'])
+    event.shapeless('minecraft:magma_block',['meng:lava_chunk','meng:lava_chunk','meng:lava_chunk','meng:lava_chunk'])
 })

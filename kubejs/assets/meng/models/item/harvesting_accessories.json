@@ -1,0 +1,134 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "create:block/block",
+	"textures": {
+		"harvester": "create:block/harvester",
+		"anvil": "block/anvil"
+	},
+	"elements": [
+		{
+			"name": "Wheel",
+			"from": [1, 0, 3],
+			"to": [1, 12, 15],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 6, 9]},
+			"faces": {
+				"east": {"uv": [0, 0, 12, 12], "texture": "#harvester"},
+				"west": {"uv": [0, 0, 12, 12], "texture": "#harvester"}
+			}
+		},
+		{
+			"name": "Trim",
+			"from": [0, 0, 11],
+			"to": [16, 2, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "texture": "#anvil"},
+				"east": {"uv": [0, 0, 1, 2], "texture": "#anvil"},
+				"south": {"uv": [0, 0, 16, 2], "texture": "#anvil"},
+				"west": {"uv": [0, 0, 1, 2], "texture": "#anvil"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#anvil"},
+				"down": {"uv": [0, 0, 16, 1], "texture": "#anvil"}
+			}
+		},
+		{
+			"name": "Trim",
+			"from": [0, 10, 6],
+			"to": [16, 12, 7],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "texture": "#anvil"},
+				"east": {"uv": [0, 0, 1, 2], "texture": "#anvil"},
+				"south": {"uv": [0, 0, 16, 2], "texture": "#anvil"},
+				"west": {"uv": [0, 0, 1, 2], "texture": "#anvil"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#anvil"},
+				"down": {"uv": [0, 0, 16, 1], "texture": "#anvil"}
+			}
+		},
+		{
+			"name": "Trim",
+			"from": [0, 8, 13],
+			"to": [16, 9, 15],
+			"faces": {
+				"north": {"uv": [0, 9, 16, 10], "texture": "#anvil"},
+				"east": {"uv": [0, 0, 2, 1], "texture": "#anvil"},
+				"south": {"uv": [0, 0, 16, 1], "texture": "#anvil"},
+				"west": {"uv": [0, 0, 2, 1], "texture": "#anvil"},
+				"up": {"uv": [0, 0, 16, 2], "texture": "#anvil"},
+				"down": {"uv": [0, 0, 16, 2], "texture": "#anvil"}
+			}
+		},
+		{
+			"name": "Trim",
+			"from": [0, 3, 3],
+			"to": [16, 4, 5],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 1], "texture": "#anvil"},
+				"east": {"uv": [0, 0, 2, 1], "texture": "#anvil"},
+				"south": {"uv": [0, 0, 16, 1], "texture": "#anvil"},
+				"west": {"uv": [0, 0, 2, 1], "texture": "#anvil"},
+				"up": {"uv": [0, 0, 16, 2], "texture": "#anvil"},
+				"down": {"uv": [0, 0, 16, 2], "texture": "#anvil"}
+			}
+		},
+		{
+			"name": "Blade",
+			"from": [0, 6, 15],
+			"to": [16, 8, 15],
+			"faces": {
+				"north": {"uv": [0, 12, 16, 14], "rotation": 180, "texture": "#harvester"},
+				"south": {"uv": [0, 12, 16, 14], "rotation": 180, "texture": "#harvester"}
+			}
+		},
+		{
+			"name": "Wheel",
+			"from": [15, 0, 3],
+			"to": [15, 12, 15],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 6, 9]},
+			"faces": {
+				"east": {"uv": [0, 0, 12, 12], "texture": "#harvester"},
+				"west": {"uv": [0, 0, 12, 12], "texture": "#harvester"}
+			}
+		},
+		{
+			"name": "Blade",
+			"from": [0, 4, 3],
+			"to": [16, 6, 3],
+			"faces": {
+				"north": {"uv": [0, 12, 16, 14], "texture": "#harvester"},
+				"south": {"uv": [0, 12, 16, 14], "texture": "#harvester"}
+			}
+		},
+		{
+			"name": "Blade",
+			"from": [0, 12, 7],
+			"to": [16, 12, 9],
+			"faces": {
+				"up": {"uv": [0, 12, 16, 14], "rotation": 180, "texture": "#harvester"},
+				"down": {"uv": [0, 12, 16, 14], "texture": "#harvester"}
+			}
+		},
+		{
+			"name": "Blade",
+			"from": [0, 0, 9],
+			"to": [16, 0, 11],
+			"faces": {
+				"up": {"uv": [0, 12, 16, 14], "texture": "#harvester"},
+				"down": {"uv": [0, 12, 16, 14], "rotation": 180, "texture": "#harvester"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 3, 1],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [0.5, 1.5, 0],
+			"scale": [0.725, 0.725, 0.725]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [0, 0.5, -4],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

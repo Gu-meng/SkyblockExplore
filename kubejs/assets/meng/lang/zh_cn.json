@@ -1,4 +1,7 @@
 {
+
+    "meng.client.window.title" : "空岛：探索 v0.0.1.240906",
+
 	"item.meng.crushbone":"碎骨",
 	"item.meng.crushbone_sword":"碎骨剑",
 	"item.meng.iron_dust":"铁粉",
@@ -13,7 +16,7 @@
     "item.meng.rain_doll":"雨天娃娃",
     "item.meng.sunny_doll":"晴天娃娃",
     "item.meng.lava_debris":"熔岩碎片",
-    "item.meng.lavl_chunk":"熔岩块",
+    "item.meng.lava_chunk":"熔岩块",
     "item.meng.stalinite_block":"钢化玻璃块",
     "item.meng.machine_incomplete":"未完成的机器",
     "item.meng.drill_bit":"钻头",
@@ -26,6 +29,9 @@
     "item.meng.diamond_mesh":"钻石筛网",
     "item.meng.diamond_wire":"钻石线",
     "item.meng.slag":"矿渣",
+    "item.meng.precision_machine_incomplete":"精密机器-未完成",
+    "item.meng.charged_certus_quartz_crystal_mesh":"充能赛特斯水晶筛网",
+    "item.meng.crushbone_shears":"碎骨剪刀",
 
     "block.meng.stalinite_block":"钢化玻璃块",
     "block.meng.iron_acacia_block":"金合欢木包铁",
@@ -39,6 +45,7 @@
     "block.meng.iron_spruce_block":"云杉木包铁",
     "block.meng.iron_warped_block":"诡异木包铁",
     "block.meng.slag_block":"矿渣块",
+    "block.meng.precision_machine_parts":"精密机器部件",
     
     "notify.meng.time.title":"时间小助手",
     "notify.meng.time.0600":"早上好,是一晚上没睡吗",

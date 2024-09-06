@@ -7,6 +7,105 @@
 	id: "0029C0BF5629FAEE"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "6F4040866DCDECA0"
+			rewards: [{
+				count: 3
+				id: "6EBDEA60705C6376"
+				item: "createaddition:copper_spool"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "561BD6291145CB6E"
+					item: "createaddition:copper_wire"
+					type: "item"
+				}
+				{
+					id: "3043A1FB3F455699"
+					item: "createaddition:spool"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			id: "6E1D0BF5C3368580"
+			tasks: [{
+				id: "57D317D8DF2FE591"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			id: "003F7FD8E12CF672"
+			tasks: [{
+				id: "38EB9CAAEC0797B4"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			id: "2E24E09BDCFE5DA2"
+			rewards: [{
+				id: "0F20FF884DFFACCF"
+				item: "createaddition:small_light_connector"
+				type: "item"
+			}]
+			tasks: [{
+				id: "264A97409515421A"
+				item: "createaddition:connector"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "10F85E0075E25CEF"
+			tasks: [{
+				id: "50252CFEF04D8E47"
+				item: "createaddition:large_connector"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			id: "140B434F41C3B45C"
+			tasks: [{
+				id: "7AA5A0075F159C5F"
+				item: "createaddition:gold_spool"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			id: "209E3B6763C2719B"
+			tasks: [{
+				id: "24A59BBF0918FD1E"
+				item: "createaddition:electrum_spool"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			id: "1A4DD41FCD59896C"
+			tasks: [{
+				id: "4464D98FE95C7181"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+	]
 	title: "{ftbq.chapter.meng.electric_age}"
 }

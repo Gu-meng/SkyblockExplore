@@ -30,6 +30,11 @@ function diamondMesh(output,input,time,isWater){
     sifting(output,[input,'meng:diamond_mesh'],time,isWater);
 }
 
+// 赛特斯筛网
+function quartzMesh(output,input,time,isWater){
+    sifting(output,[input,'meng:charged_certus_quartz_crystal_mesh'],time,isWater);
+}
+
 /**
  * 
  * @param {*} output 

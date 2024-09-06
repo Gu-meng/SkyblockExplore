@@ -389,6 +389,30 @@
 			x: 17.0d
 			y: 3.5d
 		}
+		{
+			id: "228B88A665F3846E"
+			tasks: [{
+				id: "5166ACF9A157461E"
+				item: "meng:diamond_mesh"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			id: "00A056B65E2C4B21"
+			tasks: [{
+				id: "7124D226E44FE227"
+				item: {
+					Count: 1
+					id: "createsifter:zinc_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
 	]
 	title: "{ftbq.chapter.meng.create}"
 }

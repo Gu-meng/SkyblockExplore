@@ -28,4 +28,18 @@ ServerEvents.recipes(event=>{
         sequence.deploying(machineIncomplete,[machineIncomplete,'meng:screw_nut']),
         sequence.deploying(machineIncomplete,[machineIncomplete,'meng:screw_nut'])
     ]).loops(1).transitionalItem(machineIncomplete);
+
+
+    const precisionMachineIncomplete = "meng:precision_machine_incomplete";
+
+    sequencedAssembly('meng:precision_machine_parts',
+        'meng:machine',
+        [
+            sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'meng:reinforce_iron_sheet']),
+            sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'meng:screw']),
+            sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'createaddition:gold_wire']),
+            sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'createaddition:capacitor']),
+            sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'create:electron_tube'])
+        ]
+    ).loops(3).transitionalItem(precisionMachineIncomplete);
 })
