@@ -20,7 +20,11 @@ const basicItem = {
     machine : namespace + "machine",
     diamond_wire : namespace + "diamond_wire",
     slag : namespace + "slag",
-    painful_tears : namespace + "painful_tears", 
+    painful_tears : namespace + "painful_tears",
+    xp_shop : namespace + "xp_shop",
+    small_andesite : namespace + "small_andesite",
+    small_cobblestone : namespace + "small_cobblestone",
+    small_diorite : namespace + "small_diorite"
 }
 
 const ironTimberblock = {
@@ -61,5 +65,9 @@ const CreateIncompleteItem = {
     precision_machine_incomplete : namespace + "precision_machine_incomplete",
 }
 
-const regIds = Object.assign({},basicItem,ironTimberblock,basicBlock,ToolItem,MeshItem,CreateIncompleteItem);
+const musicDisc = {
+    music_disc_never : namespace + "music_disc_never"
+}
+
+const regIds = Object.assign({},basicItem,ironTimberblock,basicBlock,ToolItem,MeshItem,CreateIncompleteItem,musicDisc);
 

@@ -45,6 +45,11 @@
 					item: "minecraft:bone_meal"
 					type: "item"
 				}
+				{
+					id: "4A40A62CC3A39BCA"
+					item: "meng:music_disc_never"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "55D4E7FFCEF66D1E"
@@ -104,12 +109,25 @@
 		{
 			description: ["{ftbq.details.meng.bone_block}"]
 			id: "7C884E28A2E4E337"
-			rewards: [{
-				id: "2F103810BD5A32B6"
-				item: "meng:crushbone"
-				random_bonus: 6
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2F103810BD5A32B6"
+					item: "meng:crushbone"
+					random_bonus: 6
+					type: "item"
+				}
+				{
+					count: 2
+					id: "21BABAEE8A4AF681"
+					item: "mob_grinding_utils:fan"
+					type: "item"
+				}
+				{
+					id: "49569D80DBD0DC90"
+					item: "minecraft:jukebox"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "5AE6B3BE3CBE32E7"
 				item: "minecraft:bone_block"
@@ -132,6 +150,12 @@
 				{
 					id: "79FBF608B9803600"
 					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "326C860B705A3D12"
+					item: "mob_grinding_utils:fan"
 					type: "item"
 				}
 			]
@@ -181,6 +205,22 @@
 			}]
 			x: 3.5d
 			y: 2.0d
+		}
+		{
+			id: "23AEEB2E558801DE"
+			rewards: [{
+				id: "7AC299BE1EBD2482"
+				item: "meng:xp_shop"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7904CD34D570F31C"
+				points: false
+				type: "xp"
+				value: 15L
+			}]
+			x: 3.5d
+			y: -1.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.start}"

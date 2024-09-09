@@ -86,6 +86,12 @@
 					item: "mekanism:basic_logistical_transporter"
 					type: "item"
 				}
+				{
+					count: 16
+					id: "5802FFB932E1CF25"
+					item: "minecraft:gravel"
+					type: "item"
+				}
 			]
 			shape: "circle"
 			size: 1.2d
@@ -101,6 +107,12 @@
 		{
 			dependencies: ["39CCE1B46CAA5BAB"]
 			id: "2F1B7E20891741D4"
+			rewards: [{
+				count: 32
+				id: "5C0FCF8CAD2365CE"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "277E96B18B46E716"
 				item: {
@@ -136,6 +148,12 @@
 			dependencies: ["39CCE1B46CAA5BAB"]
 			description: ["{ftbq.details.meng.mechanical_press}"]
 			id: "5ACBA8497E701C35"
+			rewards: [{
+				count: 32
+				id: "70A911E3C0613C57"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
 			shape: "circle"
 			size: 1.2d
 			tasks: [{
@@ -268,6 +286,12 @@
 		{
 			dependencies: ["2F1B7E20891741D4"]
 			id: "2DAD124CCECDA8E9"
+			rewards: [{
+				count: 64
+				id: "7B0359332BEF0377"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5FF8C94134264508"
 				item: {
@@ -391,6 +415,12 @@
 		}
 		{
 			id: "228B88A665F3846E"
+			rewards: [{
+				count: 256
+				id: "5DFD93D034F8D1E6"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5166ACF9A157461E"
 				item: "meng:diamond_mesh"

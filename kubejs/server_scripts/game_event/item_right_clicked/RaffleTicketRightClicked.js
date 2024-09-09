@@ -32,6 +32,7 @@ ItemEvents.rightClicked("meng:raffle_ticket", event => {
     playerPersistentData.putBoolean("lotteryState", true);
     playerPersistentData.putInt("poolCountMax", poolItemList.length);
     playerPersistentData.putInt("count", 0);
+    item.count--;
 })
 
 function addItemList(itemList) {

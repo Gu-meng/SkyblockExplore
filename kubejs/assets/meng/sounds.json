@@ -1,0 +1,10 @@
+{
+    "music.never": {
+        "sounds": [
+            {
+                "name": "meng:never",
+                "stream": true
+            }
+        ]
+    }
+}

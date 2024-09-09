@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.0.1.240906",
+    "meng.client.window.title" : "空岛：探索 v0.0.1.240909",
 
 	"item.meng.crushbone":"碎骨",
 	"item.meng.crushbone_sword":"碎骨剑",
@@ -32,6 +32,12 @@
     "item.meng.precision_machine_incomplete":"精密机器-未完成",
     "item.meng.charged_certus_quartz_crystal_mesh":"充能赛特斯水晶筛网",
     "item.meng.crushbone_shears":"碎骨剪刀",
+    "item.meng.music_disc_never": "音乐唱片",
+    "item.meng.music_disc_never.desc": "开篇小曲~",
+    "item.meng.xp_shop":"经验商城",
+    "item.meng.small_andesite":"安山岩石子",
+    "item.meng.small_cobblestone":"圆石石子",
+    "item.meng.small_diorite":"闪长岩石子",
 
     "block.meng.stalinite_block":"钢化玻璃块",
     "block.meng.iron_acacia_block":"金合欢木包铁",
@@ -62,6 +68,10 @@
     "item_group.meng.items":"Meng",
 
     "text.meng.lottery_state":"抽奖进行中,请结束后再继续",
+
+    "death.attack.meng.crushbone_attack":"%1$s被碎骨反弹致死",
+
+    "gui.title.meng.player.xp_shop":"经验商城",
 
     "ftbq.chapter.meng.start":"开始",
 
