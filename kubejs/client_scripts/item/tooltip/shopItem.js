@@ -4,7 +4,7 @@ ItemEvents.tooltip(event=>{
             if (item.getNbt() != undefined){
                 let xp = item.getNbt().getInt("buyXp")
                 if (xp != undefined && xp != null && xp != 0){
-                    text.add("商品价格为：" + xp)
+                    text.add(Text.translate("item.tooltip.meng.xp_shop.price",xp))
                 }
             }
         })
@@ -21,8 +21,8 @@ ItemEvents.tooltip(event=>{
     })
 
     event.addAdvanced('meng:xp_shop',(item,advanced,text) =>{
-        text.add(1,Text.gold("每次使用都会收取50xp作为入场费"))
-        text.add(2,Text.blue("当前拥有xp：" + Client.player.xp))
+        text.add(1,Text.translate("item.tooltip.meng.xp_shop.1").gold())
+        text.add(2,Text.translate("item.tooltip.meng.xp_shop.2",Client.player.xp).blue())
         if (item.getNbt() != undefined){
             if(!item.getNbt().getBoolean("tipxp")){
                 if (item.getNbt().getBoolean("tipxp") != undefined && item.getNbt().getBoolean("tipxp") != null){

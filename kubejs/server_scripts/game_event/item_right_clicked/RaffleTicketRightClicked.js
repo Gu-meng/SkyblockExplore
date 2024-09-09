@@ -1,4 +1,4 @@
-ItemEvents.rightClicked("meng:raffle_ticket", event => {
+ItemEvents.firstRightClicked("meng:raffle_ticket", event => {
     const player = event.getPlayer();
     const playerPersistentData = player.getPersistentData();
     if (playerPersistentData.getBoolean("lotteryState")) {
@@ -19,7 +19,7 @@ ItemEvents.rightClicked("meng:raffle_ticket", event => {
         itemList = ticketTypeObject.basal;
     }
     addItemList(itemList);
-    poolItemList = randArr(poolItemList);
+    poolItemList = ArrayUtils.randArr(poolItemList);
 
     let lootData = event.getServer().getLootData();
     let itemLoot = lootData
@@ -48,6 +48,6 @@ function addItemList(itemList) {
         if (poolItemList.length >= raffleTicketConfig.maxCount) {
             return;
         }
-        poolItemList = poolItemList.concat(randArr(listTemp));
+        poolItemList = poolItemList.concat(ArrayUtils.randArr(listTemp));
     }
 }

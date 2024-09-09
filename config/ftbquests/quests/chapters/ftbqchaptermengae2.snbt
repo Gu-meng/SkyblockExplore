@@ -7,6 +7,69 @@
 	id: "710F0586201E33D3"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "168489B1A2755709"
+			rewards: [
+				{
+					id: "6E58DA6692535D36"
+					item: "ae2:guide"
+					type: "item"
+				}
+				{
+					id: "74303472A69FA7D6"
+					item: "ae2:certus_quartz_wrench"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0D7124C68B9B3CB4"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			id: "5EB4FDC23DE66FE8"
+			tasks: [{
+				id: "132E16330F0A1857"
+				item: "ae2:silicon_press"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			id: "2BF62D18B67FA1CC"
+			tasks: [{
+				id: "49F9633BB22EC648"
+				item: "ae2:engineering_processor_press"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			id: "422EC1E5A4BE8C2D"
+			tasks: [{
+				id: "14920BF8776E7AE7"
+				item: "ae2:logic_processor_press"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			id: "60651F33033DA5C4"
+			tasks: [{
+				id: "7FEE000DF6607006"
+				item: "ae2:calculation_processor_press"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+	]
 	title: "{ftbq.chapter.meng.ae2}"
 }

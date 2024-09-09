@@ -57,7 +57,8 @@ const ToolItem = {
 const MeshItem = {
     iron_mesh : namespace + "iron_mesh",
     diamond_mesh : namespace + "diamond_mesh",
-    charged_certus_quartz_crystal_mesh : namespace + "charged_certus_quartz_crystal_mesh"
+    charged_certus_quartz_crystal_mesh : namespace + "charged_certus_quartz_crystal_mesh",
+    copper_mesh : namespace + "copper_mesh"
 }
 
 const CreateIncompleteItem = {

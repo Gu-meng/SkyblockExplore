@@ -26,12 +26,10 @@ ServerEvents.recipes(event=>{
     }
     for (let key in machine){
         sequencedAssembly(key,
-            'create:andesite_casing',
+            'meng:machine',
             [
-                sequence.cutting(machineIncomplete,machineIncomplete),
-                sequence.pressing(machineIncomplete,machineIncomplete),
-                sequence.deploying(machineIncomplete,[machineIncomplete,'meng:iron_timber_sheet']),
                 sequence.deploying(machineIncomplete,[machineIncomplete,machine[key]]),
+                sequence.deploying(machineIncomplete,[machineIncomplete,'meng:iron_timber_sheet']),
                 sequence.deploying(machineIncomplete,[machineIncomplete,'create:shaft'])
             ]
         ).loops(1).transitionalItem(machineIncomplete);

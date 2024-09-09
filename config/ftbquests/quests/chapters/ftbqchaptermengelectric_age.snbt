@@ -106,6 +106,26 @@
 			x: 5.0d
 			y: 2.5d
 		}
+		{
+			id: "22524B72007E2772"
+			tasks: [{
+				id: "406714F5B25D9F1D"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.5d
+		}
+		{
+			id: "63EF6C8A6110DCB5"
+			tasks: [{
+				id: "6E055DF020D42FC5"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.5d
+		}
 	]
 	title: "{ftbq.chapter.meng.electric_age}"
 }

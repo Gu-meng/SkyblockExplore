@@ -96,7 +96,7 @@ function nbtProcessing(obj){
 }
 
 function itemListProcessing(newList,itemList){
-    if (isArr(itemList)){
+    if (ArrayUtils.isArr(itemList)){
         itemList.forEach(value => {
             newList.push(nbtProcessing(strSplitItem(value)))
         })

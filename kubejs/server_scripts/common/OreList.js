@@ -4,8 +4,9 @@ let machineType = {
     splashing: {
         "meng:slag": []
     },
-    ironMesh: [],
     andesiteMesh: [],
+    copperMesh:[],
+    ironMesh: [],
     diamondMesh: [],
     quartzMesh: []
 }
@@ -25,14 +26,54 @@ function setChanceAndCount(chance, count) {
 
 const oreList = {
     /**
+     * 安山岩石子
+     */
+    "meng:small_andesite":{
+        splashing: {
+            "meng:slag": setChanceAndCount()
+        },
+        copperMesh : setChanceAndCount(0.25),
+        ironMesh: setChanceAndCount(0.2),
+        andesiteMesh: setChanceAndCount(0.18),
+        diamondMesh: setChanceAndCount(0.11),
+        quartzMesh: setChanceAndCount()
+    },
+    /**
+     * 闪长岩石子
+     */
+    "meng:small_diorite":{
+        splashing: {
+            "meng:slag": setChanceAndCount()
+        },
+        copperMesh : setChanceAndCount(0.25),
+        ironMesh: setChanceAndCount(0.2),
+        andesiteMesh: setChanceAndCount(0.18),
+        diamondMesh: setChanceAndCount(0.11),
+        quartzMesh: setChanceAndCount()
+    },
+    /**
+     * 圆石石子
+     */
+    "meng:small_cobblestone":{
+        splashing: {
+            "meng:slag": setChanceAndCount()
+        },
+        copperMesh : setChanceAndCount(0.25),
+        ironMesh: setChanceAndCount(0.2),
+        andesiteMesh: setChanceAndCount(0.18),
+        diamondMesh: setChanceAndCount(0.11),
+        quartzMesh: setChanceAndCount()
+    },
+    /**
      * 铁尘
      */
     'meng:iron_dust': {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
+        andesiteMesh: setChanceAndCount(0.32),
+        copperMesh : setChanceAndCount(0.65),
         ironMesh: setChanceAndCount(),
-        andesiteMesh: setChanceAndCount(0.1),
         diamondMesh: setChanceAndCount(),
         quartzMesh: setChanceAndCount(0.3, 3)
     },
@@ -43,8 +84,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(0.08),
         andesiteMesh: setChanceAndCount(0.04),
+        copperMesh : setChanceAndCount(0.05),
+        ironMesh: setChanceAndCount(0.12),
         diamondMesh: setChanceAndCount(0.25, 3),
         quartzMesh: setChanceAndCount(0.3)
     },
@@ -55,8 +97,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.25)
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.4),
         quartzMesh: setChanceAndCount(0.35, 2)
     },
@@ -67,8 +110,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.25)
         },
+        andesiteMesh: setChanceAndCount(0.0),
+        copperMesh : setChanceAndCount(0.01),
         ironMesh: setChanceAndCount(0.03),
-        andesiteMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.25, 5),
         quartzMesh: setChanceAndCount(0.3, 7)
     },
@@ -79,8 +123,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.25),
         quartzMesh: setChanceAndCount(0.4)
     },
@@ -91,8 +136,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.8, 8)
         },
-        ironMesh: setChanceAndCount(0.1),
         andesiteMesh: setChanceAndCount(0.06),
+        copperMesh : setChanceAndCount(0.11),
+        ironMesh: setChanceAndCount(0.3),
         diamondMesh: setChanceAndCount(0.55, 13),
         quartzMesh: setChanceAndCount(0.8, 3)
     },
@@ -103,8 +149,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.28, 3),
         quartzMesh: setChanceAndCount(0.4, 2)
     },
@@ -115,8 +162,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.8, 5)
         },
-        ironMesh: setChanceAndCount(0.3, 3),
         andesiteMesh: setChanceAndCount(0.3),
+        copperMesh : setChanceAndCount(0.35,2),
+        ironMesh: setChanceAndCount(0.3, 2),
         diamondMesh: setChanceAndCount(0.56, 12),
         quartzMesh: setChanceAndCount(0.7, 12)
     },
@@ -127,8 +175,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(0.05),
+        copperMesh : setChanceAndCount(0.35),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.33, 3),
         quartzMesh: setChanceAndCount()
     },
@@ -139,8 +188,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.25, 13)
         },
-        ironMesh: setChanceAndCount(0.05),
-        andesiteMesh: setChanceAndCount(0.35, 3),
+        andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(0.05,3),
         diamondMesh: setChanceAndCount(0.48, 7),
         quartzMesh: setChanceAndCount(0.38, 13)
     },
@@ -151,8 +201,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.35, 7)
         },
-        ironMesh: setChanceAndCount(0.08, 3),
         andesiteMesh: setChanceAndCount(0.06),
+        copperMesh : setChanceAndCount(0.08),
+        ironMesh: setChanceAndCount(0.08, 3),
         diamondMesh: setChanceAndCount(0.35, 12),
         quartzMesh: setChanceAndCount(0.7, 12)
     },
@@ -163,8 +214,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.1)
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.3),
         quartzMesh: setChanceAndCount(0.18, 2)
     },
@@ -175,8 +227,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.009)
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.08),
         quartzMesh: setChanceAndCount(0.11)
     },
@@ -187,8 +240,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.009)
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.08),
         quartzMesh: setChanceAndCount()
     },
@@ -199,8 +253,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(),
         quartzMesh: setChanceAndCount()
     },
@@ -211,11 +266,11 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(),
         quartzMesh: setChanceAndCount()
-
     },
     /**
      * 锡粒
@@ -224,8 +279,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.18)
         },
-        ironMesh: setChanceAndCount(0.03),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(0.01),
+        ironMesh: setChanceAndCount(0.03),
         diamondMesh: setChanceAndCount(0.18, 3),
         quartzMesh: setChanceAndCount(0.25, 4)
     },
@@ -236,8 +292,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(), 
         diamondMesh: setChanceAndCount(0.25),
         quartzMesh: setChanceAndCount(0.13, 2)
     },
@@ -248,8 +305,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.018)
         },
-        ironMesh: setChanceAndCount(0.005),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(0.005), 
         diamondMesh: setChanceAndCount(0.18, 4),
         quartzMesh: setChanceAndCount(0.28, 6)
     },
@@ -260,8 +318,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(), 
         diamondMesh: setChanceAndCount(0.11),
         quartzMesh: setChanceAndCount(0.14, 2)
     },
@@ -272,8 +331,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.018, 1)
         },
-        ironMesh: setChanceAndCount(0.01),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(0.01),
+        ironMesh: setChanceAndCount(0.01),  
         diamondMesh: setChanceAndCount(),
         quartzMesh: setChanceAndCount(0.3, 5)
 
@@ -285,8 +345,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.11),
         quartzMesh: setChanceAndCount(0.16)
     },
@@ -297,8 +358,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.18)
         },
-        ironMesh: setChanceAndCount(0.02),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(0.01),
+        ironMesh: setChanceAndCount(0.02),
         diamondMesh: setChanceAndCount(),
         quartzMesh: setChanceAndCount()
 
@@ -310,8 +372,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.2),
         quartzMesh: setChanceAndCount(0.35, 2)
     },
@@ -322,8 +385,9 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.18)
         },
-        ironMesh: setChanceAndCount(0.05),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(0.01),
+        ironMesh: setChanceAndCount(0.05),
         diamondMesh: setChanceAndCount(),
         quartzMesh: setChanceAndCount()
 
@@ -335,17 +399,22 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.2),
         quartzMesh: setChanceAndCount(0.34, 2)
     },
+    /**
+     * 赛特斯水晶
+     */
     'ae2:certus_quartz_crystal': {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.18),
         quartzMesh: setChanceAndCount(0.56)
     }
@@ -364,6 +433,9 @@ function getAllOre() {
 
         let item = searchingOre("andesiteMesh", key);
         if (item != null) machineType.andesiteMesh.push(item)
+
+        item = searchingOre("copperMesh", key);
+        if (item != null) machineType.copperMesh.push(item)
 
         item = searchingOre("ironMesh", key);
         if (item != null) machineType.ironMesh.push(item)
@@ -412,6 +484,16 @@ function getAndesiteMeshOre() {
     let list = []
     for (const key in oreList) {
         let item = searchingOre("andesiteMesh", key);
+        if (item != null) list.push(item)
+
+    }
+    return list
+}
+
+function getCopperMeshOre() {
+    let list = []
+    for (const key in oreList) {
+        let item = searchingOre("copperMesh", key);
         if (item != null) list.push(item)
 
     }

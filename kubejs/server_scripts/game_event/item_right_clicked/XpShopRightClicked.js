@@ -1,10 +1,10 @@
 global.shopItemList = [
     Item.of('meng:crushbone', { buyXp: 10 }),
-    Item.of("cobblestone", { buyXp: 100 }),
+    Item.of('minecraft:stone', { buyXp: 100 }),
 ]
 
 const shopItems = global.shopItemList
-ItemEvents.rightClicked("meng:xp_shop", event => {
+ItemEvents.firstRightClicked("meng:xp_shop", event => {
     /**
      * @type {Internal.ServerPlayer}
      */
@@ -14,24 +14,24 @@ ItemEvents.rightClicked("meng:xp_shop", event => {
     let ppd = player.getPersistentData()
     ppd.putBoolean("isAddShop", true)
     let arr = []
-
+    const shoppingTrolley = Text.translate("item.display.meng.xp_shop.shopping_trolley").getString()
     let xpShopItem = Item.of('meng:xp_shop', {
         display: {
-            Name: '{"text" : "购物车","italic" : "false"}'
+            Name: '{"text" : "' +shoppingTrolley + '","italic" : "false"}'
         },
         tipxp : false
     });
 
     function buyXpUpdate(number,color){
+        const amountRequired = Text.translate("item.display.meng.xp_shop.amount_required",number).getString()
         let buyXp = Item.of('mob_grinding_utils:solid_xp_baby',{
             display: {
-                Name: '{"text" : "购买所需xp：'+ number + '","italic" : "false","color":"' + color + '"}'
+                Name: '{"text" : "'+ amountRequired + '","italic" : "false","color":"' + color + '"}'
             }
         })
         return buyXp;
     }
     
-
     if (xp < 50){
         player.tell(Text.translate("tell.meng.not_enough_xp"))
         return;
@@ -86,9 +86,10 @@ ItemEvents.rightClicked("meng:xp_shop", event => {
         }
         gui.slot(3,5,slot=>{
             let xxp = gui.player.xp
+            const xpText = Text.translate("item.display.meng.xp_shop.xp",xxp).getString()
             let currentXp = Item.of('minecraft:experience_bottle',{
                 display: {
-                    Name: '{"text" : "当前经验：' + xxp + '","italic" : "false"}'
+                    Name: '{"text" : "' + xpText + '","italic" : "false"}'
                 }
             })
             slot.setItem(currentXp)
@@ -114,12 +115,12 @@ ItemEvents.rightClicked("meng:xp_shop", event => {
                         slott.setItem(Item.of(arr[i].item, arr[i].count))
                     })
                 }
-                gui.title = Text.translate("gui.title.meng.player.xp.bill", billXp)
                 slot.setItem("air")
                 gui.slot(8, 5, slott => {
+                    const settleAccounts = Text.translate("item.display.meng.xp_shop.xp",xxp).getString()
                     let billItem = Item.of('create:clipboard', {
                         display: {
-                            Name: '{"text" : "结算","italic" : "false"}'
+                            Name: '{"text" : "'+settleAccounts+'","italic" : "false"}'
                         }
                     })
                     slott.setItem(billItem)
@@ -127,7 +128,7 @@ ItemEvents.rightClicked("meng:xp_shop", event => {
                         if (arr.length > 0){
                             if (gui.player.xp > SumXp){
                                 gui.player.xp-=SumXp;
-                                player.tell("物品快递将会在五秒内从地图中间位置送达，请查收")
+                                player.tell(Text.translate("tell.meng.xp_shop.expressage"))
                                 // Utils.server.scheduleInTicks(20*5,()=>{
                                     arr.forEach(value=>{
                                         let ei = level.createEntity("item");
@@ -141,17 +142,18 @@ ItemEvents.rightClicked("meng:xp_shop", event => {
                                 player.closeMenu()
                                 // })
                             }else{
-                                player.tell("您的经验不支持您购买这些物品，请重新选择后再进行结算")
+                                player.tell(Text.translate("tell.meng.xp_shop.no_xp_buy"))
                             }
                         }else{
-                            player.tell("您的购物车为空，请选购后再进行结算")
+                            player.tell(Text.translate("tell.meng.xp_shop.null_buy"))
                         }
                     })
                 })
                 gui.slot(0, 5, slott => {
+                    const backText = Text.translate("item.display.meng.xp_shop.back").getString()
                     let backItem = Item.of('create:brass_hand', {
                         display: {
-                            Name: '{"text" : "返回","italic" : "false"}'
+                            Name: '{"text" : "'+backText+'","italic" : "false"}'
                         },
                         tipxp : false
                     })

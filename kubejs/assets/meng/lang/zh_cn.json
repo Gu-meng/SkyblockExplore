@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.0.1.240909",
+    "meng.client.window.title" : "空岛：探索 v0.0.1.240910",
 
 	"item.meng.crushbone":"碎骨",
 	"item.meng.crushbone_sword":"碎骨剑",
@@ -38,6 +38,7 @@
     "item.meng.small_andesite":"安山岩石子",
     "item.meng.small_cobblestone":"圆石石子",
     "item.meng.small_diorite":"闪长岩石子",
+    "item.meng.copper_mesh":"铜筛网",
 
     "block.meng.stalinite_block":"钢化玻璃块",
     "block.meng.iron_acacia_block":"金合欢木包铁",
@@ -72,6 +73,19 @@
     "death.attack.meng.crushbone_attack":"%1$s被碎骨反弹致死",
 
     "gui.title.meng.player.xp_shop":"经验商城",
+    "tell.meng.not_enough_xp":"您的经验不够打开经验商城",
+    "tell.meng.xp_shop.expressage":"物品快递将会在五秒内从地图中间位置送达，请查收",
+    "tell.meng.xp_shop.no_xp_buy":"您的经验不支持您购买这些物品，请重新选择后再进行结算",
+    "tell.meng.xp_shop.null_buy":"您的购物车为空，请选购后再进行结算",
+    "item.display.meng.xp_shop.shopping_trolley":"购物车",
+    "item.display.meng.xp_shop.amount_required":"购买所需xp：%s",
+    "item.display.meng.xp_shop.xp":"当前经验：%s",
+    "item.display.meng.xp_shop.back":"返回",
+    "item.display.meng.xp_shop.settle_accounts":"结算",
+
+    "item.tooltip.meng.xp_shop.price":"物品价格为：%s xp",
+    "item.tooltip.meng.xp_shop.1":"每次使用都会收取50xp作为入场费",
+    "item.tooltip.meng.xp_shop.2":"当前拥有xp：%s",
 
     "ftbq.chapter.meng.start":"开始",
 
@@ -79,7 +93,7 @@
     "ftbq.details.meng.start_play":"首先非常感谢您游玩整合包，本整合包主要以机械动力为主要来发展游戏进程\n整合包无需跟着任务走来，可以依照自己对模组的理解来游玩\n上面的奖励物品是你的发展资源,请好好的利用它们",
 
     "ftbq.title.meng.kill_monster":"从怪物身上获取资源",
-    "ftbq.details.meng.kill_monster":"在前期我们大部分资源都需要通过这些怪物来获取,比如石头就需要骨块进项烧制而成",
+    "ftbq.details.meng.kill_monster":"在前期我们大部分资源都需要通过这些怪物来获取,比如石头就需要骨块进行烧制而成",
 
     "ftbq.title.meng.bone_block":"这是我的骨块吗？",
     "ftbq.details.meng.bone_block":"骨块是前期你获取石头的方法,常规的骨块合成会导致骨块无法通过高温烧制成石头,所以我们合成的方法将他进行了加固",

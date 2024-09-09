@@ -44,6 +44,12 @@ ServerEvents.recipes(event => {
         ['', 'minecraft:stick']
     ])
 
+    event.shaped('meng:saw_blade',[
+        ['minecraft:iron_nugget','create:iron_sheet','minecraft:iron_nugget'],
+        ['create:iron_sheet','create:shaft','create:iron_sheet'],
+        ['minecraft:iron_nugget','create:iron_sheet','minecraft:iron_nugget']
+    ])
+
     ironTimbers.forEach(value => {
         event.shaped(value.output, [
             [value.input],

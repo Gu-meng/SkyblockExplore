@@ -23,6 +23,7 @@ ServerEvents.recipes(event=>{
 
     sequencedAssembly('meng:machine','create:andesite_casing',[
         sequence.cutting(machineIncomplete,machineIncomplete),
+        sequence.pressing(machineIncomplete,machineIncomplete),
         sequence.deploying(machineIncomplete,[machineIncomplete,'meng:screw_nut']),
         sequence.deploying(machineIncomplete,[machineIncomplete,'meng:screw_nut']),
         sequence.deploying(machineIncomplete,[machineIncomplete,'meng:screw_nut']),

@@ -301,7 +301,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 2.5d
 			y: 1.0d
 		}
 		{
@@ -357,8 +357,8 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.mechanical_harvester}"
-			x: 17.5d
-			y: -2.5d
+			x: 1.5d
+			y: 3.5d
 		}
 		{
 			description: ["{ftbq.details.meng.deployer}"]
@@ -400,8 +400,8 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.crushing_wheel}"
-			x: 17.0d
-			y: 0.5d
+			x: 3.5d
+			y: 3.5d
 		}
 		{
 			id: "00F48525A0F16CB5"
@@ -410,8 +410,8 @@
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 3.5d
+			x: 6.5d
+			y: 6.5d
 		}
 		{
 			id: "228B88A665F3846E"
@@ -426,7 +426,7 @@
 				item: "meng:diamond_mesh"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 4.5d
 			y: 1.0d
 		}
 		{
@@ -440,8 +440,38 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.0d
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			id: "36EF66123D7B6AA2"
+			rewards: [{
+				count: 32
+				id: "598DC02FB71008DD"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "78AA7D01827A1E49"
+				item: {
+					Count: 1
+					id: "meng:copper_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			id: "668857FEB24E88B7"
+			tasks: [{
+				id: "3FAB71EB97D30755"
+				item: "meng:charged_certus_quartz_crystal_mesh"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.create}"
