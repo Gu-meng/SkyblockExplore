@@ -32,6 +32,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["6F4040866DCDECA0"]
 			id: "6E1D0BF5C3368580"
 			tasks: [{
 				id: "57D317D8DF2FE591"
@@ -42,6 +43,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["1A4DD41FCD59896C"]
 			id: "003F7FD8E12CF672"
 			tasks: [{
 				id: "38EB9CAAEC0797B4"
@@ -52,6 +54,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["6E1D0BF5C3368580"]
 			id: "2E24E09BDCFE5DA2"
 			rewards: [{
 				id: "0F20FF884DFFACCF"
@@ -67,6 +70,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["2E24E09BDCFE5DA2"]
 			id: "10F85E0075E25CEF"
 			tasks: [{
 				id: "50252CFEF04D8E47"
@@ -77,6 +81,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["6F4040866DCDECA0"]
 			id: "140B434F41C3B45C"
 			tasks: [{
 				id: "7AA5A0075F159C5F"
@@ -87,6 +92,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["140B434F41C3B45C"]
 			id: "209E3B6763C2719B"
 			tasks: [{
 				id: "24A59BBF0918FD1E"
@@ -97,6 +103,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["6E1D0BF5C3368580"]
 			id: "1A4DD41FCD59896C"
 			tasks: [{
 				id: "4464D98FE95C7181"
@@ -107,6 +114,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["003F7FD8E12CF672"]
 			id: "22524B72007E2772"
 			tasks: [{
 				id: "406714F5B25D9F1D"
@@ -117,14 +125,15 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["22524B72007E2772"]
 			id: "63EF6C8A6110DCB5"
 			tasks: [{
 				id: "6E055DF020D42FC5"
 				item: "ae2:charged_certus_quartz_crystal"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 2.5d
+			x: 11.5d
+			y: 0.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.electric_age}"

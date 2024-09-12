@@ -35,4 +35,13 @@ ServerEvents.recipes(event=>{
         ).loops(1).transitionalItem(machineIncomplete);
     }
     
+    const precisionMachineIncomplete = "meng:precision_machine_incomplete";
+    sequencedAssembly('create:schematicannon','meng:precision_machine_parts',[
+        sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'minecraft:iron_block']),
+        sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'minecraft:dispenser']),
+        sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'meng:screw']),
+        sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'minecraft:smooth_stone']),
+        sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'minecraft:smooth_stone']),
+        sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'meng:screw'])
+    ]).loops(1).transitionalItem(precisionMachineIncomplete);
 })

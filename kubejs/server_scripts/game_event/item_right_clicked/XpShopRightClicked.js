@@ -1,6 +1,7 @@
 global.shopItemList = [
     Item.of('meng:crushbone', { buyXp: 10 }),
     Item.of('minecraft:stone', { buyXp: 100 }),
+    Item.of('minecraft:egg',{buyXp : 50}),
 ]
 
 const shopItems = global.shopItemList

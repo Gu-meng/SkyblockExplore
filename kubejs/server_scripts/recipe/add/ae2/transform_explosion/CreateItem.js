@@ -1,0 +1,1 @@
+AERecipe.transformExplosion('createsifter:crushed_end_stone','minecraft:end_stone')

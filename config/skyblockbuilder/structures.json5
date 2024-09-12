@@ -8,17 +8,14 @@
   "generationFeatures": {
     "allow_list": true,
     "elements": [
+        "minecraft:end_island",
         "minecraft:end_spike",
         "minecraft:end_gateway_return",
         "draconicevolution:chaos_island",
         "draconicevolution:end_comet",
-        "draconicevolution:end_draconium_ore",
         "draconicevolution:nether_draconium_ore",
         "draconicevolution:overworld_draconium_ore",
-        "minecraft:end_gateway_delayed",
-        "minecraft:end_gateway_return",
-        "minecraft:end_island",
-        "minecraft:end_spike",
+        "minecraft:end_gateway_delayed"
     ]
   },
   

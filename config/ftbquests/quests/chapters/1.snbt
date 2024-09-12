@@ -61,7 +61,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["5D42A098E3C294D5"]
+			dependencies: ["48A3D0802430E9ED"]
 			description: ["{ftbq.details.meng.kill_monster}"]
 			id: "6938A9EB1122F781"
 			rewards: [
@@ -103,10 +103,11 @@
 				}
 			]
 			title: "{ftbq.title.meng.kill_monster}"
-			x: -2.0d
+			x: 0.5d
 			y: -1.0d
 		}
 		{
+			dependencies: ["6938A9EB1122F781"]
 			description: ["{ftbq.details.meng.bone_block}"]
 			id: "7C884E28A2E4E337"
 			rewards: [
@@ -123,8 +124,9 @@
 					type: "item"
 				}
 				{
-					id: "49569D80DBD0DC90"
-					item: "minecraft:jukebox"
+					count: 16
+					id: "1A0AE2A8884653E4"
+					item: "minecraft:egg"
 					type: "item"
 				}
 			]
@@ -134,10 +136,11 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.bone_block}"
-			x: 0.5d
+			x: 3.5d
 			y: -1.0d
 		}
 		{
+			dependencies: ["7C884E28A2E4E337"]
 			description: ["{ftbq.details.meng.smelter}"]
 			id: "11F997E9816B1CF3"
 			rewards: [
@@ -158,6 +161,12 @@
 					item: "mob_grinding_utils:fan"
 					type: "item"
 				}
+				{
+					count: 16
+					id: "44CE8D00A262B933"
+					item: "minecraft:egg"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "471ADCA858136145"
@@ -165,27 +174,42 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.smelter}"
-			x: 0.5d
-			y: 2.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["11F997E9816B1CF3"]
 			description: ["{ftbq.details.meng.start.start_create}"]
 			id: "1AD7A63158207E2B"
-			rewards: [{
-				id: "02E45F84A7B6AFB0"
-				item: "create:wrench"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "02E45F84A7B6AFB0"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "06E127A08E373CCB"
+					item: "meng:raffle_ticket"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2A74F2395A1EF086"
+					item: "minecraft:lever"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4F2C7C614CEDFE4B"
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.start_create}"
-			x: -2.0d
-			y: 2.0d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["11F997E9816B1CF3"]
 			id: "27120DB8B0A7461F"
 			rewards: [{
 				id: "224122C9D8BC983F"
@@ -203,16 +227,31 @@
 				item: "minecraft:cauldron"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.0d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["7C884E28A2E4E337"]
 			id: "23AEEB2E558801DE"
-			rewards: [{
-				id: "7AC299BE1EBD2482"
-				item: "meng:xp_shop"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7AC299BE1EBD2482"
+					item: "meng:xp_shop"
+					type: "item"
+				}
+				{
+					id: "4655E8A210D26B48"
+					item: {
+						Count: 1
+						id: "constructionwand:iron_wand"
+						tag: {
+							Damage: 0
+							wand_options: { }
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7904CD34D570F31C"
 				points: false
@@ -220,6 +259,37 @@
 				value: 15L
 			}]
 			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5D42A098E3C294D5"]
+			id: "48A3D0802430E9ED"
+			rewards: [
+				{
+					id: "03339991B6F6BB77"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "07375DBA8DC9CD71"
+					item: "minecraft:jukebox"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "41DF3E306431692B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			x: -2.0d
 			y: -1.0d
 		}
 	]

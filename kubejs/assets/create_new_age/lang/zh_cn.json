@@ -1,0 +1,14 @@
+{
+    "item.create_new_age.blank_circuit": "空白线路板",
+    "item.create_new_age.copper_circuit": "铜线路板",
+    "block.create_new_age.basic_motor_extension": "基本电机拓展",
+    "block.create_new_age.advanced_motor_extension": "强化电机拓展",
+    "create.new_age.motor.stress_multiplier": "马达能量倍率增加",
+    "create.tooltip.create_new_age.additional_capacity": "额外产生能量",
+    "create.tooltip.create_new_age.stress_limit_multiplier": "马达能量倍率增加",
+    "create_new_age.ponder.generation.text_7": "注意:发电机线圈不产生旋转，只产生电。",
+    "create_new_age.ponder.motor_extension.header": "电机拓展",
+    "create_new_age.ponder.motor_extension.text_1": "厌倦了你的马达应力过大?使用电机扩展!",
+    "create_new_age.ponder.motor_extension.text_2": "扩展允许您配置电机应力容量倍增器",
+    "create_new_age.ponder.motor_extension.text_3": "注意，能量消耗与应力消耗成正比"
+}

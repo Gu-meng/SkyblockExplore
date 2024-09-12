@@ -1,0 +1,10 @@
+{
+	id: "1814B17A633E0814"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 14, item: "create:encased_fan" }
+		{ count: 14, item: "mob_grinding_utils:fan" }
+	]
+	title: "风机"
+}

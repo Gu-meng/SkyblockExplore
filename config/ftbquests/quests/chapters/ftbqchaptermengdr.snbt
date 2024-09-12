@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ftbqchaptermengdr"
+	group: ""
+	icon: "draconicevolution:reactor_stabilizer"
+	id: "2FB64F7660EC13F8"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "ftbq.chapter.meng.draconic"
+}
