@@ -18,4 +18,16 @@ ServerEvents.recipes(event => {
         ['meng:stalinite_block','minecraft:tinted_glass','meng:stalinite_block'],
         ['create:powdered_obsidian','meng:stalinite_block','create:powdered_obsidian']
     ]).id("mob_grinding_utils:recipe_tintedglass");
+
+    event.shaped('mob_grinding_utils:gm_chicken_feed_cursed',[
+        'sys',
+        'fsg',
+        'shs'
+    ],{
+        s:'minecraft:wheat_seeds',
+        y:'minecraft:spider_eye',
+        f:'minecraft:rotten_flesh',
+        g:'minecraft:bone',
+        h:'minecraft:gunpowder'
+    }).id("mob_grinding_utils:recipe_cursed_feed")  
 })

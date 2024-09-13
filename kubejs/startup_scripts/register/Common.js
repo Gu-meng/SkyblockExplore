@@ -44,6 +44,7 @@ const basicBlock = {
     stalinite_block : namespace + "stalinite_block",
     slag_block : namespace + "slag_block",
     precision_machine_parts : namespace + "precision_machine_parts",
+    dirty_cobblestone : namespace + "dirty_cobblestone"
 }
 
 const ToolItem = {

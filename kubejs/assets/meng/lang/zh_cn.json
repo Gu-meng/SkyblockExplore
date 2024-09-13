@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.0.1.240912",
+    "meng.client.window.title" : "空岛：探索 v0.0.1.240914",
 
 	"item.meng.crushbone":"碎骨",
 	"item.meng.crushbone_sword":"碎骨剑",
@@ -101,6 +101,28 @@
     "ftbq.title.meng.smelter":"热门话题！",
     "ftbq.details.meng.smelter":"恭喜你终于合成了熔炉!上面是给你的奖励,请好好的利用它们,不同的使用方法会导致游戏的游玩时间不同",
 
+    "ftbq.title.meng.cauldron":"接点雨水吧",
+    "ftbq.details.meng.cauldron":"使用炼药锅可以在下雨的时候接一些雨水，如果等不及也没关系，这边可以使用雨天娃娃来召唤下雨\n要是你好巧不巧的在雪原等地形，这边将炼药锅放置在篝火上，然后使用一组（16个）雪球右键篝火上的炼药锅，即可化成水\n如果你真的非常不巧的出生在了沙漠，那这边有两种方法，第一种是跑出沙漠群系，第二个方法则是重开游戏\n（当然还有第三种，就是作弊拿一个）",
+
+    "ftbq.title.meng.xp":"经验商城",
+    "ftbq.details.meng.xp":"使用经验商城可以将你闲置的经验购买一些有用的物品",
+
+    "ftbq.title.meng.composter":"骨粉的来源之一",
+    "ftbq.details.meng.composter":"使用剪刀将树叶剪下来，然后用从堆肥桶里获取骨粉，这种来骨粉的方式其实也不错？",
+
+    "ftbq.item.meng.logs":"任意一种木头",
+    "ftbq.title.meng.logs":"先来点木头",
+    "ftbq.details.meng.logs":"在之后的很长一段时间内他都是你见过最多的方块了",
+
+    "ftbq.title.meng.cursed_gm":"邪恶的鸡饲料",
+    "ftbq.details.meng.cursed_gm":"把这个给鸡吃，它肯定会很感谢你的，并送你一份神秘礼物",
+
+    "ftbq.title.meng.coarse_dirt":"最原始泥土获取",
+    "ftbq.details.meng.coarse_dirt":"使用沙砾和泥土合成砂土，然后用锄头锄砂土变成泥土",
+
+    "ftbq.title.meng.rotten_egg":"鸡的礼物",
+    "ftbq.details.meng.rotten_egg":"腐烂鸡蛋对着泥土使用后，会将5*5区域内的泥土变成诅咒之土，诅咒之土的刷怪效率会很高，为了避免游戏游戏出现不必要的卡顿，这边建议是不要弄太多的诅咒之土\n诅咒之土在阳光下会自燃后消失",
+
     "ftbq.title.meng.start_create":"步入机械动力",
     "ftbq.details.meng.start.start_create":"现在你终于可以开始去实现机械动力的一些物品了",
 
@@ -115,7 +137,40 @@
     "ftbq.details.meng.water_wheel":"还是偷懒的好",
 
     "ftbq.title.meng.sifter":"这个真的可以来矿吗？",
-    "ftbq.details.meng.sifter":"这个是不是很像无中生有里的筛子，但是这个是机械动力的筛子",
+    "ftbq.details.meng.sifter":"无中生有但机械动力",
+
+    "ftbq.title.meng.mesh.andesite":"前期的筛矿装备",
+    "ftbq.details.meng.mesh.andesite":"就目前来说可能只能使用到安山筛网",
+
+    "ftbq.title.meng.mesh.copper":"可以筛出更多的矿",
+    "ftbq.details.meng.mesh.copper":"使用铜筛网可以筛出比安山筛网种类更多的矿物",
+
+    "ftbq.title.meng.mesh.iron":"常驻筛网",
+    "ftbq.details.meng.mesh.iron":"在之后很长的一段日子里你都要和铁筛网度过了",
+
+    "ftbq.title.meng.mesh.diamond":"钻石网网！",
+    "ftbq.details.meng.mesh.diamond":"虽然钻石筛网只能晒矿渣块，但是可以筛出更纯的矿石",
+
+    "ftbq.title.meng.mesh.quartz":"充能赛特斯水晶筛网",
+    "ftbq.details.meng.mesh.quartz":"使用这个筛网可以筛出更多的矿物且概率更大",
+
+    "ftbq.title.meng.mesh.zinc":"当你需要水资源",
+    "ftbq.details.meng.mesh.zinc":"将筛子放入水中并且使用锌筛网，即可筛出一些水特产",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
     
     "ftbq.title.meng.andesite_mesh":"这种筛网可以晒出部分矿石",
     "ftbq.details.meng.andesite_mesh":"使用安山筛网可以晒出部分矿石，但是因为筛网材质问题，有一些矿石是筛不出来的",

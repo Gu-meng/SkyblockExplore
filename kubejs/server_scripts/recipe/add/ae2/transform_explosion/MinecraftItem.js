@@ -1,1 +1,1 @@
-AERecipe.transformExplosion('minecraft:end_portal_frame',['minecraft:obsidian','minecraft:end_crystal','ae2:charged_certus_quartz_crystal']);
+AERecipe.transformExplosion('minecraft:end_portal_frame',['minecraft:obsidian','minecraft:end_crystal','minecraft:nether_star']);

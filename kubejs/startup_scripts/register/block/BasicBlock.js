@@ -34,4 +34,9 @@ StartupEvents.registry("block",event=>{
         .tagBlock('create:wrench_pickup')
         .tagBlock('minecraft:mineable/axe')
         .tagBlock('minecraft:mineable/pickaxe')
+
+    event.create(basicBlock.dirty_cobblestone)
+        .hardness(2)
+        .stoneSoundType()
+        .tagBlock('minecraft:mineable/pickaxe')
 })

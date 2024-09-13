@@ -1,0 +1,1 @@
+MekRecipe.nucleosynthesizing('minecraft:wither_rose','minecraft:poppy',"mekanism:antimatter",10,20*100);

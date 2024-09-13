@@ -72,7 +72,7 @@ let MekRecipe = {
         if (outputItemObj.nbt == null) delete outputItemObj.nbt
         let obj = {
             "type": "mekanism:combining",
-            "extraInput": {"ingredient": {}},
+            "extraInput": { "ingredient": {} },
             "mainInput": {
                 "amount": 3,
                 "ingredient": {}
@@ -141,7 +141,7 @@ let MekRecipe = {
         if (inputItemObj.nbt == null) delete inputItemObj.nbt
         let outputItemObj = strSplitItem(outputItem);
         if (outputItemObj.nbt == null) delete outputItemObj.nbt
-        let chemicalInputObj = infuseTypeFunc(chemicalInput,chemicalInputAmount)
+        let chemicalInputObj = infuseTypeFunc(chemicalInput, chemicalInputAmount)
         let obj = {
             "type": "mekanism:metallurgic_infusing",
             "chemicalInput": {},
@@ -229,7 +229,7 @@ let MekRecipe = {
      * @param {String} input 输入流体tag
      * @param {Number} inputAmount 流体容量(mb为单位)
      */
-    separating:function(LeftGas,LeftGasAmount,rightGas,rightGasAmount,input,inputAmount){
+    separating: function (LeftGas, LeftGasAmount, rightGas, rightGasAmount, input, inputAmount) {
         let obj = {
             "type": "mekanism:separating",
             "input": {
@@ -255,21 +255,40 @@ let MekRecipe = {
      * @param {Number} outputAmount 输出数量(单位mb)
      * @param {Internal.Ingredient} inputItem 输入物品
      */
-    infusionConversion:function(outputInfuse,outputAmount,inputItem){
+    infusionConversion: function (outputInfuse, outputAmount, inputItem) {
         let inputItemObj = strSplitItem(inputItem);
         if (inputItemObj.nbt == null) delete inputItemObj.nbt
         let obj = {
             "type": "mekanism:infusion_conversion",
-            "input": {"ingredient": {}},
+            "input": { "ingredient": {} },
             "output": {
                 "amount": outputAmount,
                 "infuse_type": outputInfuse
             }
         }
         obj.input.ingredient = inputItemObj;
-        ServerEvents.recipes(e => {
-            e.custom(obj);
-        })  
+        ServerEvents.recipes(e => e.custom(obj))
+    },
+    /**
+     * 反质子核合成器
+     * @param {Internal.ItemStack} outputItem 输出物品
+     * @param {Internal.Ingredient} itemInput 输入物品
+     * @param {String} gasInput 输入气体
+     * @param {Number} gasInputAmount 输入气体数量(mb计算)
+     * @param {Number} duration 持续时间(tick计算)
+     */
+    nucleosynthesizing: function (outputItem, itemInput, gasInput,gasInputAmount,duration) {
+        let obj = { 
+            "type": "mekanism:nucleosynthesizing", 
+            "duration": duration, 
+            "gasInput": { 
+                "amount": gasInputAmount, 
+                "gas": gasInput
+            }, 
+            "itemInput": {"ingredient" :nbtProcessing(strSplitItem(itemInput))}, 
+            "output": nbtProcessing(strSplitItem(outputItem)) 
+        }
+        ServerEvents.recipes(e => e.custom(obj))
     }
 }
 
@@ -283,5 +302,5 @@ MekRecipe.metallurgicInfusing("3x minecraft:iron_ingot", '#balm:ingots', "mekani
 MekRecipe.compressing("3x minecraft:iron_ingot", '#balm:ingots', "mekanism:osmium", 3)
 MekRecipe.sawing("3x minecraft:iron_ingot", '#balm:ingots', Item.of('minecraft:copper_ingot', 5), 0.3)
 MekRecipe.sawing("3x minecraft:iron_ingot", '#balm:ingots')
-MekRecipe.separating('mekanism:hydrogen',1,'mekanism:chlorine',1,'forge:sodium',10)
-MekRecipe.infusionConversion('mekanism:carbon',50,'#forge:crops')
+MekRecipe.separating('mekanism:hydrogen', 1, 'mekanism:chlorine', 1, 'forge:sodium', 10)
+MekRecipe.infusionConversion('mekanism:carbon', 50, '#forge:crops')

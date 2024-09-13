@@ -7,6 +7,15 @@
 	id: "2FB64F7660EC13F8"
 	order_index: 5
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "250E40C910BF2FE4"
+		tasks: [{
+			id: "0C6524F7EB3386A3"
+			item: "draconicevolution:draconium_dust"
+			type: "item"
+		}]
+		x: -2.5d
+		y: -0.5d
+	}]
 	title: "ftbq.chapter.meng.draconic"
 }

@@ -1,8 +1,15 @@
-ServerEvents.recipes(event=>{
-    event.remove({id:"create:crafting/kinetics/mechanical_drill"})
-    event.remove({id:"create:crafting/kinetics/mechanical_saw"})
-    event.remove({id:"create:crafting/kinetics/mechanical_harvester"})
-    event.remove({id:"create:crafting/kinetics/fluid_pipe"})
-    event.remove({id:"create:crafting/kinetics/fluid_pipe_vertical"})
-    event.remove({id:"create:crafting/schematics/schematicannon"})
+ServerEvents.recipes(event => {
+    let removeIds = [
+        "create:crafting/kinetics/mechanical_drill",
+        "create:crafting/kinetics/mechanical_saw",
+        "create:crafting/kinetics/mechanical_harvester",
+        "create:crafting/kinetics/fluid_pipe",
+        "create:crafting/kinetics/fluid_pipe_vertical",
+        "create:crafting/schematics/schematicannon",
+        "createhalitosis:halitosis/cobblestone"
+    ]
+    removeIds.forEach(value => {
+        event.remove({ id: value })
+    })
+
 })

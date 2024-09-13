@@ -13,17 +13,6 @@
 			id: "5D42A098E3C294D5"
 			rewards: [
 				{
-					id: "7C1521F71ACD33B5"
-					item: {
-						Count: 1
-						id: "meng:crushbone_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "02AC710D0AE81912"
 					table_id: 4652297859770340667L
@@ -48,6 +37,17 @@
 				{
 					id: "4A40A62CC3A39BCA"
 					item: "meng:music_disc_never"
+					type: "item"
+				}
+				{
+					id: "121AC33D36668A3C"
+					item: {
+						Count: 1
+						id: "meng:crushbone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -210,6 +210,7 @@
 		}
 		{
 			dependencies: ["11F997E9816B1CF3"]
+			description: ["{ftbq.details.meng.cauldron}"]
 			id: "27120DB8B0A7461F"
 			rewards: [{
 				id: "224122C9D8BC983F"
@@ -227,11 +228,13 @@
 				item: "minecraft:cauldron"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.cauldron}"
 			x: 1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7C884E28A2E4E337"]
+			description: ["{ftbq.details.meng.xp}"]
 			id: "23AEEB2E558801DE"
 			rewards: [
 				{
@@ -258,11 +261,13 @@
 				type: "xp"
 				value: 15L
 			}]
+			title: "{ftbq.title.meng.xp}"
 			x: 3.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["5D42A098E3C294D5"]
+			description: ["{ftbq.details.meng.logs}"]
 			id: "48A3D0802430E9ED"
 			rewards: [
 				{
@@ -273,6 +278,17 @@
 				{
 					id: "07375DBA8DC9CD71"
 					item: "minecraft:jukebox"
+					type: "item"
+				}
+				{
+					id: "03F4982ED5D534ED"
+					item: {
+						Count: 1
+						id: "meng:crushbone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -286,11 +302,81 @@
 						value: "minecraft:logs"
 					}
 				}
-				title: "Any #minecraft:logs"
+				title: "{ftbq.item.meng.logs}"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.logs}"
 			x: -2.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["48A3D0802430E9ED"]
+			description: ["{ftbq.details.meng.composter}"]
+			id: "41D68B8A9E6D5676"
+			rewards: [{
+				id: "3A642DACE6DD97E2"
+				item: {
+					Count: 1
+					id: "meng:crushbone_shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B6888C6D0BB85E1"
+				item: "minecraft:composter"
+				type: "item"
+			}]
+			title: "{ftbq.title.meng.composter}"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6938A9EB1122F781"]
+			description: ["{ftbq.details.meng.cursed_gm}"]
+			id: "665173A35FFC6868"
+			rewards: [{
+				count: 16
+				id: "51965A7F70087056"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0A2AD75D6BBBD947"
+				item: "mob_grinding_utils:gm_chicken_feed_cursed"
+				type: "item"
+			}]
+			title: "{ftbq.title.meng.cursed_gm}"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["665173A35FFC6868"]
+			description: ["{ftbq.details.meng.coarse_dirt}"]
+			id: "21FBAF5D8250BFC4"
+			tasks: [{
+				id: "256A146A42429582"
+				item: "minecraft:coarse_dirt"
+				type: "item"
+			}]
+			title: "{ftbq.title.meng.coarse_dirt}"
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["21FBAF5D8250BFC4"]
+			description: ["{ftbq.details.meng.rotten_egg}"]
+			id: "0EE05DE064AE2EA5"
+			tasks: [{
+				id: "74803905774B71E6"
+				item: "mob_grinding_utils:rotten_egg"
+				type: "item"
+			}]
+			title: "{ftbq.title.meng.rotten_egg}"
+			x: 3.0d
+			y: -5.5d
 		}
 	]
 	title: "{ftbq.chapter.meng.start}"

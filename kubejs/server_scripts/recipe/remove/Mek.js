@@ -13,7 +13,7 @@ ServerEvents.recipes(event=>{
         'combining',
         'purifying',
         'injecting',
-        'nfusing',
+        'infusing',
         'sawing'
     ]
     levelList.forEach(value=>{

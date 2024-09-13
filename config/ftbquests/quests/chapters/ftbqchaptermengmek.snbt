@@ -27,7 +27,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			id: "4EFD715B92A02B7C"
@@ -57,18 +57,21 @@
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -2.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["3414F80AD604CE54"]
+			dependencies: [
+				"166F1C26D46FDA15"
+				"53A0D0FA78E91880"
+			]
 			id: "6A904E66F5AD7B02"
 			tasks: [{
 				id: "4F6BC2A3CA59743A"
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -3.0d
 		}
 		{
@@ -81,6 +84,28 @@
 			}]
 			x: 4.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["3414F80AD604CE54"]
+			id: "166F1C26D46FDA15"
+			tasks: [{
+				id: "0AEE5D1DF5BA472A"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3414F80AD604CE54"]
+			id: "53A0D0FA78E91880"
+			tasks: [{
+				id: "7CB5C4268C25376C"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.mek}"

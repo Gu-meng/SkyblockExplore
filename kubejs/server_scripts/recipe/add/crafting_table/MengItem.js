@@ -50,6 +50,10 @@ ServerEvents.recipes(event => {
         ['minecraft:iron_nugget','create:iron_sheet','minecraft:iron_nugget']
     ])
 
+    event.shapeless('minecraft:cobblestone',[
+        'minecraft:gunpowder','minecraft:gunpowder','meng:dirty_cobblestone'
+    ])
+
     ironTimbers.forEach(value => {
         event.shaped(value.output, [
             [value.input],

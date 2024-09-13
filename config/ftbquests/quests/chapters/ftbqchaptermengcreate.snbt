@@ -43,11 +43,13 @@
 				{
 					id: "424553A213DF5738"
 					item: "create:cogwheel"
+					random_bonus: 3
 					type: "item"
 				}
 				{
 					id: "35D2CEE2A612D185"
 					item: "create:large_cogwheel"
+					random_bonus: 3
 					type: "item"
 				}
 			]
@@ -106,6 +108,7 @@
 		}
 		{
 			dependencies: ["39CCE1B46CAA5BAB"]
+			description: ["{ftbq.details.meng.mesh.andesite}"]
 			id: "2F1B7E20891741D4"
 			rewards: [{
 				count: 32
@@ -122,6 +125,7 @@
 				}
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mesh.andesite}"
 			x: -1.5d
 			y: 1.0d
 		}
@@ -295,6 +299,7 @@
 		}
 		{
 			dependencies: ["36EF66123D7B6AA2"]
+			description: ["{ftbq.details.meng.mesh.iron}"]
 			id: "2DAD124CCECDA8E9"
 			rewards: [
 				{
@@ -318,6 +323,7 @@
 				}
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mesh.iron}"
 			x: 2.5d
 			y: 1.0d
 		}
@@ -443,6 +449,7 @@
 				"2DAD124CCECDA8E9"
 				"12FE54A491266A7F"
 			]
+			description: ["{ftbq.details.meng.mesh.diamond}"]
 			id: "228B88A665F3846E"
 			rewards: [{
 				count: 256
@@ -455,11 +462,13 @@
 				item: "meng:diamond_mesh"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mesh.diamond}"
 			x: 4.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["2F1B7E20891741D4"]
+			description: ["{ftbq.details.meng.mesh.zinc}"]
 			id: "00A056B65E2C4B21"
 			tasks: [{
 				id: "7124D226E44FE227"
@@ -470,11 +479,13 @@
 				}
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mesh.zinc}"
 			x: -1.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["2F1B7E20891741D4"]
+			description: ["{ftbq.details.meng.mesh.copper}"]
 			id: "36EF66123D7B6AA2"
 			rewards: [{
 				count: 32
@@ -491,17 +502,20 @@
 				}
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mesh.copper}"
 			x: 0.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["228B88A665F3846E"]
+			description: ["{ftbq.details.meng.mesh.quartz}"]
 			id: "668857FEB24E88B7"
 			tasks: [{
 				id: "3FAB71EB97D30755"
 				item: "meng:charged_certus_quartz_crystal_mesh"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mesh.quartz}"
 			x: 6.5d
 			y: 1.0d
 		}
@@ -606,6 +620,17 @@
 				type: "item"
 			}]
 			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["71BC2F4285738816"]
+			id: "0F5B009FE8B0E4BD"
+			tasks: [{
+				id: "03E56DE8130DDB61"
+				item: "mob_grinding_utils:saw"
+				type: "item"
+			}]
+			x: 6.5d
 			y: 10.0d
 		}
 	]

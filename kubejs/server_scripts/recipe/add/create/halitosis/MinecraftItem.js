@@ -1,0 +1,1 @@
+CreateHalitosis.halitosis('minecraft:end_stone','minecraft:basalt');
