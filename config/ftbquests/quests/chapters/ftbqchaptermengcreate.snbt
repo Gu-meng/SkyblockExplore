@@ -160,12 +160,19 @@
 			dependencies: ["39CCE1B46CAA5BAB"]
 			description: ["{ftbq.details.meng.mechanical_press}"]
 			id: "5ACBA8497E701C35"
-			rewards: [{
-				count: 32
-				id: "70A911E3C0613C57"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					id: "70A911E3C0613C57"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "6A23EC18076DEC91"
+					item: "meng:machine"
+					type: "item"
+				}
+			]
 			shape: "circle"
 			size: 1.5d
 			tasks: [{
@@ -637,6 +644,28 @@
 			}]
 			x: 6.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["2350ED4B290EE7EA"]
+			id: "638A028DB93E5D7F"
+			tasks: [{
+				id: "63F1C0900B32E2E7"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["638A028DB93E5D7F"]
+			id: "02AC699F9538A037"
+			tasks: [{
+				id: "081E2C5C74C28A4D"
+				item: "minecraft:grass_block"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
 		}
 	]
 	title: "{ftbq.chapter.meng.create}"

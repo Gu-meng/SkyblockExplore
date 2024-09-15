@@ -2,8 +2,8 @@ ServerEvents.entityLootTables(event=>{
     event.modifyEntity("zombie",loot=>{
         entityLootAddCrushbone(loot,0.8,2);
         loot.addPool(pool=>{
-            pool.addItem('meng:iron_dust').weight(1);
-            pool.addEmpty(10);
+            pool.addItem('meng:iron_dust').weight(3);
+            pool.addEmpty(11);
             pool.lootingEnchant(2,5);
         });
     });

@@ -20,24 +20,25 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"3414F80AD604CE54"
+				"53A0D0FA78E91880"
+			]
 			id: "1E754AECC726594C"
-			tasks: [{
-				id: "2A85341B60A6121F"
-				item: "mekanism:jetpack"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2A85341B60A6121F"
+					item: "mekanism:jetpack"
+					type: "item"
+				}
+				{
+					id: "7A01D3F45FF91735"
+					item: "mekanism:free_runners"
+					type: "item"
+				}
+			]
 			x: -2.5d
 			y: 0.0d
-		}
-		{
-			id: "4EFD715B92A02B7C"
-			tasks: [{
-				id: "7CAC0B8207257496"
-				item: "mekanism:free_runners"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -0.5d
 		}
 		{
 			id: "590D97C5221D55AF"
@@ -106,6 +107,177 @@
 			}]
 			x: -1.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["3414F80AD604CE54"]
+			id: "2CA816485F986D2A"
+			tasks: [{
+				id: "32C6B76175A98C85"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"2CA816485F986D2A"
+				"166F1C26D46FDA15"
+			]
+			id: "5419FB11DCFBC3AB"
+			tasks: [{
+				id: "570EBA00C6E4A531"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2CA816485F986D2A"]
+			id: "5F99CE6D3E6BBE89"
+			tasks: [{
+				id: "153E192B08ACC90D"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5F99CE6D3E6BBE89"]
+			id: "378D6AD734EC1215"
+			tasks: [{
+				id: "3B5F67D819A90F4C"
+				item: "mekanism:combiner"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["53A0D0FA78E91880"]
+			id: "7A89C7268198463B"
+			tasks: [{
+				id: "62D2DE04E83B9BFA"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53A0D0FA78E91880"]
+			id: "519D463F6978173C"
+			tasks: [{
+				id: "3C5F27F6A9145890"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CA816485F986D2A"]
+			id: "2BD0A09C883F1F9E"
+			tasks: [{
+				id: "72B4F14625CDF3B4"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5419FB11DCFBC3AB"]
+			id: "1FCF3A03A629965D"
+			tasks: [{
+				id: "01E2D711063869A2"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"1FCF3A03A629965D"
+				"5F99CE6D3E6BBE89"
+			]
+			id: "1C6E59B45C242DF6"
+			tasks: [{
+				id: "5B179D6677B48C50"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1C6E59B45C242DF6"]
+			id: "245A160C53FC801F"
+			tasks: [{
+				id: "5F2617F21C78101E"
+				item: "mekanism:chemical_dissolution_chamber"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2CA816485F986D2A"]
+			id: "567A2CCEC7F8DB44"
+			tasks: [{
+				id: "367014741AEBC68A"
+				item: "mekanism:precision_sawmill"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1C6E59B45C242DF6"]
+			id: "1EE3D24E8DE1D5E7"
+			tasks: [{
+				id: "65B900B10B2E25D2"
+				item: "mekanism:chemical_washer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1C6E59B45C242DF6"]
+			id: "28E2E40F4F9C366B"
+			tasks: [{
+				id: "72EC293807C55B2A"
+				item: "mekanism:chemical_crystallizer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6A904E66F5AD7B02"]
+			id: "346EDE573126FBD1"
+			tasks: [{
+				id: "774E79288E891720"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5F99CE6D3E6BBE89"]
+			id: "212D8FF1F58D15DE"
+			tasks: [{
+				id: "0B78D54974012F7E"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -11.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.mek}"

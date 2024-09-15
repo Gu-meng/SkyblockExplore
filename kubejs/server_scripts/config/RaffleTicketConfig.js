@@ -1,3 +1,6 @@
+// priority: 3
+
+
 const raffleTicketConfig = {
     // 最大计数个数
     maxCount : 100,

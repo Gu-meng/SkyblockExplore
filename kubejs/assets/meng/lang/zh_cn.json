@@ -1,6 +1,9 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.0.1.240914",
+    "meng.client.window.title" : "空岛：探索 v0.0.1.240916",
+
+    "key.meng.multiple_blocks" : "连锁采集",
+    "key.keybinding.multiple_blocks":"连锁采集",
 
 	"item.meng.crushbone":"碎骨",
 	"item.meng.crushbone_sword":"碎骨剑",

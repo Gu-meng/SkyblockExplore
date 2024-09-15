@@ -3,8 +3,8 @@
 let MekRecipe = {
     /**
      * 注册提纯仓
-     * @param {Internal.Ingredient} inputItem 输入物品
      * @param {Internal.ItemStack} outputItem 输出物品
+     * @param {Internal.Ingredient} inputItem 输入物品
      * @param {String} chemicalInputGas 所需气体id
      * @param {Number} chemicalInputAmount 所需气体数量(n * 200mb) 默认为1
      */
@@ -291,16 +291,3 @@ let MekRecipe = {
         ServerEvents.recipes(e => e.custom(obj))
     }
 }
-
-// 下面是测试代码
-MekRecipe.purifying(Item.of('minecraft:iron_ingot', 5), Item.of('minecraft:copper_ingot', 5), "mekanism:oxygen")
-MekRecipe.injecting('2x minecraft:iron_ingot', '#balm:ingots', "mekanism:oxygen")
-MekRecipe.combining("5x minecraft:iron_ingot", "#forge:cobblestone/normal", '3x minecraft:copper_ingot')
-MekRecipe.crushing("10x minecraft:iron_ingot", '#balm:ingots')
-MekRecipe.enriching("3x minecraft:iron_ingot", '#balm:ingots')
-MekRecipe.metallurgicInfusing("3x minecraft:iron_ingot", '#balm:ingots', "mekanism:diamond", 15)
-MekRecipe.compressing("3x minecraft:iron_ingot", '#balm:ingots', "mekanism:osmium", 3)
-MekRecipe.sawing("3x minecraft:iron_ingot", '#balm:ingots', Item.of('minecraft:copper_ingot', 5), 0.3)
-MekRecipe.sawing("3x minecraft:iron_ingot", '#balm:ingots')
-MekRecipe.separating('mekanism:hydrogen', 1, 'mekanism:chlorine', 1, 'forge:sodium', 10)
-MekRecipe.infusionConversion('mekanism:carbon', 50, '#forge:crops')

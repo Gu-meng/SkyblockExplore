@@ -213,6 +213,11 @@
 		{
 			dependencies: ["3307F524AF374869"]
 			id: "6E4E552AF49ED019"
+			rewards: [{
+				id: "3AA3A586E757DF79"
+				item: "ae2:crystal_resonance_generator"
+				type: "item"
+			}]
 			tasks: [{
 				id: "76C328D2B61FE84C"
 				item: "ae2:controller"
@@ -220,6 +225,334 @@
 			}]
 			x: 3.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["6E4E552AF49ED019"]
+			id: "5B96E102F4B8FCF7"
+			rewards: [{
+				id: "252CE6E33EC0FCDE"
+				item: "ae2:cell_component_16k"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D39DCA7ACD2AB8E"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5B96E102F4B8FCF7"]
+			id: "22CC6D45DAB4B5A8"
+			tasks: [{
+				id: "46015928CB03ADC7"
+				item: "ae2:terminal"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["22CC6D45DAB4B5A8"]
+			id: "06BAA123357E3F02"
+			tasks: [{
+				id: "199C78266F704D61"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6E4E552AF49ED019"]
+			id: "0F1AF6268011EBDA"
+			tasks: [{
+				id: "5F991AD2EC7D10DB"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0F1AF6268011EBDA"]
+			id: "7FD539F462F5CFB5"
+			tasks: [{
+				id: "5A134A16689B1770"
+				item: {
+					Count: 1
+					id: "ae2:energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7FD539F462F5CFB5"]
+			id: "3D85B81C4F920333"
+			tasks: [{
+				id: "254C38914F3DF31D"
+				item: {
+					Count: 1
+					id: "ae2:dense_energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["422EC1E5A4BE8C2D"]
+			id: "35974038AE4AD98F"
+			tasks: [{
+				id: "1D4720D58DA00A73"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["35974038AE4AD98F"]
+			id: "38E70CD7375A21A6"
+			tasks: [{
+				id: "57710D2CA61595E1"
+				item: "ae2:cell_component_4k"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["38E70CD7375A21A6"]
+			id: "5C93FE15AC7497B4"
+			tasks: [{
+				id: "77223F07A8CB7C48"
+				item: "ae2:cell_component_16k"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5C93FE15AC7497B4"]
+			id: "4F124740C2D8271C"
+			tasks: [{
+				id: "33D801B1C113DEE0"
+				item: "ae2:cell_component_64k"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4F124740C2D8271C"]
+			id: "63F48ECB81349400"
+			tasks: [{
+				id: "59A37C2B1F19CB3D"
+				item: "ae2:cell_component_256k"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6E4E552AF49ED019"]
+			id: "5F9B7D2D216B8AA8"
+			tasks: [{
+				id: "74E8C9F284BBDE3F"
+				item: "ae2:wireless_access_point"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5F9B7D2D216B8AA8"]
+			id: "18731AD9D7B20D69"
+			tasks: [{
+				id: "6EF77EF91CE28473"
+				item: "ae2:wireless_terminal"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6E4E552AF49ED019"]
+			id: "43EAC87BFABCC9ED"
+			rewards: [{
+				id: "59298C577C7DA3FF"
+				item: "ae2:crafting_monitor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B49FF2CA4449B7F"
+				item: "ae2:1k_crafting_storage"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["43EAC87BFABCC9ED"]
+			id: "201FCDB2F0703253"
+			tasks: [{
+				id: "219895A5E88449BB"
+				item: "ae2:4k_crafting_storage"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["201FCDB2F0703253"]
+			id: "71CFBE51F00854A6"
+			tasks: [{
+				id: "705B47277FDB5231"
+				item: "ae2:16k_crafting_storage"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["71CFBE51F00854A6"]
+			id: "29DA0CAB3AEB41A9"
+			tasks: [{
+				id: "186016C4A8F1A66F"
+				item: "ae2:64k_crafting_storage"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["29DA0CAB3AEB41A9"]
+			id: "0D16D074AAA44788"
+			tasks: [{
+				id: "42918F329B553E63"
+				item: "ae2:256k_crafting_storage"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["43EAC87BFABCC9ED"]
+			id: "70FBDFE3550520D1"
+			tasks: [{
+				id: "6CD8FE9D79A4A744"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["18731AD9D7B20D69"]
+			id: "1594706E32086CA1"
+			tasks: [{
+				id: "4DDA0770AD1249D4"
+				item: "ae2:wireless_booster"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6E4E552AF49ED019"]
+			id: "46DB6632E07427F9"
+			tasks: [{
+				id: "37694A4C32100B51"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["46DB6632E07427F9"]
+			id: "792F28405EA9F82F"
+			tasks: [
+				{
+					id: "7CF34E9854B74A83"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					id: "6F45870B206BDA54"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5B96E102F4B8FCF7"]
+			id: "2C5B859D6634B0E3"
+			tasks: [
+				{
+					id: "2E3C3F270D482634"
+					item: "ae2:crafting_card"
+					type: "item"
+				}
+				{
+					id: "1134F9726738121C"
+					item: "ae2:redstone_card"
+					type: "item"
+				}
+				{
+					id: "18D8179C2C6FE3DF"
+					item: "ae2:capacity_card"
+					type: "item"
+				}
+				{
+					id: "4FBCDA80364A2F19"
+					item: "ae2:void_card"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5B96E102F4B8FCF7"]
+			id: "478F91B717175613"
+			tasks: [
+				{
+					id: "063EC3285D67C3E0"
+					item: "ae2:equal_distribution_card"
+					type: "item"
+				}
+				{
+					id: "3A41E95CD956FDF3"
+					item: "ae2:energy_card"
+					type: "item"
+				}
+				{
+					id: "0373E7A6A59E0AD9"
+					item: "ae2:fuzzy_card"
+					type: "item"
+				}
+				{
+					id: "1F5E6646347A30D0"
+					item: "ae2:speed_card"
+					type: "item"
+				}
+				{
+					id: "67480918989A933A"
+					item: "ae2:inverter_card"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -7.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.ae2}"

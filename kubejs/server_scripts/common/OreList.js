@@ -332,10 +332,10 @@ const oreList = {
             "meng:slag": setChanceAndCount(0.018, 1)
         },
         andesiteMesh: setChanceAndCount(),
-        copperMesh : setChanceAndCount(0.01),
-        ironMesh: setChanceAndCount(0.01),  
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),  
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount(0.3, 5)
+        quartzMesh: setChanceAndCount(0.1, 2)
 
     },
     /**
@@ -348,8 +348,8 @@ const oreList = {
         andesiteMesh: setChanceAndCount(),
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.11),
-        quartzMesh: setChanceAndCount(0.16)
+        diamondMesh: setChanceAndCount(),
+        quartzMesh: setChanceAndCount(0.01)
     },
     /**
      * 铅粒
@@ -417,6 +417,32 @@ const oreList = {
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.18),
         quartzMesh: setChanceAndCount(0.56)
+    },
+    /**
+     * 金属钍
+     */
+    'create_new_age:thorium':{
+        splashing: {
+            "meng:slag": setChanceAndCount()
+        },
+        andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(0.1),
+        diamondMesh: setChanceAndCount(0.28),
+        quartzMesh: setChanceAndCount(0.46)
+    },
+    /**
+     * 氟石
+     */
+    'mekanism:fluorite_gem':{
+        splashing: {
+            "meng:slag": setChanceAndCount(0.3)
+        },
+        andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
+        diamondMesh: setChanceAndCount(),
+        quartzMesh: setChanceAndCount()
     }
 }
 

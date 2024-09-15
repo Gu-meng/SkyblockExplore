@@ -8,20 +8,15 @@ const AERecipe = {
      */
     transformExplosion: function (outputItem, inputItems) {
         let ingredientList = []
-        // let inputItemObj;
-        ingredientList = itemListProcessing(ingredientList, inputItems)
-        let outputItemObj = nbtProcessing(strSplitItem(outputItem));
 
         let obj = {
             "type": "ae2:transform",
             "circumstance": {
                 "type": "explosion"
             },
-            "ingredients": [],
-            "result": {}
+            "ingredients": itemListProcessing(ingredientList, inputItems),
+            "result": nbtProcessing(strSplitItem(outputItem))
         }
-        obj.ingredients = ingredientList;
-        obj.result = outputItemObj;
         ServerEvents.recipes(e => e.custom(obj))
     },
     /**
@@ -34,19 +29,15 @@ const AERecipe = {
         let ingredientList = [{
             "item": 'ae2:charged_certus_quartz_crystal'
         }]
-        ingredientList = itemListProcessing(ingredientList, inputItems)
-        let outputItemObj = nbtProcessing(strSplitItem(outputItem));
         let obj = {
             "type": "ae2:transform",
             "circumstance": {
                 "type": "fluid",
                 "tag": FluidTag
             },
-            "ingredients": [],
-            "result": {}
+            "ingredients": itemListProcessing(ingredientList, inputItems),
+            "result": nbtProcessing(strSplitItem(outputItem))
         }
-        obj.ingredients = ingredientList;
-        obj.result = outputItemObj;
         ServerEvents.recipes(e => e.custom(obj))
     },
     /**

@@ -8,6 +8,6 @@ EntityEvents.death("ender_dragon",event=>{
        spawnItem.customNameVisible = true;
        spawnItem.pos = pos;
        spawnItem.spawn();
-       event.getLevel().getPlayers().tell(`末影龙掉落了鞘翅在坐标：${pos.x} ~ ${pos.z}`);
+       level.getPlayers().tell(`末影龙掉落了鞘翅在坐标：${pos.x} ~ ${pos.z}`);
     }
 })

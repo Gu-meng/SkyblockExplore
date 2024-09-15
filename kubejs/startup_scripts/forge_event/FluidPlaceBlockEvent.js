@@ -1,9 +1,13 @@
 let $BlockEvent = Java.loadClass("net.minecraftforge.event.level.BlockEvent")
-ForgeEvents.onEvent($BlockEvent.FluidPlaceBlockEvent,e=>{
-    let block = e.getNewState().getBlock().id;
-    if (block == "minecraft:stone"){
-        e.setNewState(Block.getBlock('minecraft:netherrack').defaultBlockState());
-    }else if (block == "minecraft:cobblestone"){
-        e.setNewState(Block.getBlock('meng:dirty_cobblestone').defaultBlockState());
-    }
+ForgeEvents.onEvent($BlockEvent.FluidPlaceBlockEvent,event=>{
+    global.fluidPlaceBlockEvent(event);
 })
+
+global.fluidPlaceBlockEvent = event =>{
+    try {
+        let block = event.getNewState().getBlock();
+        event.setNewState(global.fluidCreateBlock(block.id));
+    } catch (err) {
+        console.error(err);
+    }
+}

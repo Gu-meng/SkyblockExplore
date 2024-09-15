@@ -24,7 +24,8 @@ const basicItem = {
     xp_shop : namespace + "xp_shop",
     small_andesite : namespace + "small_andesite",
     small_cobblestone : namespace + "small_cobblestone",
-    small_diorite : namespace + "small_diorite"
+    small_diorite : namespace + "small_diorite",
+    diamond_upgrade_smithing_template : namespace + "diamond_upgrade_smithing_template"
 }
 
 const ironTimberblock = {

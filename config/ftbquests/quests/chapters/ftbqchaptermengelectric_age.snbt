@@ -50,7 +50,7 @@
 				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 6.0d
 			y: 2.5d
 		}
 		{
@@ -99,7 +99,7 @@
 				item: "createaddition:electrum_spool"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -3.5d
 			y: 5.5d
 		}
 		{
@@ -110,7 +110,7 @@
 				item: "createaddition:modular_accumulator"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 2.5d
 		}
 		{
@@ -121,7 +121,7 @@
 				item: "createaddition:tesla_coil"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 8.0d
 			y: 2.5d
 		}
 		{
@@ -132,8 +132,167 @@
 				item: "ae2:charged_certus_quartz_crystal"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 0.0d
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["140B434F41C3B45C"]
+			id: "381B95A531DD4EFC"
+			tasks: [{
+				id: "16E9E40F271102E0"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["22524B72007E2772"]
+			id: "2525B9675D92F11B"
+			tasks: [{
+				id: "5871504E69DEE00E"
+				item: "create_new_age:energiser_t1"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["06D4C4B961004574"]
+			id: "05ACB17837712577"
+			tasks: [{
+				id: "267855EFBC111165"
+				item: "create_new_age:basic_solar_heating_plate"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["381B95A531DD4EFC"]
+			id: "53F9B44BBE81FC1B"
+			tasks: [{
+				id: "385AADDABFE0749A"
+				item: "create_new_age:heat_pipe"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"53F9B44BBE81FC1B"
+				"2525B9675D92F11B"
+			]
+			id: "06D4C4B961004574"
+			tasks: [{
+				id: "697EA049D5C48411"
+				item: "create_new_age:heater"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2525B9675D92F11B"]
+			id: "1BB43BF45E71D3F1"
+			tasks: [{
+				id: "53115AC9AFEBA2D4"
+				item: "create_new_age:energiser_t2"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1BB43BF45E71D3F1"]
+			id: "5F163FA65480C474"
+			tasks: [{
+				id: "6E92F0C9772C1E8C"
+				item: "create_new_age:energiser_t3"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["05ACB17837712577"]
+			id: "7164A7A03232CF2A"
+			tasks: [{
+				id: "0DE55C96457479C0"
+				item: "create_new_age:advanced_solar_heating_plate"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["06D4C4B961004574"]
+			id: "59E26A3A47759A31"
+			rewards: [{
+				id: "0C4723DBB5B22B30"
+				item: "create_new_age:reactor_glass"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4EA82A8C46358595"
+					item: "create_new_age:reactor_casing"
+					type: "item"
+				}
+				{
+					id: "22D79700759620A3"
+					item: "create_new_age:reactor_rod"
+					type: "item"
+				}
+				{
+					id: "1C50C03946470CB9"
+					item: "create_new_age:reactor_fuel_acceptor"
+					type: "item"
+				}
+				{
+					id: "1F9E16F15911CF2C"
+					item: "create_new_age:reactor_heat_vent"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["05ACB17837712577"]
+			id: "450769ED55B17577"
+			tasks: [{
+				id: "68D9C060383A2924"
+				item: "create_new_age:stirling_engine"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["59E26A3A47759A31"]
+			id: "7B9D46103E0E9086"
+			rewards: [{
+				count: 8
+				id: "6E99AE8B7E5268B2"
+				item: "create_new_age:netherite_magnet"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "31439C95BF2FE4CE"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+				{
+					id: "04156CDEEC829836"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 8.5d
 		}
 	]
 	title: "{ftbq.chapter.meng.electric_age}"
