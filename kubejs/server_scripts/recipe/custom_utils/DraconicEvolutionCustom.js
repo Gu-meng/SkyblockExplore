@@ -13,15 +13,13 @@ const draconicRecipe = {
         let arr = []
         let obj = {
             "type": "draconicevolution:fusion_crafting",
-            "catalyst": {},
+            "catalyst": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem),
             "ingredients": [],
-            "result": {},
+            "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem),
             "tier": tier,
             "total_energy": energy
         }
-        obj.catalyst = nbtProcessing(strSplitItem(inputItem))
         obj.ingredients = itemListProcessing(arr, ingredientList)
-        obj.result = nbtProcessing(strSplitItem(outputItem))
         ServerEvents.recipes(e => e.custom(obj))
     }
 }

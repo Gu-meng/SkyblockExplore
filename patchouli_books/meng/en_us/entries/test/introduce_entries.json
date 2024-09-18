@@ -1,0 +1,32 @@
+{
+    "name": "特有物品",
+    "icon": "minecraft:writable_book",
+    "category": "patchouli:introduce_categories",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在这里会介绍一些东西"
+        },
+        {
+            "type": "spotlight",
+            "item" : "meng:crushbone",
+            "text" : "碎骨可以使用碎骨剑击杀怪物获取也可以将腐肉放在篝火上烤成碎骨,可以用于合成碎骨工具，一个骨头可以分解6个碎骨，在工作台内9个碎骨可以合成一个骨头"
+        },
+        {
+            "type": "spotlight",
+            "item" : "meng:crushbone_sword",
+            "text" : "碎骨剑的攻击伤害和速度远大于木剑，是前期非常好的过度武器且使用碎骨剑击杀怪物有大概率掉落碎骨" 
+        },
+        {
+            "type": "spotlight",
+            "item" : "meng:crushbone_axe",
+            "text" : "碎骨斧虽然攻击速度慢，但是他的砍树速度不慢" 
+        },
+        {
+            "type": "spotlight",
+            "item" : "meng:iron_dust",
+            "text" : "用于合成铁粒，可以通过击杀僵尸有概率掉落" 
+        }
+        
+    ]
+}

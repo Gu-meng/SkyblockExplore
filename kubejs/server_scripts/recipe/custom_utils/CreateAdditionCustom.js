@@ -9,8 +9,8 @@ const createAddition = {
     rolling : function(outputItem,inputItem){
         const obj = {
             "type":"createaddition:rolling",
-            "input": nbtProcessing(strSplitItem(inputItem)),
-            "result": nbtProcessing(strSplitItem(outputItem))
+            "input": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem),
+            "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
         ServerEvents.recipes(e => e.custom(obj))
     },
@@ -24,8 +24,8 @@ const createAddition = {
     charging : function(outputItem,inputItem,energy,maxChargeRate){
         const obj = {
             "type":"createaddition:charging",
-            "input": nbtProcessing(strSplitItem(inputItem)),
-            "result":  nbtProcessing(strSplitItem(outputItem)),
+            "input": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem),
+            "result":  MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem),
             "energy": energy,
             "maxChargeRate": maxChargeRate
         }

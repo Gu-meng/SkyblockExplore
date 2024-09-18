@@ -110,12 +110,19 @@
 			dependencies: ["39CCE1B46CAA5BAB"]
 			description: ["{ftbq.details.meng.mesh.andesite}"]
 			id: "2F1B7E20891741D4"
-			rewards: [{
-				count: 32
-				id: "5C0FCF8CAD2365CE"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					id: "5C0FCF8CAD2365CE"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "0BD42E99181D09E1"
+					type: "xp"
+					xp: 100
+				}
+			]
 			tasks: [{
 				id: "277E96B18B46E716"
 				item: {
@@ -201,6 +208,19 @@
 			dependencies: ["5ACBA8497E701C35"]
 			description: ["{ftbq.details.meng.mechanical_mixer}"]
 			id: "6577C7CDC94B0718"
+			rewards: [
+				{
+					count: 4
+					id: "33B883AEDD1144ED"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					id: "4393BCA111D3F573"
+					type: "xp"
+					xp: 100
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "535311BAC09689CB"
@@ -215,6 +235,11 @@
 			dependencies: ["6577C7CDC94B0718"]
 			description: ["{ftbq.details.meng.lava_debris}"]
 			id: "752E54E533CB8E93"
+			rewards: [{
+				id: "7528F708E7C10B75"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				count: 4L
@@ -320,6 +345,11 @@
 					item: "meng:raffle_ticket"
 					type: "item"
 				}
+				{
+					id: "6F9DC052B0F49212"
+					type: "xp"
+					xp: 100
+				}
 			]
 			tasks: [{
 				id: "5FF8C94134264508"
@@ -397,6 +427,11 @@
 			dependencies: ["6577C7CDC94B0718"]
 			description: ["{ftbq.details.meng.deployer}"]
 			id: "56E078A5860C1C54"
+			rewards: [{
+				id: "274879610A4960E0"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				id: "5D7BF840296F73B2"
 				item: "create:deployer"
@@ -442,6 +477,7 @@
 		}
 		{
 			dependencies: ["36F13EB5682F1DF1"]
+			description: ["{ftbq.details.meng.mill}"]
 			id: "00F48525A0F16CB5"
 			size: 1.5d
 			tasks: [{
@@ -449,6 +485,7 @@
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.mill}"
 			x: 7.5d
 			y: 1.5d
 		}
@@ -459,12 +496,19 @@
 			]
 			description: ["{ftbq.details.meng.mesh.diamond}"]
 			id: "228B88A665F3846E"
-			rewards: [{
-				count: 256
-				id: "5DFD93D034F8D1E6"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 256
+					id: "5DFD93D034F8D1E6"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "49CEF9A04CD8F51E"
+					type: "xp"
+					xp: 1000
+				}
+			]
 			tasks: [{
 				id: "5166ACF9A157461E"
 				item: "meng:diamond_mesh"
@@ -478,6 +522,11 @@
 			dependencies: ["2F1B7E20891741D4"]
 			description: ["{ftbq.details.meng.mesh.zinc}"]
 			id: "00A056B65E2C4B21"
+			rewards: [{
+				id: "00F30EDE48558420"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				id: "7124D226E44FE227"
 				item: {
@@ -495,12 +544,19 @@
 			dependencies: ["2F1B7E20891741D4"]
 			description: ["{ftbq.details.meng.mesh.copper}"]
 			id: "36EF66123D7B6AA2"
-			rewards: [{
-				count: 32
-				id: "598DC02FB71008DD"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					id: "598DC02FB71008DD"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "47E9805450662F1A"
+					type: "xp"
+					xp: 200
+				}
+			]
 			tasks: [{
 				id: "78AA7D01827A1E49"
 				item: {
@@ -518,6 +574,11 @@
 			dependencies: ["228B88A665F3846E"]
 			description: ["{ftbq.details.meng.mesh.quartz}"]
 			id: "668857FEB24E88B7"
+			rewards: [{
+				id: "7E2631FE3955DFD3"
+				type: "xp"
+				xp: 500
+			}]
 			tasks: [{
 				id: "3FAB71EB97D30755"
 				item: "meng:charged_certus_quartz_crystal_mesh"
@@ -529,6 +590,7 @@
 		}
 		{
 			dependencies: ["4D68132783E769A5"]
+			description: ["{ftbq.details.meng.machine}"]
 			id: "36F13EB5682F1DF1"
 			size: 1.5d
 			tasks: [{
@@ -536,11 +598,13 @@
 				item: "meng:machine"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.machine}"
 			x: 6.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["4D68132783E769A5"]
+			description: ["{ftbq.details.meng.fluid_pipe}"]
 			id: "03D273E42B9DEB9A"
 			tasks: [
 				{
@@ -554,11 +618,13 @@
 					type: "item"
 				}
 			]
+			title: "{ftbq.title.meng.fluid_pipe}"
 			x: 4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["36F13EB5682F1DF1"]
+			description: ["{ftbq.details.meng.precision_machine_parts}"]
 			id: "71BC2F4285738816"
 			shape: "hexagon"
 			size: 1.0d
@@ -567,11 +633,13 @@
 				item: "meng:precision_machine_parts"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.precision_machine_parts}"
 			x: 5.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["71BC2F4285738816"]
+			description: ["{ftbq.details.meng.schematicannon}"]
 			id: "3C898760AD694343"
 			rewards: [{
 				count: 6
@@ -591,11 +659,13 @@
 					type: "item"
 				}
 			]
+			title: "{ftbq.title.meng.schematicannon}"
 			x: 5.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["2B6435BFF65D88EC"]
+			description: ["{ftbq.details.meng.slag}"]
 			hide_dependent_lines: true
 			id: "12FE54A491266A7F"
 			tasks: [{
@@ -603,12 +673,18 @@
 				item: "meng:slag"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.slag}"
 			x: 4.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["5AE802AF89EFB4CC"]
 			id: "75B3EB9575F8264B"
+			rewards: [{
+				id: "7541C4A6E47DBCA9"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6FDA17A9679701CF"
 				item: "minecraft:netherrack"
@@ -618,7 +694,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["03D273E42B9DEB9A"]
+			dependencies: [
+				"03D273E42B9DEB9A"
+				"3C898760AD694343"
+			]
+			description: ["{ftbq.details.meng.cv}"]
 			id: "135407D6C14BD3E1"
 			rewards: [{
 				count: 128
@@ -631,23 +711,31 @@
 				item: "create:clipboard"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.cv}"
 			x: 4.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["71BC2F4285738816"]
+			description: ["{ftbq.details.meng.saw_mob}"]
 			id: "0F5B009FE8B0E4BD"
 			tasks: [{
 				id: "03E56DE8130DDB61"
 				item: "mob_grinding_utils:saw"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.saw_mob}"
 			x: 6.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2350ED4B290EE7EA"]
 			id: "638A028DB93E5D7F"
+			rewards: [{
+				id: "4C7BFE13DCBFB1F7"
+				item: "create:item_drain"
+				type: "item"
+			}]
 			tasks: [{
 				id: "63F1C0900B32E2E7"
 				item: "create:spout"
@@ -658,12 +746,34 @@
 		}
 		{
 			dependencies: ["638A028DB93E5D7F"]
+			description: ["{ftbq.details.meng.grass_block}"]
 			id: "02AC699F9538A037"
+			rewards: [
+				{
+					count: 2
+					id: "0F486D53DBBEA23A"
+					item: "minecraft:pig_spawn_egg"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "063198B0679E10CB"
+					item: "minecraft:cow_spawn_egg"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "7CC980EB4FD9C224"
+					item: "minecraft:sheep_spawn_egg"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "081E2C5C74C28A4D"
 				item: "minecraft:grass_block"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.grass_block}"
 			x: 1.5d
 			y: 3.5d
 		}

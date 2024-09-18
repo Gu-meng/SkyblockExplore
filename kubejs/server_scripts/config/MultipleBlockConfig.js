@@ -1,5 +1,5 @@
 // priority: 3
 
 const MultipleBlockConfig = {
-    maxMultiple : 64,
+    maxMultiple : 128,
 }

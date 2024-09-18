@@ -1,0 +1,3 @@
+AERecipe.inscriberPress('ae2:logic_processor','ae2:printed_logic_processor','mekanism:basic_control_circuit','ae2:printed_silicon')
+AERecipe.inscriberPress('ae2:calculation_processor','ae2:printed_calculation_processor','mekanism:basic_control_circuit','ae2:printed_silicon')
+AERecipe.inscriberPress('ae2:engineering_processor','ae2:printed_engineering_processor','mekanism:basic_control_circuit','ae2:printed_silicon')

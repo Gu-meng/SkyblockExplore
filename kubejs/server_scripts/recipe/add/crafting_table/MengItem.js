@@ -54,6 +54,26 @@ ServerEvents.recipes(event => {
         'minecraft:gunpowder','minecraft:gunpowder','meng:dirty_cobblestone'
     ])
 
+    event.shaped('meng:stalinite_block',[
+        'aba',
+        'bab',
+        'aba'
+    ],{
+        a : 'mekanism:dust_steel',
+        b : 'minecraft:glass'
+    })
+
+    event.shaped('meng:harvesting_accessories',[
+        ['create:andesite_casing','create:andesite_casing','create:andesite_casing'],
+        ['meng:saw_blade','create:shaft','meng:saw_blade']
+    ])
+
+    event.shaped('meng:drill_bit',[
+        ['create:andesite_casing','minecraft:iron_ingot'],
+        ['create:andesite_casing','create:shaft','minecraft:iron_ingot'],
+        ['create:andesite_casing','minecraft:iron_ingot']
+    ])
+
     ironTimbers.forEach(value => {
         event.shaped(value.output, [
             [value.input],

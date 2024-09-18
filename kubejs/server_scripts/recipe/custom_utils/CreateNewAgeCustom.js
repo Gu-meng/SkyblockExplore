@@ -10,8 +10,8 @@ const createNewAge = {
     energising: function (outputItem, inputItem, energy) {
         const obj = {
             "type": "create_new_age:energising",
-            "ingredients": [nbtProcessing(strSplitItem(inputItem))],
-            "results": [nbtProcessing(strSplitItem(outputItem))],
+            "ingredients": [MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem)],
+            "results": [MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)],
             "energy_needed": energy,
         }
         ServerEvents.recipes(e =>{

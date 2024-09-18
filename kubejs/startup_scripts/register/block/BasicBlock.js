@@ -38,5 +38,6 @@ StartupEvents.registry("block",event=>{
     event.create(basicBlock.dirty_cobblestone)
         .hardness(2)
         .stoneSoundType()
+        .requiresTool()
         .tagBlock('minecraft:mineable/pickaxe')
 })

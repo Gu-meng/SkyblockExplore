@@ -118,6 +118,7 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                 }
                 slot.setItem("air")
                 gui.slot(8, 5, slott => {
+                    let xxp = gui.player.xp
                     const settleAccounts = Text.translate("item.display.meng.xp_shop.xp",xxp).getString()
                     let billItem = Item.of('create:clipboard', {
                         display: {

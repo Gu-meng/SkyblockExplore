@@ -26,8 +26,8 @@ ServerEvents.recipes(event => {
         energising: function (inputItem, outputItem, energy) {
             return event.custom({
                 "type": "create_new_age:energising",
-                "ingredients": [nbtProcessing(strSplitItem(inputItem))],
-                "results": [nbtProcessing(strSplitItem(outputItem))],
+                "ingredients": [MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem)],
+                "results": [MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)],
                 "energy_needed": energy,
             })
         }

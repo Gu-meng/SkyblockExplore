@@ -38,16 +38,6 @@ ServerEvents.recipes(event => {
     // 岩浆块
     event.shapeless('minecraft:magma_block', ['meng:lava_chunk', 'meng:lava_chunk', 'meng:lava_chunk', 'meng:lava_chunk'])
 
-    // 安山岩
-    fullTable(event, 'minecraft:andesite', 'meng:small_andesite')
-
-    // 原石
-    fullTable(event, 'minecraft:cobblestone', 'meng:small_cobblestone')
-
-    // 闪长岩
-    fullTable(event, 'minecraft:diorite', 'meng:small_diorite')
-
-
     //台阶合成木板
     Ingredient.of('#minecraft:slabs').getItemIds().forEach(slab => {
         event.findRecipes({ type: "minecraft:crafting_shaped", output: slab }).forEach(value => {
@@ -58,10 +48,7 @@ ServerEvents.recipes(event => {
                 if (item != inputItem) item = null
             })
             if (item == null) return;
-            event.shaped(item, [
-                [slab],
-                [slab]
-            ])
+            event.shaped(item, [slab,slab])
         })
     })
 
@@ -86,8 +73,17 @@ ServerEvents.recipes(event => {
         ['minecraft:iron_nugget','','minecraft:iron_nugget'],
         ['minecraft:iron_nugget','','minecraft:iron_nugget']
     ])
+
+    // 安山岩
+    fullTable(event, 'minecraft:andesite', 'meng:small_andesite')
+
+    // 原石
+    fullTable(event, 'minecraft:cobblestone', 'meng:small_cobblestone')
+
+    // 闪长岩
+    fullTable(event, 'minecraft:diorite', 'meng:small_diorite')
 })
 
 function fullTable(event, output, input) {
-    event.shapeless(output, [input, input, input, input, input, input, input, input, input])
+   return event.shapeless(output, [input, input, input, input, input, input, input, input, input])
 }

@@ -114,17 +114,11 @@ let MekRecipe = {
      * @param {Internal.Ingredient} inputItem 输入物品
      */
     enriching: function (outputItem, inputItem) {
-        let inputItemObj = strSplitItem(inputItem);
-        if (inputItemObj.nbt == null) delete inputItemObj.nbt
-        let outputItemObj = strSplitItem(outputItem);
-        if (outputItemObj.nbt == null) delete outputItemObj.nbt
         let obj = {
             "type": "mekanism:enriching",
-            "input": { "ingredient": {} },
-            "output": {}
+            "input": { "ingredient": nbtProcessing(strSplitItem(inputItem)) },
+            "output": nbtProcessing(strSplitItem(outputItem))
         }
-        obj.input.ingredient = inputItemObj;
-        obj.output = outputItemObj;
         ServerEvents.recipes(e => {
             e.custom(obj);
         })
@@ -133,7 +127,7 @@ let MekRecipe = {
      * 冶金灌注机
      * @param {Internal.Ingredient} inputItem 输入物品
      * @param {Internal.ItemStack} outputItem 输出物品
-     * @param {String} chemicalInput 所需id
+     * @param {MekInfuse} chemicalInput 所需灌注id
      * @param {Number} chemicalInputAmount 所需数量
      */
     metallurgicInfusing: function (outputItem, inputItem, chemicalInput, chemicalInputAmount) {
@@ -144,13 +138,10 @@ let MekRecipe = {
         let chemicalInputObj = infuseTypeFunc(chemicalInput, chemicalInputAmount)
         let obj = {
             "type": "mekanism:metallurgic_infusing",
-            "chemicalInput": {},
-            "itemInput": { "ingredient": {} },
-            "output": {}
+            "chemicalInput": chemicalInputObj,
+            "itemInput": { "ingredient": inputItemObj },
+            "output": outputItemObj
         }
-        obj.itemInput.ingredient = inputItemObj;
-        obj.output = outputItemObj;
-        obj.chemicalInput = chemicalInputObj;
         ServerEvents.recipes(e => {
             e.custom(obj);
         })

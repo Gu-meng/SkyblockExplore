@@ -19,7 +19,7 @@ ItemEvents.firstRightClicked("meng:raffle_ticket", event => {
         itemList = ticketTypeObject.basal;
     }
     addItemList(itemList);
-    poolItemList = ArrayUtils.randArr(poolItemList);
+    poolItemList = MengUtils.ArrUtil.randArr(poolItemList);
 
     let lootData = event.getServer().getLootData();
     let itemLoot = lootData
@@ -42,12 +42,11 @@ function addItemList(itemList) {
         }
     });
     let listTemp = poolItemList;
-    console.log(listTemp.length);
 
     while (true) {
         if (poolItemList.length >= raffleTicketConfig.maxCount) {
             return;
         }
-        poolItemList = poolItemList.concat(ArrayUtils.randArr(listTemp));
+        poolItemList = poolItemList.concat(MengUtils.ArrUtil.randArr(listTemp));
     }
 }

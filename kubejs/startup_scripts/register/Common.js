@@ -1,3 +1,5 @@
+// priority: 15
+
 const modid = "meng";
 const namespace = modid + ":";
 
@@ -72,5 +74,42 @@ const musicDisc = {
     music_disc_never : namespace + "music_disc_never"
 }
 
-const regIds = Object.assign({},basicItem,ironTimberblock,basicBlock,ToolItem,MeshItem,CreateIncompleteItem,musicDisc);
+let AECellComponentItems = {
+}
+
+let AECellComponentItemIds = {
+
+}
+
+/**
+ * 注册存储元件和对应的组件
+ * @param {Number} byte 最大内存 kb
+ * @param {Number} maxItemTypeCount 最大物品类型属性 1~63
+ * @param {Number} AE2Energy 消耗的ae能
+ * @param {Number} bytesPer 每一个新物品开辟所需的空间byte
+ */
+function regCellComponent(byte,maxItemTypeCount,AE2Energy,bytesPer){
+    let cellComponentId = `${namespace}cell_component_${byte}k`
+    let storageCellId = `${namespace}item_storage_cell_${byte}k`
+    AECellComponentItems[byte] = {
+        byte:byte,
+        cellComponent: cellComponentId,
+        storageCell:storageCellId,
+        maxItemTypeCount:maxItemTypeCount,
+        AE2Energy:AE2Energy,
+        bytesPer:bytesPer
+    }
+    AECellComponentItemIds[`component${byte}`] = cellComponentId
+    AECellComponentItemIds[`storage${byte}`] = storageCellId
+}
+
+regCellComponent(512,63,3.0,4096)
+regCellComponent(1024,63,4.0,4096)
+regCellComponent(2048,63,5.0,4096)
+regCellComponent(4096,63,6.0,4096)
+regCellComponent(8192,63,7.0,4096)
+regCellComponent(16384,63,12.0,4096)
+regCellComponent(32768,63,20.0,8192)
+
+const regIds = Object.assign({},basicItem,ironTimberblock,basicBlock,ToolItem,MeshItem,CreateIncompleteItem,musicDisc,AECellComponentItemIds);
 

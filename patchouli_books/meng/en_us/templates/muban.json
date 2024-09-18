@@ -1,0 +1,17 @@
+{
+    "components": [
+        {
+            "type": "spotlight",
+            "item": "#item",
+            "text": "#text",
+            "x": 0,
+            "y": 0
+        },
+        {
+            "type": "crafting",
+            "recipe": "#recipe",
+            "x": 0,
+            "y": 115
+        }
+    ]
+}

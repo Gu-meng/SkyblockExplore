@@ -15,7 +15,7 @@ const AERecipe = {
                 "type": "explosion"
             },
             "ingredients": itemListProcessing(ingredientList, inputItems),
-            "result": nbtProcessing(strSplitItem(outputItem))
+            "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
         ServerEvents.recipes(e => e.custom(obj))
     },
@@ -36,7 +36,7 @@ const AERecipe = {
                 "tag": FluidTag
             },
             "ingredients": itemListProcessing(ingredientList, inputItems),
-            "result": nbtProcessing(strSplitItem(outputItem))
+            "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
         ServerEvents.recipes(e => e.custom(obj))
     },
@@ -51,17 +51,13 @@ const AERecipe = {
         let obj = {
             "type": "ae2:inscriber",
             "ingredients": {
-                "bottom": {},
-                "middle": {},
-                "top": {}
+                "bottom": MengUtils.StrToItemUtil.strProcessingNbtItem(inputBottom),
+                "middle": MengUtils.StrToItemUtil.strProcessingNbtItem(inputMiddle),
+                "top": MengUtils.StrToItemUtil.strProcessingNbtItem(inputTop)
             },
             "mode": "press",
-            "result": {}
+            "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        obj.ingredients.top = nbtProcessing(strSplitItem(inputTop))
-        obj.ingredients.middle = nbtProcessing(strSplitItem(inputMiddle))
-        obj.ingredients.bottom = nbtProcessing(strSplitItem(inputBottom))
-        obj.ingredients.result = nbtProcessing(strSplitItem(outputItem))
         ServerEvents.recipes(e => e.custom(obj))
     },
     /**
@@ -73,13 +69,11 @@ const AERecipe = {
         let obj = {
             "type": "ae2:inscriber",
             "ingredients": {
-                "middle": {}
+                "middle": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem)
             },
             "mode": "inscribe",
-            "result": {}
+            "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        obj.ingredients.middle = nbtProcessing(strSplitItem(inputItem))
-        obj.ingredients.result = nbtProcessing(strSplitItem(outputItem))
         ServerEvents.recipes(e => e.custom(obj))
     }
 }

@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.0.1.240916",
+    "meng.client.window.title" : "空岛：探索 v0.0.1.240919",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -42,6 +42,7 @@
     "item.meng.small_cobblestone":"圆石石子",
     "item.meng.small_diorite":"闪长岩石子",
     "item.meng.copper_mesh":"铜筛网",
+    "item.meng.dirty_cobblestone":"未处理的圆石",
 
     "block.meng.stalinite_block":"钢化玻璃块",
     "block.meng.iron_acacia_block":"金合欢木包铁",
@@ -56,7 +57,13 @@
     "block.meng.iron_warped_block":"诡异木包铁",
     "block.meng.slag_block":"矿渣块",
     "block.meng.precision_machine_parts":"精密机器部件",
-    
+    "block.meng.dirty_cobblestone":"未处理的圆石",
+
+    "infuse_type.meng.alloy_infused":"灌注合金",
+    "infuse_type.meng.alloy_reinforced":"强化合金",
+    "infuse_type.meng.alloy_atomic":"原子合金",
+
+
     "notify.meng.time.title":"时间小助手",
     "notify.meng.time.0600":"早上好,是一晚上没睡吗",
     "notify.meng.time.0800":"吃了吗,打游戏也别忘了吃早饭哦",
@@ -89,6 +96,13 @@
     "item.tooltip.meng.xp_shop.price":"物品价格为：%s xp",
     "item.tooltip.meng.xp_shop.1":"每次使用都会收取50xp作为入场费",
     "item.tooltip.meng.xp_shop.2":"当前拥有xp：%s",
+
+    "jei.item.information.painful_tears":"当友善生物：鸡、猪、牛受到岩浆块的伤害时会有概率留下“痛苦之泪”\n痛苦之泪可以丢到熔岩里召唤恶魂",
+    "jei.item.information.raffle_ticket":"右键消耗一张抽奖券进行抽奖",
+    "jei.item.information.xp_shop":"经验商城可以在里面通过经验购买物品",
+    "jei.item.information.rain_doll":"右键消耗雨天娃娃的耐久来使天气变为下雨天",
+    "jei.item.information.sunny_doll":"晴天娃娃可以使天气变为晴天",
+    "jei.item.information.dirty_cobblestone":"通过熔岩和水产生的未处理的圆石，需要合成后变为普通的圆石",
 
     "ftbq.chapter.meng.start":"开始",
 
@@ -160,21 +174,33 @@
     "ftbq.title.meng.mesh.zinc":"当你需要水资源",
     "ftbq.details.meng.mesh.zinc":"将筛子放入水中并且使用锌筛网，即可筛出一些水特产",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.grass_block":"关于动物",
+    "ftbq.details.meng.grass_block":"动物是只会在草方块上生成，当然有时候群系不对也不会生成动物:(",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.slag":"大量矿物",
+    "ftbq.details.meng.slag":"将圆石磨碎之后有概率掉落矿物碎渣\n矿物碎渣是大部分矿物的组合",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.machine":"机器半成品",
+    "ftbq.details.meng.machine":"高效可靠的机器都是需要复杂的组装过程的",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.precision_machine_parts":"精密机器部件",
+    "ftbq.details.meng.precision_machine_parts":"有许多精密的机器都需要用到这个",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
-    
+    "ftbq.title.meng.fluid_pipe":"粒子刷石机",
+    "ftbq.details.meng.fluid_pipe":"可以使用机械动力的流体管道做一个粒子刷石机，这样可以更高效的获取石头\n如果你不会也没关系，整合包提供了粒子刷石机的蓝图",
+
+    "ftbq.title.meng.schematicannon":"蓝图大炮",
+    "ftbq.details.meng.schematicannon":"使用大炮打蓝图肯定比自己手建快多了",
+
+    "ftbq.title.meng.cv":"让我看看需要什么",
+    "ftbq.details.meng.cv":"可以使用剪切板看看蓝图大炮需要哪些材料",
+
+    "ftbq.title.meng.saw_mob":"小怪物磨床",
+    "ftbq.details.meng.saw_mob":"更高效的怪物处理",
+
+    "ftbq.title.meng.mill":"电力",
+    "ftbq.details.meng.mill":"做出这个就可以进入电力时代了！\n咱们村终于通电了！！！",
+
     "ftbq.title.meng.andesite_mesh":"这种筛网可以晒出部分矿石",
     "ftbq.details.meng.andesite_mesh":"使用安山筛网可以晒出部分矿石，但是因为筛网材质问题，有一些矿石是筛不出来的",
 
@@ -222,8 +248,52 @@
 
     "ftbq.title.meng.encased_fan":"吃吹吹",
     "ftbq.details.meng.encased_fan":"咱是不是可以用鼓风机改造一下刷怪塔？这样，我再送你几个鼓风机，让你的刷怪塔更快完工",
+    
+    "ftbq.chapter.meng.electric_age":"电力时代",
 
-    "ftbq.title.meng.rolling_mill":"有电线了？",
-    "ftbq.details.meng.rolling_mill":"有了这个意味着我们可以获取电了"
+    "ftbq.title.meng.copper_wire":"",
+    "ftbq.details.meng.copper_wire":"",
 
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.chapter.meng.ae2":"ae存储自动化",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.chapter.meng.mek":"Mek通用机械",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.title.meng.":"",
+    "ftbq.details.meng.":"",
+
+    "ftbq.chapter.meng.draconic":"龙之研究"
+    
 }

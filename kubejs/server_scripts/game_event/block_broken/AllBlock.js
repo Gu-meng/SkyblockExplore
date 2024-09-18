@@ -28,7 +28,7 @@ BlockEvents.broken(event => {
         }
         posList.forEach(pos => level.destroyBlock(BlockPos.of(pos), isDrop, player))
         handItem.setDamageValue(handItem.getDamageValue() + posList.length);
-        console.log(handItem.getDamageValue());
+        if (!handItem.hasTag('minecraft:tools')) return
         if (handItem.getDamageValue() > handItem.getMaxDamage()) handItem.count--
     }
 })

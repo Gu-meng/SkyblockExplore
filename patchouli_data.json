@@ -1,5 +1,13 @@
 {
-  "bookGuiScale": 0,
+  "bookGuiScale": 3,
   "clickedVisualize": false,
-  "bookData": {}
+  "bookData": {
+    "patchouli:meng": {
+      "viewedEntries": [
+        "patchouli:test/introduce_entries"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
 }

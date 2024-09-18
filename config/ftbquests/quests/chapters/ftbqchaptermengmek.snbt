@@ -16,7 +16,7 @@
 		}
 	}
 	id: "18149989323779F7"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -53,6 +53,11 @@
 		{
 			dependencies: ["590D97C5221D55AF"]
 			id: "3414F80AD604CE54"
+			rewards: [{
+				id: "39D57190950B3F9D"
+				item: "mekanism:enriched_carbon"
+				type: "item"
+			}]
 			tasks: [{
 				id: "39643108E404F812"
 				item: "mekanism:metallurgic_infuser"
@@ -152,8 +157,8 @@
 				item: "mekanism:combiner"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -9.5d
+			x: -2.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["53A0D0FA78E91880"]
@@ -222,7 +227,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2CA816485F986D2A"]
@@ -243,8 +248,8 @@
 				item: "mekanism:chemical_washer"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -8.0d
+			x: 4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["1C6E59B45C242DF6"]
@@ -254,12 +259,17 @@
 				item: "mekanism:chemical_crystallizer"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -7.5d
+			x: 1.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["6A904E66F5AD7B02"]
 			id: "346EDE573126FBD1"
+			rewards: [{
+				id: "5C0808BE3FC52736"
+				item: "mekanism:basic_chemical_tank"
+				type: "item"
+			}]
 			tasks: [{
 				id: "774E79288E891720"
 				item: "mekanism:pressurized_reaction_chamber"
@@ -278,6 +288,192 @@
 			}]
 			x: -1.0d
 			y: -11.0d
+		}
+		{
+			dependencies: ["29D89671B6287DF4"]
+			id: "24B0AE09F03D4A41"
+			tasks: [{
+				id: "4CFF3BB2F369EEB0"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"1229CE4849BE17F5"
+				"4D34E0A4A2C846C7"
+			]
+			id: "29D89671B6287DF4"
+			tasks: [
+				{
+					id: "604964D0BBD0EF73"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+				{
+					id: "253F45493A46E5C1"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					id: "75A99AAB8D9D75F8"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["5F99CE6D3E6BBE89"]
+			id: "5790ECEF2B4F6F6C"
+			tasks: [
+				{
+					id: "1E7311B2CF6D8F8A"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					id: "4E52A6EE341433E6"
+					item: "mekanismgenerators:fission_reactor_port"
+					type: "item"
+				}
+				{
+					id: "6EBF630B77242FA8"
+					item: "mekanismgenerators:fission_reactor_logic_adapter"
+					type: "item"
+				}
+				{
+					id: "2AE0325E8E957A45"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					id: "7464090485ADBB44"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"212D8FF1F58D15DE"
+				"28E2E40F4F9C366B"
+			]
+			id: "4D34E0A4A2C846C7"
+			tasks: [{
+				id: "6C6AD63117DC32E5"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1C6E59B45C242DF6"]
+			id: "0E96DC56E46F3FEE"
+			tasks: [{
+				id: "7AE32EDF09C925AE"
+				item: "mekanism:isotopic_centrifuge"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"0E96DC56E46F3FEE"
+				"28E2E40F4F9C366B"
+			]
+			id: "1229CE4849BE17F5"
+			tasks: [{
+				id: "7ED734C6D874263F"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["24B0AE09F03D4A41"]
+			id: "61107CA81A2F71A7"
+			tasks: [{
+				id: "1A90967C9CC01C1A"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["61107CA81A2F71A7"]
+			id: "7BB4EBC3E59F5D08"
+			tasks: [{
+				id: "6902E607E22C3D4D"
+				item: "minecraft:wither_rose"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7BB4EBC3E59F5D08"]
+			id: "566AC82FBD25D830"
+			tasks: [{
+				id: "712CC6550640B34E"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["566AC82FBD25D830"]
+			id: "2BA23919C99CBEE9"
+			tasks: [{
+				id: "704D596172EF79B8"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["51C1DA28C4C75C4E"]
+			id: "718713FEF41E9FBE"
+			tasks: [{
+				id: "062CCDEEC31677D8"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["718713FEF41E9FBE"]
+			id: "4F5046E591ADDF5E"
+			tasks: [{
+				id: "086F8C572B5C1853"
+				item: "mekanism:elite_tier_installer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F5046E591ADDF5E"]
+			id: "1A1B1FD06EF6D403"
+			tasks: [{
+				id: "317033F5772F201D"
+				item: "mekanism:ultimate_tier_installer"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.mek}"
