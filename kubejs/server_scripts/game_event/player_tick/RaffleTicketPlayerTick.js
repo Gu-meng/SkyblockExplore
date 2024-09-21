@@ -10,8 +10,6 @@ PlayerEvents.tick(event => {
             if (tickCount % 10 == 0){
                 if (count >= countMax){
                     playerPersistentData.putBoolean("lotteryState",false);
-                    console.log(poolItemList[count-2]);
-                    console.log(count);
                     
                     player.give(Item.of(poolItemList[count-2]));
                     paintHide(player)
@@ -95,3 +93,4 @@ function paintShow(player, one_item, two_item, three_item) {
         }
     })
 }
+

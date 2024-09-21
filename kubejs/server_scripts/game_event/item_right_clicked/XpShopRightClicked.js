@@ -1,7 +1,8 @@
 global.shopItemList = [
     Item.of('meng:crushbone', { buyXp: 10 }),
     Item.of('minecraft:stone', { buyXp: 100 }),
-    Item.of('minecraft:egg',{buyXp : 50}),
+    Item.of('minecraft:egg',{buyXp: 50 }),
+    Item.of('meng:raffle_ticket',{buyXp:2000 })
 ]
 
 const shopItems = global.shopItemList
@@ -119,7 +120,7 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                 slot.setItem("air")
                 gui.slot(8, 5, slott => {
                     let xxp = gui.player.xp
-                    const settleAccounts = Text.translate("item.display.meng.xp_shop.xp",xxp).getString()
+                    const settleAccounts = Text.translate("item.display.meng.xp_shop.settle_accounts").getString()
                     let billItem = Item.of('create:clipboard', {
                         display: {
                             Name: '{"text" : "'+settleAccounts+'","italic" : "false"}'
@@ -134,12 +135,13 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                                 // Utils.server.scheduleInTicks(20*5,()=>{
                                     arr.forEach(value=>{
                                         let ei = level.createEntity("item");
-                                        ei.x = 0;
-                                        ei.y = 0;
-                                        ei.z = 0;
+                                        ei.x = 5;
+                                        ei.y = 128;
+                                        ei.z = 5;
                                         ei.item = Item.of(value.item,value.count);
                                         ei.glowing = true;
                                         ei.spawn();
+                                        console.log(ei);
                                     })
                                 player.closeMenu()
                                 // })

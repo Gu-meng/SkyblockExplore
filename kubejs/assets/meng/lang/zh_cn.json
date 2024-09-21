@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.0.1.240919",
+    "meng.client.window.title" : "空岛：探索 v0.0.1.240922",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -43,6 +43,20 @@
     "item.meng.small_diorite":"闪长岩石子",
     "item.meng.copper_mesh":"铜筛网",
     "item.meng.dirty_cobblestone":"未处理的圆石",
+    "item.meng.cell_component_512k":"512k ME存储组件",
+    "item.meng.cell_component_1024k":"1M ME存储组件",
+    "item.meng.cell_component_2048k":"2M ME存储组件",
+    "item.meng.cell_component_4096k":"4M ME存储组件",
+    "item.meng.cell_component_8192k":"8M ME存储组件",
+    "item.meng.cell_component_16384k":"16M ME存储组件",
+    "item.meng.cell_component_32768k":"32M ME存储组件",
+    "item.meng.item_storage_cell_512k":"512k ME物品存储元件",
+    "item.meng.item_storage_cell_1024k":"1M ME物品存储元件",
+    "item.meng.item_storage_cell_2048k":"2M ME物品存储元件",
+    "item.meng.item_storage_cell_4096k":"4M ME物品存储元件",
+    "item.meng.item_storage_cell_8192k":"8M ME物品存储元件",
+    "item.meng.item_storage_cell_16384k":"16M ME物品存储元件",
+    "item.meng.item_storage_cell_32768k":"32M ME物品存储元件",
 
     "block.meng.stalinite_block":"钢化玻璃块",
     "block.meng.iron_acacia_block":"金合欢木包铁",
@@ -62,6 +76,7 @@
     "infuse_type.meng.alloy_infused":"灌注合金",
     "infuse_type.meng.alloy_reinforced":"强化合金",
     "infuse_type.meng.alloy_atomic":"原子合金",
+    "infuse_type.meng.dragon_breath":"龙息",
 
 
     "notify.meng.time.title":"时间小助手",
@@ -107,10 +122,19 @@
     "ftbq.chapter.meng.start":"开始",
 
     "ftbq.title.meng.start_play":"欢迎游玩",
-    "ftbq.details.meng.start_play":"首先非常感谢您游玩整合包，本整合包主要以机械动力为主要来发展游戏进程\n整合包无需跟着任务走来，可以依照自己对模组的理解来游玩\n上面的奖励物品是你的发展资源,请好好的利用它们",
+    "ftbq.details.meng.start_play":"首先非常感谢您游玩整合包，整合包不会限制您任何作弊手段\n整合包无需跟着任务线走，可以依照自己对模组的理解来游玩\n上面的奖励物品是你的发展资源,请好好的利用它们",
+
+    "ftbq.title.meng.info1":"介绍",
+    "ftbq.details.meng.info1":"整合包内有许多独有的物品，可以在JEI（EMI）输入@meng来进行搜索查看\n整合包不限制玩家采用任何手段去跨阶段，所以您可以根据自己对模组的理解来加快游戏的进度",
+
+    "ftbq.title.meng.info2":"玩法简介",
+    "ftbq.details.meng.info2":"整合包围绕怪物掉落资源展开，不论是前期还是后期的石头都是离不开怪物资源，所以一定要建造一个比较高效的刷怪塔",
+
+    "ftbq.title.meng.info3":"介绍2",
+    "ftbq.details.meng.info3":"游戏内默认没有死亡不掉落，如果需要可以自己开启，整合包不限制任何作弊手段，如果真的在某一个阶段玩不下去是可以自己拿一点物品完整体验整个整合包流程",
 
     "ftbq.title.meng.kill_monster":"从怪物身上获取资源",
-    "ftbq.details.meng.kill_monster":"在前期我们大部分资源都需要通过这些怪物来获取,比如石头就需要骨块进行烧制而成",
+    "ftbq.details.meng.kill_monster":"在前期我们大部分资源都需要通过这些怪物来获取,比如石头就需要骨块进行烧制而成\n你需要想尽一切办法来提升刷怪塔的效率！！！",
 
     "ftbq.title.meng.bone_block":"这是我的骨块吗？",
     "ftbq.details.meng.bone_block":"骨块是前期你获取石头的方法,常规的骨块合成会导致骨块无法通过高温烧制成石头,所以我们合成的方法将他进行了加固",
@@ -227,6 +251,9 @@
 
     "ftbq.title.meng.blaze_burner":"加热！加热！",
     "ftbq.details.meng.blaze_burner":"做一个烈焰人燃烧室吧！",
+
+    "ftbq.title.meng.blaze_burner2":"关个烈焰人",
+    "ftbq.details.meng.blaze_burner2":"将鸡蛋丢进熔岩里有概率生成烈焰人，趁这个时候把烈焰人抓起来",
 
     "ftbq.title.meng.mechanical_crafter":"超大工作台",
     "ftbq.details.meng.mechanical_crafter":"有很多配方都需要通过动力合成器才能够合成，所以你必须做出这个",

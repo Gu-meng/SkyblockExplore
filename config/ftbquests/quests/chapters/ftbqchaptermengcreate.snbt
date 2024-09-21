@@ -169,7 +169,7 @@
 			id: "5ACBA8497E701C35"
 			rewards: [
 				{
-					count: 32
+					count: 128
 					id: "70A911E3C0613C57"
 					item: "minecraft:gravel"
 					type: "item"
@@ -220,6 +220,12 @@
 					type: "xp"
 					xp: 100
 				}
+				{
+					count: 128
+					id: "57D2BF90B85E0513"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
 			]
 			size: 1.5d
 			tasks: [{
@@ -235,11 +241,19 @@
 			dependencies: ["6577C7CDC94B0718"]
 			description: ["{ftbq.details.meng.lava_debris}"]
 			id: "752E54E533CB8E93"
-			rewards: [{
-				id: "7528F708E7C10B75"
-				item: "minecraft:bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7528F708E7C10B75"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "4B59E903E1095754"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				count: 4L
@@ -255,12 +269,20 @@
 			dependencies: ["752E54E533CB8E93"]
 			description: ["{ftbq.details.meng.lava}"]
 			id: "5AE802AF89EFB4CC"
-			rewards: [{
-				count: 2
-				id: "3B3E7F81097A76FB"
-				item: "minecraft:blaze_spawn_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 64
+					id: "52C1D622E9B2C271"
+					item: "minecraft:white_stained_glass"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "5D3431F2D17B58FD"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "562984440F40747E"
@@ -388,6 +410,12 @@
 			dependencies: ["36F13EB5682F1DF1"]
 			description: ["{ftbq.details.meng.mechanical_drill}"]
 			id: "5343D4B36FF91DC8"
+			rewards: [{
+				count: 128
+				id: "278B884E64150855"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0A35515412B2EEC7"
 				item: "create:mechanical_drill"
@@ -479,6 +507,12 @@
 			dependencies: ["36F13EB5682F1DF1"]
 			description: ["{ftbq.details.meng.mill}"]
 			id: "00F48525A0F16CB5"
+			rewards: [{
+				count: 256
+				id: "74EA69B1239B1000"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "2212F886D876E899"
@@ -592,6 +626,18 @@
 			dependencies: ["4D68132783E769A5"]
 			description: ["{ftbq.details.meng.machine}"]
 			id: "36F13EB5682F1DF1"
+			rewards: [
+				{
+					id: "41660A45FE4D0DF9"
+					item: "meng:drill_bit"
+					type: "item"
+				}
+				{
+					id: "5B107C7BE5BDD85D"
+					item: "meng:saw_blade"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "47F1ECEF11941A92"
@@ -680,18 +726,31 @@
 		{
 			dependencies: ["5AE802AF89EFB4CC"]
 			id: "75B3EB9575F8264B"
-			rewards: [{
-				id: "7541C4A6E47DBCA9"
-				item: "minecraft:quartz"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7541C4A6E47DBCA9"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "5E8D1347D7B2679C"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "6FDA17A9679701CF"
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
 			x: 1.5d
-			y: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -774,8 +833,56 @@
 				type: "item"
 			}]
 			title: "{ftbq.title.meng.grass_block}"
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2350ED4B290EE7EA"]
+			description: ["{ftbq.details.meng.blaze_burner2}"]
+			id: "7EFD3322D6A17550"
+			tasks: [{
+				id: "7B1DCA036273FC65"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "{ftbq.title.meng.blaze_burner2}"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7EFD3322D6A17550"]
+			id: "7626FB631939207B"
+			rewards: [
+				{
+					count: 3
+					id: "4DEC76C65E040C1A"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "4EF27EE1BFA19301"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "491256CAC02D3B13"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5AE802AF89EFB4CC"]
+			id: "0A2A5975BCB39656"
+			tasks: [{
+				id: "747596BA338B8AF8"
+				item: "mob_grinding_utils:ender_inhibitor_on"
+				type: "item"
+			}]
 			x: 1.5d
-			y: 3.5d
+			y: -0.5d
 		}
 	]
 	title: "{ftbq.chapter.meng.create}"

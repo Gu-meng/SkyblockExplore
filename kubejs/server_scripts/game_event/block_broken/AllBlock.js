@@ -1,7 +1,7 @@
 BlockEvents.broken(event => {
-    const key = global.regKey;
+    // const key = global.regKey;
     let player = event.getPlayer();
-    if (key.isDown()) {
+    if (player.getPersistentData().getBoolean("multipleBlocks")) {
         let posList = [];
         let maxMultiple = MultipleBlockConfig.maxMultiple;
         let block = event.getBlock();
@@ -27,8 +27,8 @@ BlockEvents.broken(event => {
             else tempCount = index;
         }
         posList.forEach(pos => level.destroyBlock(BlockPos.of(pos), isDrop, player))
-        handItem.setDamageValue(handItem.getDamageValue() + posList.length);
         if (!handItem.hasTag('minecraft:tools')) return
+        handItem.setDamageValue(handItem.getDamageValue() + posList.length);
         if (handItem.getDamageValue() > handItem.getMaxDamage()) handItem.count--
     }
 })
@@ -40,42 +40,29 @@ BlockEvents.broken(event => {
  */
 function addMultipleBlocks(block, list) {
     let blockList = []
-    let upBlock = block.getUp().getId() == block.getId() ? block.getUp() : null;
-    let downBlock = block.getDown().getId() == block.getId() ? block.getDown() : null;
-    let westBlock = block.getWest().getId() == block.getId() ? block.getWest() : null;
-    let northBlock = block.getNorth().getId() == block.getId() ? block.getNorth() : null;
-    let southBlock = block.getSouth().getId() == block.getId() ? block.getSouth() : null;
-    let eastBlock = block.getEast().getId() == block.getId() ? block.getEast() : null;
-
-    if (upBlock != null && !list.includes(upBlock.getPos().asLong())) {
-        list.push(upBlock.getPos().asLong())
-        blockList.push(upBlock);
-    }
-    if (downBlock != null && !list.includes(downBlock.getPos().asLong())) {
-        list.push(downBlock.getPos().asLong())
-        blockList.push(downBlock)
-    }
-    if (westBlock != null && !list.includes(westBlock.getPos().asLong())) {
-        list.push(westBlock.getPos().asLong())
-        blockList.push(westBlock)
-    }
-    if (northBlock != null && !list.includes(northBlock.getPos().asLong())) {
-        list.push(northBlock.getPos().asLong())
-        blockList.push(northBlock)
-    }
-    if (southBlock != null && !list.includes(southBlock.getPos().asLong())) {
-        list.push(southBlock.getPos().asLong())
-        blockList.push(southBlock)
-    }
-    if (eastBlock != null && !list.includes(eastBlock.getPos().asLong())) {
-        list.push(eastBlock.getPos().asLong())
-        blockList.push(eastBlock)
-    }
+    
+    pushList(equalBlock(block.getUp(),block),list,blockList);
+    pushList(equalBlock(block.getDown(),block),list,blockList);
+    pushList(equalBlock(block.getWest(),block),list,blockList);
+    pushList(equalBlock(block.getNorth(),block),list,blockList);
+    pushList(equalBlock(block.getSouth(),block),list,blockList);
+    pushList(equalBlock(block.getEast(),block),list,blockList);
 
     return {
         blockList: blockList,
         list: list
     }
+}
+
+function pushList(block,list1,list2){
+    if (block != null && !list1.includes(block.getPos().asLong())) {
+        list1.push(block.getPos().asLong())
+        list2.push(block)
+    }
+}
+
+function equalBlock(block1,block2){
+   return block1.getId() == block2.getId() ? block1 : null;
 }
 
 /**

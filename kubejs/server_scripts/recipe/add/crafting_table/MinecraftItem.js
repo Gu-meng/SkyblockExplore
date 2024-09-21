@@ -1,9 +1,8 @@
 ServerEvents.recipes(event => {
     // 骨块的合成配方
-    event.shapeless("minecraft:bone_block", [
-        'minecraft:bone', 'minecraft:bone', 'minecraft:bone',
-        'minecraft:bone', 'minecraft:bone', 'minecraft:bone',
-        'minecraft:bone', 'minecraft:bone', 'minecraft:bone'
+    event.shaped("minecraft:bone_block", [
+        ['minecraft:bone', 'minecraft:bone'],
+        ['minecraft:bone','minecraft:bone']
     ]).id("minecraft:bone_block");
     // 铁粒的合成
     event.shaped('minecraft:iron_nugget', [
@@ -15,12 +14,10 @@ ServerEvents.recipes(event => {
     fullTable(event, 'minecraft:bone', "meng:crushbone")
 
     // 骨粉
-    event.shapeless('minecraft:bone_meal', ["meng:crushbone"]);
-
-    event.shapeless('9x minecraft:bone_meal', ["minecraft:bone"]);
+    event.shapeless('minecraft:bone_meal', "meng:crushbone");
 
     // 骨粉
-    event.shapeless('81x minecraft:bone_meal', ["minecraft:bone_block"]).id("minecraft:bone_meal_from_bone_block");
+    event.shapeless('36x minecraft:bone_meal', ["minecraft:bone_block"]).id("minecraft:bone_meal_from_bone_block");
 
     // 闪长岩
     event.shaped('minecraft:diorite', [
@@ -82,6 +79,8 @@ ServerEvents.recipes(event => {
 
     // 闪长岩
     fullTable(event, 'minecraft:diorite', 'meng:small_diorite')
+
+    event.shapeless("minecraft:redstone",['meng:redstone_dust','meng:redstone_dust','meng:redstone_dust','meng:redstone_dust'])
 })
 
 function fullTable(event, output, input) {

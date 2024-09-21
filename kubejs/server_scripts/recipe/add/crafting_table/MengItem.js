@@ -75,13 +75,52 @@ ServerEvents.recipes(event => {
     ])
 
     ironTimbers.forEach(value => {
-        event.shaped(value.output, [
-            [value.input],
-            ['create:iron_sheet'],
-            [value.input]
-        ])
+        event.shaped(value.output, [value.input,'create:iron_sheet',value.input])
     })
+
+    event.shaped('meng:copper_mesh',[
+      'aaa',
+      'aba',
+      'aaa'  
+    ],{
+        a:'minecraft:stick',
+        b:'minecraft:copper_ingot'
+    })
+
+    for (let i = 0; i < aeItemList.length; i++) {
+        if (aeItemList.length == i+1) break
+        event.shaped(aeItemList[i+1],['aa','aa'],{a:aeItemList[i]});
+    }
+
+    for (let i = 0; i < aeStorageList.length; i++) {
+        event.shaped(aeStorageList[i],[
+            ['ae2:quartz_vibrant_glass','mekanism:alloy_atomic','ae2:quartz_vibrant_glass'],
+            ['mekanism:alloy_atomic',aeItemList[i+1],'mekanism:alloy_atomic'],
+            ['mekanism:ingot_refined_obsidian','mekanism:ingot_refined_obsidian','mekanism:ingot_refined_obsidian']
+        ])
+    }
 })
+
+const aeStorageList = [
+    'meng:item_storage_cell_512k',
+    'meng:item_storage_cell_1024k',
+    'meng:item_storage_cell_2048k',
+    'meng:item_storage_cell_4096k',
+    'meng:item_storage_cell_8192k',
+    'meng:item_storage_cell_16384k',
+    'meng:item_storage_cell_32768k'
+]
+
+const aeItemList = [
+    'ae2:cell_component_256k',
+    'meng:cell_component_512k',
+    'meng:cell_component_1024k',
+    'meng:cell_component_2048k',
+    'meng:cell_component_4096k',
+    'meng:cell_component_8192k',
+    'meng:cell_component_16384k',
+    'meng:cell_component_32768k'
+]
 
 const ironTimbers = [
     {

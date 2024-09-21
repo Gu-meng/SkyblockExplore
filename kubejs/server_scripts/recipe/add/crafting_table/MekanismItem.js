@@ -10,4 +10,10 @@ ServerEvents.recipes(event=>{
         ['mekanism:ingot_steel','mekanism:basic_tier_installer','mekanism:ingot_steel'],
         ['mekanism:advanced_control_circuit','mekanism:ingot_steel','mekanism:advanced_control_circuit']
     ]).id("mekanism:tier_installer/advanced")
+
+    event.replaceInput({id:"mekanismgenerators:generator/solar"},'minecraft:iron_ingot','create_new_age:advanced_solar_heating_plate');
+
+    event.replaceInput({id:"mekanismgenerators:generator/heat"},'minecraft:furnace','ae2:vibration_chamber');
+
+    
 })

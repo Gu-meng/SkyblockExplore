@@ -14,7 +14,8 @@ ServerEvents.recipes(event => {
         "create:smelting/ingot_osmium_compat_mekanism", 
         "create:smelting/ingot_tin_compat_mekanism",
         "create:smelting/ingot_lead_compat_mekanism",
-        "create:smelting/ingot_uranium_compat_mekanism"
+        "create:smelting/ingot_uranium_compat_mekanism",
+        "createhalitosis:halitosis/glass_bottle"
     ]
     removeIds.forEach(value => {
         event.remove({ id: value })

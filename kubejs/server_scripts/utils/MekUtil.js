@@ -115,7 +115,11 @@ const MekInfuse = {
     /**
      * 原子合金
      */
-    alloyAtomic: "meng:alloy_atomic"
+    alloyAtomic: "meng:alloy_atomic",
+    /**
+     * 龙息
+     */
+    dragonBreath: "meng:dragon_breath",
 }
 
 const MekGas = {

@@ -41,7 +41,7 @@ const AERecipe = {
         ServerEvents.recipes(e => e.custom(obj))
     },
     /**
-     * 压印机挤压合成模式(需要提供只要一个top或者bottom)
+     * 压印机挤压合成模式(需要提供至少一个top或者bottom)
      * @param {Internal.ItemStack} outputItem 输出物品
      * @param {Internal.Ingredient} inputTop 机器上方输入物品
      * @param {Internal.Ingredient} inputMiddle 机器中间输入物品

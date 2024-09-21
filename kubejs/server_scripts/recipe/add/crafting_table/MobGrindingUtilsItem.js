@@ -30,4 +30,14 @@ ServerEvents.recipes(event => {
         g:'minecraft:bone',
         h:'minecraft:gunpowder'
     }).id("mob_grinding_utils:recipe_cursed_feed")  
+
+    event.shaped('mob_grinding_utils:absorption_hopper',[
+        'aba',
+        'bcb',
+        'aba'
+    ],{
+        a:'minecraft:ender_pearl',
+        b:'mekanism:basic_logistical_transporter',
+        c:'minecraft:chest'
+    }).id("mob_grinding_utils:recipe_absorbtion_hopper")
 })
