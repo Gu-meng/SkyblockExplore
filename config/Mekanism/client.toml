@@ -106,8 +106,8 @@
 				y = 15
 
 			[client.gui.window.transporterConfig]
-				x = 2147483647
-				y = 2147483647
+				x = 11
+				y = 17
 
 			[client.gui.window.upgrade]
 				x = 10

@@ -125,15 +125,7 @@ function strSplitItem(str){
  * @param {Internal.ItemStack} itemObj 
  */
 function ItemOfAlterItem(itemObj){
-    let itemNbt = null;
-    if (itemObj.getNbtString() != "null"){
-        itemNbt = itemObj.getNbtString() 
-    }
-    return {
-        item : itemObj.id,
-        count : itemObj.count,
-        nbt : itemNbt
-    }
+    return itemObj.toJson()
 }
 
 /**

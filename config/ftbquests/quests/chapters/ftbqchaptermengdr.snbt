@@ -738,6 +738,17 @@
 			x: 28.5d
 			y: -0.5d
 		}
+		{
+			dependencies: ["1105775A4D7A5899"]
+			id: "5015895401F560AB"
+			tasks: [{
+				id: "01381DA810CDB05B"
+				item: "meng:catalyst_goat"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
 	]
 	title: "{ftbq.chapter.meng.draconic}"
 }

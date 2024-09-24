@@ -1,0 +1,1 @@
+MekRecipe.injecting('minecraft:cobblestone','meng:dirty_cobblestone','mekanism:oxygen',1);

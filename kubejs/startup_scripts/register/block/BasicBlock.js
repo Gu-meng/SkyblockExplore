@@ -1,4 +1,4 @@
-StartupEvents.registry("block",event=>{
+StartupEvents.registry("block", event => {
     const ironTimbers = [
         regIds.iron_acacia_block,
         regIds.iron_birch_block,
@@ -11,7 +11,7 @@ StartupEvents.registry("block",event=>{
         regIds.iron_spruce_block,
         regIds.iron_warped_block
     ]
-    ironTimbers.forEach(value=>{
+    ironTimbers.forEach(value => {
         event.create(value)
             .woodSoundType()
             .hardness(2)
@@ -21,14 +21,21 @@ StartupEvents.registry("block",event=>{
             .tagItem("meng:iron_timbers")
     })
 
-    event.create(regIds.stalinite_block)
+    event.create(basicBlock.stalinite_block)
         .defaultTranslucent()
         .hardness(3)
         .noDrops()
         .glassSoundType()
         .tag('forge:glass')
-    
-    event.create(regIds.precision_machine_parts)
+
+    event.create(basicBlock.precision_machine_parts)
+        .hardness(2)
+        .stoneSoundType()
+        .tagBlock('create:wrench_pickup')
+        .tagBlock('minecraft:mineable/axe')
+        .tagBlock('minecraft:mineable/pickaxe')
+
+    event.create(basicBlock.better_precision_machine_parts)
         .hardness(2)
         .stoneSoundType()
         .tagBlock('create:wrench_pickup')

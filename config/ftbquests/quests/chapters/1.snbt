@@ -219,7 +219,7 @@
 			}]
 			title: "{ftbq.title.meng.smelter}"
 			x: 3.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["11F997E9816B1CF3"]
@@ -250,7 +250,7 @@
 			}]
 			title: "{ftbq.title.meng.start_create}"
 			x: 6.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["11F997E9816B1CF3"]
@@ -274,7 +274,7 @@
 			}]
 			title: "{ftbq.title.meng.cauldron}"
 			x: 1.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			can_repeat: true
@@ -536,6 +536,33 @@
 			}]
 			x: 5.5d
 			y: -5.5d
+		}
+		{
+			dependencies: ["0EE05DE064AE2EA5"]
+			id: "51BA08EA4F56CF8F"
+			rewards: [{
+				count: 5
+				id: "786705AEF5BBBCD3"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B6F0C11E7BC18B9"
+				item: "mob_grinding_utils:absorption_hopper"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6938A9EB1122F781"]
+			id: "29686050DC353FBC"
+			tasks: [{
+				id: "63BD70D8B520831E"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.5d
 		}
 	]
 	title: "{ftbq.chapter.meng.start}"

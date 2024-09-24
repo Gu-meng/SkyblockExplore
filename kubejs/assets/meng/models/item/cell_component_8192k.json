@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-      "layer0": "meng:item/cell_component_8192k"
+        "layer0": "meng:item/cell_component_8192k"
     }
-  }
+}

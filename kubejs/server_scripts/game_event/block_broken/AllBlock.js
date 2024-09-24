@@ -1,5 +1,4 @@
 BlockEvents.broken(event => {
-    // const key = global.regKey;
     let player = event.getPlayer();
     if (player.getPersistentData().getBoolean("multipleBlocks")) {
         let posList = [];

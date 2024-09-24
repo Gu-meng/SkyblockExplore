@@ -5,4 +5,5 @@ JEIEvents.information(event=>{
     event.addItem('meng:rain_doll',Text.translate("jei.item.information.rain_doll"))
     event.addItem('meng:sunny_doll',Text.translate("jei.item.information.sunny_doll"))
     event.addItem('meng:dirty_cobblestone',Text.translate("jei.item.information.dirty_cobblestone"))
+    event.addItem('meng:catalyst_goat',Text.translatable("jei.item.information.catalyst_goat"))
 })

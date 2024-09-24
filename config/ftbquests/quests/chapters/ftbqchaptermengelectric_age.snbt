@@ -294,6 +294,21 @@
 			x: 12.0d
 			y: 8.5d
 		}
+		{
+			dependencies: [
+				"2525B9675D92F11B"
+				"63EF6C8A6110DCB5"
+				"3307F524AF374869"
+			]
+			id: "209606C5D024C1BA"
+			tasks: [{
+				id: "0CE6B3B402F809D3"
+				item: "meng:better_precision_machine_parts"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.5d
+		}
 	]
 	title: "{ftbq.chapter.meng.electric_age}"
 }

@@ -27,7 +27,9 @@ const basicItem = {
     small_andesite : namespace + "small_andesite",
     small_cobblestone : namespace + "small_cobblestone",
     small_diorite : namespace + "small_diorite",
-    diamond_upgrade_smithing_template : namespace + "diamond_upgrade_smithing_template"
+    diamond_upgrade_smithing_template : namespace + "diamond_upgrade_smithing_template",
+    deep_fear : namespace + "deep_fear",
+    catalyst_goat : namespace + "catalyst_goat",
 }
 
 const ironTimberblock = {
@@ -47,7 +49,8 @@ const basicBlock = {
     stalinite_block : namespace + "stalinite_block",
     slag_block : namespace + "slag_block",
     precision_machine_parts : namespace + "precision_machine_parts",
-    dirty_cobblestone : namespace + "dirty_cobblestone"
+    dirty_cobblestone : namespace + "dirty_cobblestone",
+    better_precision_machine_parts : namespace + "better_precision_machine_parts"
 }
 
 const ToolItem = {
@@ -68,10 +71,15 @@ const MeshItem = {
 const CreateIncompleteItem = {
     machine_incomplete : namespace + "machine_incomplete",
     precision_machine_incomplete : namespace + "precision_machine_incomplete",
+    better_precision_machine_incomplete : namespace + "better_precision_machine_incomplete"
 }
 
 const musicDisc = {
     music_disc_never : namespace + "music_disc_never"
+}
+
+const fluidBucket = {
+    steel : namespace + "steel_bucket"
 }
 
 let AECellComponentItems = {
@@ -111,5 +119,5 @@ regCellComponent(8192,63,7.0,4096)
 regCellComponent(16384,63,12.0,4096)
 regCellComponent(32768,63,20.0,8192)
 
-const regIds = Object.assign({},basicItem,ironTimberblock,basicBlock,ToolItem,MeshItem,CreateIncompleteItem,musicDisc,AECellComponentItemIds);
+const regIds = Object.assign({},basicItem,ironTimberblock,basicBlock,ToolItem,MeshItem,CreateIncompleteItem,musicDisc,AECellComponentItemIds,fluidBucket);
 

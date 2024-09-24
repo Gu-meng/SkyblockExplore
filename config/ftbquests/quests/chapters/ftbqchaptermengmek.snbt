@@ -42,6 +42,12 @@
 		}
 		{
 			id: "590D97C5221D55AF"
+			rewards: [{
+				count: 16
+				id: "74AD04E7A0F8CDD3"
+				item: "create:crushed_raw_osmium"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6E2CECC401ABB261"
 				item: "mekanism:ingot_osmium"
@@ -306,6 +312,12 @@
 				"4D34E0A4A2C846C7"
 			]
 			id: "29D89671B6287DF4"
+			rewards: [{
+				count: 128
+				id: "0C9F67E58BED373E"
+				item: "mekanism:structural_glass"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "604964D0BBD0EF73"
@@ -329,6 +341,13 @@
 		{
 			dependencies: ["5F99CE6D3E6BBE89"]
 			id: "5790ECEF2B4F6F6C"
+			rewards: [{
+				count: 128
+				id: "5CD49690E8D2DA39"
+				item: "mekanismgenerators:reactor_glass"
+				random_bonus: 64
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1E7311B2CF6D8F8A"
@@ -474,6 +493,20 @@
 			}]
 			x: 10.0d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"166F1C26D46FDA15"
+				"3307F524AF374869"
+			]
+			id: "464F646006687582"
+			tasks: [{
+				id: "6BB8B81E3243D123"
+				item: "meng:steel_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.mek}"

@@ -26,6 +26,10 @@ const draconicRecipe = {
 
 const draconicTier = {
     /**
+     * 基础
+     */
+    DRACONIUM:"DRACONIUM",
+    /**
      * 飞龙
      */
     WYVERN: "WYVERN",

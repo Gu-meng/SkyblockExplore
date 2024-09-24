@@ -1,0 +1,313 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "collection"
+	group: ""
+	id: "65F5363F1C3DA0B5"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0C70A32BB1A275C2"
+			tasks: [
+				{
+					count: 64L
+					id: "7DA5822C351A536E"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "04C62C83AA2D6913"
+					item: "minecraft:light_gray_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4BD00B7CAEC97C1D"
+					item: "minecraft:gray_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "39E0B4D5A39813D7"
+					item: "minecraft:black_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "09A0DDBCF09F8ECC"
+					item: "minecraft:brown_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5ED244C1AA57FE89"
+					item: "minecraft:red_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "74F7038E8DEE9010"
+					item: "minecraft:orange_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "48CF14D50A76F82B"
+					item: "minecraft:yellow_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "14EEE3EC0E51F427"
+					item: "minecraft:lime_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2217FC280CB762F9"
+					item: "minecraft:green_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "519FA2AF9D3A74E8"
+					item: "minecraft:cyan_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4921CBC9DB448D35"
+					item: "minecraft:light_blue_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4F6197E1DB06C484"
+					item: "minecraft:blue_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0157A0A0D5DB9CD4"
+					item: "minecraft:purple_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2E98FE3978CA73B6"
+					item: "minecraft:magenta_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3D72FE2B1476F21C"
+					item: "minecraft:pink_wool"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			id: "26617A1EE31F78C8"
+			tasks: [
+				{
+					count: 64L
+					id: "1A063091713C8103"
+					item: "minecraft:white_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5557CF7D920D7078"
+					item: "minecraft:light_gray_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7664D4DAC23F3F27"
+					item: "minecraft:gray_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4E51EC8F1104A275"
+					item: "minecraft:black_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6A93743EFB018680"
+					item: "minecraft:brown_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6531795881171461"
+					item: "minecraft:red_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3E33B396D9066696"
+					item: "minecraft:orange_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "671BE3DC3382CD3A"
+					item: "minecraft:yellow_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0D8887DFA71B1407"
+					item: "minecraft:lime_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "14CE34A5FC37C059"
+					item: "minecraft:green_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "649D93F9999B450A"
+					item: "minecraft:cyan_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "780F4CB095C65AF6"
+					item: "minecraft:light_blue_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7D4B8A07F9F60219"
+					item: "minecraft:blue_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "05FBB339514FB088"
+					item: "minecraft:purple_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4C652C19ACA2C2AF"
+					item: "minecraft:magenta_concrete"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "27B225BB90A90B1D"
+					item: "minecraft:pink_concrete"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			id: "2FC288B1ADD01BD9"
+			tasks: [
+				{
+					id: "49D193DFD7D45671"
+					item: {
+						Count: 1
+						id: "minecraft:goat_horn"
+						tag: {
+							instrument: "minecraft:ponder_goat_horn"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5131AD4E1DBFFA7D"
+					item: {
+						Count: 1
+						id: "minecraft:goat_horn"
+						tag: {
+							instrument: "minecraft:sing_goat_horn"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70A61BD28588D2E6"
+					item: {
+						Count: 1
+						id: "minecraft:goat_horn"
+						tag: {
+							instrument: "minecraft:seek_goat_horn"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "325B142E7A51747C"
+					item: {
+						Count: 1
+						id: "minecraft:goat_horn"
+						tag: {
+							instrument: "minecraft:feel_goat_horn"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2AB107641617DA61"
+					item: {
+						Count: 1
+						id: "minecraft:goat_horn"
+						tag: {
+							instrument: "minecraft:admire_goat_horn"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "32BBEFA125E6D7DA"
+					item: {
+						Count: 1
+						id: "minecraft:goat_horn"
+						tag: {
+							instrument: "minecraft:call_goat_horn"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F1F31C57B684427"
+					item: {
+						Count: 1
+						id: "minecraft:goat_horn"
+						tag: {
+							instrument: "minecraft:yearn_goat_horn"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "67CEB44892DFAB06"
+					item: {
+						Count: 1
+						id: "minecraft:goat_horn"
+						tag: {
+							instrument: "minecraft:dream_goat_horn"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+	]
+	title: "collection"
+}

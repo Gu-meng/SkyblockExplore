@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.0.1.240922",
+    "meng.client.window.title" : "空岛：探索 v0.0.1.240924",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -33,6 +33,7 @@
     "item.meng.diamond_wire":"钻石线",
     "item.meng.slag":"矿渣",
     "item.meng.precision_machine_incomplete":"精密机器-未完成",
+    "item.meng.better_precision_machine_incomplete":"更好的精密机器-未完成",
     "item.meng.charged_certus_quartz_crystal_mesh":"充能赛特斯水晶筛网",
     "item.meng.crushbone_shears":"碎骨剪刀",
     "item.meng.music_disc_never": "音乐唱片",
@@ -57,6 +58,9 @@
     "item.meng.item_storage_cell_8192k":"8M ME物品存储元件",
     "item.meng.item_storage_cell_16384k":"16M ME物品存储元件",
     "item.meng.item_storage_cell_32768k":"32M ME物品存储元件",
+    "item.meng.deep_fear":"深层恐惧",
+    "item.meng.steel_bucket":"熔炼钢桶",
+    "item.meng.catalyst_goat":"山羊催化剂",
 
     "block.meng.stalinite_block":"钢化玻璃块",
     "block.meng.iron_acacia_block":"金合欢木包铁",
@@ -71,7 +75,10 @@
     "block.meng.iron_warped_block":"诡异木包铁",
     "block.meng.slag_block":"矿渣块",
     "block.meng.precision_machine_parts":"精密机器部件",
+    "block.meng.better_precision_machine_parts":"更好的精密机器部件",
     "block.meng.dirty_cobblestone":"未处理的圆石",
+
+    "fluid.meng.steel":"熔炼钢",
 
     "infuse_type.meng.alloy_infused":"灌注合金",
     "infuse_type.meng.alloy_reinforced":"强化合金",
@@ -118,6 +125,7 @@
     "jei.item.information.rain_doll":"右键消耗雨天娃娃的耐久来使天气变为下雨天",
     "jei.item.information.sunny_doll":"晴天娃娃可以使天气变为晴天",
     "jei.item.information.dirty_cobblestone":"通过熔岩和水产生的未处理的圆石，需要合成后变为普通的圆石",
+    "jei.item.information.catalyst_goat":"对着绵羊使用，绵羊将会在20秒后转化为山羊，如果期间绵羊死亡将停止转换，被消耗的物品将不会被返回",
 
     "ftbq.chapter.meng.start":"开始",
 

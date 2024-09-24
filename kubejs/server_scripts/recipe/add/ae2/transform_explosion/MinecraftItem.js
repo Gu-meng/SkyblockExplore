@@ -1,1 +1,1 @@
-AERecipe.transformExplosion('minecraft:end_portal_frame',['minecraft:obsidian','minecraft:end_crystal','minecraft:nether_star']);
+AERecipe.transformExplosion('minecraft:end_portal_frame',['meng:deep_fear','minecraft:end_crystal','minecraft:nether_star']);

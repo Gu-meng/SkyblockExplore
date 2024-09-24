@@ -493,6 +493,12 @@
 			dependency_requirement: "all_started"
 			description: ["{ftbq.details.meng.crushing_wheel}"]
 			id: "2B6435BFF65D88EC"
+			rewards: [{
+				count: 128
+				id: "776BB077C98B1F5D"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
 			tasks: [{
 				count: 2L
 				id: "6BAFEF779B60856E"
@@ -532,15 +538,15 @@
 			id: "228B88A665F3846E"
 			rewards: [
 				{
-					count: 256
-					id: "5DFD93D034F8D1E6"
-					item: "minecraft:gravel"
-					type: "item"
-				}
-				{
 					id: "49CEF9A04CD8F51E"
 					type: "xp"
 					xp: 1000
+				}
+				{
+					count: 16
+					id: "443C4CAA583AA392"
+					item: "meng:slag_block"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -556,11 +562,19 @@
 			dependencies: ["2F1B7E20891741D4"]
 			description: ["{ftbq.details.meng.mesh.zinc}"]
 			id: "00A056B65E2C4B21"
-			rewards: [{
-				id: "00F30EDE48558420"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "00F30EDE48558420"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 128
+					id: "4572668385264BD0"
+					item: "minecraft:sand"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7124D226E44FE227"
 				item: {
@@ -714,6 +728,12 @@
 			description: ["{ftbq.details.meng.slag}"]
 			hide_dependent_lines: true
 			id: "12FE54A491266A7F"
+			rewards: [{
+				count: 256
+				id: "5A1CD19E0B132EED"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
 			tasks: [{
 				id: "189097D1A0CC2917"
 				item: "meng:slag"
@@ -876,6 +896,12 @@
 		{
 			dependencies: ["5AE802AF89EFB4CC"]
 			id: "0A2A5975BCB39656"
+			rewards: [{
+				count: 32
+				id: "73A36F917FDE1FBD"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
 			tasks: [{
 				id: "747596BA338B8AF8"
 				item: "mob_grinding_utils:ender_inhibitor_on"
@@ -883,6 +909,59 @@
 			}]
 			x: 1.5d
 			y: -0.5d
+		}
+		{
+			dependencies: ["2F1B7E20891741D4"]
+			id: "7311D978B0863B44"
+			rewards: [{
+				count: 64
+				id: "5D7BA0180C7148FB"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			tasks: [{
+				id: "75DFBADC089E9435"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["752E54E533CB8E93"]
+			id: "3B78B49E70528AC9"
+			tasks: [{
+				id: "0F26517B59B020B9"
+				item: "meng:lava_chunk"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3B78B49E70528AC9"]
+			id: "60170E4B0FBAA761"
+			tasks: [{
+				id: "61B91A5AD4484565"
+				item: "minecraft:magma_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"60170E4B0FBAA761"
+				"02AC699F9538A037"
+			]
+			id: "4AF089035CD03A79"
+			tasks: [{
+				id: "7CBB8E892A0BF294"
+				item: "meng:painful_tears"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
 		}
 	]
 	title: "{ftbq.chapter.meng.create}"

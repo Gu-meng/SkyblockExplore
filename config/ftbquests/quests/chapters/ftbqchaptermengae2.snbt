@@ -335,7 +335,7 @@
 				item: "ae2:cell_component_16k"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: -10.0d
 		}
 		{
@@ -346,7 +346,7 @@
 				item: "ae2:cell_component_64k"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -10.0d
 		}
 		{
@@ -357,7 +357,7 @@
 				item: "ae2:cell_component_256k"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.0d
 			y: -10.0d
 		}
 		{
@@ -553,6 +553,83 @@
 			]
 			x: 1.0d
 			y: -7.0d
+		}
+		{
+			dependencies: ["63F48ECB81349400"]
+			id: "43A381375EE62DC1"
+			tasks: [{
+				id: "44FF9BECE193BC88"
+				item: "meng:cell_component_512k"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["43A381375EE62DC1"]
+			id: "037B3B2E13141A56"
+			tasks: [{
+				id: "5F9C6DE7D0C441EC"
+				item: "meng:cell_component_1024k"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["037B3B2E13141A56"]
+			id: "133319C31881E4D9"
+			tasks: [{
+				id: "765D5ACEA1E459E5"
+				item: "meng:cell_component_2048k"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["133319C31881E4D9"]
+			id: "5B3F566B932B7BCE"
+			tasks: [{
+				id: "67B9948E270B0DF7"
+				item: "meng:cell_component_4096k"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5B3F566B932B7BCE"]
+			id: "77C2B7FD7FA4DFF0"
+			tasks: [{
+				id: "330D19405373BC1E"
+				item: "meng:cell_component_8192k"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["77C2B7FD7FA4DFF0"]
+			id: "3826F64D6A5F1434"
+			tasks: [{
+				id: "587C454425B61006"
+				item: "meng:cell_component_16384k"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3826F64D6A5F1434"]
+			id: "3F48D6AF626202FA"
+			tasks: [{
+				id: "67CFFF6A56874478"
+				item: "meng:cell_component_32768k"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -10.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.ae2}"
