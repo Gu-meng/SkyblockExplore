@@ -7,7 +7,7 @@ ServerEvents.recipes(event=>{
 
     event.shaped('ae2:controller',[
         'aba',
-        'bab',
+        'bcb',
         'aba'
     ],{
         a:'ae2:smooth_sky_stone_block',

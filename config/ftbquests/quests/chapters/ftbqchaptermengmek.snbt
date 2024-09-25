@@ -508,6 +508,17 @@
 			x: 1.5d
 			y: -4.0d
 		}
+		{
+			dependencies: ["5790ECEF2B4F6F6C"]
+			id: "32F815EBB0B35A59"
+			tasks: [{
+				id: "0E5C2B8EA62758FC"
+				item: "minecraft:beacon"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.5d
+		}
 	]
 	title: "{ftbq.chapter.meng.mek}"
 }

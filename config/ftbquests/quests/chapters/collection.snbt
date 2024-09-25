@@ -308,6 +308,152 @@
 			x: 2.5d
 			y: 0.0d
 		}
+		{
+			id: "1FD225E4A4FF6795"
+			tasks: [
+				{
+					id: "6F238DF98B213F3F"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "pig"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "6056AA138292D1C7"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "cow"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "2F705695022A7B0E"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "sheep"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "551EDA9B58557700"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "chicken"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "5580E12FCF581170"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "goat"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			id: "2537B35C28B7FD72"
+			tasks: [
+				{
+					id: "5B2C45BF17358348"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "zombie"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "1D88BCAD990B373F"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "creeper"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "25BACD6CF4B8AE1F"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "skeleton"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "05A57F7D6C7121ED"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "wither_skeleton"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "57071F4887398DE1"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "spider"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "2E44CF29BC4DEA3D"
+					item: {
+						Count: 1
+						id: "draconicevolution:mob_soul"
+						tag: {
+							EntityName: "enderman"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
 	]
 	title: "collection"
 }

@@ -1,2 +1,2 @@
 draconicRecipe.fusionCrafting('draconicevolution:grinder','mob_grinding_utils:saw',
-    ['draconicevolution:wyvern_sword','draconicevolution:wyvern_sword','minecraft:dragon_head','draconicevolution:wyvern_energy_core','draconicevolution:awakened_draconium_ingot','draconicevolution:awakened_draconium_ingot','meng:deep_fear','#minecraft:music_discs'],draconicTier.DRACONIC,22682101)
+    ['draconicevolution:wyvern_sword','draconicevolution:wyvern_sword','minecraft:dragon_head','draconicevolution:wyvern_energy_core','minecraft:nether_star','draconicevolution:awakened_draconium_ingot','meng:deep_fear','#minecraft:music_discs'],draconicTier.DRACONIC,22682101)

@@ -1,0 +1,76 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "time"
+	group: ""
+	id: "7F1F91AC5F335D86"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "42DCF37B52B521E9"
+			rewards: [
+				{
+					count: 64
+					id: "3848257BAF7168B4"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "6A9BFABBE3C719D8"
+					item: "meng:raffle_ticket"
+					type: "item"
+				}
+			]
+			tasks: [{
+				elapsedTime: 3600L
+				id: "402AC7CC40227176"
+				type: "questsadditions:time"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["42DCF37B52B521E9"]
+			id: "4775E521B09CFFFB"
+			rewards: [{
+				count: 128
+				id: "3523209B8F62F909"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [{
+				elapsedTime: 10800L
+				id: "4CEAB02B63EB0C87"
+				type: "questsadditions:time"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4775E521B09CFFFB"]
+			id: "4BF24AACC875C0E2"
+			rewards: [
+				{
+					count: 256
+					id: "644D87D6494A37AC"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "07BA76C9843F597C"
+					item: "meng:raffle_ticket"
+					type: "item"
+				}
+			]
+			tasks: [{
+				elapsedTime: 18000L
+				id: "04AF56F2A79FDF50"
+				type: "questsadditions:time"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+	]
+	title: "time"
+}

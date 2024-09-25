@@ -1,6 +1,6 @@
 BlockEvents.broken(event => {
     let player = event.getPlayer();
-    if (player.getPersistentData().getBoolean("multipleBlocks")) {
+    if (player.getData().get("multipleBlocks")) {
         let posList = [];
         let maxMultiple = MultipleBlockConfig.maxMultiple;
         let block = event.getBlock();

@@ -1,3 +1,3 @@
 NetworkEvents.dataReceived("multipleBlocks",event=>{
-    event.player.getPersistentData().putBoolean("multipleBlocks", event.getData().getBoolean("multipleBlocks"));
+    event.player.getData().add("multipleBlocks", event.getData().getBoolean("multipleBlocks"));
 })

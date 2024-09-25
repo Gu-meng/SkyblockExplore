@@ -1,9 +1,9 @@
 ItemEvents.firstRightClicked("meng:raffle_ticket", event => {
     const player = event.getPlayer();
-    const playerPersistentData = player.getPersistentData();
-    if (playerPersistentData.getBoolean("lotteryState")) {
+    const playerAttachedData = player.getData();
+    if (playerAttachedData.get("lotteryState")) {
         player.tell(Text.translate("text.meng.lottery_state"))
-        // playerPersistentData.putBoolean("lotteryState",false);
+        // playerAttachedData.put("lotteryState",false);
         return;
     }
     const item = event.getItem();
@@ -18,8 +18,14 @@ ItemEvents.firstRightClicked("meng:raffle_ticket", event => {
     if (itemList == undefined) {
         itemList = ticketTypeObject.basal;
     }
-    addItemList(itemList);
-    poolItemList = MengUtils.ArrUtil.randArr(poolItemList);
+    let uuid = player.getUuid()
+    let obj = {}
+    obj[uuid] = MengUtils.ArrUtil.randArr(addItemList(itemList))
+    // console.log(obj);
+    poolItemList.push(obj)
+    // console.log(poolItemList);
+    
+
 
     let lootData = event.getServer().getLootData();
     let itemLoot = lootData
@@ -28,25 +34,30 @@ ItemEvents.firstRightClicked("meng:raffle_ticket", event => {
             new $LootParams(event.getLevel())
                 .create($LootContextParamSets.EMPTY)
         )[0];
-    poolItemList[poolItemList.length - 2] = itemLoot.id;
-    playerPersistentData.putBoolean("lotteryState", true);
-    playerPersistentData.putInt("poolCountMax", poolItemList.length);
-    playerPersistentData.putInt("count", 0);
+    let poolList = poolItemList.find(value => Object.keys(value).includes(uuid.toString()))[uuid];
+    // console.log(poolList);
+    poolList[poolList.length - 2] = itemLoot.id;
+    // return;
+    playerAttachedData.add("lotteryState", true);
+    playerAttachedData.add("poolCountMax", poolList.length);
+    playerAttachedData.add("count", 0);
     item.count--;
 })
 
 function addItemList(itemList) {
+    let list = []
     itemList.forEach(value => {
         for (let index = 0; index < value.weight; index++) {
-            poolItemList.push(value.itemId);
+            list.push(value.itemId);
         }
     });
-    let listTemp = poolItemList;
+    let listTemp = list;
 
     while (true) {
-        if (poolItemList.length >= raffleTicketConfig.maxCount) {
-            return;
+        if (list.length >= raffleTicketConfig.maxCount) {
+            break;
         }
-        poolItemList = poolItemList.concat(MengUtils.ArrUtil.randArr(listTemp));
+        list = list.concat(MengUtils.ArrUtil.randArr(listTemp));
     }
+    return list;
 }

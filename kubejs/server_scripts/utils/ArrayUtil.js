@@ -5,7 +5,6 @@ MengUtils.ArrUtil.isArr = value =>{
 }
 
 MengUtils.ArrUtil.randArr = arr =>{
-    console.log("cufa");
     for (var i = 0; i < arr.length; i++) {
         var iRand = parseInt(arr.length * Math.random());
         var temp = arr[i];
