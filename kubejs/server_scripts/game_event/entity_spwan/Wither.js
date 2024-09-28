@@ -6,7 +6,7 @@ EntityEvents.spawned("wither", event => {
     let level = event.getLevel()
     let { x, y, z } = wither.blockPosition();
     let maxHealth = 300;
-    let basicArmor = 2;
+    let basicArmor = 0;
     let player = null
     player = level.getNearestPlayer(x, y, z, 100, false)
     try { player.getClass() } catch (err) { player = null }
@@ -34,7 +34,7 @@ EntityEvents.spawned("wither", event => {
             }
         }
         basicArmor += laa;
-        wither.modifyAttribute("minecraft:generic.armor","armor_test",basicArmor,"addition");
+        wither.modifyAttribute("minecraft:generic.armor","armor_wither",basicArmor,"addition");
         ppd.putInt("summonWitherCount", swc + 1)
     }
 })

@@ -61,11 +61,15 @@ const ToolItem = {
     crushbone_shears : namespace + "crushbone_shears"
 }
 
-const MeshItem = {
-    iron_mesh : namespace + "iron_mesh",
+const MeshAdvanced = {
     diamond_mesh : namespace + "diamond_mesh",
     charged_certus_quartz_crystal_mesh : namespace + "charged_certus_quartz_crystal_mesh",
-    copper_mesh : namespace + "copper_mesh"
+}
+
+const MeshItem = {
+    iron_mesh : namespace + "iron_mesh",
+    copper_mesh : namespace + "copper_mesh",
+    quartz_mesh : namespace + "quartz_mesh"
 }
 
 const CreateIncompleteItem = {
@@ -119,5 +123,5 @@ regCellComponent(8192,63,7.0,4096)
 regCellComponent(16384,63,12.0,4096)
 regCellComponent(32768,63,20.0,8192)
 
-const regIds = Object.assign({},basicItem,ironTimberblock,basicBlock,ToolItem,MeshItem,CreateIncompleteItem,musicDisc,AECellComponentItemIds,fluidBucket);
+const regIds = Object.assign({},basicItem,ironTimberblock,basicBlock,ToolItem,MeshItem,MeshAdvanced,CreateIncompleteItem,musicDisc,AECellComponentItemIds,fluidBucket);
 

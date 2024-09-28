@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.0.1.240926",
+    "meng.client.window.title" : "空岛：探索 v0.1.240928",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -127,6 +127,8 @@
     "jei.item.information.dirty_cobblestone":"通过熔岩和水产生的未处理的圆石，需要合成后变为普通的圆石",
     "jei.item.information.catalyst_goat":"对着绵羊使用，绵羊将会在20秒后转化为山羊，如果期间绵羊死亡将停止转换，被消耗的物品将不会被返回",
 
+    "jei.meng.lava_recipe":"物品丢入熔岩生成生物",
+
     "ftbq.chapter.meng.start":"开始",
 
     "ftbq.title.meng.start_play":"欢迎游玩",
@@ -215,6 +217,12 @@
     "ftbq.title.meng.machine":"机器半成品",
     "ftbq.details.meng.machine":"高效可靠的机器都是需要复杂的组装过程的",
 
+    "ftbq.details.meng.lava_chunk":"用于合成岩浆块",
+
+    "ftbq.details.meng.painful_tears":"友善生物站在岩浆快上备受折磨的时候一些不坚强的生物就会留下痛苦之类，痛苦之泪可以召唤恶魂",
+
+    "ftbq.details.meng.netherrack":"移除了原版刷石机刷出石头（不是圆石）改为了生成下界岩，使用石英筛网可以晒出少部分下界资源",
+
     "ftbq.title.meng.precision_machine_parts":"精密机器部件",
     "ftbq.details.meng.precision_machine_parts":"有许多精密的机器都需要用到这个",
 
@@ -286,49 +294,94 @@
     
     "ftbq.chapter.meng.electric_age":"电力时代",
 
-    "ftbq.title.meng.copper_wire":"",
-    "ftbq.details.meng.copper_wire":"",
+    "ftbq.title.meng.copper_wire":"电线",
+    "ftbq.details.meng.copper_wire":"先暂时使用铜线圈好了，毕竟目前铜最便宜了",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.alternator":"发电",
+    "ftbq.details.meng.alternator":"可以将多余应力的转化为电能",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.modular":"存电",
+    "ftbq.details.meng.modular":"将电能存起来，之后还有用",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.electric":"用电",
+    "ftbq.details.meng.electric":"将电能再转化为应力",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.tesla":"充电",
+    "ftbq.details.meng.tesla":"给物品冲冲电吧！",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.t1_energiser":"更好的充电",
+    "ftbq.details.meng.t1_energiser":"这个是更高级的充电器，越高级越好吗？不知道，但是高级的作用更多，",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.bsic_solar":"热能收集",
+    "ftbq.details.meng.bsic_solar":"热能也可以进行利用一下",
+    
+    "ftbq.title.meng.advanced_solar":"更好的热能收集",
+    "ftbq.details.meng.advanced_solar":"高级的太阳能板可以在有限的阳光下收集更多的热能",
+
+    "ftbq.title.meng.stirling":"利用热能",
+    "ftbq.details.meng.stirling":"热气机可以将热能转化为应力给机器机械动力机器进行使用",
+
+    "ftbq.title.meng.heater":"让烈焰人休息",
+    "ftbq.details.meng.heater":"使用锅炉加热器可以完全的替代掉烈焰人，烈焰人能做的事情他都可以做，而且只要有热能他就不会罢工",
+
+    "ftbq.title.meng.reactor":"更稳定的？热能来源",
+    "ftbq.details.meng.reactor":"这东西处理不好可是会爆炸的啊，但是他真的来热能很快",
+
+    "ftbq.title.meng.generator":"发电！更快的发电！！！",
+    "ftbq.details.meng.generator":"转的越快，发电越多，发电越多，所需应力越大\n所需应力大，机器转不动，机器转不动，转的越慢\n转的越慢，发电越少\n所以转的越快发电越少",
 
     "ftbq.chapter.meng.ae2":"ae存储自动化",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.certus_auartz":"进入ae存储时代！",
+    "ftbq.details.meng.certus_auartz":"当获取到充能赛特石英水晶时，你就正式的踏上AE之旅，他可以给我们的物品（“黑奴”）一个家，也可以为机器们提供这些“黑奴”们",
+    
+    "ftbq.title.meng.inscriber":"Duang~",
+    "ftbq.details.meng.inscriber":"那就再送你三个吧，多个干活效率翻倍",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.processor":"处理器家族",
+    "ftbq.details.meng.processor":"这是很有必要三件套",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.title.meng.controller":"开始了！开始了",
+    "ftbq.details.meng.controller":"ME控制器作为AE网络的核心，你是必须拥有的",
+
+    "ftbq.details.meng.drive":"我不是渣，我只是想给每个物品一个家",
+
+    "ftbq.title.meng.basic_card":"基础卡们",
+
+    "ftbq.title.meng.advanced_card":"高级卡们",
+
+    "ftbq.title.meng.terminal":"让我看看！",
+
+    "ftbq.title.meng.crafting_terminal":"让我用用",
+
+    "ftbq.title.meng.wifi":"连上无线网",
+
+    "ftbq.title.meng.wifi_use":"用上无线网",
+
+    "ftbq.title.meng.wifi_enhance":"增强无线网",
 
     "ftbq.chapter.meng.mek":"Mek通用机械",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.details.meng.osmium":"通用机械的开始",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.details.meng.steel":"钢铁是怎么炼成的",
 
-    "ftbq.title.meng.":"",
-    "ftbq.details.meng.":"",
+    "ftbq.details.meng.jetpack":"末地除了主岛，其他都是零零碎碎的小浮岛，做上喷气背包可以让你在末地行动起来更加方便",
 
-    "ftbq.chapter.meng.draconic":"龙之研究"
+    "ftbq.title.meng.beacon_mek":"消除核辐射",
+    "ftbq.details.meng.beacon_mek":"蹲下来将下界之心对着三级及以上等级的信标进行使用，是可以消除机器所产生的辐射",
+
+    "ftbq.title.meng.fission":"裂变反应堆",
+    "ftbq.details.meng.fission":"许多材料都需要裂变反应才能获取到，所以这个是必须的\n当骷髅收到凋零伤害时有概率转化为凋零骷髅，所以可以利用这朵花来改变",
+
+    "ftbq.title.meng.wither_rose":"一朵哪够啊？",
+
+    "ftbq.title.meng.wither_skull":"关于凋零",
+    "ftbq.details.meng.wither_skull":"凋零会随着召唤次数而不断变强，不过我们可以通过鹦鹉螺来对着信标来减少对应等级的强度\n减少计算：一级信标减少1一次召唤难度，二级信标减少2次，最多减少4次",
+
+    "ftbq.chapter.meng.draconic":"龙之研究",
     
+    "ftbq.chapter.meng.collection":"收集成就",
+
+    "ftbq.chapter.meng.progress":"进度成就"
 }

@@ -78,7 +78,7 @@ function paintShow(player, one_item, two_item, three_item) {
             w: raffleTicketConfig.sideItemShowSize,
             h: raffleTicketConfig.sideItemShowSize,
             x: "$screenW/2-" + raffleTicketConfig.itemShowInterval,
-            y: "$screenH/2+sin(time()*1.2)*$screenH/32",
+            y: "$screenH/2+sin(time()*0.5)*$screenH/32",
         },
         item_two: {
             type: "item",
@@ -87,7 +87,7 @@ function paintShow(player, one_item, two_item, three_item) {
             w: raffleTicketConfig.middleItemShowSize,
             h: raffleTicketConfig.middleItemShowSize,
             x: "$screenW/2",
-            y: "$screenH/2+sin(time()*1.2)*$screenH/32",
+            y: "$screenH/2+sin(time()*0.5)*$screenH/32",
         },
         item_three: {
             type: "item",
@@ -96,7 +96,7 @@ function paintShow(player, one_item, two_item, three_item) {
             w: raffleTicketConfig.sideItemShowSize,
             h: raffleTicketConfig.sideItemShowSize,
             x: "$screenW/2+" + raffleTicketConfig.itemShowInterval,
-            y: "$screenH/2+sin(time()*1.2)*$screenH/32",
+            y: "$screenH/2+sin(time()*0.5)*$screenH/32",
         }
     })
 }

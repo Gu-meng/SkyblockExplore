@@ -24,6 +24,7 @@
 				"3414F80AD604CE54"
 				"53A0D0FA78E91880"
 			]
+			description: ["{ftbq.details.meng.jetpack}"]
 			id: "1E754AECC726594C"
 			tasks: [
 				{
@@ -41,6 +42,7 @@
 			y: 0.0d
 		}
 		{
+			description: ["{ftbq.details.meng.osmium}"]
 			id: "590D97C5221D55AF"
 			rewards: [{
 				count: 16
@@ -99,6 +101,7 @@
 		}
 		{
 			dependencies: ["3414F80AD604CE54"]
+			description: ["{ftbq.details.meng.steel}"]
 			id: "166F1C26D46FDA15"
 			tasks: [{
 				id: "0AEE5D1DF5BA472A"
@@ -341,13 +344,20 @@
 		{
 			dependencies: ["5F99CE6D3E6BBE89"]
 			id: "5790ECEF2B4F6F6C"
-			rewards: [{
-				count: 128
-				id: "5CD49690E8D2DA39"
-				item: "mekanismgenerators:reactor_glass"
-				random_bonus: 64
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 128
+					id: "5CD49690E8D2DA39"
+					item: "mekanismgenerators:reactor_glass"
+					random_bonus: 64
+					type: "item"
+				}
+				{
+					id: "53403D92D48D7133"
+					item: "minecraft:wither_rose"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "1E7311B2CF6D8F8A"
@@ -436,17 +446,26 @@
 				item: "minecraft:wither_rose"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.wither_rose}"
 			x: 6.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["7BB4EBC3E59F5D08"]
+			description: ["{ftbq.details.meng.wither_skull}"]
 			id: "566AC82FBD25D830"
+			rewards: [{
+				count: 64
+				id: "78ADCC4B9701DC86"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
 			tasks: [{
 				id: "712CC6550640B34E"
 				item: "minecraft:wither_skeleton_skull"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.wither_skull}"
 			x: 8.5d
 			y: -8.0d
 		}
@@ -509,13 +528,18 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["5790ECEF2B4F6F6C"]
+			dependencies: [
+				"5790ECEF2B4F6F6C"
+				"2BA23919C99CBEE9"
+			]
+			description: ["{ftbq.details.meng.beacon_mek}"]
 			id: "32F815EBB0B35A59"
 			tasks: [{
 				id: "0E5C2B8EA62758FC"
 				item: "minecraft:beacon"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.beacon_mek}"
 			x: 0.0d
 			y: -12.5d
 		}

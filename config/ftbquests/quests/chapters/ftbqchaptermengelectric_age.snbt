@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["{ftbq.details.meng.copper_wire}"]
 			id: "6F4040866DCDECA0"
 			rewards: [{
 				count: 3
@@ -28,30 +29,35 @@
 					type: "item"
 				}
 			]
+			title: "{ftbq.title.meng.copper_wire}"
 			x: -1.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["6F4040866DCDECA0"]
+			description: ["{ftbq.details.meng.alternator}"]
 			id: "6E1D0BF5C3368580"
 			tasks: [{
 				id: "57D317D8DF2FE591"
 				item: "createaddition:alternator"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.alternator}"
 			x: 2.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["1A4DD41FCD59896C"]
+			description: ["{ftbq.details.meng.electric}"]
 			id: "003F7FD8E12CF672"
 			tasks: [{
 				id: "38EB9CAAEC0797B4"
 				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.5d
+			title: "{ftbq.title.meng.electric}"
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6E1D0BF5C3368580"]
@@ -67,7 +73,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2E24E09BDCFE5DA2"]
@@ -78,7 +84,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6F4040866DCDECA0"]
@@ -99,30 +105,34 @@
 				item: "createaddition:electrum_spool"
 				type: "item"
 			}]
-			x: -3.5d
+			x: 1.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["6E1D0BF5C3368580"]
+			description: ["{ftbq.details.meng.modular}"]
 			id: "1A4DD41FCD59896C"
 			tasks: [{
 				id: "4464D98FE95C7181"
 				item: "createaddition:modular_accumulator"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.modular}"
 			x: 4.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["003F7FD8E12CF672"]
+			description: ["{ftbq.details.meng.tesla}"]
 			id: "22524B72007E2772"
 			tasks: [{
 				id: "406714F5B25D9F1D"
 				item: "createaddition:tesla_coil"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.5d
+			title: "{ftbq.title.meng.tesla}"
+			x: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["22524B72007E2772"]
@@ -132,66 +142,49 @@
 				item: "ae2:charged_certus_quartz_crystal"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["140B434F41C3B45C"]
-			id: "381B95A531DD4EFC"
-			tasks: [{
-				id: "16E9E40F271102E0"
-				item: "create:steam_engine"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 5.5d
+			x: 7.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["22524B72007E2772"]
+			description: ["{ftbq.details.meng.t1_energiser}"]
 			id: "2525B9675D92F11B"
 			tasks: [{
 				id: "5871504E69DEE00E"
 				item: "create_new_age:energiser_t1"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.0d
+			title: "{ftbq.title.meng.t1_energiser}"
+			x: 7.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["06D4C4B961004574"]
+			dependencies: [
+				"06D4C4B961004574"
+				"63EF6C8A6110DCB5"
+			]
+			description: ["{ftbq.details.meng.bsic_solar}"]
 			id: "05ACB17837712577"
 			tasks: [{
 				id: "267855EFBC111165"
 				item: "create_new_age:basic_solar_heating_plate"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 5.5d
+			title: "{ftbq.title.meng.bsic_solar}"
+			x: 7.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["381B95A531DD4EFC"]
-			id: "53F9B44BBE81FC1B"
-			tasks: [{
-				id: "385AADDABFE0749A"
-				item: "create_new_age:heat_pipe"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"53F9B44BBE81FC1B"
-				"2525B9675D92F11B"
-			]
+			description: ["{ftbq.details.meng.heater}"]
 			id: "06D4C4B961004574"
 			tasks: [{
 				id: "697EA049D5C48411"
 				item: "create_new_age:heater"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 5.5d
+			title: "{ftbq.title.meng.heater}"
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2525B9675D92F11B"]
@@ -201,8 +194,8 @@
 				item: "create_new_age:energiser_t2"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 4.0d
+			x: 7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["1BB43BF45E71D3F1"]
@@ -212,22 +205,25 @@
 				item: "create_new_age:energiser_t3"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 4.0d
+			x: 10.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["05ACB17837712577"]
+			description: ["{ftbq.details.meng.advanced_solar}"]
 			id: "7164A7A03232CF2A"
 			tasks: [{
 				id: "0DE55C96457479C0"
 				item: "create_new_age:advanced_solar_heating_plate"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 5.5d
+			title: "{ftbq.title.meng.advanced_solar}"
+			x: 9.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["06D4C4B961004574"]
+			description: ["{ftbq.details.meng.reactor}"]
 			id: "59E26A3A47759A31"
 			rewards: [{
 				id: "0C4723DBB5B22B30"
@@ -256,22 +252,29 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: 8.5d
+			title: "{ftbq.title.meng.reactor}"
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["05ACB17837712577"]
+			description: ["{ftbq.details.meng.stirling}"]
 			id: "450769ED55B17577"
 			tasks: [{
 				id: "68D9C060383A2924"
 				item: "create_new_age:stirling_engine"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.0d
+			title: "{ftbq.title.meng.stirling}"
+			x: 7.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["59E26A3A47759A31"]
+			dependencies: [
+				"59E26A3A47759A31"
+				"450769ED55B17577"
+			]
+			description: ["{ftbq.details.meng.generator}"]
 			id: "7B9D46103E0E9086"
 			rewards: [{
 				count: 8
@@ -291,8 +294,9 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: 8.5d
+			title: "{ftbq.title.meng.generator}"
+			x: 7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -306,8 +310,30 @@
 				item: "meng:better_precision_machine_parts"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 2.5d
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2525B9675D92F11B"]
+			id: "50C2022E609D84F8"
+			tasks: [{
+				id: "5B373C7CF3CDF49F"
+				item: "create_new_age:overcharged_gold"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2525B9675D92F11B"]
+			id: "6942D16033281183"
+			tasks: [{
+				id: "1F6EE2808DAE3B00"
+				item: "create_new_age:overcharged_diamond"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.5d
 		}
 	]
 	title: "{ftbq.chapter.meng.electric_age}"

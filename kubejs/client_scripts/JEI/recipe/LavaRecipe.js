@@ -2,7 +2,7 @@ JEIAddedEvents.registerCategories((event) => {
     event.custom("meng:lava_recipe", category => {
         let jeiHelpers = category.getJeiHelpers();
         let guihelper = jeiHelpers.getGuiHelper();
-        category.title(Text.translate("jei.meng.lavl_recipe"))
+        category.title(Text.translate("jei.meng.lava_recipe"))
             .icon(guihelper.createDrawableItemStack(Item.of("meng:lava_chunk")))
             .background(guihelper.createBlankDrawable(150, 100))
             .isRecipeHandled(recipe => {

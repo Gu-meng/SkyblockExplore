@@ -266,7 +266,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["752E54E533CB8E93"]
+			dependencies: [
+				"752E54E533CB8E93"
+				"60170E4B0FBAA761"
+			]
 			description: ["{ftbq.details.meng.lava}"]
 			id: "5AE802AF89EFB4CC"
 			rewards: [
@@ -745,6 +748,7 @@
 		}
 		{
 			dependencies: ["5AE802AF89EFB4CC"]
+			description: ["{ftbq.details.meng.netherrack}"]
 			id: "75B3EB9575F8264B"
 			rewards: [
 				{
@@ -929,7 +933,14 @@
 		}
 		{
 			dependencies: ["752E54E533CB8E93"]
+			description: ["{ftbq.details.meng.lava_chunk}"]
 			id: "3B78B49E70528AC9"
+			rewards: [{
+				count: 16
+				id: "789AB938F17CB8C3"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0F26517B59B020B9"
 				item: "meng:lava_chunk"
@@ -954,6 +965,7 @@
 				"60170E4B0FBAA761"
 				"02AC699F9538A037"
 			]
+			description: ["{ftbq.details.meng.painful_tears}"]
 			id: "4AF089035CD03A79"
 			tasks: [{
 				id: "7CBB8E892A0BF294"
@@ -962,6 +974,21 @@
 			}]
 			x: 1.5d
 			y: 5.5d
+		}
+		{
+			dependencies: ["75B3EB9575F8264B"]
+			id: "4AE79F1C4C49D55C"
+			tasks: [{
+				id: "0DC258A4C7A48DFC"
+				item: {
+					Count: 1
+					id: "meng:quartz_mesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
 		}
 	]
 	title: "{ftbq.chapter.meng.create}"

@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["{ftbq.details.meng.certus_auartz}"]
 			id: "168489B1A2755709"
 			rewards: [
 				{
@@ -27,6 +28,7 @@
 				item: "ae2:charged_certus_quartz_crystal"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.certus_auartz}"
 			x: -4.0d
 			y: -5.0d
 		}
@@ -78,6 +80,7 @@
 		{
 			dependencies: ["168489B1A2755709"]
 			dependency_requirement: "all_started"
+			description: ["{ftbq.details.meng.inscriber}"]
 			id: "228E504DC2599626"
 			rewards: [{
 				count: 3
@@ -90,11 +93,13 @@
 				item: "ae2:inscriber"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.inscriber}"
 			x: -1.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["228E504DC2599626"]
+			description: ["{ftbq.details.meng.processor}"]
 			id: "3307F524AF374869"
 			tasks: [
 				{
@@ -113,6 +118,7 @@
 					type: "item"
 				}
 			]
+			title: "{ftbq.title.meng.processor}"
 			x: 1.0d
 			y: -5.0d
 		}
@@ -223,11 +229,13 @@
 				item: "ae2:controller"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.controller}"
 			x: 3.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6E4E552AF49ED019"]
+			description: ["{ftbq.details.meng.drive}"]
 			id: "5B96E102F4B8FCF7"
 			rewards: [{
 				id: "252CE6E33EC0FCDE"
@@ -250,6 +258,7 @@
 				item: "ae2:terminal"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.terminal}"
 			x: 5.5d
 			y: -7.0d
 		}
@@ -261,6 +270,7 @@
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.crafting_terminal}"
 			x: 8.0d
 			y: -7.0d
 		}
@@ -324,7 +334,7 @@
 				item: "ae2:cell_component_4k"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.0d
 			y: -10.0d
 		}
 		{
@@ -335,7 +345,7 @@
 				item: "ae2:cell_component_16k"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -2.5d
 			y: -10.0d
 		}
 		{
@@ -346,7 +356,7 @@
 				item: "ae2:cell_component_64k"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: -10.0d
 		}
 		{
@@ -357,7 +367,7 @@
 				item: "ae2:cell_component_256k"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -10.0d
 		}
 		{
@@ -368,6 +378,7 @@
 				item: "ae2:wireless_access_point"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.wifi}"
 			x: 5.5d
 			y: -5.0d
 		}
@@ -379,6 +390,7 @@
 				item: "ae2:wireless_terminal"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.wifi_use}"
 			x: 8.0d
 			y: -5.0d
 		}
@@ -461,6 +473,7 @@
 				item: "ae2:wireless_booster"
 				type: "item"
 			}]
+			title: "{ftbq.title.meng.wifi_enhance}"
 			x: 10.5d
 			y: -5.0d
 		}
@@ -518,12 +531,19 @@
 					type: "item"
 				}
 			]
+			title: "{ftbq.title.meng.basic_card}"
 			x: 3.0d
 			y: -8.5d
 		}
 		{
 			dependencies: ["5B96E102F4B8FCF7"]
 			id: "478F91B717175613"
+			rewards: [{
+				count: 16
+				id: "543A7A449365D51B"
+				item: "ae2:wireless_booster"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "063EC3285D67C3E0"
@@ -551,6 +571,7 @@
 					type: "item"
 				}
 			]
+			title: "{ftbq.title.meng.advanced_card}"
 			x: 1.0d
 			y: -7.0d
 		}
@@ -562,7 +583,7 @@
 				item: "meng:cell_component_512k"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: -10.0d
 		}
 		{
@@ -573,7 +594,7 @@
 				item: "meng:cell_component_1024k"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.5d
 			y: -10.0d
 		}
 		{
@@ -584,7 +605,7 @@
 				item: "meng:cell_component_2048k"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: -10.0d
 		}
 		{
@@ -595,7 +616,7 @@
 				item: "meng:cell_component_4096k"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.5d
 			y: -10.0d
 		}
 		{
@@ -606,7 +627,7 @@
 				item: "meng:cell_component_8192k"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: -10.0d
 		}
 		{
@@ -617,7 +638,7 @@
 				item: "meng:cell_component_16384k"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.5d
 			y: -10.0d
 		}
 		{
@@ -628,7 +649,7 @@
 				item: "meng:cell_component_32768k"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 11.0d
 			y: -10.0d
 		}
 	]

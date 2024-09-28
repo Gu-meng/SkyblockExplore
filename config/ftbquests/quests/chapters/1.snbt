@@ -564,6 +564,25 @@
 			x: 0.5d
 			y: 0.5d
 		}
+		{
+			description: ["整合包目前为开发版公测，可能会有很多内容不够完善，且在游玩中卡进度的bug，如果出现卡进度的bug，请在发布处留言并在游戏内使用创哥理赔"]
+			icon: "minecraft:redstone_torch"
+			id: "131C210CBC688F10"
+			rewards: [{
+				command: "/gamerule keepInventory true"
+				id: "5830333EA5D2AB03"
+				title: "打开死亡不掉落"
+				type: "command"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "1A79C625049A8172"
+				title: "注意事项"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
 	]
 	title: "{ftbq.chapter.meng.start}"
 }
