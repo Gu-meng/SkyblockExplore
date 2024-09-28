@@ -105,15 +105,22 @@
     "death.attack.meng.crushbone_attack":"%1$s被碎骨反弹致死",
 
     "gui.title.meng.player.xp_shop":"经验商城",
-    "tell.meng.not_enough_xp":"您的经验不够打开经验商城",
-    "tell.meng.xp_shop.expressage":"物品快递将会在五秒内从地图中间位置送达，请查收",
-    "tell.meng.xp_shop.no_xp_buy":"您的经验不支持您购买这些物品，请重新选择后再进行结算",
-    "tell.meng.xp_shop.null_buy":"您的购物车为空，请选购后再进行结算",
+
     "item.display.meng.xp_shop.shopping_trolley":"购物车",
     "item.display.meng.xp_shop.amount_required":"购买所需xp：%s",
     "item.display.meng.xp_shop.xp":"当前经验：%s",
     "item.display.meng.xp_shop.back":"返回",
     "item.display.meng.xp_shop.settle_accounts":"结算",
+
+    "tell.meng.not_enough_xp":"您的经验不够打开经验商城",
+    "tell.meng.xp_shop.expressage":"物品快递将会在五秒内从地图中间位置送达，请查收",
+    "tell.meng.xp_shop.no_xp_buy":"您的经验不支持您购买这些物品，请重新选择后再进行结算",
+    "tell.meng.xp_shop.null_buy":"您的购物车为空，请选购后再进行结算",
+    "tell.meng.mek_remove_radiation1":"已清除所有的辐射源",
+    "tell.meng.mek_remove_radiation2":"清除所有辐射源的信标等级必须大于等于3级！",
+    "tell.meng.swc1":"当前凋零难度为：%s",
+    "tell.meng.swc2":"当前凋零难度为：%s，无需降低难度",
+    "tell.meng.ender_dragon":"末影龙掉落了鞘翅在坐标：%s ~ %s",
 
     "item.tooltip.meng.xp_shop.price":"物品价格为：%s xp",
     "item.tooltip.meng.xp_shop.1":"每次使用都会收取50xp作为入场费",

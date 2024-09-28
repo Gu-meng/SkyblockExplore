@@ -1,3 +1,3 @@
 ClientEvents.init(event=>{
-    Client.setTitle("SkyIsland:probe")
+    Client.setTitle("Skyblock:Explore")
 })
