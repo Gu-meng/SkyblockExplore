@@ -19,7 +19,7 @@ const draconicRecipe = {
             "tier": tier,
             "total_energy": energy
         }
-        obj.ingredients = itemListProcessing(arr, ingredientList)
+        obj.ingredients = MengUtils.StrToItemUtil.itemListProcessing(arr, ingredientList)
         ServerEvents.recipes(e => e.custom(obj))
     }
 }

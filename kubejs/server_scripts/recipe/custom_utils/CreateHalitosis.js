@@ -9,8 +9,8 @@ const CreateHalitosis = {
     halitosis: function (outputItems, inputItems) {
         let ingredientList = []
         let outputItemList = []
-        ingredientList = itemListProcessing(ingredientList, inputItems)
-        outputItemList = itemListProcessing(outputItemList, outputItems);
+        ingredientList = MengUtils.StrToItemUtil.itemListProcessing(ingredientList, inputItems)
+        outputItemList = MengUtils.StrToItemUtil.itemListProcessing(outputItemList, outputItems);
         const obj = {
             "type": "createhalitosis:halitosis",
             "ingredients": ingredientList,

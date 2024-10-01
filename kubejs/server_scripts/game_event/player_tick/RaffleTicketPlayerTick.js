@@ -6,7 +6,6 @@ PlayerEvents.tick(event => {
         let countMax = playerAttachedData.get("poolCountMax");
         let count = playerAttachedData.get("count");
         let itemShow = itemShowFunc(player,count,countMax);
-        // console.log(itemShow);
         if (countMax - count <= 3) {
             if (tickCount % 10 == 0){
                 if (count >= countMax){

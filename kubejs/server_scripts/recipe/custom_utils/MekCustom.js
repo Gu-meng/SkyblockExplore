@@ -9,10 +9,6 @@ let MekRecipe = {
      * @param {Number} chemicalInputAmount 所需气体数量(n * 200mb) 默认为1
      */
     purifying: function (outputItem, inputItem, chemicalInputGas, chemicalInputAmount) {
-        let inputItemObj = strSplitItem(inputItem);
-        if (inputItemObj.nbt == null) delete inputItemObj.nbt
-        let outputItemObj = strSplitItem(outputItem);
-        if (outputItemObj.nbt == null) delete outputItemObj.nbt
         if (chemicalInputAmount == undefined) chemicalInputAmount = 1
         let obj = {
             type: "mekanism:purifying",
@@ -20,14 +16,10 @@ let MekRecipe = {
                 amount: chemicalInputAmount,
                 gas: chemicalInputGas
             },
-            itemInput: { ingredient: {} },
-            output: {}
+            itemInput: { ingredient: MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
+            output: MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        obj.itemInput.ingredient = inputItemObj;
-        obj.output = outputItemObj;
-        ServerEvents.recipes(e => {
-            e.custom(obj);
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 注册化学压射室
@@ -37,10 +29,6 @@ let MekRecipe = {
      * @param {Number} chemicalInputAmount 所需气体数量(n * 200mb)
      */
     injecting: function (outputItem, inputItem, chemicalInputGas, chemicalInputAmount) {
-        let inputItemObj = strSplitItem(inputItem);
-        if (inputItemObj.nbt == null) delete inputItemObj.nbt
-        let outputItemObj = strSplitItem(outputItem);
-        if (outputItemObj.nbt == null) delete outputItemObj.nbt
         if (chemicalInputAmount == undefined) chemicalInputAmount = 1
         let obj = {
             "type": "mekanism:injecting",
@@ -48,14 +36,10 @@ let MekRecipe = {
                 "amount": chemicalInputAmount,
                 "gas": chemicalInputGas
             },
-            "itemInput": { "ingredient": {} },
-            "output": {}
+            "itemInput": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
+            "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        obj.itemInput.ingredient = inputItemObj;
-        obj.output = outputItemObj;
-        ServerEvents.recipes(e => {
-            e.custom(obj);
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 注册融合机
@@ -64,28 +48,17 @@ let MekRecipe = {
      * @param {Internal.ItemStack} outputItem 输出物品
      */
     combining: function (outputItem, downInputItem, upInputItem) {
-        let downInputItemObj = strSplitItem(downInputItem);
-        if (downInputItemObj.nbt == null) delete downInputItemObj.nbt
-        let upInputItemObj = strSplitItem(upInputItem);
-        if (upInputItemObj.nbt == null) delete upInputItemObj.nbt
-        let outputItemObj = strSplitItem(outputItem);
-        if (outputItemObj.nbt == null) delete outputItemObj.nbt
+        let upInputItemObj = MengUtils.StrToItemUtil.strProcessingNbtItem(upInputItem)
         let obj = {
             "type": "mekanism:combining",
-            "extraInput": { "ingredient": {} },
+            "extraInput": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(downInputItem) },
             "mainInput": {
-                "amount": 3,
-                "ingredient": {}
+                "amount": upInputItemObj.count,
+                "ingredient": upInputItemObj
             },
-            "output": {}
+            "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        obj.extraInput.ingredient = downInputItemObj;
-        obj.mainInput.amount = upInputItemObj.count;
-        obj.mainInput.ingredient = upInputItemObj;
-        obj.output = outputItemObj;
-        ServerEvents.recipes(e => {
-            e.custom(obj);
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 粉碎机
@@ -93,20 +66,12 @@ let MekRecipe = {
      * @param {Internal.Ingredient} inputItem 输入物品
      */
     crushing: function (outputItem, inputItem) {
-        let inputItemObj = strSplitItem(inputItem);
-        if (inputItemObj.nbt == null) delete inputItemObj.nbt
-        let outputItemObj = strSplitItem(outputItem);
-        if (outputItemObj.nbt == null) delete outputItemObj.nbt
         let obj = {
             "type": "mekanism:crushing",
-            "input": { "ingredient": {} },
-            "output": {}
+            "input": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
+            "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        obj.input.ingredient = inputItemObj;
-        obj.output = outputItemObj;
-        ServerEvents.recipes(e => {
-            e.custom(obj);
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 富集仓
@@ -116,12 +81,10 @@ let MekRecipe = {
     enriching: function (outputItem, inputItem) {
         let obj = {
             "type": "mekanism:enriching",
-            "input": { "ingredient": nbtProcessing(strSplitItem(inputItem)) },
-            "output": nbtProcessing(strSplitItem(outputItem))
+            "input": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
+            "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => {
-            e.custom(obj);
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 冶金灌注机
@@ -131,20 +94,14 @@ let MekRecipe = {
      * @param {Number} chemicalInputAmount 所需数量
      */
     metallurgicInfusing: function (outputItem, inputItem, chemicalInput, chemicalInputAmount) {
-        let inputItemObj = strSplitItem(inputItem);
-        if (inputItemObj.nbt == null) delete inputItemObj.nbt
-        let outputItemObj = strSplitItem(outputItem);
-        if (outputItemObj.nbt == null) delete outputItemObj.nbt
         let chemicalInputObj = infuseTypeFunc(chemicalInput, chemicalInputAmount)
         let obj = {
             "type": "mekanism:metallurgic_infusing",
             "chemicalInput": chemicalInputObj,
-            "itemInput": { "ingredient": inputItemObj },
-            "output": outputItemObj
+            "itemInput": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
+            "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => {
-            e.custom(obj);
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 锇压缩机
@@ -154,10 +111,6 @@ let MekRecipe = {
      * @param {Number} chemicalInputAmount 所需气体数量(n * 200mb) 默认为1
      */
     compressing: function (outputItem, inputItem, chemicalInputGas, chemicalInputAmount) {
-        let inputItemObj = strSplitItem(inputItem);
-        if (inputItemObj.nbt == null) delete inputItemObj.nbt
-        let outputItemObj = strSplitItem(outputItem);
-        if (outputItemObj.nbt == null) delete outputItemObj.nbt
         if (chemicalInputAmount == undefined) chemicalInputAmount = 1
         let obj = {
             "type": "mekanism:compressing",
@@ -165,14 +118,10 @@ let MekRecipe = {
                 "amount": chemicalInputAmount,
                 "gas": chemicalInputGas
             },
-            "itemInput": { "ingredient": {} },
-            "output": {}
+            "itemInput": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
+            "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        obj.itemInput.ingredient = inputItemObj;
-        obj.output = outputItemObj;
-        ServerEvents.recipes(e => {
-            e.custom(obj);
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 
@@ -183,18 +132,11 @@ let MekRecipe = {
      */
     sawing: function (outputItem, inputItem, extraOutputItem, extraItemProbability) {
         let extraOutputItemObj;
-        if (extraOutputItem != undefined) {
-            extraOutputItemObj = strSplitItem(extraOutputItem);
-            if (extraOutputItemObj.nbt == null) delete extraOutputItemObj.nbt
-        }
-        let inputItemObj = strSplitItem(inputItem);
-        if (inputItemObj.nbt == null) delete inputItemObj.nbt
-        let outputItemObj = strSplitItem(outputItem);
-        if (outputItemObj.nbt == null) delete outputItemObj.nbt
+        if (extraOutputItem != undefined) extraOutputItemObj = MengUtils.StrToItemUtil.strProcessingNbtItem(extraOutputItem)
         let obj = {
             "type": "mekanism:sawing",
-            "input": { "ingredient": {} },
-            "mainOutput": {},
+            "input": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
+            "mainOutput": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem),
             "secondaryChance": 1,
             "secondaryOutput": {}
         }
@@ -205,11 +147,7 @@ let MekRecipe = {
             if (extraOutputItem != undefined) obj.secondaryChance = extraItemProbability;
             obj.secondaryOutput = extraOutputItemObj;
         }
-        obj.input.ingredient = inputItemObj;
-        obj.mainOutput = outputItemObj;
-        ServerEvents.recipes(e => {
-            e.custom(obj);
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 电解分离器
@@ -236,9 +174,7 @@ let MekRecipe = {
                 "gas": rightGas
             }
         }
-        ServerEvents.recipes(e => {
-            e.custom(obj);
-        })
+        ServerEvents.recipes(e => e.custom(obj))
     },
     /**
      * 物品到灌注类型
@@ -247,17 +183,14 @@ let MekRecipe = {
      * @param {Internal.Ingredient} inputItem 输入物品
      */
     infusionConversion: function (outputInfuse, outputAmount, inputItem) {
-        let inputItemObj = strSplitItem(inputItem);
-        if (inputItemObj.nbt == null) delete inputItemObj.nbt
         let obj = {
             "type": "mekanism:infusion_conversion",
-            "input": { "ingredient": {} },
+            "input": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
             "output": {
                 "amount": outputAmount,
                 "infuse_type": outputInfuse
             }
         }
-        obj.input.ingredient = inputItemObj;
         ServerEvents.recipes(e => e.custom(obj))
     },
     /**
@@ -268,16 +201,16 @@ let MekRecipe = {
      * @param {Number} gasInputAmount 输入气体数量(mb计算)
      * @param {Number} duration 持续时间(tick计算)
      */
-    nucleosynthesizing: function (outputItem, itemInput, gasInput,gasInputAmount,duration) {
-        let obj = { 
-            "type": "mekanism:nucleosynthesizing", 
-            "duration": duration, 
-            "gasInput": { 
-                "amount": gasInputAmount, 
+    nucleosynthesizing: function (outputItem, itemInput, gasInput, gasInputAmount, duration) {
+        let obj = {
+            "type": "mekanism:nucleosynthesizing",
+            "duration": duration,
+            "gasInput": {
+                "amount": gasInputAmount,
                 "gas": gasInput
-            }, 
-            "itemInput": {"ingredient" :nbtProcessing(strSplitItem(itemInput))}, 
-            "output": nbtProcessing(strSplitItem(outputItem)) 
+            },
+            "itemInput": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(itemInput) },
+            "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
         ServerEvents.recipes(e => e.custom(obj))
     }

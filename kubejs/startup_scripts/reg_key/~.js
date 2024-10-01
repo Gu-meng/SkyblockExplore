@@ -12,4 +12,4 @@ global.regKey = new $KeyMapping(
  
 ClientEvents.init(() => {
   $KeyMappingRegistry.register(global.regKey);
-});
+}); 

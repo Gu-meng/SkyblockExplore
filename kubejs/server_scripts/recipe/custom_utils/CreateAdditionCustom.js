@@ -32,7 +32,3 @@ const createAddition = {
         ServerEvents.recipes(e => e.custom(obj))
     }
 }
-
-// 下面是测试代码
-createAddition.rolling('minecraft:diamond','#forge:ingots')
-// createAddition.charging('minecraft:diamond','#forge:ingots',5000,200)

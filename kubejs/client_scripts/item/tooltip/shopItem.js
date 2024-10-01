@@ -21,8 +21,8 @@ ItemEvents.tooltip(event=>{
     })
 
     event.addAdvanced('meng:xp_shop',(item,advanced,text) =>{
-        text.add(1,Text.translate("item.tooltip.meng.xp_shop.1").gold())
-        text.add(2,Text.translate("item.tooltip.meng.xp_shop.2",Client.player.xp).blue())
+        text.add(Text.translate("item.tooltip.meng.xp_shop.1").gold())
+        text.add(Text.translate("item.tooltip.meng.xp_shop.2",Client.player.xp).blue())
         if (item.getNbt() != undefined){
             if(!item.getNbt().getBoolean("tipxp")){
                 if (item.getNbt().getBoolean("tipxp") != undefined && item.getNbt().getBoolean("tipxp") != null){

@@ -14,7 +14,7 @@ const AERecipe = {
             "circumstance": {
                 "type": "explosion"
             },
-            "ingredients": itemListProcessing(ingredientList, inputItems),
+            "ingredients": MengUtils.StrToItemUtil.itemListProcessing(ingredientList, inputItems),
             "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
         ServerEvents.recipes(e => e.custom(obj))
@@ -35,7 +35,7 @@ const AERecipe = {
                 "type": "fluid",
                 "tag": FluidTag
             },
-            "ingredients": itemListProcessing(ingredientList, inputItems),
+            "ingredients": MengUtils.StrToItemUtil.itemListProcessing(ingredientList, inputItems),
             "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
         ServerEvents.recipes(e => e.custom(obj))
@@ -77,10 +77,3 @@ const AERecipe = {
         ServerEvents.recipes(e => e.custom(obj))
     }
 }
-// 下面只是测试代码
-AERecipe.transformExplosion("minecraft:bucket", "minecraft:diamond");
-AERecipe.transformExplosion("minecraft:bucket", ["minecraft:diamond", 'minecraft:ancient_debris']);
-AERecipe.transformExplosion("minecraft:bucket", ["minecraft:diamond", 'minecraft:ancient_debris', Item.of('minecraft:ender_pearl')]);
-AERecipe.transformExplosion(Item.of('minecraft:enchanted_book').enchant('minecraft:protection', 4), ["minecraft:diamond", 'minecraft:ancient_debris', Item.of('minecraft:ender_pearl'), '#forge:ingots']);
-
-AERecipe.transformFluid('3x minecraft:iron_ingot', "minecraft:gold_ingot", "minecraft:water");
