@@ -1,4 +1,7 @@
 BlockEvents.broken(event => {
+    /**
+     * @type {Internal.ServerPlayer}
+     */
     let player = event.getPlayer();
     if (player.getData().get("multipleBlocks")) {
         let posList = [];
@@ -25,10 +28,23 @@ BlockEvents.broken(event => {
             if (tempCount == index) break;
             else tempCount = index;
         }
-        posList.forEach(pos => level.destroyBlock(BlockPos.of(pos), isDrop, player))
+        posList.forEach(pos => {
+            if (player.isCreative()) {
+                level.destroyBlock(BlockPos.of(pos), false, player)
+                return;
+            }
+            if (block.hasTag('meng:tool_shears') && handItem.hasTag('forge:shears')) {
+                level.destroyBlock(BlockPos.of(pos), false, player)
+                level.getBlock(BlockPos.of(pos)).popItem(block.getItem())
+            } else {
+                level.destroyBlock(BlockPos.of(pos), isDrop, player)
+            }
+        })
         if (!handItem.hasTag('minecraft:tools')) return
-        handItem.setDamageValue(handItem.getDamageValue() + posList.length);
-        if (handItem.getDamageValue() > handItem.getMaxDamage()) handItem.count--
+        if (!player.isCreative()) {
+            handItem.setDamageValue(handItem.getDamageValue() + posList.length);
+            if (handItem.getDamageValue() > handItem.getMaxDamage()) handItem.count--
+        }
     }
 })
 
@@ -39,13 +55,13 @@ BlockEvents.broken(event => {
  */
 function addMultipleBlocks(block, list) {
     let blockList = []
-    
-    pushList(equalBlock(block.getUp(),block),list,blockList);
-    pushList(equalBlock(block.getDown(),block),list,blockList);
-    pushList(equalBlock(block.getWest(),block),list,blockList);
-    pushList(equalBlock(block.getNorth(),block),list,blockList);
-    pushList(equalBlock(block.getSouth(),block),list,blockList);
-    pushList(equalBlock(block.getEast(),block),list,blockList);
+
+    pushList(equalBlock(block.getUp(), block), list, blockList);
+    pushList(equalBlock(block.getDown(), block), list, blockList);
+    pushList(equalBlock(block.getWest(), block), list, blockList);
+    pushList(equalBlock(block.getNorth(), block), list, blockList);
+    pushList(equalBlock(block.getSouth(), block), list, blockList);
+    pushList(equalBlock(block.getEast(), block), list, blockList);
 
     return {
         blockList: blockList,
@@ -53,15 +69,15 @@ function addMultipleBlocks(block, list) {
     }
 }
 
-function pushList(block,list1,list2){
+function pushList(block, list1, list2) {
     if (block != null && !list1.includes(block.getPos().asLong())) {
         list1.push(block.getPos().asLong())
         list2.push(block)
     }
 }
 
-function equalBlock(block1,block2){
-   return block1.getId() == block2.getId() ? block1 : null;
+function equalBlock(block1, block2) {
+    return block1.getId() == block2.getId() ? block1 : null;
 }
 
 /**
@@ -84,6 +100,11 @@ function canDrop(block, item) {
     return false;
 }
 
+/**
+ * 获取方块破坏等级
+ * @param {*} block 
+ * @returns 
+ */
 function blockDestroyLevel(block) {
     if (block.hasTag(MengUtils.toolLevel.stoneTool)) return MengUtils.toolLevel["minecraft:needs_stone_tool"]
     if (block.hasTag(MengUtils.toolLevel.ironTool)) return MengUtils.toolLevel["minecraft:needs_iron_tool"]
@@ -91,6 +112,11 @@ function blockDestroyLevel(block) {
     return 0;
 }
 
+/**
+ * 获取方块破坏工具
+ * @param {*} block 
+ * @returns 
+ */
 function blockDestroyTool(block) {
     if (block.hasTag(MengUtils.tagBlockTool.pickaxes)) return MengUtils.tagTool.pickaxes;
     if (block.hasTag(MengUtils.tagBlockTool.axes)) return MengUtils.tagTool.axes;

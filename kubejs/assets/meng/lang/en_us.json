@@ -1,5 +1,5 @@
 {
-    "meng.client.window.title": "SkyIsland:Exploration v0.1.240928",
+    "meng.client.window.title": "Explore Everything v0.1.1.241012",
     "key.meng.multiple_blocks": "Multiple Blocks Mining",
     "key.keybinding.multiple_blocks": "Multiple Blocks Mining",
     "item.meng.crushbone": "Crushed Bone",
@@ -107,7 +107,7 @@
     "item.tooltip.meng.xp_shop.2": "Current xp owned: %s",
     "jei.item.information.painful_tears": "When friendly mobs: chicken, pig, cow are hurt by a block of lava, there is a chance to leave 'Painful Tears'\nPainful Tears can be thrown into the lava to summon a ghast",
     "jei.item.information.raffle_ticket": "Right-click to consume a raffle ticket for a lottery draw",
-    "jei.item.information.xp_shop": "The Experience Shop allows you to purchase items with experience",
+    "jei.item.information.xp_shop": "The Experience Shop allows you to purchase items with experience\nThe first time you use it, you need to crouch down and bind a box as a storage location",
     "jei.item.information.rain_doll": "Right-click to consume the durability of the Rain Doll to change the weather to rainy",
     "jei.item.information.sunny_doll": "Sunny Doll can change the weather to sunny",
     "jei.item.information.dirty_cobblestone": "Unprocessed cobblestone produced by lava and water, needs to be synthesized into ordinary cobblestone",
@@ -275,5 +275,12 @@
     "ftbq.details.meng.wither_skull": "The Wither becomes stronger with each summoning, but we can use Conch Pearls to reduce the difficulty of summoning at corresponding levels by facing a beacon.\nReduction calculation: A level 1 beacon reduces the summoning difficulty by 1 time, a level 2 beacon reduces it by 2 times, up to a maximum of 4 times.",
     "ftbq.chapter.meng.draconic": "Draconic Studies",
     "ftbq.chapter.meng.collection": "Collection Achievements",
-    "ftbq.chapter.meng.progress": "Progress Achievements"
+    "ftbq.chapter.meng.progress": "Progress Achievements",
+    "tell.meng.chest_new":"The chest has been successfully bound, please ensure that the chest is not full",
+    "tell.meng.chest_update":"Change binding chest, please ensure that the chest is not full",
+    "tell.meng.chest_repetition":"You bind the chest, no need to bind again",
+    "tell.meng.chest_full":"The chest is full, please pay attention to clean it",
+    "tell.meng.chest_putin":"The items have been put into the chest",
+    "tell.meng.chest_null":"Please bind the chest before shopping",
+    "tell.meng.chest_level_null":"Your chest is not found in the current dimension"
 }

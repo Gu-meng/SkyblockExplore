@@ -1,5 +1,4 @@
 // priority: 10
-
 const MengUtils = {
     /**
      * 概率 1为100% 0.3为30% 0.01为1%
@@ -188,3 +187,6 @@ const MengUtils = {
         }
     }
 }
+
+
+global.MengUtils = MengUtils;

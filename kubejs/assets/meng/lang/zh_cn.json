@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.1.240928",
+    "meng.client.window.title" : "空岛：探索 v0.1.1.241012",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -128,7 +128,7 @@
 
     "jei.item.information.painful_tears":"当友善生物：鸡、猪、牛受到岩浆块的伤害时会有概率留下“痛苦之泪”\n痛苦之泪可以丢到熔岩里召唤恶魂",
     "jei.item.information.raffle_ticket":"右键消耗一张抽奖券进行抽奖",
-    "jei.item.information.xp_shop":"经验商城可以在里面通过经验购买物品",
+    "jei.item.information.xp_shop":"经验商城可以在里面通过经验购买物品\n第一次使用需要蹲下来绑定一个箱子来作为物品存放位置",
     "jei.item.information.rain_doll":"右键消耗雨天娃娃的耐久来使天气变为下雨天",
     "jei.item.information.sunny_doll":"晴天娃娃可以使天气变为晴天",
     "jei.item.information.dirty_cobblestone":"通过熔岩和水产生的未处理的圆石，需要合成后变为普通的圆石",
@@ -390,5 +390,13 @@
     
     "ftbq.chapter.meng.collection":"收集成就",
 
-    "ftbq.chapter.meng.progress":"进度成就"
+    "ftbq.chapter.meng.progress":"进度成就",
+
+    "tell.meng.chest_new":"已成功绑定快递箱，请保证快递箱不为满",
+    "tell.meng.chest_update":"您更换绑定快递箱，请保证快递箱不为满",
+    "tell.meng.chest_repetition":"您绑定快递箱，无需重复绑定",
+    "tell.meng.chest_full":"快递箱已满，请注意清理",
+    "tell.meng.chest_putin":"物品已存入快递箱中",
+    "tell.meng.chest_null":"请先添加收货地址再进行购物",
+    "tell.meng.chest_level_null":"当前纬度并未找到您的快递箱"
 }

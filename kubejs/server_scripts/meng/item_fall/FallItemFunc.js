@@ -14,7 +14,8 @@ EntityEvents.spawned("item", event => {
             y: itemEntity.getY(),
             output: value.outputItem,
             count: count,
-            spaceBetween: value.spaceBetween
+            spaceBetween: value.spaceBetween,
+            water: 400
         }
     })
 })
@@ -27,12 +28,21 @@ LevelEvents.tick(event => {
         if (fallValue.dimension == event.getLevel().getDimension()) {
             try {
                 let entity = event.getLevel().getEntity(key)
-                if (entity.onGround()) {
-                    if (fallValue.y - entity.getY() >= fallValue.spaceBetween) {
-                        entity.setItem(Item.of(fallValue.output, fallValue.count))
+                let block = event.getLevel().getBlock(entity.getBlock().getPos());
+                if (block.id == "minecraft:water" && fallValue.water > 0) {
+                    fallValue.water--;
+                }else {
+                    if (entity.onGround()) {
+                        if (fallValue.y - entity.getY() >= fallValue.spaceBetween) {
+                            entity.setItem(Item.of(fallValue.output, fallValue.count))
+                        }
+                        entity.pickUpDelay = 20;
+                        delete itemFallList[key]
+                    } else {
+                        if (fallValue.y < entity.getY()) {
+                            fallValue.y = entity.getY()
+                        }
                     }
-                    entity.pickUpDelay = 20;
-                    delete itemFallList[key]
                 }
             } catch (e) {
                 console.warn(e);

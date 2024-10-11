@@ -99,6 +99,8 @@ ServerEvents.recipes(event => {
             ['mekanism:ingot_refined_obsidian','mekanism:ingot_refined_obsidian','mekanism:ingot_refined_obsidian']
         ])
     }
+
+    event.shapeless('meng:charged_certus_quartz_crystal_mesh',['meng:iron_frame','ae2:charged_certus_quartz_crystal','ae2:charged_certus_quartz_crystal']);
 })
 
 const aeStorageList = [
