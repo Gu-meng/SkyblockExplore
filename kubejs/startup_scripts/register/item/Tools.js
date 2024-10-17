@@ -3,6 +3,7 @@ StartupEvents.registry("item", event => {
         .speed(10)
         .speedBaseline(-3.5)
         .attackDamageBaseline(8)
+        .tag("minecraft:axes")
         .maxDamage(100);
 
     event.create(ToolItem.crushbone_sword, "sword")

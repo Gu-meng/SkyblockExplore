@@ -8,6 +8,23 @@ const MengUtils = {
     isPercent: function (probability) {
         return Math.random() < probability;
     },
+    /**
+     * 区间随机数
+     * @param {Number} min 最小数 
+     * @param {Number} max 最大数
+     */
+    intervalRandomNumber:function (min,max){
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    },
+    /**
+     * 我的世界天数计算
+     * @param {number_} dayTick 
+     */
+    mcDay:function (dayTick){
+        return Math.floor(dayTick / 24000 % 2147483647);
+    },
     // 优先级 9
     ArrUtil: {
         /**

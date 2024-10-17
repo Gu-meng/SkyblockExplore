@@ -30,13 +30,13 @@ const MekUtil = {
     infuseTypeFunc: function(InfuseTypeId,amount){
         if (MekUtil.isInfuseType(str)) {
             return {
-                infuse_type: str,
-                amount: count
+                infuse_type: InfuseTypeId,
+                amount: amount
             }
         } else {
             return {
-                amount: count,
-                tag: str
+                amount: amount,
+                tag: InfuseTypeId
             }
         }
     }
