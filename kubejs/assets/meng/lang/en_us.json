@@ -1,5 +1,5 @@
 {
-    "meng.client.window.title": "Explore Everything v0.1.1.241012",
+    "meng.client.window.title": "Explore Everything v0.1.2.241020",
     "key.meng.multiple_blocks": "Multiple Blocks Mining",
     "key.keybinding.multiple_blocks": "Multiple Blocks Mining",
     "item.meng.crushbone": "Crushed Bone",
@@ -282,5 +282,7 @@
     "tell.meng.chest_full":"The chest is full, please pay attention to clean it",
     "tell.meng.chest_putin":"The items have been put into the chest",
     "tell.meng.chest_null":"Please bind the chest before shopping",
-    "tell.meng.chest_level_null":"Your chest is not found in the current dimension"
+    "tell.meng.chest_level_null":"Your chest is not found in the current dimension",
+    "item.meng.reload_xpshop":"Reload Experience Shop Item",
+    "meng.tell.reload_xpshop":"Experience Shop Refreshed."
 }

@@ -1,3 +1,0 @@
-const debugConfig = {
-    isDebug : false
-}

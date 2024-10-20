@@ -1,6 +1,7 @@
 ItemEvents.tooltip(event=>{
+    
     global.shopItemList.forEach(value => {
-        event.addAdvanced(value.id,(item,advanced,text) =>{
+        event.addAdvanced(value.item,(item,advanced,text) =>{
             if (item.getNbt() != undefined){
                 let xp = item.getNbt().getInt("buyXp")
                 if (xp != undefined && xp != null && xp != 0){

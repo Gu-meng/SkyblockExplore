@@ -102,8 +102,6 @@ function synchronizationShopList(server) {
     synchronizationShop(XpShopPersistentData(server))
     shopItemList.forEach(value => {
         newList.push(value.item)
-        console.log(value.item);
-
     })
     return newList;
 }
@@ -279,10 +277,11 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                                 expressBox(block, arr);
                                 player.tell(Text.translate("tell.meng.chest_putin"))
                                 player.closeMenu()
+                                ppd.putBoolean("isPay", true);
                             } else {
                                 player.tell(Text.translate("tell.meng.xp_shop.no_xp_buy"))
                             }
-                            ppd.putBoolean("isPay", true);
+                            
                         } else {
                             player.tell(Text.translate("tell.meng.xp_shop.null_buy"))
                         }
@@ -295,7 +294,8 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                     slott.setItem(backItem)
                     ppd.putBoolean("isAddShop", true)
                     slott.setLeftClicked(() => {
-                        for (let index = 0; index < arr.length + 1; index++) {
+                        let il = shopItems.length >= arr.length ? shopItems.length : arr.length;
+                        for (let index = 0; index < il + 1; index++) {
                             gui.slot(index, 0, sslot => {
                                 sslot.setItem(shopItems[index])
                             })

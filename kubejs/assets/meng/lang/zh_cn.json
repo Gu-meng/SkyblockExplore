@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.1.1.241012",
+    "meng.client.window.title" : "空岛：探索 v0.1.2.241020",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -398,5 +398,8 @@
     "tell.meng.chest_full":"快递箱已满，请注意清理",
     "tell.meng.chest_putin":"物品已存入快递箱中",
     "tell.meng.chest_null":"请先添加收货地址再进行购物",
-    "tell.meng.chest_level_null":"当前纬度并未找到您的快递箱"
+    "tell.meng.chest_level_null":"当前纬度并未找到您的快递箱",
+
+    "item.meng.reload_xpshop":"刷新商店物品",
+    "meng.tell.reload_xpshop":"商店已刷新"
 }

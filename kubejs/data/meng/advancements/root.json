@@ -1,0 +1,32 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": false,
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "meng:crushbone",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": "受到碎骨剑的反伤",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "frame": "challenge",
+        "hidden":false,
+        "show_toast":true,
+        "icon": {
+            "item": "meng:crushbone"
+        },
+        "title": "被攻击了？"
+    }
+}

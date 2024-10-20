@@ -87,10 +87,9 @@ function equalBlock(block1, block2) {
  * @returns 
  */
 function canDrop(block, item) {
-    let tool = blockDestroyTool(block)
-    if (tool == undefined) return false
-    let level = blockDestroyLevel(block)
-    if (item.hasTag(tool)) {
+    let db = toolDestroyBlock(item);
+    if (block.hasTag(db)){
+        let level = blockDestroyLevel(block);
         if (level == 0) return true
         for (let index = level; index < 4; index++) {
             let l = MengUtils.tool[index][tool]
@@ -113,13 +112,13 @@ function blockDestroyLevel(block) {
 }
 
 /**
- * 获取方块破坏工具
- * @param {*} block 
+ * 获取工具可破坏的方块
+ * @param {*} item 
  * @returns 
  */
-function blockDestroyTool(block) {
-    if (block.hasTag(MengUtils.tagBlockTool.pickaxes)) return MengUtils.tagTool.pickaxes;
-    if (block.hasTag(MengUtils.tagBlockTool.axes)) return MengUtils.tagTool.axes;
-    if (block.hasTag(MengUtils.tagBlockTool.shovels)) return MengUtils.tagTool.shovels;
-    if (block.hasTag(MengUtils.tagBlockTool.hoes)) return MengUtils.tagTool.hoes;
+function toolDestroyBlock(item) {
+    if (item.hasTag(MengUtils.tagTool.axes)) return MengUtils.tagBlockTool.axes;
+    if (item.hasTag(MengUtils.tagTool.pickaxes)) return MengUtils.tagBlockTool.pickaxes;
+    if (item.hasTag(MengUtils.tagTool.shovels)) return MengUtils.tagBlockTool.shovels;
+    if (item.hasTag(MengUtils.tagTool.hoes)) return MengUtils.tagBlockTool.hoes;
 }

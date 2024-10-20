@@ -21,11 +21,7 @@ ItemEvents.firstRightClicked("meng:raffle_ticket", event => {
     let uuid = player.getUuid()
     let obj = {}
     obj[uuid] = MengUtils.ArrUtil.randArr(addItemList(itemList))
-    // console.log(obj);
     poolItemList.push(obj)
-    // console.log(poolItemList);
-    
-
 
     let lootData = event.getServer().getLootData();
     let itemLoot = lootData
@@ -35,9 +31,8 @@ ItemEvents.firstRightClicked("meng:raffle_ticket", event => {
                 .create($LootContextParamSets.EMPTY)
         )[0];
     let poolList = poolItemList.find(value => Object.keys(value).includes(uuid.toString()))[uuid];
-    // console.log(poolList);
     poolList[poolList.length - 2] = itemLoot.id;
-    // return;
+    
     playerAttachedData.add("lotteryState", true);
     playerAttachedData.add("poolCountMax", poolList.length);
     playerAttachedData.add("count", 0);

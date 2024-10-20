@@ -28,6 +28,7 @@ function initAddItemXpShop(){
     addItem('meng:raffle_ticket', 2000, 1, 5, 0.2, 10);
 
     addItem('minecraft:experience_bottle', 100, 1, 2, 0.1, 13);
+    addItem("meng:reload_xpshop", 1500, 1, 5, 0.1, 20);
 
     addItem('minecraft:oak_sapling', 300, 1, 5, 0.3);
     addItem('minecraft:spruce_sapling', 300, 1, 5, 0.3);
@@ -36,4 +37,6 @@ function initAddItemXpShop(){
     addItem('minecraft:acacia_sapling', 300, 1, 5, 0.3);
     addItem('minecraft:dark_oak_sapling', 300, 1, 5, 0.3);
     addItem('minecraft:cherry_sapling', 300, 1, 5, 0.3);
+
+    global.shopItemList = xpShopItemList;
 }
