@@ -30,7 +30,8 @@ const basicItem = {
     diamond_upgrade_smithing_template : namespace + "diamond_upgrade_smithing_template",
     deep_fear : namespace + "deep_fear",
     catalyst_goat : namespace + "catalyst_goat",
-    reload_xpshop : namespace + "reload_xpshop"
+    reload_xpshop : namespace + "reload_xpshop",
+    return_pearl : namespace + "return_pearl"
 }
 
 const ironTimberblock = {

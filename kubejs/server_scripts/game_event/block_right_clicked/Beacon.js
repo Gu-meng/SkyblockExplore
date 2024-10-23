@@ -17,7 +17,7 @@ BlockEvents.rightClicked("beacon", event => {
                 swc = swc - beaconLevel < 0 ? 0 : swc - beaconLevel;
                 ppd.putInt("summonWitherCount", swc);
                 event.item.count--;
-                player.tell(Text.translate(tell.meng.swc1, swc));
+                player.tell(Text.translate("tell.meng.swc1", swc));
             } else {
                 player.tell(Text.translate("tell.meng.swc2", swc));
             }

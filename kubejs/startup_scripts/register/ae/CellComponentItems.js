@@ -1,9 +1,3 @@
-const $BasicStorageCell = Java.loadClass("appeng.items.storage.BasicStorageCell")
-const $StorageComponentItem = Java.loadClass("appeng.items.materials.StorageComponentItem")
-const $AEItems = Java.loadClass("appeng.core.definitions.AEItems")
-const $AEKeyType = Java.loadClass("appeng.api.stacks.AEKeyType")
-const $Item = Java.loadClass("net.minecraft.world.item.Item");
-
 StartupEvents.registry("item", event => {
     for (const key in AECellComponentItems) {
         let aeValue = AECellComponentItems[key];

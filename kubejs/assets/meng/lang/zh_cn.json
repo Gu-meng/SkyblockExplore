@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.1.2.241020",
+    "meng.client.window.title" : "空岛：探索 v0.1.2.241024",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -401,5 +401,7 @@
     "tell.meng.chest_level_null":"当前纬度并未找到您的快递箱",
 
     "item.meng.reload_xpshop":"刷新商店物品",
-    "meng.tell.reload_xpshop":"商店已刷新"
+    "meng.tell.reload_xpshop":"商店已刷新",
+
+    "item.meng.return_pearl": "返回珍珠"
 }

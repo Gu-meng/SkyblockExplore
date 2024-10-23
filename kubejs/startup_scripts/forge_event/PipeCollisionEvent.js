@@ -1,6 +1,3 @@
-const $PipeCollisionEvent = Java.loadClass("com.simibubi.create.api.event.PipeCollisionEvent")
-
-
 ForgeEvents.onEvent($PipeCollisionEvent.Spill, event => {
     global.handlePipeSpillCollisionFallback(event)
 })

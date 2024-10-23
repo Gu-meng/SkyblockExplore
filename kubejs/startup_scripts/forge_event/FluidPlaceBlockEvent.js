@@ -1,4 +1,3 @@
-let $BlockEvent = Java.loadClass("net.minecraftforge.event.level.BlockEvent")
 ForgeEvents.onEvent($BlockEvent.FluidPlaceBlockEvent,event=>{
     global.fluidPlaceBlockEvent(event);
 })
