@@ -27,6 +27,7 @@ StartupEvents.registry("block", event => {
         .noDrops()
         .glassSoundType()
         .tag('forge:glass')
+        .tag("wither_immune")
 
     event.create(basicBlock.precision_machine_parts)
         .hardness(2)
@@ -47,4 +48,11 @@ StartupEvents.registry("block", event => {
         .stoneSoundType()
         .requiresTool()
         .tagBlock('minecraft:mineable/pickaxe')
+
+    event.create(basicBlock.wither_core_block)
+        .hardness(5)
+        .stoneSoundType()
+        .requiresTool()
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
 })

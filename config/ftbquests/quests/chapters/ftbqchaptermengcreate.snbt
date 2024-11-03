@@ -52,6 +52,11 @@
 					random_bonus: 3
 					type: "item"
 				}
+				{
+					id: "4BC823F9F40E6C6E"
+					item: "meng:budding_redstone"
+					type: "item"
+				}
 			]
 			size: 1.5d
 			tasks: [{
@@ -752,11 +757,6 @@
 			id: "75B3EB9575F8264B"
 			rewards: [
 				{
-					id: "7541C4A6E47DBCA9"
-					item: "minecraft:quartz"
-					type: "item"
-				}
-				{
 					id: "5E8D1347D7B2679C"
 					item: {
 						Count: 1
@@ -765,6 +765,11 @@
 							Damage: 0
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "7E6211AA6B3B0275"
+					item: "meng:budding_quartz"
 					type: "item"
 				}
 			]
@@ -858,7 +863,7 @@
 			}]
 			title: "{ftbq.title.meng.grass_block}"
 			x: 3.0d
-			y: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2350ED4B290EE7EA"]
@@ -958,7 +963,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -973,22 +978,23 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["75B3EB9575F8264B"]
-			id: "4AE79F1C4C49D55C"
-			tasks: [{
-				id: "0DC258A4C7A48DFC"
-				item: {
-					Count: 1
-					id: "meng:quartz_mesh"
-					tag: { }
-				}
+			id: "75D799B95B7EFA65"
+			rewards: [{
+				id: "7D3D51D518D14533"
+				item: "meng:nether_gem"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.5d
+			tasks: [{
+				id: "3EC8DA3F6383602C"
+				item: "meng:nether_fluid_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.create}"

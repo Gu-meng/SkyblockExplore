@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.1.2.241024",
+    "meng.client.window.title" : "空岛：探索 v0.2.0.241103",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -118,8 +118,8 @@
     "tell.meng.xp_shop.null_buy":"您的购物车为空，请选购后再进行结算",
     "tell.meng.mek_remove_radiation1":"已清除所有的辐射源",
     "tell.meng.mek_remove_radiation2":"清除所有辐射源的信标等级必须大于等于3级！",
-    "tell.meng.swc1":"当前凋零难度为：%s",
-    "tell.meng.swc2":"当前凋零难度为：%s，无需降低难度",
+    "tell.meng.swc1":"当前凋灵难度为：%s",
+    "tell.meng.swc2":"当前凋灵难度为：%s，无需降低难度",
     "tell.meng.ender_dragon":"末影龙掉落了鞘翅在坐标：%s ~ %s",
 
     "item.tooltip.meng.xp_shop.price":"物品价格为：%s xp",
@@ -228,7 +228,7 @@
 
     "ftbq.details.meng.painful_tears":"友善生物站在岩浆快上备受折磨的时候一些不坚强的生物就会留下痛苦之类，痛苦之泪可以召唤恶魂",
 
-    "ftbq.details.meng.netherrack":"移除了原版刷石机刷出石头（不是圆石）改为了生成下界岩，使用石英筛网可以晒出少部分下界资源",
+    "ftbq.details.meng.netherrack":"移除了原版刷石机刷出石头（不是圆石）改为了生成下界岩",
 
     "ftbq.title.meng.precision_machine_parts":"精密机器部件",
     "ftbq.details.meng.precision_machine_parts":"有许多精密的机器都需要用到这个",
@@ -379,12 +379,12 @@
     "ftbq.details.meng.beacon_mek":"蹲下来将下界之心对着三级及以上等级的信标进行使用，是可以消除机器所产生的辐射",
 
     "ftbq.title.meng.fission":"裂变反应堆",
-    "ftbq.details.meng.fission":"许多材料都需要裂变反应才能获取到，所以这个是必须的\n当骷髅收到凋零伤害时有概率转化为凋零骷髅，所以可以利用这朵花来改变",
+    "ftbq.details.meng.fission":"许多材料都需要裂变反应才能获取到，所以这个是必须的\n当骷髅收到凋灵伤害时有概率转化为凋灵骷髅，所以可以利用这朵花来改变",
 
     "ftbq.title.meng.wither_rose":"一朵哪够啊？",
 
-    "ftbq.title.meng.wither_skull":"关于凋零",
-    "ftbq.details.meng.wither_skull":"凋零会随着召唤次数而不断变强，不过我们可以通过鹦鹉螺来对着信标来减少对应等级的强度\n减少计算：一级信标减少1一次召唤难度，二级信标减少2次，最多减少4次",
+    "ftbq.title.meng.wither_skull":"关于凋灵",
+    "ftbq.details.meng.wither_skull":"凋灵会随着召唤次数而不断变强，不过我们可以通过鹦鹉螺来对着信标来减少对应等级的强度\n减少计算：一级信标减少1一次召唤难度，二级信标减少2次，最多减少4次",
 
     "ftbq.chapter.meng.draconic":"龙之研究",
     
@@ -403,5 +403,31 @@
     "item.meng.reload_xpshop":"刷新商店物品",
     "meng.tell.reload_xpshop":"商店已刷新",
 
-    "item.meng.return_pearl": "返回珍珠"
+    "item.meng.return_pearl": "返回珍珠",
+    "block.meng.wither_core_block":"凋灵之心",
+    "block.meng.coal_cluster":"碳晶",
+    "block.meng.large_coal_hud":"大型碳晶芽",
+    "block.meng.medium_coal_hud":"中型碳晶芽",
+    "block.meng.small_coal_hud":"小型碳晶芽",
+    "block.meng.budding_coal":"碳晶母岩",
+    "block.meng.redstone_cluster":"红石水晶",
+    "block.meng.large_redstone_hud":"大型红石水晶芽",
+    "block.meng.medium_redstone_hud":"中型红石水晶芽",
+    "block.meng.small_redstone_hud":"小型红石水晶芽",
+    "block.meng.budding_redstone":"红石水晶母岩",
+    "jei.item.information.reload_xpshop":"用于商店刷新",
+    "jei.item.information.return_pearl":"在使用末影珍珠后，将会给予该物品给使用者，在一定秒数内可以返回到丢末影珍珠的位置",
+    "jei.item.information.nether_gem":"下界宝石，用于和下界交易\n将下界宝石丢给地狱门来完成交易",
+    "jei.item.information.wither_core_block":"用于召唤凋灵",
+    "block.meng.quartz_cluster":"石英水晶",
+    "block.meng.large_quartz_hud":"大型石英水晶芽",
+    "block.meng.medium_quartz_hud":"中型石英水晶芽",
+    "block.meng.small_quartz_hud":"小型石英水晶芽",
+    "block.meng.budding_quartz":"石英水晶母岩",
+    "fluid.meng.nether_fluid":"下界流体",
+    "item.meng.nether_fluid_bucket":"下界流体桶",
+    "item.meng.nether_gem":"下界宝石",
+    "jei.meng.jei_nether_portal":"地狱门交易",
+    "jei.meng.jei_xpshop":"经验商城所有物品",
+    "item.meng.netherite_scrap_nugget":"下界合金碎片碎粒"
 }

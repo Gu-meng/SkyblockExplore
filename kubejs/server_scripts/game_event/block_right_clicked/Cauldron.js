@@ -30,7 +30,7 @@ BlockEvents.rightClicked('minecraft:water_cauldron',event=>{
     })
     if (blockState.getValue(nvalue) != 3){
         newBlock = blockState.setValue(nvalue,$Integer.valueOf(Math.floor(blockState.getValue(nvalue) + 1).toString()))
-        level.setBlock(block.pos,newBlock,1)
+        level.setBlock(block.pos,newBlock,3)
         item.count -= 16
     }
 })

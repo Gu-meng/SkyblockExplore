@@ -24,11 +24,6 @@
 					type: "item"
 				}
 				{
-					id: "58ED53ECC4FE99F3"
-					item: "meng:raffle_ticket"
-					type: "item"
-				}
-				{
 					count: 64
 					id: "0230B5953A91E173"
 					item: "minecraft:bone_meal"
@@ -46,6 +41,17 @@
 						id: "meng:crushbone_axe"
 						tag: {
 							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "57DD209364A03F47"
+					item: {
+						Count: 1
+						id: "meng:raffle_ticket"
+						tag: {
+							ticketType: "ore"
 						}
 					}
 					type: "item"
@@ -211,6 +217,11 @@
 					item: "minecraft:egg"
 					type: "item"
 				}
+				{
+					id: "7B310F5A544CC570"
+					item: "meng:budding_coal"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "471ADCA858136145"
@@ -232,14 +243,20 @@
 					type: "item"
 				}
 				{
-					id: "06E127A08E373CCB"
-					item: "meng:raffle_ticket"
-					type: "item"
-				}
-				{
 					count: 16
 					id: "2A74F2395A1EF086"
 					item: "minecraft:lever"
+					type: "item"
+				}
+				{
+					id: "41E07FAC8961C8EC"
+					item: {
+						Count: 1
+						id: "meng:raffle_ticket"
+						tag: {
+							ticketType: "ore"
+						}
+					}
 					type: "item"
 				}
 			]
@@ -297,6 +314,11 @@
 							wand_options: { }
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "5DA267264F915474"
+					item: "meng:reload_xpshop"
 					type: "item"
 				}
 			]
@@ -555,25 +577,28 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["6938A9EB1122F781"]
-			id: "29686050DC353FBC"
-			tasks: [{
-				id: "63BD70D8B520831E"
-				type: "checkmark"
-			}]
-			x: 0.5d
-			y: 0.5d
-		}
-		{
 			description: ["整合包目前为开发版公测，可能会有很多内容不够完善，且在游玩中卡进度的bug，如果出现卡进度的bug，请在发布处留言并在游戏内使用创哥理赔"]
 			icon: "minecraft:redstone_torch"
 			id: "131C210CBC688F10"
-			rewards: [{
-				command: "/gamerule keepInventory true"
-				id: "5830333EA5D2AB03"
-				title: "打开死亡不掉落"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/gamerule keepInventory true"
+					id: "5830333EA5D2AB03"
+					title: "打开死亡不掉落"
+					type: "command"
+				}
+				{
+					id: "195260D205D8F41D"
+					item: {
+						Count: 1
+						id: "meng:raffle_ticket"
+						tag: {
+							ticketType: "bed"
+						}
+					}
+					type: "item"
+				}
+			]
 			size: 1.0d
 			tasks: [{
 				id: "1A79C625049A8172"

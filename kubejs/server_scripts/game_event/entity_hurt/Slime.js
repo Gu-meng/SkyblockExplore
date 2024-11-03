@@ -1,7 +1,7 @@
 EntityEvents.hurt("slime", event => {
     let entity = event.getEntity();
     if (event.getSource().getType() == "hotFloor" || event.getSource().getType() == "onFire"){
-        if (entity.hurtTime == 9 && MengUtils.isPercent(0.3)) {
+        if (entity.hurtTime == 9 && MengUtils.isPercent(MobSpwanConfig.magmaCube.spawn)) {
             /**
              * @type {Internal.MagmaCube}
              */

@@ -7,7 +7,7 @@
  */
 function returnPearlScheduleTick (server, tick, time,player){
     let playerName = player.username;
-    tick = 20 * 5 - tick;
+    tick = 20 * ReturnPearlConfig.deleteTime - tick;
     if (ReturnPearl[playerName] == undefined) ReturnPearl[playerName] = {};
     if (tick <= 0) {
         let inv = player.getInventory();

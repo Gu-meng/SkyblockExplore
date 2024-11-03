@@ -10,11 +10,12 @@ PlayerEvents.tick(event => {
             if (tickCount % 10 == 0){
                 if (count >= countMax){
                     playerAttachedData.add("lotteryState",false);
-                    let poolList = poolItemList.find(value => Object.keys(value).includes(player.getUuid().toString()))[player.getUuid()];
+                    let poolList = poolItemList[player.getUuid().toString()]
                     player.give(Item.of(poolList[count-2]));
                     player.playNotifySound("minecraft:entity.player.levelup","players",1,1)
                     paintHide(player)
-                    poolList = [];
+                    delete poolItemList[player.getUuid().toString()];
+                    // poolList = poolItemList;
                 }else{
                     paintShow(player,itemShow.oneItemId,itemShow.twoItemId,itemShow.threeItemId);
                     playerAttachedData.add("count", count + 1)
@@ -38,7 +39,7 @@ PlayerEvents.tick(event => {
 
 function itemShowFunc(player,count,max) {
     let uuid = player.getUuid();
-    let poolList = poolItemList.find(value => Object.keys(value).includes(uuid.toString()))[uuid];
+    let poolList = poolItemList[uuid];
     let two_item = poolList[Number(count)];
     let one_item = poolList[count - 1 == -1 ? max - 1 : count - 1];
     let three_item;

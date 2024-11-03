@@ -6,7 +6,11 @@ JEIEvents.information(event=>{
         "rain_doll",
         "sunny_doll",
         "dirty_cobblestone",
-        "catalyst_goat"
+        "catalyst_goat",
+        "reload_xpshop",
+        "return_pearl",
+        "nether_gem",
+        "wither_core_block"
     ]
     list.forEach(value=>{
         event.addItem("meng:" + value,Text.translate("jei.item.information." + value))

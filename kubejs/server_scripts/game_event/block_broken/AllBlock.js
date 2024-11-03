@@ -33,16 +33,25 @@ BlockEvents.broken(event => {
                 level.destroyBlock(BlockPos.of(pos), false, player)
                 return;
             }
-            if (block.hasTag('meng:tool_shears') && handItem.hasTag('forge:shears')) {
-                level.destroyBlock(BlockPos.of(pos), false, player)
-                level.getBlock(BlockPos.of(pos)).popItem(block.getItem())
-            } else {
-                level.destroyBlock(BlockPos.of(pos), isDrop, player)
+            if (isDrop) {
+                level.getBlockState(BlockPos.of(pos))
+                    .getBlock()
+                    .playerDestroy(
+                        level, 
+                        player, 
+                        BlockPos.of(pos), 
+                        level.getBlockState(BlockPos.of(pos)), 
+                        level.getBlockEntity(BlockPos.of(pos)), 
+                        handItem
+                    );
+                level.destroyBlock(BlockPos.of(pos), false)
+            }else{
+                level.destroyBlock(BlockPos.of(pos), false,player)
             }
         })
         if (!handItem.hasTag('minecraft:tools')) return
         if (!player.isCreative()) {
-            handItem.setDamageValue(handItem.getDamageValue() + posList.length);
+            handItem.setDamageValue(handItem.getDamageValue() + posList.length - 1);
             if (handItem.getDamageValue() > handItem.getMaxDamage()) handItem.count--
         }
     }
@@ -88,12 +97,23 @@ function equalBlock(block1, block2) {
  */
 function canDrop(block, item) {
     let db = toolDestroyBlock(item);
-    if (block.hasTag(db)){
+    if (block.hasTag(db)) {
         let level = blockDestroyLevel(block);
         if (level == 0) return true
         for (let index = level; index < 4; index++) {
-            let l = MengUtils.tool[index][tool]
-            for (let j = 0; j < l.length; j++) if (item.id == l[j]) return true
+            try{
+                let l = null
+                Object.keys(MengUtils.tool[index]).forEach(key=>{
+                    if (l == null && item.hasTag(key)){
+                        l = MengUtils.tool[index][key]
+                    }
+                    return;
+                })
+                for (let j = 0; j < l.length; j++) if (item.id == l[j]) return true
+            }catch(err){    
+                console.warn(err);
+                return false;
+            }
         }
     }
     return false;

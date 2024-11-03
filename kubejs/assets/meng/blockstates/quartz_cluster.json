@@ -1,0 +1,30 @@
+{
+	"variants": {
+		"facing=down": {
+			"model": "meng:block/quartz_cluster",
+			"x": 180
+		},
+		"facing=east": {
+			"model": "meng:block/quartz_cluster",
+			"x": 90,
+			"y": 90
+		},
+		"facing=north": {
+			"model": "meng:block/quartz_cluster",
+			"x": 90
+		},
+		"facing=south": {
+			"model": "meng:block/quartz_cluster",
+			"x": 90,
+			"y": 180
+		},
+		"facing=up": {
+			"model": "meng:block/quartz_cluster"
+		},
+		"facing=west": {
+			"model": "meng:block/quartz_cluster",
+			"x": 90,
+			"y": 270
+		}
+	}
+}

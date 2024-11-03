@@ -6,7 +6,7 @@ PlayerEvents.loggedIn(event => {
             let time = item.getNbt().getString("time");
             let timeTick = event.level.levelData.gameTime - tick;
             
-            if (timeTick >= 20 * 5) {
+            if (timeTick >= 20 * ReturnPearlConfig.deleteTime) {
                 item.count--;
             } else {
                 returnPearlScheduleTick(event.server,timeTick,time,event.player)

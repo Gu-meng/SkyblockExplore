@@ -49,6 +49,7 @@ stringMesh([
 ],'minecraft:sand')
 
 stringMesh([
+    Item.of("minecraft:sugar_cane").withChance(0.3),
     Item.of('minecraft:seagrass').withChance(0.1),
     Item.of('minecraft:kelp').withChance(0.05),
     Item.of('minecraft:sea_pickle').withChance(0.02),

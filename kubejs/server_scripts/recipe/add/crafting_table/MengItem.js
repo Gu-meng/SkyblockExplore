@@ -100,6 +100,12 @@ ServerEvents.recipes(event => {
         ])
     }
 
+    event.shaped("meng:wither_core_block",[
+        ["minecraft:soul_sand","meng:deep_fear","minecraft:soul_sand"],
+        ["meng:deep_fear","minecraft:ghast_tear","meng:deep_fear"],
+        ["minecraft:soul_sand","meng:deep_fear","minecraft:soul_sand"]
+    ])
+
     event.shapeless('meng:charged_certus_quartz_crystal_mesh',['meng:iron_frame','ae2:charged_certus_quartz_crystal','ae2:charged_certus_quartz_crystal']);
 })
 

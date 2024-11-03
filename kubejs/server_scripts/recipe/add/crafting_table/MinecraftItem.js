@@ -82,7 +82,3 @@ ServerEvents.recipes(event => {
 
     event.shapeless("minecraft:redstone",['meng:redstone_dust','meng:redstone_dust','meng:redstone_dust','meng:redstone_dust'])
 })
-
-function fullTable(event, output, input) {
-   return event.shapeless(output, [input, input, input, input, input, input, input, input, input])
-}

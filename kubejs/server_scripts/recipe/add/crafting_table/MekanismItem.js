@@ -15,5 +15,5 @@ ServerEvents.recipes(event=>{
 
     event.replaceInput({id:"mekanismgenerators:generator/heat"},'minecraft:furnace','ae2:vibration_chamber');
 
-    
+    fullTable(event,"mekanism:dirty_netherite_scrap","meng:netherite_scrap_nugget")
 })

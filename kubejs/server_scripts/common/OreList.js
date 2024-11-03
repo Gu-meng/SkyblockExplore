@@ -156,45 +156,6 @@ const oreList = {
         quartzMesh: setChanceAndCount(0.4, 2)
     },
     /**
-     * 煤炭
-     */
-    'minecraft:coal': {
-        splashing: {
-            "meng:slag": setChanceAndCount(0.8, 5)
-        },
-        andesiteMesh: setChanceAndCount(0.3),
-        copperMesh : setChanceAndCount(0.35,2),
-        ironMesh: setChanceAndCount(0.3, 2),
-        diamondMesh: setChanceAndCount(0.56, 12),
-        quartzMesh: setChanceAndCount(0.7, 12)
-    },
-    /**
-     * 红石粉粉
-     */
-    "meng:redstone_dust": {
-        splashing: {
-            "meng:slag": setChanceAndCount()
-        },
-        andesiteMesh: setChanceAndCount(0.05),
-        copperMesh : setChanceAndCount(0.35),
-        ironMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
-    },
-    /**
-     * 红石
-     */
-    'minecraft:redstone': {
-        splashing: {
-            "meng:slag": setChanceAndCount(0.25, 13)
-        },
-        andesiteMesh: setChanceAndCount(),
-        copperMesh : setChanceAndCount(),
-        ironMesh: setChanceAndCount(0.05,3),
-        diamondMesh: setChanceAndCount(0.48, 7),
-        quartzMesh: setChanceAndCount(0.38, 13)
-    },
-    /**
      * 青金石
      */
     'minecraft:lapis_lazuli': {
@@ -244,19 +205,6 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.08),
-        quartzMesh: setChanceAndCount()
-    },
-    /**
-     * 下届石英
-     */
-    'minecraft:quartz': {
-        splashing: {
-            "meng:slag": setChanceAndCount()
-        },
-        andesiteMesh: setChanceAndCount(),
-        copperMesh : setChanceAndCount(),
-        ironMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(),
         quartzMesh: setChanceAndCount()
     },
     /**

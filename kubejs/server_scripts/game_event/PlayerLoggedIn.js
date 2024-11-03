@@ -17,4 +17,5 @@ PlayerEvents.loggedIn(event=>{
             scale: 0.8,
         }
     })
+    event.player.tell(Text.green("感谢游玩整合包，整合包QQ交流群为：").append(Text.yellow("979724163")))
 })

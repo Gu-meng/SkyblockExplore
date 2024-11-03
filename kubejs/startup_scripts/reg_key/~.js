@@ -1,6 +1,4 @@
-const $KeyMappingRegistry = Java.loadClass(
-  "dev.architectury.registry.client.keymappings.KeyMappingRegistry"
-);
+const $KeyMappingRegistry = Java.loadClass("dev.architectury.registry.client.keymappings.KeyMappingRegistry");
  
 global.regKey = new $KeyMapping(
   "key.meng.multiple_blocks",

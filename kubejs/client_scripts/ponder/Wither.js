@@ -1,0 +1,46 @@
+Ponder.registry(event => {
+    event.create(['meng:wither_core_block',"minecraft:wither_skeleton_skull"])
+        .scene(
+            "meng:wither",
+            "凋灵召唤",
+            (scene,utils)=>{
+                scene.showBasePlate();
+                scene.addKeyframe();
+                scene.world.setBlock([2,1,2],"minecraft:soul_sand",true);
+                scene.world.showSection([2,1,2],Direction.DOWN)
+                scene.idle(15);
+                scene.addKeyframe();
+                scene.world.setBlock([3,2,2],"minecraft:soul_sand",true);
+                scene.world.showSection([3,2,2],Direction.DOWN) 
+                scene.idle(5);
+                scene.world.setBlock([2,2,2],"meng:wither_core_block",true); 
+                scene.world.showSection([2,2,2],Direction.DOWN)
+                scene.idle(5);
+                scene.world.setBlock([1,2,2],"minecraft:soul_sand",true); 
+                scene.world.showSection([1,2,2],Direction.DOWN)
+                scene.idle(15);
+                scene.addKeyframe();
+                scene.world.setBlock([2,3,2],"minecraft:wither_skeleton_skull",true); 
+                scene.world.showSection([2,3,2],Direction.DOWN)
+                scene.idle(5);
+                scene.world.setBlock([3,3,2],"minecraft:wither_skeleton_skull",true);
+                scene.world.showSection([3,3,2],Direction.DOWN)
+                scene.idle(5); 
+                scene.world.setBlock([1,3,2],"minecraft:wither_skeleton_skull",true); 
+                scene.world.showSection([1,3,2],Direction.DOWN)
+                scene.idle(10);
+                scene.addKeyframe();
+                scene.world.setBlock([2,1,2],"minecraft:air",true);
+                scene.world.setBlock([3,2,2],"minecraft:air",true);
+                scene.world.setBlock([2,2,2],"minecraft:air",true);
+                scene.world.setBlock([1,2,2],"minecraft:air",true);
+                scene.world.setBlock([2,1,2],"minecraft:air",true);
+                scene.world.setBlock([2,3,2],"minecraft:air",true);
+                scene.world.setBlock([3,3,2],"minecraft:air",true);
+                scene.world.setBlock([1,3,2],"minecraft:air",true);
+                scene.idle(3);
+                scene.world.createEntity("wither",[2,1,2])
+                // scene.world.showSection([2,1,2],Direction.DOWN)
+            }
+        )
+});

@@ -441,6 +441,11 @@
 		{
 			dependencies: ["61107CA81A2F71A7"]
 			id: "7BB4EBC3E59F5D08"
+			rewards: [{
+				id: "01A99D97702A91C4"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6902E607E22C3D4D"
 				item: "minecraft:wither_rose"
@@ -460,11 +465,18 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			tasks: [{
-				id: "712CC6550640B34E"
-				item: "minecraft:wither_skeleton_skull"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "712CC6550640B34E"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+				{
+					id: "1DE2838C36523932"
+					item: "meng:wither_core_block"
+					type: "item"
+				}
+			]
 			title: "{ftbq.title.meng.wither_skull}"
 			x: 8.5d
 			y: -8.0d

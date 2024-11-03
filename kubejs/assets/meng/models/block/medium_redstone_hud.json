@@ -1,0 +1,7 @@
+{
+	"parent": "meng:block/cross",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"cross": "meng:block/cluster/medium_hud"
+	}
+}

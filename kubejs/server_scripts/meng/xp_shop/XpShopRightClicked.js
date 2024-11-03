@@ -1,18 +1,4 @@
 /**
- * 之后有个想法做成动态商店
- * 比如每个物品有一个补货、价格每天有个随机的浮动
- * 物品的出现也是概率性的，比如今天补到这个货了
- * 好吧，这个是之后的更新计划 -- 2024年10月17日实现了！
- */
-
-// global.shopItemList = [
-//     Item.of('meng:crushbone', { buyXp: 10 }),
-//     Item.of('minecraft:stone', { buyXp: 100 }),
-//     Item.of('minecraft:egg', { buyXp: 50 }),
-//     Item.of('meng:raffle_ticket', { buyXp: 2000 }),
-// ]
-
-/**
  * 检查商店是否有绑定正确的箱子且在同一纬度下
  * @param {Internal.ItemStack_} item 箱子物品
  * @param {*} level 世界
@@ -50,26 +36,33 @@ function detectionChest(item, level, player) {
 /**
  * 存入快递箱
  * @param {*} block 箱子方块
- * @param {*} items 存入物品数组
+ * @param {XpShopArrHelper} arrHelper 
  */
-function expressBox(block, items) {
+function expressBox(block, arrHelper) {
     /**
      * @type {Internal.ChestBlockEntity}
      */
     let cbe = block.getEntity();
-    items.forEach(value => {
+    arrHelper.getItems().forEach(item => {
         for (let j = 0; j < 27; j++) {
-            if (cbe.getItem(j).id == value.item) {
-                cbe.getItem(j).count += value.count;
-                break;
+            if (cbe.getItem(j).id == item.id) {
+                if (cbe.getItem(j).hasNBT()){
+                    if (cbe.getItem(j).nbt.equals(item.nbt)){
+                        cbe.getItem(j).count += item.count;
+                        break;
+                    }
+                }else{
+                    cbe.getItem(j).count += item.count;
+                    break;
+                }
             } else if (cbe.getItem(j).id == 'minecraft:air') {
-                cbe.setItem(j, Item.of(value.item, value.count))
+                cbe.setItem(j, item)
                 break;
             }
             if (j == 26) {
                 player.tell(Text.translate("tell.meng.chest_full"))
                 let spawnItem = e.level.createEntity("item")
-                spawnItem.item = Item.of(value.item, value.count)
+                spawnItem.item = item
                 spawnItem.pos = e.getBlock().getUp().getPos()
                 spawnItem.spawn()
             }
@@ -100,6 +93,7 @@ function buyXpUpdate(number, color) {
 function synchronizationShopList(server) {
     let newList = [];
     synchronizationShop(XpShopPersistentData(server))
+
     shopItemList.forEach(value => {
         newList.push(value.item)
     })
@@ -107,12 +101,9 @@ function synchronizationShopList(server) {
 }
 
 // 下面的狮山属于是只有上帝能看懂了
-// 在之后的代码结构调整将各个功能板块分开来
-// const shopItems = global.shopItemList
-// const shopItems = shopItemList.values();
 ItemEvents.firstRightClicked("meng:xp_shop", event => {
     const server = event.getServer()
-    
+
     /**
      * @type {Internal.ServerPlayer}
      */
@@ -127,7 +118,7 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
     if (block == null) return
 
     let rd = ReplenishmentDay(server)
-    if (rd.isSyncDay(level)){
+    if (rd.isSyncDay(level)) {
         rd.updateReplenishDay(level);
         replenishment(server);
     }
@@ -139,6 +130,7 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
     //记录是否支付
     ppd.putBoolean("isPay", false);
     let arr = []
+    let arrHelper = new XpShopArrHelper([]);
 
     let xpShopItem = setItemDisplay('meng:xp_shop', "item.display.meng.xp_shop.shopping_trolley")
 
@@ -156,43 +148,23 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                 slot.setItem(shopItems[index])
                 //给物品添加左键事件（添加购买）
                 slot.setLeftClicked(() => {
+                    let iitem = slot.getItem();
+                    if (iitem.is("air")) return;
+                    let nbt = iitem.nbt;
+                    let xxp = nbt.getInt("buyXp")
+                    let iid = nbt.getString("identificationId");
                     if (ppd.getBoolean("isAddShop")) {
-                        //如果购物车里没有商品时候直接添加
-                        if (arr.length < 0) {
-                            arr.push({
-                                item: slot.getItem().getId(),
-                                xp: slot.getItem().getNbt().getInt("buyXp"),
-                                count: 1,
-                            })
-                            // 处理有商品时的逻辑
+                        if (!arrHelper.itemIsEmpty(iid)) {
+                            arrHelper.addItem(iitem, iid, 1, xxp, nbt)
                         } else {
-                            // temp
-                            let t = 0;
-                            // 在购物车里寻找对应的物品
-                            for (let i = 0; i < arr.length; i++) {
-                                if (arr[i].item == slot.getItem().getId()) {
-                                    arr[i].count += 1;
-                                    t = 1;
-                                    break;
-                                }
-                            }
-                            //没有找到该物品则添加新的
-                            if (t == 0) {
-                                arr.push({
-                                    item: slot.getItem().getId(),
-                                    xp: slot.getItem().getNbt().getInt("buyXp"),
-                                    count: 1,
-                                })
-                            }
+                            arrHelper.updateItem(iid, 1);
                         }
                         //计算所需总的经验
-                        SumXp += slot.getItem().getNbt().getInt("buyXp")
+                        SumXp += xxp;
 
-                        let c = deleteXpShop(server, slot.getItem().getId(), 1);
+                        let c = deleteXpShop(server, iid, 1);
 
-                        ppd.put("tempItem", arr);
-
-                        // if (c == 0) slot.setItem("air");
+                        ppd.put("tempItem", arrHelper.getItemList());
 
                         for (let index = 0; index < shopItems.length; index++) {
                             gui.slot(index, 0, sslot => {
@@ -208,14 +180,9 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                                 sslot.setItem(shopItems[index])
                             })
                         }
-                        // gui.slot(shopItems.length, 0, sslot => sslot.setItem("air"))
 
                         gui.slot(4, 5, slott => {
-                            let c = 0
-                            arr.forEach(value => {
-                                c += value.count;
-                            })
-                            slott.getItem().setCount(c);
+                            slott.getItem().setCount(arrHelper.getAllCount());
                         })
 
                         gui.slot(5, 5, slot => {
@@ -248,7 +215,7 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                 // 给购物车的位置设置为空（避免重复打开购物车）
                 slot.setItem("air")
 
-                let billXp = 0;
+                // let billXp = 0;
                 ppd.putBoolean("isAddShop", false)
                 //先将gui所有展示物品清空
                 for (let index = 0; index < shopItems.length + 1; index++) {
@@ -257,10 +224,10 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                     })
                 }
                 // 展示购物车物品
-                for (let i = 0; i < arr.length; i++) {
-                    billXp += arr[i].xp
+                for (let i = 0; i < arrHelper.getArrLength(); i++) {
+                    // billXp += arr[i].xp
                     gui.slot(i, 0, slott => {
-                        slott.setItem(Item.of(arr[i].item, arr[i].count))
+                        slott.setItem(arrHelper.getIndexItem(i))
                         // 后续这里可以写上在购物车里进行去除
                     })
                 }
@@ -271,17 +238,18 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                     slott.setItem(billItem)
                     // 结算处理逻辑代码
                     slott.setLeftClicked(() => {
-                        if (arr.length > 0) {
+                        // if (arr.length > 0) {
+                        if (arrHelper.getArrLength() > 0) {
                             if (xxp > SumXp) {
                                 xxp -= SumXp;
-                                expressBox(block, arr);
+                                expressBox(block, arrHelper);
                                 player.tell(Text.translate("tell.meng.chest_putin"))
                                 player.closeMenu()
                                 ppd.putBoolean("isPay", true);
                             } else {
                                 player.tell(Text.translate("tell.meng.xp_shop.no_xp_buy"))
                             }
-                            
+
                         } else {
                             player.tell(Text.translate("tell.meng.xp_shop.null_buy"))
                         }
@@ -294,7 +262,7 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                     slott.setItem(backItem)
                     ppd.putBoolean("isAddShop", true)
                     slott.setLeftClicked(() => {
-                        let il = shopItems.length >= arr.length ? shopItems.length : arr.length;
+                        let il = shopItems.length >= arrHelper.getArrLength() ? shopItems.length : arrHelper.getArrLength();
                         for (let index = 0; index < il + 1; index++) {
                             gui.slot(index, 0, sslot => {
                                 sslot.setItem(shopItems[index])
@@ -316,6 +284,77 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                 })
             })
         })
-        gui
     })
 })
+/**
+ * 
+ * @param {Array} list 
+ */
+function XpShopArrHelper(list) {
+    this.itemList = list;
+    this.addItem = (item, identificationId, count, xp, nbt) => {
+        this.itemList.push({
+            item: item,
+            identificationId: identificationId,
+            xp: xp,
+            count: count,
+            nbt: nbt
+        })
+    }
+
+    this.getItem = (identificationId) => {
+        let v = this.getItemList().find(value => value.identificationId == identificationId);
+        return this.getItemStack(v,true);
+    }
+
+    this.getItemStack = (value,isDeleteIId) => {
+         /**
+         * @type {Internal.OrderedCompoundTag_}
+         */
+        let nbt = value.nbt
+        nbt.remove("buyXp")
+        nbt.remove("remaining")
+        if (isDeleteIId) nbt.remove("identificationId")
+        return Item.of(value.item.id, value.count, nbt);
+    }
+
+    this.getAllCount = () => {
+        let j = 0;
+        this.getItemList().forEach(value=>{
+            j += value.count
+        })
+        return j;
+    }
+
+    this.itemIsEmpty = (identificationId) => {
+        if (identificationId == undefined) return false;
+        let v = this.getItemList().find(value => value.identificationId == identificationId);
+        return v == undefined ? false : true;
+    }
+
+    this.updateItem = (identificationId, addCount) => {
+        let v = this.getItemList().find(value => value.identificationId == identificationId);
+        v.count += addCount;
+    }
+
+    this.getItemList = () => {
+        return this.itemList;
+    }
+
+    this.getItems = () => {
+        let itemList = [];
+        this.itemList.forEach(value=>{
+            itemList.push(this.getItem(value.identificationId))
+        })
+        return itemList;
+    }
+
+    this.getArrLength = () => {
+        return this.getItemList().length;
+    }
+
+    this.getIndexItem = (index, isDeleteIId) => {
+        const value = this.getItemList()[index]
+        return this.getItemStack(value,isDeleteIId)
+    }
+}

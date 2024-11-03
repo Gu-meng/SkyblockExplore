@@ -3,7 +3,7 @@
 global.EntityLavaRecipe = []
 
 const ItemInLavaRecipe = {
-    spawnEntity : function (inputItem,outputEntity,outputEntityEgg,displayRenderScale,displayX){
+    spawnEntity : function (inputItem,outputEntity,outputEntityEgg,displayRenderScale,displayY){
         global.EntityLavaRecipe.push({
             inputItem: inputItem,
             output: {
@@ -13,7 +13,7 @@ const ItemInLavaRecipe = {
             },
             display: {
                 renderScale: displayRenderScale,
-                x: displayX
+                y: displayY
             }
         })
     }

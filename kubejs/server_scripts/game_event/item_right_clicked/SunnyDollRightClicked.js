@@ -5,7 +5,7 @@ ItemEvents.firstRightClicked("meng:sunny_doll",event=>{
         let item = event.getItem();
         if (player.getCooldowns().getCooldownPercent(item.item,1) != 0) return
         level.server.runCommandSilent("weather clear");
-        player.addItemCooldown(item,20*60);
+        player.addItemCooldown(item,20*ItemCooldownConfig.sunnyDoll);
         item.setDamageValue(item.getDamageValue() + 1);
         if (item.getDamageValue() == item.getMaxDamage()){
             item.count--;

@@ -3,7 +3,7 @@ ItemEvents.tooltip(event=>{
         try{
             if (!item.hasNBT()) return
             let gt = Client.player.level.levelData.gameTime
-            let tick = 20 * 5 - (gt - item.nbt.getLong("tick"));
+            let tick = 20 * ReturnPearlConfig.deleteTime - (gt - item.nbt.getLong("tick"));
             // let oldTime = parseInt(item.getNbt().getString("time"))
             // let newTime = new Date().getTime();
             // let deleteTime = (5 - Math.floor((newTime - oldTime) / 1000))

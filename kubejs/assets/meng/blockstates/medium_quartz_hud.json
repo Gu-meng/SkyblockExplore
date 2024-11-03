@@ -1,0 +1,30 @@
+{
+	"variants": {
+		"facing=down": {
+			"model": "meng:block/medium_quartz_hud",
+			"x": 180
+		},
+		"facing=east": {
+			"model": "meng:block/medium_quartz_hud",
+			"x": 90,
+			"y": 90
+		},
+		"facing=north": {
+			"model": "meng:block/medium_quartz_hud",
+			"x": 90
+		},
+		"facing=south": {
+			"model": "meng:block/medium_quartz_hud",
+			"x": 90,
+			"y": 180
+		},
+		"facing=up": {
+			"model": "meng:block/medium_quartz_hud"
+		},
+		"facing=west": {
+			"model": "meng:block/medium_quartz_hud",
+			"x": 90,
+			"y": 270
+		}
+	}
+}

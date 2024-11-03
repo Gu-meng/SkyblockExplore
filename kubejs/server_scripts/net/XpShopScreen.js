@@ -6,7 +6,7 @@ NetworkEvents.dataReceived("xpShopScreen",event=>{
         if (!event.player.persistentData.getBoolean("isPay")){
             for (let i = 0; i < arr.length; i++) {
                 let value = arr[i];
-                backXpShopItem(event.server,value["item"],value["count"])
+                backXpShopItem(event.server,value.identificationId,value.count)
             }
         }
         if (arr.length != 0) event.player.persistentData.remove("tempItem")

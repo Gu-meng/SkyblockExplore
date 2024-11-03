@@ -1,0 +1,9 @@
+{
+    "type": "meng:basic_transaction",
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": []
+        }
+    }
+}

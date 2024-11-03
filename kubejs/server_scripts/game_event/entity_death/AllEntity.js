@@ -3,8 +3,8 @@ EntityEvents.death(event => {
     const onPos = entity.getOnPos();
     const { x, y, z } = onPos;
 
-    if (y <= -32) {
-        if (MengUtils.isPercent(0.05)) {
+    if (y <= MobSpwanConfig.warden.y) {
+        if (MengUtils.isPercent(MobSpwanConfig.warden.spawn)) {
             event.getServer().runCommandSilent(`summon minecraft:warden ${x + 0.5} ${y + 2.5} ${z + 0.5}`);
         }
     }
