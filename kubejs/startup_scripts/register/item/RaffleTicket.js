@@ -1,15 +1,14 @@
 let RaffleTicketObj = {};
 
-function regRaffleTicket (type,text,color) {
+function regRaffleTicket (type,color) {
     RaffleTicketObj[type] = {
-        color:color,
-        text:text
+        color:color
     }
 }
-regRaffleTicket("basal","抽奖券",0xff8317)
-regRaffleTicket("ore","矿物抽奖券",0x54daff);
-regRaffleTicket("sapling","树苗抽奖券",0x09ff00);
-regRaffleTicket("bed","床的抽奖券",0xff85b4);
+regRaffleTicket("basal",0xff8317)
+regRaffleTicket("ore",0x54daff);
+regRaffleTicket("sapling",0x09ff00);
+regRaffleTicket("bed",0xff85b4);
 
 StartupEvents.registry("item", event => {
     event.create(basicItem.raffle_ticket)
@@ -34,8 +33,7 @@ StartupEvents.registry("item", event => {
 
 global.raffleTicketName = (type) =>{
     let obj = RaffleTicketObj[type];
-    return Text.of(obj.text).color(obj.color)
-    // return Text.translate("item.meng.raffle_ticket." + type).color(obj.color)
+    return Text.translate("item.meng.raffle_ticket." + type).color(obj.color)
 }
 
 global.raffleTicketColor = (type) => {

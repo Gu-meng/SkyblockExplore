@@ -1,3 +1,4 @@
+// priority: 2
 
 /**
  * 添加商店内可能出现的物品
@@ -30,37 +31,17 @@ function addItem(item, buyXp, minCount, maxCount, chance, minimumGuarantee,ident
 function initAddItemXpShop(){
     global.shopItemList = [];
 
-    addItem('meng:crushbone', 10, 28, 64, 0.8);
-    addItem('minecraft:stone', 100, 26, 64, 0.5, 5);
-    addItem('minecraft:egg', 50, 7, 32, 0.4, 5);
-    addItem('meng:raffle_ticket', 1000, 1, 1, 0.2, 10,"bed",{ticketType:"bed"});
-    addItem('meng:raffle_ticket', 500, 1, 1, 0.2, 10,"sapling",{ticketType:"sapling"});
-    addItem('meng:raffle_ticket', 2000, 1, 5, 0.2, 10,"ore",{ticketType:"ore"});
-
-    addItem('minecraft:experience_bottle', 100, 1, 2, 0.1, 13);
-    addItem("meng:reload_xpshop", 1500, 1, 5, 0.1, 20);
-
-    addItem('minecraft:oak_sapling', 300, 1, 5, 0.3);
-    addItem('minecraft:spruce_sapling', 300, 1, 5, 0.3);
-    addItem('minecraft:birch_sapling', 300, 1, 5, 0.3);
-    addItem('minecraft:jungle_sapling', 300, 1, 5, 0.3);
-    addItem('minecraft:acacia_sapling', 300, 1, 5, 0.3);
-    addItem('minecraft:dark_oak_sapling', 300, 1, 5, 0.3);
-    addItem('minecraft:cherry_sapling', 300, 1, 5, 0.3);
-
-    addItem("meng:budding_quartz", 2000, 1, 3, 0.05);
-    addItem("meng:budding_redstone", 1000, 1, 5, 0.1);
-    addItem("meng:budding_coal", 500, 1, 10, 0.2);
-
     xpShopItemList.forEach(value=>{
         if (global.shopItemList.find(value2 => value2.item == value.item) == undefined) global.shopItemList.push({item:value.item})
     })
-    
     try{
-        Utils.server.players.forEach(player=>{
-            sendShopItemInClient(player)
-        })
-    }catch(err){console.warn(err);}
+        if(Utils.server.players.size()>0){
+            Utils.server.players.forEach(player=>{
+                sendShopItemInClient(player);
+            })
+        }
+    }catch(err){console.warn(err)}
+ 
 }
 
 /**
@@ -69,10 +50,9 @@ function initAddItemXpShop(){
  */
 function sendShopItemInClient(player){
     let obj = {value:[]}
-    xpShopItemList.forEach(value=>{
+    global.xpShopItemList.forEach(value=>{
         obj.value.push({
-            item:value.item,
-            nbt:value.nbt,
+            item:Item.of(value.item,value.nbt),
             buyXp:value.buyXp,
             chance: (value.chance * 100) + "%" 
         })

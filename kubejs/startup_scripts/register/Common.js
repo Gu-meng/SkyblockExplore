@@ -33,7 +33,11 @@ const basicItem = {
     reload_xpshop: namespace + "reload_xpshop",
     return_pearl: namespace + "return_pearl",
     nether_gem : namespace + "nether_gem",
-    netherite_scrap_nugget : namespace + "netherite_scrap_nugget"
+    netherite_scrap_nugget : namespace + "netherite_scrap_nugget",
+}
+
+const especial = {
+    backpack : namespace + "backpack"
 }
 
 const ironTimberblock = {

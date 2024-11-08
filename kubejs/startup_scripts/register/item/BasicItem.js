@@ -3,4 +3,6 @@ StartupEvents.registry("item",event=>{
         if (key == "raffle_ticket") continue;
         event.create(basicItem[key]);
     }
+
+    event.create(especial.backpack).maxStackSize(1).tag("curios:back");
 })

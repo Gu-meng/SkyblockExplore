@@ -1,3 +1,5 @@
+// priority: 5
+
 /**
  * 创建返回珍珠的定时任务
  * @param {*} server 
@@ -17,7 +19,7 @@ function returnPearlScheduleTick (server, tick, time,player){
         server.scheduleInTicks(tick + 10, () => {
             let inv = player.getInventory();
             invDeleteItem(inv, "meng:return_pearl", time,playerName);
-            player.tell("已删除超时的返回珍珠")
+            player.tell(Text.translate("tell.meng.return_pearl"))
             delete ReturnPearl[playerName][time];
         })
     player.sendData("serverTick",{tick:server.tickCount});

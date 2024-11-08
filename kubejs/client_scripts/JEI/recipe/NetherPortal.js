@@ -12,20 +12,20 @@ JEIAddedEvents.registerCategories((event) => {
                 let itemList = recipe.data;
                 for (let i = 0; i < itemList.length; i++) {
                     let value = itemList[i];
-                    builder.addSlot("output",x,y)
+                    builder.addSlot("output", x, y)
                         .addItemStack(value.item)
                         .setSlotName("output" + i)
-                        .addTooltipCallback((r,t)=>{
-                            t.add(1,Text.of("[" + value.minCount + " - " + value.maxCount + "]").green())
-                            t.add(2,Text.of("概率为" + value.chance).yellow())
+                        .addTooltipCallback((r, t) => {
+                            t.add(1, Text.of("[" + value.minCount + " - " + value.maxCount + "]").green())
+                            t.add(2, Text.of("概率为" + value.chance).yellow())
                         })
-                        if((i+1) % 4 == 0){
-                            x = 75;
-                            y += 18;
-                        }else{
-                            x += 18;
-                        }
-                        
+                    if ((i + 1) % 4 == 0) {
+                        x = 75;
+                        y += 18;
+                    } else {
+                        x += 18;
+                    }
+
                 }
             })
             .setDrawHandler((r, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
@@ -44,19 +44,37 @@ JEIAddedEvents.registerCategories((event) => {
 
 global.netherPortalItemArray = [];
 
-NetworkEvents.dataReceived("netherPortalItem",event=>{
+NetworkEvents.dataReceived("netherPortalItem", event => {
     global.netherPortalItemArray = []
-    event.data.value.forEach(value=>{
+    event.data.value.forEach(value => {
         global.netherPortalItemArray.push({
-            item:Item.of(value.item,value.minCount),
-            chance:value.chance,
-            minCount:value.minCount,
-            maxCount:value.maxCount
+            item: Item.of(value.item, value.minCount),
+            chance: value.chance,
+            minCount: value.minCount,
+            maxCount: value.maxCount
         })
     })
 })
 
-JEIAddedEvents.registerRecipes(event=>{
+JEIAddedEvents.registerRecipes(event => {
+    global.netherPortalItemArray = [];
+    let sum = 0;
+    global.neterPortalLoots.forEach(value => {
+        sum += value.chance;
+    })
+
+    let oneChance = parseFloat((100 / sum).toFixed(2));
+
+    global.neterPortalLoots.forEach(value => {
+        global.netherPortalItemArray.push({
+            item: value.item,
+            minCount: value.minCount,
+            maxCount: value.maxCount,
+            chance: parseFloat((value.chance * oneChance).toFixed(2)) + "%"
+        })
+    })
+
+
     event.custom("meng:jei_nether_portal")
         .add(global.netherPortalItemArray)
 })

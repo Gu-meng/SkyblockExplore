@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.2.0.241103",
+    "meng.client.window.title" : "空岛：探索 v0.2.1.241108",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -429,5 +429,22 @@
     "item.meng.nether_gem":"下界宝石",
     "jei.meng.jei_nether_portal":"地狱门交易",
     "jei.meng.jei_xpshop":"经验商城所有物品",
-    "item.meng.netherite_scrap_nugget":"下界合金碎片碎粒"
+    "item.meng.netherite_scrap_nugget":"下界合金碎片碎粒",
+
+    "item.meng.raffle_ticket.basal":"抽奖券",
+    "item.meng.raffle_ticket.ore":"矿物抽奖券",
+    "item.meng.raffle_ticket.sapling":"树苗抽奖券",
+    "item.meng.raffle_ticket.bed":"床抽奖券",
+    "item.meng.backpack":"背包",
+    "key.meng.packsack":"背包",
+    "key.keybinding.packsack":"打开饰品栏背包",
+    "tell.meng.openBackpack.curiosapi":"您的饰品栏里没有背包",
+    "tell.meng.raffle_ticket.all":"%s 从抽奖券中获取了 %s",
+    "tell.meng.return_pearl":"已删除超时的返回珍珠",
+    "item.tooltip.meng.backpack1":"背包为测试物品，可能存在bug",
+    "item.tooltip.meng.backpack2":"请不要把贵重物品存入",
+    "item.tooltip.meng.backpack3":"请不要将打开背包的背包物品放进背包里",
+    "item.tooltip.meng.return_pearl1":"该物品已失效无法使用",
+    "item.tooltip.meng.return_pearl2":"剩余时间 %s",
+    "ponder.meng.wither.header":"召唤凋灵"
 }

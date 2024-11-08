@@ -1,3 +1,5 @@
+// priority: 5
+
 function entityDropPainfulTears(entity,level,server,type){
     if (type != "hotFloor") return
     if (entity.hurtTime == 9) {

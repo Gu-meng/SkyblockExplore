@@ -1,3 +1,5 @@
+// priority: 5
+
 // 线筛网
 function stringMesh(output,input,time,isWater){
     sifting(output,[input,'createsifter:string_mesh'],time,isWater);

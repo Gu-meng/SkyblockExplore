@@ -48,6 +48,15 @@ NetworkEvents.dataReceived("xpShopItem",event=>{
 })
 
 JEIAddedEvents.registerRecipes(event=>{
+    global.xpShopItemArray = [];
+    global.xpShopItemList.forEach(value=>{
+        global.xpShopItemArray.push({
+            item:Item.of(value.item,value.nbt),
+            buyXp:value.buyXp,
+            chance: (value.chance * 100) + "%" 
+        })
+    })
+    
     event.custom("meng:jei_xpshop")
         .add(global.xpShopItemArray)
 })

@@ -1,3 +1,5 @@
+// priority: 5
+
 const Difficulty = {
     wither:{
         /**

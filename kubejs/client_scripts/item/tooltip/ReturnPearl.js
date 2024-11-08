@@ -4,17 +4,11 @@ ItemEvents.tooltip(event=>{
             if (!item.hasNBT()) return
             let gt = Client.player.level.levelData.gameTime
             let tick = 20 * ReturnPearlConfig.deleteTime - (gt - item.nbt.getLong("tick"));
-            // let oldTime = parseInt(item.getNbt().getString("time"))
-            // let newTime = new Date().getTime();
-            // let deleteTime = (5 - Math.floor((newTime - oldTime) / 1000))
             let deleteTime = Math.floor(tick / 20);
             if (deleteTime < 0){
-                text.add("该物品已失效无法使用")
-                // if (!item.nbt.getBoolean("isDiscard")){
-                //     Client.player.sendData("deleteItem",{time:oldTime.toString()})
-                // }
+                text.add(Text.translate("item.tooltip.meng.return_pearl1"))
             }else{
-                text.add("剩余时间" + deleteTime)
+                text.add(Text.translate("item.tooltip.meng.return_pearl2",deleteTime))
             }
         }catch(err){}
     })

@@ -12,6 +12,7 @@ PlayerEvents.tick(event => {
                     playerAttachedData.add("lotteryState",false);
                     let poolList = poolItemList[player.getUuid().toString()]
                     player.give(Item.of(poolList[count-2]));
+                    event.server.tell(Text.translate("tell.meng.raffle_ticket.all",player.username,Item.of(poolList[count-2]).displayName).gold())
                     player.playNotifySound("minecraft:entity.player.levelup","players",1,1)
                     paintHide(player)
                     delete poolItemList[player.getUuid().toString()];

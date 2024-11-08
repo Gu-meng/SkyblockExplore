@@ -1,8 +1,9 @@
 Ponder.registry(event => {
+    let name = Text.translate("ponder.meng.wither.header").getString()
     event.create(['meng:wither_core_block',"minecraft:wither_skeleton_skull"])
         .scene(
             "meng:wither",
-            "凋灵召唤",
+            name,
             (scene,utils)=>{
                 scene.showBasePlate();
                 scene.addKeyframe();

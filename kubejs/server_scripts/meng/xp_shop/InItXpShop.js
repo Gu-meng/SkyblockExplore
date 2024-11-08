@@ -11,12 +11,4 @@ PlayerEvents.loggedIn(event => {
     } else {
         synchronizationShop(xpShop)
     }
-
-    if (server.players.size() > 1) {
-        sendShopItemInClient(event.player)
-        sendNetherPortalItem(event.player)
-    } else {
-        server.tell("正在同步数据，可能会导致卡顿")
-        server.scheduleInTicks(5, () => server.runCommandSilent("reload"))
-    }
 })

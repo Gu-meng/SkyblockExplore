@@ -286,6 +286,7 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
         })
     })
 })
+
 /**
  * 
  * @param {Array} list 

@@ -1,4 +1,4 @@
-// 下面是测试代码
+
 let leaves = {
     'minecraft:oak_leaves':[
         Item.of('minecraft:apple').withChance(0.05),
