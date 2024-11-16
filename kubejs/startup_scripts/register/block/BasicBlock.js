@@ -23,11 +23,15 @@ StartupEvents.registry("block", event => {
 
     event.create(basicBlock.stalinite_block)
         .defaultTranslucent()
-        .hardness(3)
-        .noDrops()
+        .requiresTool()
         .glassSoundType()
-        .tag('forge:glass')
-        .tag("wither_immune")
+        .tagBlock('forge:glass')
+        .tagBlock("minecraft:wither_immune")
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_diamond_tool')
+        .hardness(10)
+        .resistance(3600000)
+
 
     event.create(basicBlock.precision_machine_parts)
         .hardness(2)

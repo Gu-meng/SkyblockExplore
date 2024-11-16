@@ -65,6 +65,7 @@ function createHud(item,blockBuilder, color, updateBlock, dropItem) {
             bs.set(facing, Direction.UP)
         })
         .tag("meng:budding")
+        .tag('minecraft:mineable/pickaxe')
         .color(color)
         .item(itemBuilder => {
             itemBuilder.color(color)
@@ -92,6 +93,7 @@ StartupEvents.registry("block", event => {
                 global.setBlock(rtc, value.small)
             })
             .tag("crystal_sound_blocks")
+            .tag('minecraft:mineable/pickaxe')
             .color(value.color)
             .item(itemBuilder => {
                 itemBuilder.color(value.color)

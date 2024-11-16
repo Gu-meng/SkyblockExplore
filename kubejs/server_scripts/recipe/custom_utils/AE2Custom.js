@@ -17,7 +17,7 @@ const AERecipe = {
             "ingredients": MengUtils.StrToItemUtil.itemListProcessing(ingredientList, inputItems),
             "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 世界互动流体内合成
@@ -38,7 +38,7 @@ const AERecipe = {
             "ingredients": MengUtils.StrToItemUtil.itemListProcessing(ingredientList, inputItems),
             "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 压印机挤压合成模式(需要提供至少一个top或者bottom)
@@ -58,7 +58,7 @@ const AERecipe = {
             "mode": "press",
             "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 压印机 压制合成模式(只需要传入一个输入)
@@ -74,6 +74,6 @@ const AERecipe = {
             "mode": "inscribe",
             "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     }
 }

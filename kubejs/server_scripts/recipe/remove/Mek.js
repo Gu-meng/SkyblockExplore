@@ -22,7 +22,7 @@ ServerEvents.recipes(event=>{
             event.remove({id:recipeId})
         })
     })
-    let removeId = [
+    const removeId = [
         "mekanism:processing/steel/enriched_iron_to_dust",
         "mekanism:nucleosynthesizing/wither_skeleton_skull",
         "mekanism:processing/iron/enriched",
@@ -36,7 +36,16 @@ ServerEvents.recipes(event=>{
         "mekanism:control_circuit/advanced",
         "mekanism:enriching/conversion/obsidian_to_obsidian_dust",
         "mekanism:control_circuit/elite",
-        "mekanism:control_circuit/ultimate"
+        "mekanism:control_circuit/ultimate",
+        "mekanism:metallurgic_infusing/alloy/infused",
+        "mekanism:metallurgic_infusing/alloy/reinforced",
+        "mekanism:infusion_conversion/carbon/from_charcoal",
+        "mekanism:infusion_conversion/carbon/from_enriched",
+        "mekanism:infusion_conversion/carbon/from_charcoal_block",
+        "mekanism:infusion_conversion/carbon/from_coal_block",
+        "mekanism:infusion_conversion/carbon/from_coal",
+        "mekanism:nucleosynthesizing/diamond",
+        "mekanism:jetpack"
     ]
     removeId.forEach(value=>{
         event.remove({id:value})

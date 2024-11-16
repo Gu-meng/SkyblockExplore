@@ -10,7 +10,8 @@ JEIEvents.information(event=>{
         "reload_xpshop",
         "return_pearl",
         "nether_gem",
-        "wither_core_block"
+        "wither_core_block",
+        "stalinite_block"
     ]
     list.forEach(value=>{
         event.addItem("meng:" + value,Text.translate("jei.item.information." + value))

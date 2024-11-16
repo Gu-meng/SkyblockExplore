@@ -12,7 +12,7 @@ const createAddition = {
             "input": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem),
             "result": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 物品充电配方
@@ -29,6 +29,6 @@ const createAddition = {
             "energy": energy,
             "maxChargeRate": maxChargeRate
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     }
 }

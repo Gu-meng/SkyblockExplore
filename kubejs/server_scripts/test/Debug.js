@@ -2,6 +2,7 @@ const Debug = () => {
     function getItemId() {
         if (!debugConfig.handItemId) return;
         ItemEvents.firstLeftClicked(e => {
+            if (e.item.is("air")) return;
             e.player.runCommand("kjs hand")
             Client.keyboardHandler.setClipboard('"' + e.item.id + '"');
         })

@@ -34,6 +34,8 @@ const basicItem = {
     return_pearl: namespace + "return_pearl",
     nether_gem : namespace + "nether_gem",
     netherite_scrap_nugget : namespace + "netherite_scrap_nugget",
+    broken_glass : namespace + "broken_glass",
+    glowstone_gem : namespace + "glowstone_gem"
 }
 
 const especial = {
@@ -56,6 +58,7 @@ const ironTimberblock = {
 const basicBlock = {
     stalinite_block: namespace + "stalinite_block",
     slag_block: namespace + "slag_block",
+    new_slag_block : namespace + "new_slag_block",
     precision_machine_parts: namespace + "precision_machine_parts",
     dirty_cobblestone: namespace + "dirty_cobblestone",
     better_precision_machine_parts: namespace + "better_precision_machine_parts",
@@ -73,6 +76,7 @@ const ToolItem = {
 const MeshAdvanced = {
     diamond_mesh: namespace + "diamond_mesh",
     charged_certus_quartz_crystal_mesh: namespace + "charged_certus_quartz_crystal_mesh",
+    netherite_mesh:namespace + "netherite_mesh"
 }
 
 const MeshItem = {

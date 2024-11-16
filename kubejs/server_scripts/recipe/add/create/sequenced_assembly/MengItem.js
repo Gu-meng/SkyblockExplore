@@ -47,7 +47,11 @@ ServerEvents.recipes(event=>{
 
     const precisionMachineIncomplete = "meng:precision_machine_incomplete";
 
-    sequencedAssembly('meng:precision_machine_parts',
+    sequencedAssembly(
+        [
+            Item.of('meng:precision_machine_parts').withChance(99),
+            Item.of("minecraft:iron_block").withChance(1)
+        ],
         'meng:machine',
         [
             sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'meng:reinforce_iron_sheet']),
@@ -56,7 +60,7 @@ ServerEvents.recipes(event=>{
             sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'createaddition:capacitor']),
             sequence.deploying(precisionMachineIncomplete,[precisionMachineIncomplete,'create:electron_tube'])
         ]
-    ).loops(3).transitionalItem(precisionMachineIncomplete);
+    ).loops(1).transitionalItem(precisionMachineIncomplete);
 
     const betterPrecisionMachineIncomplete = 'meng:better_precision_machine_incomplete'
 

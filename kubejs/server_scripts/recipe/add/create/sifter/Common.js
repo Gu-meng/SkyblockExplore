@@ -37,6 +37,11 @@ function quartzMesh(output,input,time,isWater){
     sifting(output,[input,'meng:charged_certus_quartz_crystal_mesh'],time,isWater);
 }
 
+// 下界合金筛网
+function netheriteMesh(output,input,time,isWater){
+    sifting(output,[input,'meng:netherite_mesh'],time,isWater);
+}
+
 // 铜筛网
 function copperMesh(output,input,time,isWater){
     sifting(output,[input,'meng:copper_mesh'],time,isWater);

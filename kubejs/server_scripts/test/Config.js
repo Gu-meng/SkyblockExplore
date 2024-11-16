@@ -1,5 +1,5 @@
 const debugConfig = {
     isDebug : true,
-    handItemId : false,
+    handItemId : true,
     itemEntityId : false
 }

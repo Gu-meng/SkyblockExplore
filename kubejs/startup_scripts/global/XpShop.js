@@ -46,4 +46,4 @@ global.addItem("meng:budding_coal", 500, 1, 10, 0.2);
 
 global.addItem("minecraft:bee_spawn_egg", 2500, 1, 2, 0.01, 50);
 global.addItem("minecraft:honeycomb", 4000, 1, 5, 0.02, 30);
-global.addItem("meng:backpack", 5000, 1, 1, 0.01, -1,{items:[]});
+global.addItem("meng:backpack", 5000, 1, 1, 0.01, 50,{items:[]});

@@ -69,7 +69,6 @@ function expressBox(block, arrHelper) {
         }
     })
 }
-
 function setItemDisplay(itemId, textTranslate) {
     const text = Text.translate(textTranslate).getString()
     return Item.of(itemId, {
@@ -246,6 +245,7 @@ ItemEvents.firstRightClicked("meng:xp_shop", event => {
                                 player.tell(Text.translate("tell.meng.chest_putin"))
                                 player.closeMenu()
                                 ppd.putBoolean("isPay", true);
+                                gui.player.setXp(xxp);
                             } else {
                                 player.tell(Text.translate("tell.meng.xp_shop.no_xp_buy"))
                             }

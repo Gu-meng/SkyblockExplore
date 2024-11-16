@@ -3,7 +3,11 @@
 const backpack = "meng:backpack";
 const dataBackpack = "backpack";
 const dataBackpackItem = dataBackpack + "Item";
-
+/**
+ * 
+ * @param {*} inventoryContainer 
+ * @param {Internal.ItemStack} backpackItem 
+ */
 function backpackFunc(inventoryContainer,backpackItem) {
     let n = 0;
     if (inventoryContainer.getItems().size() == 90) n = 54;
@@ -13,14 +17,14 @@ function backpackFunc(inventoryContainer,backpackItem) {
         if (item.is("air")) continue;
         list.push({ item: item.id, count: item.count, slot: i, nbt: item.nbt })
     }
-    backpackItem.setNbt({ "items": list })
-    return;
+    backpackItem.nbt.merge({ "items": list })
 }
 
 function openBackpackFunc(player, item) {
     if (!item.hasNBT()) item.setNbt({ items: [] })
     let nbt = item.getNbt();
     let itemList = nbt.get("items");
+    if (itemList == undefined) item.nbt.merge({ items: [] });
 
     player.openMenu(new $SimpleMenuProvider((i, inv, p) => {
         let chest = $ChestMenu.sixRows(i, inv)

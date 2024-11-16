@@ -1,6 +1,5 @@
 ItemEvents.firstRightClicked(backpack, event => {
     let { player, item } = event
-    if (!item.hasNBT()) item.setNbt({ items: [] })
     openBackpackFunc(player,item);
 })
 
@@ -8,7 +7,6 @@ ItemEvents.firstRightClicked(backpack, event => {
 NetworkEvents.dataReceived("openBackpack", event => {
     const player = event.player
     if (player.data.get(dataBackpack) == undefined) {
-        console.log("111");
         let opItem = $CuriosApi
             .getCuriosHelper()
         ["findFirstCurio(net.minecraft.world.entity.LivingEntity,net.minecraft.world.item.Item)"](player, backpack);

@@ -19,7 +19,7 @@ let MekRecipe = {
             itemInput: { ingredient: MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
             output: MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 注册化学压射室
@@ -39,7 +39,7 @@ let MekRecipe = {
             "itemInput": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
             "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 注册融合机
@@ -58,7 +58,7 @@ let MekRecipe = {
             },
             "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 粉碎机
@@ -71,7 +71,7 @@ let MekRecipe = {
             "input": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
             "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 富集仓
@@ -84,7 +84,7 @@ let MekRecipe = {
             "input": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
             "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 冶金灌注机
@@ -101,7 +101,7 @@ let MekRecipe = {
             "itemInput": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
             "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 锇压缩机
@@ -121,7 +121,7 @@ let MekRecipe = {
             "itemInput": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
             "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 
@@ -147,7 +147,7 @@ let MekRecipe = {
             if (extraOutputItem != undefined) obj.secondaryChance = extraItemProbability;
             obj.secondaryOutput = extraOutputItemObj;
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 电解分离器
@@ -174,7 +174,7 @@ let MekRecipe = {
                 "gas": rightGas
             }
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 物品到灌注类型
@@ -191,7 +191,7 @@ let MekRecipe = {
                 "infuse_type": outputInfuse
             }
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     },
     /**
      * 反质子核合成器
@@ -212,6 +212,6 @@ let MekRecipe = {
             "itemInput": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(itemInput) },
             "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     }
 }

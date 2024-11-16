@@ -11,7 +11,7 @@ ServerEvents.recipes(event=>{
         c : 'create_new_age:overcharged_diamond',
         j : 'meng:saw_blade',
         g : 'create:shaft',
-        q : 'meng:precision_machine_parts',
+        q : "meng:better_precision_machine_parts",
         b : 'create_new_age:overcharged_iron_sheet'
     })
 })

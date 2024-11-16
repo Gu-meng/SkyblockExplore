@@ -120,6 +120,10 @@ const MekInfuse = {
      * 龙息
      */
     dragonBreath: "meng:dragon_breath",
+    /**
+     * 萤石
+     */
+    glowstone:"meng:glowstone"
 }
 
 const MekGas = {

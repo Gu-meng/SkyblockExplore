@@ -50,11 +50,7 @@ ServerEvents.recipes(event => {
         ['minecraft:iron_nugget','create:iron_sheet','minecraft:iron_nugget']
     ])
 
-    event.shapeless('minecraft:cobblestone',[
-        'minecraft:gunpowder','minecraft:gunpowder','meng:dirty_cobblestone'
-    ])
-
-    event.shaped('meng:stalinite_block',[
+    event.shaped('2x meng:stalinite_block',[
         'aba',
         'bab',
         'aba'
@@ -107,6 +103,8 @@ ServerEvents.recipes(event => {
     ])
 
     event.shapeless('meng:charged_certus_quartz_crystal_mesh',['meng:iron_frame','ae2:charged_certus_quartz_crystal','ae2:charged_certus_quartz_crystal']);
+
+    event.smithing("meng:netherite_mesh","meng:charged_certus_quartz_crystal_mesh","minecraft:netherite_block")
 })
 
 const aeStorageList = [

@@ -10,4 +10,6 @@ ServerEvents.recipes(event=>{
     pressing('meng:reinforce_iron_sheet',[
         "minecraft:iron_block"
     ])
+
+    pressing("meng:broken_glass",'minecraft:glass_bottle')
 })

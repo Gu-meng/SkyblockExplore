@@ -81,4 +81,14 @@ ServerEvents.recipes(event => {
     fullTable(event, 'minecraft:diorite', 'meng:small_diorite')
 
     event.shapeless("minecraft:redstone",['meng:redstone_dust','meng:redstone_dust','meng:redstone_dust','meng:redstone_dust'])
+
+    event.replaceInput({id:"minecraft:fermented_spider_eye"},"minecraft:brown_mushroom",'#forge:slimeballs')
+
+    event.shaped("minecraft:glass",['aa','aa'],{
+        a:"meng:broken_glass"
+    })
+
+    event.shapeless('minecraft:cobblestone',[
+        'minecraft:gunpowder','minecraft:gunpowder','meng:dirty_cobblestone'
+    ])
 })

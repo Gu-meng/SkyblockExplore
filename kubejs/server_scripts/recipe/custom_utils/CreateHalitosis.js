@@ -16,6 +16,6 @@ const CreateHalitosis = {
             "ingredients": ingredientList,
             "results": outputItemList
         }
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     }
 }

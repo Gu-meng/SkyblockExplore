@@ -13,8 +13,8 @@ global.addNeterPortalLoots = (item,chance,minCount,maxCount) =>{
 global.addNeterPortalLoots("minecraft:nether_wart",20,10,25)
 // 下界石英矿 
 global.addNeterPortalLoots("minecraft:nether_quartz_ore",30,20,45)
-// 烈焰棒
-global.addNeterPortalLoots("minecraft:blaze_rod",10,5,10)
+// 萤石块
+global.addNeterPortalLoots("minecraft:glowstone",20,22,48)
 // 恶魂之泪 
 global.addNeterPortalLoots("minecraft:ghast_tear",10,5,10)
 // 凋灵骷髅头

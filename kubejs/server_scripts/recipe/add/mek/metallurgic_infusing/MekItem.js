@@ -7,5 +7,4 @@ MekRecipe.metallurgicInfusing('mekanism:alloy_reinforced','mekanism:alloy_infuse
 MekRecipe.metallurgicInfusing('mekanism:elite_control_circuit','mekanism:advanced_control_circuit',MekInfuse.alloyReinforced,120)
 MekRecipe.metallurgicInfusing('mekanism:dust_refined_obsidian','#forge:dusts/obsidian',MekInfuse.alloyReinforced,80)
 MekRecipe.metallurgicInfusing('mekanism:ultimate_control_circuit','mekanism:elite_control_circuit',MekInfuse.alloyAtomic,100)
-MekRecipe.metallurgicInfusing('draconicevolution:draconium_dust','createsifter:crushed_end_stone',MekInfuse.dragonBreath,25)
 // MekRecipe.metallurgicInfusing()

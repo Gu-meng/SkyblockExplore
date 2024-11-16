@@ -1,3 +1,5 @@
+// priority: 10
+
 const WitherSpawn = {
     patternBlock : function patternBlock(){
         return $BlockPatternBuilder.start().aisle(

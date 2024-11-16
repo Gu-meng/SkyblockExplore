@@ -8,7 +8,8 @@ let machineType = {
     copperMesh:[],
     ironMesh: [],
     diamondMesh: [],
-    quartzMesh: []
+    quartzMesh: [],
+    netheriteMesh: []
 }
 
 const splashingObjIds = [
@@ -33,10 +34,11 @@ const oreList = {
             "meng:slag": setChanceAndCount()
         },
         copperMesh : setChanceAndCount(0.25),
-        ironMesh: setChanceAndCount(0.2),
+        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(0.18),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount(),
     },
     /**
      * 闪长岩石子
@@ -46,10 +48,11 @@ const oreList = {
             "meng:slag": setChanceAndCount()
         },
         copperMesh : setChanceAndCount(0.25),
-        ironMesh: setChanceAndCount(0.2),
+        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(0.18),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 圆石石子
@@ -59,10 +62,11 @@ const oreList = {
             "meng:slag": setChanceAndCount()
         },
         copperMesh : setChanceAndCount(0.25),
-        ironMesh: setChanceAndCount(0.2),
+        ironMesh: setChanceAndCount(),
         andesiteMesh: setChanceAndCount(0.18),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 铁尘
@@ -75,7 +79,8 @@ const oreList = {
         copperMesh : setChanceAndCount(0.65),
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 铁粒
@@ -84,11 +89,12 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount()
         },
-        andesiteMesh: setChanceAndCount(0.04),
-        copperMesh : setChanceAndCount(0.05),
-        ironMesh: setChanceAndCount(0.12),
+        andesiteMesh: setChanceAndCount(),
+        copperMesh : setChanceAndCount(0.35,4),
+        ironMesh: setChanceAndCount(0.4),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 粉碎铁
@@ -100,8 +106,9 @@ const oreList = {
         andesiteMesh: setChanceAndCount(),
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.4),
-        quartzMesh: setChanceAndCount(0.35, 2)
+        diamondMesh: setChanceAndCount(0.5,5),
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount(1,5)
     },
     /**
      * 金粒
@@ -110,11 +117,12 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.25)
         },
-        andesiteMesh: setChanceAndCount(0.0),
+        andesiteMesh: setChanceAndCount(),
         copperMesh : setChanceAndCount(0.01),
-        ironMesh: setChanceAndCount(0.03),
+        ironMesh: setChanceAndCount(0.05),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 粉碎金
@@ -127,7 +135,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.25),
-        quartzMesh: setChanceAndCount(0.4)
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount(0.8,3)
     },
     /**
      * 铜粒
@@ -136,11 +145,12 @@ const oreList = {
         splashing: {
             "meng:slag": setChanceAndCount(0.8, 8)
         },
-        andesiteMesh: setChanceAndCount(0.06),
-        copperMesh : setChanceAndCount(0.11),
-        ironMesh: setChanceAndCount(0.3),
+        andesiteMesh: setChanceAndCount(0.12),
+        copperMesh : setChanceAndCount(0.2),
+        ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 粉碎铜
@@ -152,8 +162,9 @@ const oreList = {
         andesiteMesh: setChanceAndCount(),
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(0.28, 3),
-        quartzMesh: setChanceAndCount(0.4, 2)
+        diamondMesh: setChanceAndCount(0.1, 3),
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 青金石
@@ -163,10 +174,11 @@ const oreList = {
             "meng:slag": setChanceAndCount(0.35, 7)
         },
         andesiteMesh: setChanceAndCount(0.06),
-        copperMesh : setChanceAndCount(0.08),
-        ironMesh: setChanceAndCount(0.08, 3),
-        diamondMesh: setChanceAndCount(0.35, 12),
-        quartzMesh: setChanceAndCount(0.7, 12)
+        copperMesh : setChanceAndCount(),
+        ironMesh: setChanceAndCount(),
+        diamondMesh: setChanceAndCount(),
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 紫水晶
@@ -179,7 +191,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.3),
-        quartzMesh: setChanceAndCount(0.18, 2)
+        quartzMesh: setChanceAndCount(0.18, 2),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 钻石
@@ -192,7 +205,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.08),
-        quartzMesh: setChanceAndCount(0.11)
+        quartzMesh: setChanceAndCount(0.18),
+        netheriteMesh: setChanceAndCount(0.4,2)
     },
     /**
      * 绿宝石
@@ -203,22 +217,10 @@ const oreList = {
         },
         andesiteMesh: setChanceAndCount(),
         copperMesh : setChanceAndCount(),
-        ironMesh: setChanceAndCount(),
+        ironMesh: setChanceAndCount(0.02),
         diamondMesh: setChanceAndCount(0.08),
-        quartzMesh: setChanceAndCount()
-    },
-    /**
-     * 下届合金碎片
-     */
-    'minecraft:netherite_scrap': {
-        splashing: {
-            "meng:slag": setChanceAndCount()
-        },
-        andesiteMesh: setChanceAndCount(),
-        copperMesh : setChanceAndCount(),
-        ironMesh: setChanceAndCount(),
-        diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(0.25),
+        netheriteMesh: setChanceAndCount(0.45,4)
     },
     /**
      * 锡粒
@@ -231,7 +233,8 @@ const oreList = {
         copperMesh : setChanceAndCount(0.01),
         ironMesh: setChanceAndCount(0.03),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 粉碎锡
@@ -244,7 +247,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(), 
         diamondMesh: setChanceAndCount(0.25),
-        quartzMesh: setChanceAndCount(0.13, 2)
+        quartzMesh: setChanceAndCount(0.13, 2),
+        netheriteMesh: setChanceAndCount(0.8,4)
     },
     /**
      * 锇粒
@@ -257,7 +261,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(0.005), 
         diamondMesh: setChanceAndCount(0.18, 4),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 粉碎锇
@@ -270,7 +275,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(), 
         diamondMesh: setChanceAndCount(0.11),
-        quartzMesh: setChanceAndCount(0.16, 2)
+        quartzMesh: setChanceAndCount(0.16, 2),
+        netheriteMesh: setChanceAndCount(0.5,4)
     },
     /**
      * 铀粒
@@ -283,7 +289,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),  
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount(0.1, 3)
+        quartzMesh: setChanceAndCount(0.1, 3),
+        netheriteMesh: setChanceAndCount()
 
     },
     /**
@@ -297,7 +304,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount(0.1,3)
     },
     /**
      * 铅粒
@@ -310,7 +318,8 @@ const oreList = {
         copperMesh : setChanceAndCount(0.01),
         ironMesh: setChanceAndCount(0.02),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
 
     },
     /**
@@ -324,7 +333,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.2),
-        quartzMesh: setChanceAndCount(0.35, 2)
+        quartzMesh: setChanceAndCount(0.35, 2),
+        netheriteMesh: setChanceAndCount(0.8,4)
     },
     /**
      * 锌粒
@@ -337,7 +347,8 @@ const oreList = {
         copperMesh : setChanceAndCount(0.01),
         ironMesh: setChanceAndCount(0.05),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount()
 
     },
     /**
@@ -351,7 +362,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.2),
-        quartzMesh: setChanceAndCount(0.34, 2)
+        quartzMesh: setChanceAndCount(0.34, 2),
+        netheriteMesh: setChanceAndCount(0.7,4)
     },
     /**
      * 赛特斯水晶
@@ -364,7 +376,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(0.18),
-        quartzMesh: setChanceAndCount(0.56)
+        quartzMesh: setChanceAndCount(0.56),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 金属钍
@@ -375,9 +388,10 @@ const oreList = {
         },
         andesiteMesh: setChanceAndCount(),
         copperMesh : setChanceAndCount(),
-        ironMesh: setChanceAndCount(0.1),
+        ironMesh: setChanceAndCount(0.05),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount(0.46)
+        quartzMesh: setChanceAndCount(0.46),
+        netheriteMesh: setChanceAndCount()
     },
     /**
      * 氟石
@@ -390,7 +404,8 @@ const oreList = {
         copperMesh : setChanceAndCount(),
         ironMesh: setChanceAndCount(),
         diamondMesh: setChanceAndCount(),
-        quartzMesh: setChanceAndCount()
+        quartzMesh: setChanceAndCount(),
+        netheriteMesh: setChanceAndCount(0.52,3)
     }
 }
 
@@ -419,6 +434,9 @@ function getAllOre() {
 
         item = searchingOre("quartzMesh", key);
         if (item != null) machineType.quartzMesh.push(item)
+
+        item = searchingOre("netheriteMesh",key);
+        if (item != null) machineType.netheriteMesh.push(item)
     }
 }
 

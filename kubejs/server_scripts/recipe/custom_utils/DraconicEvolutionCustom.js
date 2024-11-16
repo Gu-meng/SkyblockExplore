@@ -20,7 +20,7 @@ const draconicRecipe = {
             "total_energy": energy
         }
         obj.ingredients = MengUtils.StrToItemUtil.itemListProcessing(arr, ingredientList)
-        ServerEvents.recipes(e => e.custom(obj))
+        customList.push(obj)
     }
 }
 

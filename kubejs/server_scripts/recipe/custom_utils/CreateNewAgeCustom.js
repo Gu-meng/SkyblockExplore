@@ -14,9 +14,7 @@ const createNewAge = {
             "results": [MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)],
             "energy_needed": energy,
         }
-        ServerEvents.recipes(e =>{
-            e.custom(obj)
-        })
+        customList.push(obj)
     }
 }
 
