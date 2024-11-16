@@ -1,5 +1,5 @@
 {
-    "meng.client.window.title": "Explore Everything v0.2.1.241108",
+    "meng.client.window.title": "Explore Everything v0.2.2.241116",
     "key.meng.multiple_blocks": "Multiple Blocks Mining",
     "key.keybinding.multiple_blocks": "Multiple Blocks Mining",
     "item.meng.crushbone": "Crushed Bone",
@@ -325,5 +325,11 @@
     "item.tooltip.meng.backpack": "Backpack is a test item and may contain bugs\nPlease do not store valuable items in it\nDo not put backpack items that open backpacks inside the backpack",
     "item.tooltip.meng.return_pearl1": "This item has expired and cannot be used",
     "item.tooltip.meng.return_pearl2": "Remaining time %s",
-    "ponder.meng.wither.header":"Spawn Wither"
+    "ponder.meng.wither.header":"Spawn Wither",
+    "item.meng.netherite_mesh":"Netherite Mesh",
+    "item.meng.glowstone_gem":"Glowstone Gem",
+    "item.meng.broken_glass":"Broken Glass",
+    "infuse_type.meng.glowstone": "Glowstone",
+    "block.meng.new_slag_block":"New Slag Block",
+    "jei.item.information.stalinite_block":"Glass that can block the explosion of the Wither"
 }

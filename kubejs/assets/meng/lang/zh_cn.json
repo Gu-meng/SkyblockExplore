@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.2.1.241108",
+    "meng.client.window.title" : "空岛：探索 v0.2.2.241116",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -446,5 +446,11 @@
     "item.tooltip.meng.backpack3":"请不要将打开背包的背包物品放进背包里",
     "item.tooltip.meng.return_pearl1":"该物品已失效无法使用",
     "item.tooltip.meng.return_pearl2":"剩余时间 %s",
-    "ponder.meng.wither.header":"召唤凋灵"
+    "ponder.meng.wither.header":"召唤凋灵",
+    "item.meng.netherite_mesh":"下界合金筛网",
+    "item.meng.glowstone_gem":"萤石宝石",
+    "item.meng.broken_glass":"玻璃碎片",
+    "infuse_type.meng.glowstone": "萤石",
+    "block.meng.new_slag_block":"不一样的矿渣块",
+    "jei.item.information.stalinite_block":"可以挡住凋灵爆炸的玻璃"
 }
