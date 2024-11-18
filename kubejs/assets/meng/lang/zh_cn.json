@@ -1,6 +1,6 @@
 {
 
-    "meng.client.window.title" : "空岛：探索 v0.2.2.241116",
+    "meng.client.window.title" : "空岛：探索 v0.2.2.241118",
 
     "key.meng.multiple_blocks" : "连锁采集",
     "key.keybinding.multiple_blocks":"连锁采集",
@@ -452,5 +452,6 @@
     "item.meng.broken_glass":"玻璃碎片",
     "infuse_type.meng.glowstone": "萤石",
     "block.meng.new_slag_block":"不一样的矿渣块",
-    "jei.item.information.stalinite_block":"可以挡住凋灵爆炸的玻璃"
+    "jei.item.information.stalinite_block":"可以挡住凋灵爆炸的玻璃",
+    "item.meng.overcharged_osmium":"充电锇锭"
 }

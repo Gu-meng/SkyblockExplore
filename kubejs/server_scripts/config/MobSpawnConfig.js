@@ -16,7 +16,7 @@ const MobSpwanConfig = {
      * 岩浆史莱姆
      */
     magmaCube:{
-        spawn:0.3
+        spawn:0.1
     },
     /**
      * 凋零骷髅

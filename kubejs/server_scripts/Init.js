@@ -28,8 +28,6 @@ const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi")
 
 const $MGUFakePlayer = Java.loadClass("mob_grinding_utils.fakeplayer.MGUFakePlayer")
 
-Client.setTitle(Text.translate("meng.client.window.title").getString())
-
 ServerEvents.loaded(e=>{
     e.server.scheduleInTicks(1,()=>{})
 

@@ -1,0 +1,20 @@
+{   
+    "replace": false,
+    "values": [
+        "#storagedrawers:drawers",
+        "storagedrawers:oak_trim",
+        "storagedrawers:spruce_trim",
+        "storagedrawers:birch_trim",
+        "storagedrawers:jungle_trim",
+        "storagedrawers:acacia_trim",
+        "storagedrawers:dark_oak_trim",
+        "storagedrawers:mangrove_trim",
+        "storagedrawers:cherry_trim",
+        "storagedrawers:bamboo_trim",
+        "storagedrawers:crimson_trim",
+        "storagedrawers:warped_trim",
+        "storagedrawers:controller",
+        "storagedrawers:controller_slave",
+        "storagedrawers:compacting_drawers_3"
+    ]
+}

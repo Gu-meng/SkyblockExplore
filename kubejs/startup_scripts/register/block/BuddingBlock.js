@@ -88,6 +88,7 @@ StartupEvents.registry("block", event => {
     Object.keys(budding).forEach(key => {
         let value = budding[key];
         event.create(value.budding)
+            .noDrops()
             .textureAll("meng:block/budding/budding")
             .randomTick(rtc => {
                 global.setBlock(rtc, value.small)

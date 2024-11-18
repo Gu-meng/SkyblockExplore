@@ -10,6 +10,7 @@ BlockEvents.broken(event => {
         let isDrop = !block.getBlockState().requiresCorrectToolForDrops()
         let level = block.getLevel();
         let handItem = player.getMainHandItem()
+        if (handItem.id == "mekanism:atomic_disassembler") isDrop = true;
         if (!isDrop) isDrop = canDrop(block, handItem);
         let tempCount = 0;
         let multiple = addMultipleBlocks(block, posList)
@@ -97,6 +98,7 @@ function equalBlock(block1, block2) {
  */
 function canDrop(block, item) {
     let db = toolDestroyBlock(item);
+    if (db == undefined) return false;
     if (block.hasTag(db)) {
         let level = blockDestroyLevel(block);
         if (level == 0) return true

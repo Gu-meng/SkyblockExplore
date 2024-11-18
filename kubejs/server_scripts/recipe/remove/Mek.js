@@ -14,10 +14,15 @@ ServerEvents.recipes(event=>{
         'purifying',
         'injecting',
         'infusing',
-        'sawing'
+        'sawing',
+        "energy_cube"
     ]
     levelList.forEach(value=>{
         removeList.forEach(id=>{
+            if (id == "energy_cube"){
+                if (value == "basic") return;
+                event.remove({id:`mekanism:${id}/${value}`})
+            }
             let recipeId = `mekanism:factory/${value}/${id}`
             event.remove({id:recipeId})
         })
@@ -45,7 +50,9 @@ ServerEvents.recipes(event=>{
         "mekanism:infusion_conversion/carbon/from_coal_block",
         "mekanism:infusion_conversion/carbon/from_coal",
         "mekanism:nucleosynthesizing/diamond",
-        "mekanism:jetpack"
+        "mekanism:jetpack",
+        "mekanism:gas_conversion/osmium_from_block",
+        "mekanism:gas_conversion/osmium_from_ingot"
     ]
     removeId.forEach(value=>{
         event.remove({id:value})

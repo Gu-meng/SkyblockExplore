@@ -1,4 +1,4 @@
-    BlockEvents.rightClicked(event => {
+BlockEvents.rightClicked(event => {
     if (event.getHand() != "MAIN_HAND") return;
     if (event.player.isShiftKeyDown()) return;
     let block = event.block;

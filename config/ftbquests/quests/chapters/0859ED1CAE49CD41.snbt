@@ -1,0 +1,319 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0859ED1CAE49CD41"
+	group: ""
+	icon: "meng:better_precision_machine_parts"
+	id: "0859ED1CAE49CD41"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "59CE2E5E4E5548F1"
+			rewards: [{
+				id: "3587652CBCE8FA9A"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.painful_tears}"
+			tasks: [{
+				id: "07C487B0FE368A29"
+				item: "meng:painful_tears"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			id: "210A622DA563A900"
+			rewards: [{
+				id: "0F840402AC8B0F30"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.raffle_ticket}"
+			tasks: [{
+				id: "67D42064B5CB05C1"
+				item: "meng:raffle_ticket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			id: "3B54AEEF9A22F84C"
+			rewards: [{
+				id: "1E407A4CAFEDF06C"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.xp_shop}"
+			tasks: [{
+				id: "5E0D46657DA916BB"
+				item: "meng:xp_shop"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			id: "0A345F71044C94FC"
+			rewards: [{
+				id: "1D374E02F89A2E98"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.rain_doll}"
+			tasks: [{
+				id: "7B99CCB8B3BFC208"
+				item: {
+					Count: 1
+					id: "meng:rain_doll"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			id: "4B89919483612179"
+			rewards: [{
+				id: "7597F27C3231DD09"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.sunny_doll}"
+			tasks: [{
+				id: "271C86FFE7353A70"
+				item: {
+					Count: 1
+					id: "meng:sunny_doll"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			id: "58512D329A197B89"
+			rewards: [{
+				id: "065CAD9BE97D9E40"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.dirty_cobblestone}"
+			tasks: [{
+				id: "066BE1FBBEA33448"
+				item: "meng:dirty_cobblestone"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			id: "7376E53E3007909D"
+			rewards: [{
+				id: "009B33EFCA4F4374"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.catalyst_goat}"
+			tasks: [{
+				id: "6A3F7D0BADA6A132"
+				item: "meng:catalyst_goat"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			id: "1D9C58DB99805C9A"
+			rewards: [{
+				id: "211266D68B84720C"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.reload_xpshop}"
+			tasks: [{
+				id: "4CAADD1866DA1B06"
+				item: "meng:reload_xpshop"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			id: "0AF91C7A0E57D6AD"
+			rewards: [{
+				id: "3FEECF2AC47B53FD"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.return_pearl}"
+			tasks: [{
+				id: "6D5205B77E26CB72"
+				item: "meng:return_pearl"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "4A9122D7F6951164"
+			rewards: [{
+				id: "1258A7CA98F28CD4"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.nether_gem}"
+			tasks: [{
+				id: "4DA1AC7A55F3A9E2"
+				item: "meng:nether_gem"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			id: "5E5DA1FF32067009"
+			rewards: [{
+				id: "19FA66FC47B33042"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.wither_core_block}"
+			tasks: [{
+				id: "0D5C10F4EB015393"
+				item: "meng:wither_core_block"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			id: "061948470BDAB6E7"
+			rewards: [{
+				id: "214AED2BDA3F6DF5"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "{jei.item.information.stalinite_block}"
+			tasks: [{
+				id: "31E617516CE077EE"
+				item: "meng:stalinite_block"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "1A5FDAE98E0B77A8"
+			rewards: [{
+				id: "62592E44C2EB1395"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "末影龙在死亡时有概率掉落"
+			tasks: [{
+				id: "731856C46F1366F2"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			id: "4FFC4363AF651B52"
+			rewards: [{
+				id: "77F69A087CE90AEC"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "史莱姆在收到火焰伤害时，有概率转化为岩浆史莱姆"
+			tasks: [{
+				id: "20AD3330FA0BA3B0"
+				item: "minecraft:magma_cream"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "74B9EE662F30738F"
+			rewards: [{
+				id: "4237B0126AED8C79"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "骷髅在受到凋灵伤害时，会概率变成凋灵骷髅"
+			tasks: [{
+				id: "58AF186473A01B22"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			id: "4E70B09FA57D4D53"
+			rewards: [{
+				id: "0D08771627A763B3"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "任何生物包括玩家在低于-48格时死亡会概率生成坚守"
+			tasks: [{
+				id: "09C38DEF206BF3C8"
+				item: "meng:deep_fear"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			id: "7CCB72B852AFCF5E"
+			rewards: [{
+				id: "1D81A6DBF4C85FCB"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "圆石距离地面10格高的位置掉下来会摔成沙砾"
+			tasks: [{
+				id: "095C211D257D6228"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			id: "7176B9C4A1F09157"
+			rewards: [{
+				id: "4503FE5EE8DA0E83"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "从距离地面20格高的位置将沙砾丢下去会粉碎成沙子"
+			tasks: [{
+				id: "61018EAF5B436B42"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+	]
+	title: "特有物品介绍"
+}

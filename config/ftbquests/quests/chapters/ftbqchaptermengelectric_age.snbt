@@ -335,6 +335,17 @@
 			x: 9.0d
 			y: 6.5d
 		}
+		{
+			dependencies: ["2525B9675D92F11B"]
+			id: "5C8F5BE40F098AD4"
+			tasks: [{
+				id: "0A2242CD14E4E90B"
+				item: "meng:overcharged_osmium"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
 	]
 	title: "{ftbq.chapter.meng.electric_age}"
 }

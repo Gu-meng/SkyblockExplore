@@ -608,6 +608,199 @@
 			x: -4.0d
 			y: -3.5d
 		}
+		{
+			dependencies: ["6938A9EB1122F781"]
+			id: "5A99F16A8C97B0D7"
+			tasks: [{
+				id: "5FEBA391C2495A66"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7516FE8C5EE20479"]
+			id: "6A6EAFFF172942F5"
+			tasks: [{
+				id: "20C855FB00EACC4E"
+				item: "minecraft:bone"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5CDCCADA0DF3E3D6"]
+			id: "7516FE8C5EE20479"
+			tasks: [{
+				id: "0F9D9A79C763F005"
+				item: "meng:crushbone"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6938A9EB1122F781"]
+			id: "5CDCCADA0DF3E3D6"
+			tasks: [{
+				id: "20B2AFEEBE7B0712"
+				item: "minecraft:rotten_flesh"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6938A9EB1122F781"]
+			id: "0561503865400CEF"
+			tasks: [{
+				id: "4BC17F8E60490726"
+				item: "minecraft:spider_eye"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5A99F16A8C97B0D7"
+				"0561503865400CEF"
+			]
+			id: "5E3AB9E3BD503D65"
+			tasks: [{
+				id: "40547F21C578CCC2"
+				item: "minecraft:fermented_spider_eye"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5E3AB9E3BD503D65"]
+			id: "41AAD39B5CBED254"
+			tasks: [{
+				id: "66F2CCE011AFFC9B"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["41AAD39B5CBED254"]
+			id: "4FA37E9E127ED6F9"
+			tasks: [{
+				id: "6ABE94F4F5E759DC"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6938A9EB1122F781"]
+			id: "1034261D57A3776A"
+			tasks: [{
+				id: "0A0BDFA55974B44C"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"3E3001A70C57B832"
+				"2C0F49F6870534F4"
+			]
+			id: "2AF5A80F9C5DC0CE"
+			tasks: [{
+				id: "177FDCF7704522A4"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1034261D57A3776A"
+				"4FA37E9E127ED6F9"
+			]
+			id: "3E3001A70C57B832"
+			tasks: [{
+				id: "55704B7519279E10"
+				item: "meng:dirty_cobblestone"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6A6EAFFF172942F5"]
+			id: "2C0F49F6870534F4"
+			tasks: [{
+				id: "7B3F561CBB4494ED"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6938A9EB1122F781"]
+			id: "2A45E97979B3BF75"
+			tasks: [{
+				id: "144824C40FC8C979"
+				item: "minecraft:arrow"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2A45E97979B3BF75"]
+			id: "1B23CA7B94B70C1B"
+			tasks: [{
+				id: "159DA1A77AAFC447"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5A99F16A8C97B0D7"]
+			description: ["史莱姆受到火焰伤害时有概率转化为岩浆史莱姆"]
+			id: "7BF6D80A44DF0FA4"
+			tasks: [{
+				id: "1DFC17C9C00D8943"
+				item: "minecraft:magma_cream"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6A6EAFFF172942F5"]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "7EE78806EB182439"
+			subtitle: "骷髅在受到凋灵伤害时，有概率转化为凋灵骷髅"
+			tasks: [{
+				id: "204C74EBA494293B"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 10.5d
+		}
 	]
 	title: "{ftbq.chapter.meng.start}"
 }

@@ -35,7 +35,8 @@ const basicItem = {
     nether_gem : namespace + "nether_gem",
     netherite_scrap_nugget : namespace + "netherite_scrap_nugget",
     broken_glass : namespace + "broken_glass",
-    glowstone_gem : namespace + "glowstone_gem"
+    glowstone_gem : namespace + "glowstone_gem",
+    overcharged_osmium : namespace + "overcharged_osmium"
 }
 
 const especial = {

@@ -23,6 +23,7 @@
 			dependencies: [
 				"3414F80AD604CE54"
 				"53A0D0FA78E91880"
+				"4D23A5B5AE964A89"
 			]
 			description: ["{ftbq.details.meng.jetpack}"]
 			id: "1E754AECC726594C"
@@ -554,6 +555,18 @@
 			title: "{ftbq.title.meng.beacon_mek}"
 			x: 0.0d
 			y: -12.5d
+		}
+		{
+			dependencies: ["2BA23919C99CBEE9"]
+			description: ["末影龙在死亡时有概率掉落鞘翅"]
+			id: "4D23A5B5AE964A89"
+			tasks: [{
+				id: "7E8A7478520B3314"
+				item: "minecraft:end_portal_frame"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -6.0d
 		}
 	]
 	title: "{ftbq.chapter.meng.mek}"

@@ -91,4 +91,6 @@ ServerEvents.recipes(event => {
     event.shapeless('minecraft:cobblestone',[
         'minecraft:gunpowder','minecraft:gunpowder','meng:dirty_cobblestone'
     ])
+
+    fullTable(event,"meng:lava_debris","minecraft:magma_cream")
 })

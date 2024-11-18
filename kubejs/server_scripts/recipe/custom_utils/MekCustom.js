@@ -213,5 +213,22 @@ let MekRecipe = {
             "output": MengUtils.StrToItemUtil.strProcessingNbtItem(outputItem)
         }
         customList.push(obj)
+    },
+    /**
+     * 物品到气体类型
+     * @param {String} outputInfuse 输出气体类型
+     * @param {Number} outputAmount 输出数量(单位mb)
+     * @param {Internal.Ingredient} inputItem 输入物品
+     */
+    gasConversion: function (outputGas, outputAmount, inputItem) {
+        let obj = {
+            "type": "mekanism:gas_conversion",
+            "input": { "ingredient": MengUtils.StrToItemUtil.strProcessingNbtItem(inputItem) },
+            "output": {
+                "amount": outputAmount,
+                "gas": outputGas
+            }
+        }
+        customList.push(obj)
     }
 }

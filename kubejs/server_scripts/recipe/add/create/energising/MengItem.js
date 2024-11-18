@@ -1,0 +1,1 @@
+createNewAge.energising("meng:overcharged_osmium","mekanism:ingot_osmium",5000)

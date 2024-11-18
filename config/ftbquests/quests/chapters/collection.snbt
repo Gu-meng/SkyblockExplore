@@ -9,6 +9,11 @@
 	quests: [
 		{
 			id: "0C70A32BB1A275C2"
+			rewards: [{
+				id: "187C3F12DAAD14C4"
+				item: "storagedrawers:creative_storage_upgrade"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 64L
@@ -112,6 +117,20 @@
 		}
 		{
 			id: "26617A1EE31F78C8"
+			rewards: [
+				{
+					count: 6
+					id: "12C5EAC8EAA5805C"
+					item: "minecraft:netherite_block"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "01AE2599AF675DAC"
+					item: "storagedrawers:creative_storage_upgrade"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					count: 64L
@@ -310,6 +329,11 @@
 		}
 		{
 			id: "1FD225E4A4FF6795"
+			rewards: [{
+				id: "621487DF1FF64683"
+				item: "create:creative_motor"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6F238DF98B213F3F"
@@ -377,6 +401,39 @@
 		}
 		{
 			id: "2537B35C28B7FD72"
+			rewards: [
+				{
+					id: "7D61ECCAF84C6111"
+					item: {
+						Count: 1
+						id: "mekanism:creative_energy_cube"
+						tag: {
+							mekData: {
+								EnergyContainers: [{
+									Container: 0b
+									stored: "18446744073709551615.9999"
+								}]
+								componentConfig: {
+									config0: {
+										side0: 4
+										side1: 4
+										side2: 4
+										side3: 4
+										side4: 4
+										side5: 4
+									}
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3FBDF207375AAF25"
+					item: "ae2:creative_item_cell"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "5B2C45BF17358348"
